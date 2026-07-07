@@ -1,0 +1,1 @@
+"""Football club predictions package."""
