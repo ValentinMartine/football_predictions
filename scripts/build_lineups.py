@@ -1,14 +1,9 @@
 """
-Assemble les compositions par match (Understat) et les apparie aux matchs récents des
-prédictions, pour l'affichage sur le site.
+Build recent match lineups from Understat player-match data.
 
-Pour chaque match apparié (date + équipes normalisées), on exporte les joueurs des deux
-équipes avec : poste (code Understat, traduit côté site), statut (titulaire / entré /
-sorti) + minute du remplacement, minutes des buts, passes déc., xG. On désigne aussi
-l'homme du match (proxy : contribution buts/passes + xG).
-
-Limite connue : Understat ne fournit pas l'événement de substitution (qui remplace qui),
-donc les remplaçants sont regroupés en fin de liste, triés par minute d'entrée.
+Understat gives player minutes and substitute status, but not the exact
+replacement pairs. We infer pairs by team from substitution minutes and the
+outgoing player's position, then keep the inferred confidence in the JSON.
 """
 from __future__ import annotations
 
@@ -26,15 +21,23 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "lineups.json"
 LEAGUES = ["ENG-Premier League", "ESP-La Liga", "ITA-Serie A", "GER-Bundesliga", "FRA-Ligue 1"]
 
-# Ordre d'affichage habituel (GK, défense centre->droite->gauche, milieux, attaque, banc).
+# Display order: goalkeeper, defenders, midfielders, attackers, bench.
 POS_ORDER = {
     "GK": 0, "DC": 1, "DR": 2, "DL": 3, "DMC": 4, "DMR": 5, "DML": 6,
     "MC": 7, "MR": 8, "ML": 9, "AMC": 10, "AMR": 11, "AML": 12,
     "FW": 13, "FWR": 14, "FWL": 15, "Sub": 99,
 }
 
+POS_GROUP = {
+    "GK": "GK",
+    "DC": "DEF", "DR": "DEF", "DL": "DEF",
+    "DMC": "MID", "DMR": "MID", "DML": "MID", "MC": "MID", "MR": "MID", "ML": "MID",
+    "AMC": "ATT", "AMR": "ATT", "AML": "ATT", "FW": "ATT", "FWR": "ATT", "FWL": "ATT",
+    "Sub": "SUB",
+}
 
-# Alias : noms abrégés football-data.co.uk -> noms Understat (après normalisation)
+
+# football-data.co.uk aliases -> Understat names after normalization.
 ALIAS = {
     "espanol": "espanyol", "man city": "manchester city", "man united": "manchester united",
     "sociedad": "real sociedad", "ath bilbao": "athletic club", "ath madrid": "atletico madrid",
@@ -94,6 +97,100 @@ def main() -> None:
     game_info = {r[sgid]: (r[sh], r[sa]) for _, r in sched.iterrows()}
     key_to_game = {(r["day"], norm(r[sh]), norm(r[sa])): r[sgid] for _, r in sched.iterrows()}
 
+    def _pair_substitutions(players: list[dict]) -> list[dict]:
+        for player in players:
+            player["display_pos"] = player["pos"]
+            player["paired_with"] = None
+            player["substitution_group"] = None
+            player["pair_confidence"] = None
+
+        by_team: dict[str, list[dict]] = {}
+        for player in players:
+            by_team.setdefault(player["team"], []).append(player)
+
+        group_id = 1
+        for team_players in by_team.values():
+            outgoing = [p for p in team_players if p["off"] and p["smin"] is not None]
+            incoming = [p for p in team_players if p["on"] and p["smin"] is not None]
+            used_outgoing: set[int] = set()
+
+            for entrant in sorted(incoming, key=lambda p: (p["smin"], p["player"])):
+                best_idx, best_score = None, None
+                for idx, leaver in enumerate(outgoing):
+                    if idx in used_outgoing:
+                        continue
+                    minute_gap = abs(int(entrant["smin"]) - int(leaver["smin"]))
+                    goalkeeper_penalty = 20 if POS_GROUP.get(leaver["pos"]) == "GK" else 0
+                    score = minute_gap * 10 + goalkeeper_penalty
+                    if best_score is None or score < best_score:
+                        best_idx, best_score = idx, score
+
+                if best_idx is None:
+                    continue
+
+                leaver = outgoing[best_idx]
+                used_outgoing.add(best_idx)
+                leaver["substitution_group"] = group_id
+                leaver["paired_with"] = entrant["player"]
+                entrant["substitution_group"] = group_id
+                entrant["paired_with"] = leaver["player"]
+                entrant["display_pos"] = leaver["pos"]
+                entrant["pair_confidence"] = "good" if abs(int(entrant["smin"]) - int(leaver["smin"])) <= 2 else "minute_only"
+                group_id += 1
+
+            unpaired_incoming = [
+                p for p in incoming
+                if p["substitution_group"] is None and p["smin"] is not None
+            ]
+            fallback_outgoing = [
+                p for p in team_players
+                if not p["on"]
+                and p["substitution_group"] is None
+                and POS_GROUP.get(p["pos"]) != "GK"
+            ]
+            for entrant in sorted(unpaired_incoming, key=lambda p: (p["smin"], p["player"])):
+                if not fallback_outgoing:
+                    break
+                leaver = min(
+                    fallback_outgoing,
+                    key=lambda p: (abs(POS_ORDER.get(p["pos"], 50) - 8), p["player"]),
+                )
+                fallback_outgoing.remove(leaver)
+                leaver["off"] = True
+                leaver["smin"] = entrant["smin"]
+                leaver["substitution_group"] = group_id
+                leaver["paired_with"] = entrant["player"]
+                entrant["substitution_group"] = group_id
+                entrant["paired_with"] = leaver["player"]
+                entrant["display_pos"] = leaver["pos"]
+                entrant["pair_confidence"] = "late_minute_inferred" if int(entrant["smin"]) >= 85 else "minute_inferred"
+                group_id += 1
+
+        display: list[dict] = []
+        for team_players in by_team.values():
+            starters = sorted(
+                [p for p in team_players if not p["on"]],
+                key=lambda p: (p["ord"], p["player"]),
+            )
+            entrants_by_group: dict[int, list[dict]] = {}
+            unpaired_entrants = []
+            for player in team_players:
+                if not player["on"]:
+                    continue
+                group = player["substitution_group"]
+                if group is None:
+                    unpaired_entrants.append(player)
+                else:
+                    entrants_by_group.setdefault(group, []).append(player)
+
+            for starter in starters:
+                display.append(starter)
+                group = starter["substitution_group"]
+                if group is not None:
+                    display.extend(sorted(entrants_by_group.get(group, []), key=lambda p: (p["smin"] or 0, p["player"])))
+            display.extend(sorted(unpaired_entrants, key=lambda p: (p["smin"] or 0, p["player"])))
+        return display
+
     def players_for(game_id):
         sub = pm[pm[gcol] == game_id]
         out = []
@@ -104,22 +201,22 @@ def main() -> None:
             pos = str(r[poscol]) if poscol and pd.notna(r[poscol]) else ""
             is_sub = pos.lower() == "sub"
             off = (not is_sub) and mins < 90
-            # minute de substitution : entrée (sub) ~ 90-mins ; sortie (titulaire) ~ mins
             smin = (90 - mins) if is_sub else (mins if off else None)
             out.append({
-                "player": str(r[pcol]), "team": str(r[tcol]),
-                "pos": pos,                              # code Understat brut (traduit côté site)
+                "player": str(r[pcol]),
+                "team": str(r[tcol]),
+                "pos": pos,
+                "display_pos": pos,
                 "ord": POS_ORDER.get(pos, 50),
-                "on": is_sub,                            # entré en jeu (flèche verte)
-                "off": off,                              # sorti (flèche rouge)
-                "smin": smin,                            # minute d'entrée/sortie
-                "gmin": goal_min.get((game_id, str(r[pcol])), []),  # minutes des buts
+                "on": is_sub,
+                "off": off,
+                "smin": smin,
+                "gmin": goal_min.get((game_id, str(r[pcol])), []),
                 "g": int(r[goal]) if goal and pd.notna(r[goal]) else 0,
                 "a": int(r[ast]) if ast and pd.notna(r[ast]) else 0,
                 "xg": round(float(r[xgc]), 2) if xgc and pd.notna(r[xgc]) else 0.0,
             })
-        # titulaires (par poste) d'abord, puis remplaçants (par minute d'entrée)
-        return sorted(out, key=lambda x: (x["on"], x["ord"], -(x["smin"] or 0) if x["on"] else 0))
+        return _pair_substitutions(out)
 
     def find_game(m):
         gid = key_to_game.get((m["date"], norm(m["home"]), norm(m["away"])))
@@ -152,9 +249,9 @@ def main() -> None:
         matched += 1
 
     OUT.write_text(json.dumps(lineups, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"compos appariées : {matched}/{len(preds['recent_matches'])} matchs -> {OUT.name}")
+    print(f"lineups matched: {matched}/{len(preds['recent_matches'])} matches -> {OUT.name}")
     if missing:
-        print("NON appariés :")
+        print("not matched:")
         for x in missing:
             print("  -", x)
 
