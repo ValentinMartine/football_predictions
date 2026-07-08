@@ -17,12 +17,21 @@ LEAGUE_NAMES = {
     "I1": "Serie A",
     "D1": "Bundesliga",
     "F1": "Ligue 1",
+    # Divisions inférieures + autres championnats (marchés plus "soft")
+    "E1": "Championship", "E2": "League One", "E3": "League Two",
+    "SC0": "Scottish Premiership", "SC1": "Scottish Championship",
+    "D2": "2. Bundesliga", "I2": "Serie B", "SP2": "La Liga 2", "F2": "Ligue 2",
+    "N1": "Eredivisie", "B1": "Jupiler Pro League", "P1": "Primeira Liga",
+    "T1": "Super Lig", "G1": "Super League Greece",
 }
 LEAGUE_IDS = {code: i for i, code in enumerate(LEAGUE_NAMES)}
 
 
 def _read_one(path: Path) -> pd.DataFrame:
-    df = pd.read_csv(path, encoding="utf-8-sig")
+    try:
+        df = pd.read_csv(path, encoding="utf-8-sig")
+    except UnicodeDecodeError:
+        df = pd.read_csv(path, encoding="latin-1")  # ligues mineures parfois en Windows-1252
     df = df.dropna(subset=["Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR"]).copy()
     season, league = path.stem.split("_", 1)
     df["season"] = season

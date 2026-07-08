@@ -30,6 +30,7 @@ from src.pipeline import FEATURE_COLS, build_features, load_matches
 ROOT = Path(__file__).resolve().parents[1]
 MIN_EDGE = 0.05
 MIN_ODDS, MAX_ODDS = 1.5, 3.5
+TOP5 = {"E0", "SP1", "I1", "D1", "F1"}
 
 
 def _reg():
@@ -81,6 +82,7 @@ def main() -> int:
     feat["over_open"] = pd.to_numeric(raw.get("B365>2.5"), errors="coerce")
 
     train, val, test = temporal_split(feat)
+    test = test.reset_index(drop=True)
     mh, ma = _reg().fit(train[FEATURE_COLS], train["home_goals"]), _reg().fit(train[FEATURE_COLS], train["away_goals"])
 
     def p_over(d):
@@ -100,6 +102,17 @@ def main() -> int:
     for name, s in [("clôture moyenne", closing), ("meilleure cote", best)]:
         print(f"{name:16}{s['n_bets']:>8}{s['roi_pct']:>10.2f}{s['win_rate_pct']:>10.1f}")
 
+    # Découpage par niveau : top 5 vs divisions inférieures / autres (meilleure cote)
+    is_top = test["league"].isin(TOP5).to_numpy()
+    tiers = {}
+    for tname, mask in [("top5", is_top), ("mineures", ~is_top)]:
+        sub = test[mask].reset_index(drop=True)
+        if len(sub) == 0:
+            continue
+        s = _sim(sub, pt[mask], "over_best", "under_best")
+        tiers[tname] = s
+        print(f"  [{tname:9}] meilleure cote : {s['n_bets']} paris, ROI {s['roi_pct']:+.2f}%, winrate {s['win_rate_pct']}%")
+
     # CLV : sur les paris Over sélectionnés à l'ouverture, cote ouverture vs clôture
     op, cl = pd.to_numeric(test["over_open"], errors="coerce").to_numpy(), pd.to_numeric(test["over_close"], errors="coerce").to_numpy()
     clv = [op[i] / cl[i] - 1 for i in range(len(test))
@@ -116,11 +129,14 @@ def main() -> int:
         "over_rate_pct": round(100 * over_hit, 1),
         "closing_avg": closing,
         "line_shopping": best,
+        "by_tier": tiers,
         "mean_clv_pct": mean_clv,
         "clv_n_bets": len(clv),
-        "note": ("Marché soft testé : pas d'edge à la clôture (négatif), mais le line shopping "
-                 "ramène à l'équilibre et la CLV est positive. Plus robuste que le 1X2 (échantillon "
-                 "bien plus grand). Aucun profit fiable, mais pas de saignée avec le line shopping."),
+        "note": ("Testé sur 19 championnats (dont divisions inférieures), ~13 500 matchs de test. "
+                 "Aucun edge à la clôture. Le line shopping ramène près de l'équilibre sur le top 5 "
+                 "(~0 %) mais reste négatif sur les ligues mineures (le modèle y est moins précis, "
+                 "ce qui annule leur inefficience supposée). CLV positive mais jamais convertie en ROI. "
+                 "Conclusion honnête : aucun profit fiable démontrable sur ces marchés publics."),
     }
     out = ROOT / "data" / "over_under_report.json"
     out.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
