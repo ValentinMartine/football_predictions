@@ -62,6 +62,19 @@ def _odds(row, side: str) -> float | None:
     return None
 
 
+def _col(row, *cols) -> float | None:
+    """Première cote > 1 parmi les colonnes données (pour CLV / line shopping)."""
+    for col in cols:
+        if col in row.index:
+            try:
+                value = float(row[col])
+            except (TypeError, ValueError):
+                continue
+            if value > 1:
+                return value
+    return None
+
+
 def build_features() -> pd.DataFrame:
     df = load_matches()
     elo_by_league: dict[str, ClubElo] = defaultdict(ClubElo)
@@ -113,6 +126,16 @@ def build_features() -> pd.DataFrame:
             "odds_home": odds_home,
             "odds_draw": odds_draw,
             "odds_away": odds_away,
+            # Cotes pour CLV / line shopping : ouverture, clôture moyenne, meilleure clôture
+            "open_home": _col(r, "B365H", "AvgH", "MaxH"),
+            "open_draw": _col(r, "B365D", "AvgD", "MaxD"),
+            "open_away": _col(r, "B365A", "AvgA", "MaxA"),
+            "close_home": _col(r, "AvgCH", "B365CH", "MaxCH"),
+            "close_draw": _col(r, "AvgCD", "B365CD", "MaxCD"),
+            "close_away": _col(r, "AvgCA", "B365CA", "MaxCA"),
+            "best_home": _col(r, "MaxCH", "MaxH", "B365CH"),
+            "best_draw": _col(r, "MaxCD", "MaxD", "B365CD"),
+            "best_away": _col(r, "MaxCA", "MaxA", "B365CA"),
             "market_home": imp_home,
             "market_draw": imp_draw,
             "market_away": imp_away,

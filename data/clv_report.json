@@ -1,0 +1,24 @@
+{
+  "cloture_moyenne": {
+    "n_bets": 182,
+    "roi_pct": 4.91,
+    "win_rate_pct": 51.1,
+    "avg_odds": 2.078
+  },
+  "ouverture": {
+    "n_bets": 187,
+    "roi_pct": -5.35,
+    "win_rate_pct": 44.92,
+    "avg_odds": 2.105
+  },
+  "meilleure_cloture": {
+    "n_bets": 280,
+    "roi_pct": 8.74,
+    "win_rate_pct": 52.86,
+    "avg_odds": 2.094
+  },
+  "clv_moyenne_ouverture": {
+    "mean_clv_pct": 4.12,
+    "n_bets": 187
+  }
+}
