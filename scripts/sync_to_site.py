@@ -16,6 +16,7 @@ FILES = [
     ("understat_stats.json", "understat_stats.json"),
     ("national_player_form.json", "national_player_form.json"),
     ("team_power.json", "team_power.json"),
+    ("over_under_report.json", "over_under_report.json"),
 ]
 
 

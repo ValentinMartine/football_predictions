@@ -19,6 +19,7 @@ from pathlib import Path
 CLUBS = Path(__file__).resolve().parents[1]
 PERSO = CLUBS.parent
 SITE = PERSO / "valentinmartine"
+WORLDCUP = PERSO / "worldcup_2026_predictions"
 LOG_DIR = CLUBS / "automation" / "logs"
 AUTHOR_EMAIL = "212414673+ValentinMartine@users.noreply.github.com"
 AUTHOR_NAME = "ValentinMartine"
@@ -63,8 +64,16 @@ def commit_and_push(repo: Path, path_spec: str, message: str) -> None:
 def main() -> int:
     log("=== Début mise à jour quotidienne ===")
     try:
-        log("Pipeline clubs (download -> export -> stats -> flags -> compos -> forme -> sync)...")
+        log("Pipeline clubs (download -> export -> stats -> flags -> compos -> forme -> O/U -> sync)...")
         run([sys.executable, "scripts/update_pipeline.py"], CLUBS)
+
+        # Coupe du Monde : cotes + prédictions à venir (non bloquant ; écrit wc_odds.json côté site)
+        try:
+            run([sys.executable, "scripts/fetch_wc_odds.py"], WORLDCUP)
+            run([sys.executable, "scripts/predict_wc_upcoming.py"], WORLDCUP)
+            log("  Coupe du Monde : cotes + prédictions rafraîchies")
+        except Exception as exc:  # noqa: BLE001
+            log(f"  Coupe du Monde ignorée (non bloquant) : {exc}")
 
         today = f"{datetime.now():%Y-%m-%d}"
         commit_and_push(CLUBS, "data", f"chore(data): mise à jour quotidienne des prédictions ({today})")

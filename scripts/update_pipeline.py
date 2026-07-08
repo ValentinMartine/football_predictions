@@ -20,6 +20,7 @@ def main() -> None:
     run([sys.executable, "scripts/fetch_match_events.py"])
     run([sys.executable, "scripts/build_lineups.py"])
     run([sys.executable, "scripts/build_national_player_form.py"])
+    run([sys.executable, "scripts/over_under_backtest.py"])
     run([sys.executable, "scripts/sync_to_site.py"])
 
 

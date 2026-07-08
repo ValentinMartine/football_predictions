@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-07-08T22:41:56+00:00",
+  "market": "Over/Under 2.5 buts",
+  "model": "Score Poisson (2 régresseurs LightGBM), P(Over) calibrée (isotone)",
+  "n_test": 3504,
+  "over_rate_pct": 53.2,
+  "closing_avg": {
+    "n_bets": 1254,
+    "roi_pct": -5.73,
+    "win_rate_pct": 47.3,
+    "final_bankroll": 246.61
+  },
+  "line_shopping": {
+    "n_bets": 1940,
+    "roi_pct": 0.13,
+    "win_rate_pct": 49.2,
+    "final_bankroll": 1059.47
+  },
+  "mean_clv_pct": 3.56,
+  "clv_n_bets": 730,
+  "note": "Marché soft testé : pas d'edge à la clôture (négatif), mais le line shopping ramène à l'équilibre et la CLV est positive. Plus robuste que le 1X2 (échantillon bien plus grand). Aucun profit fiable, mais pas de saignée avec le line shopping."
+}
