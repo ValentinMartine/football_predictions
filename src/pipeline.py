@@ -129,19 +129,23 @@ def build_features() -> pd.DataFrame:
                     ga = np.mean([x["ga"] for x in recent])
                     shots = np.mean([x["shots"] for x in recent])
                     shots_target = np.mean([x["shots_target"] for x in recent])
+                    corners = np.mean([x["corners"] for x in recent])
+                    fouls = np.mean([x["fouls"] for x in recent])
+                    cards = np.mean([x["cards"] for x in recent])
                 else:
                     pts, gf, ga, shots, shots_target = 1.2, 1.3, 1.3, 11.0, 4.0
+                    corners, fouls, cards = 5.0, 12.0, 1.8
                 features[f"form_{side}_{window}"] = pts
                 features[f"gf_{side}_{window}"] = gf
                 features[f"ga_{side}_{window}"] = ga
                 features[f"shots_{side}_{window}"] = shots
                 features[f"st_{side}_{window}"] = shots_target
+                features[f"corners_{side}_{window}"] = corners
+                features[f"fouls_{side}_{window}"] = fouls
+                features[f"cards_{side}_{window}"] = cards
 
-            features[f"form_diff_{window}"] = features[f"form_home_{window}"] - features[f"form_away_{window}"]
-            features[f"gf_diff_{window}"] = features[f"gf_home_{window}"] - features[f"gf_away_{window}"]
-            features[f"ga_diff_{window}"] = features[f"ga_home_{window}"] - features[f"ga_away_{window}"]
-            features[f"shots_diff_{window}"] = features[f"shots_home_{window}"] - features[f"shots_away_{window}"]
-            features[f"st_diff_{window}"] = features[f"st_home_{window}"] - features[f"st_away_{window}"]
+            for prefix in ("form", "gf", "ga", "shots", "st", "corners", "fouls", "cards"):
+                features[f"{prefix}_diff_{window}"] = features[f"{prefix}_home_{window}"] - features[f"{prefix}_away_{window}"]
 
         rows.append(features)
 
@@ -151,6 +155,9 @@ def build_features() -> pd.DataFrame:
             "ga": ag,
             "shots": float(getattr(row, "HS", np.nan) if not pd.isna(getattr(row, "HS", np.nan)) else 11.0),
             "shots_target": float(getattr(row, "HST", np.nan) if not pd.isna(getattr(row, "HST", np.nan)) else 4.0),
+            "corners": float(getattr(row, "HC", np.nan) if not pd.isna(getattr(row, "HC", np.nan)) else 5.0),
+            "fouls": float(getattr(row, "HF", np.nan) if not pd.isna(getattr(row, "HF", np.nan)) else 12.0),
+            "cards": float((getattr(row, "HY", 0) or 0) + (getattr(row, "HR", 0) or 0)) if not pd.isna(getattr(row, "HY", np.nan)) else 1.8,
         })
         histories[key_a].append({
             "pts": _points(ag, hg),
@@ -158,6 +165,9 @@ def build_features() -> pd.DataFrame:
             "ga": hg,
             "shots": float(getattr(row, "AS", np.nan) if not pd.isna(getattr(row, "AS", np.nan)) else 11.0),
             "shots_target": float(getattr(row, "AST", np.nan) if not pd.isna(getattr(row, "AST", np.nan)) else 4.0),
+            "corners": float(getattr(row, "AC", np.nan) if not pd.isna(getattr(row, "AC", np.nan)) else 5.0),
+            "fouls": float(getattr(row, "AF", np.nan) if not pd.isna(getattr(row, "AF", np.nan)) else 12.0),
+            "cards": float((getattr(row, "AY", 0) or 0) + (getattr(row, "AR", 0) or 0)) if not pd.isna(getattr(row, "AY", np.nan)) else 1.8,
         })
         last_date[key_h] = last_date[key_a] = r["date"]
         elo.update(home, away, hg, ag)
@@ -172,12 +182,12 @@ FEATURE_COLS = [
         f"{prefix}_{side}_{window}"
         for window in FORM_WINDOWS
         for side in ("home", "away")
-        for prefix in ("form", "gf", "ga", "shots", "st")
+        for prefix in ("form", "gf", "ga", "shots", "st", "corners", "fouls", "cards")
     ],
     *[
         f"{prefix}_diff_{window}"
         for window in FORM_WINDOWS
-        for prefix in ("form", "gf", "ga", "shots", "st")
+        for prefix in ("form", "gf", "ga", "shots", "st", "corners", "fouls", "cards")
     ],
 ]
 
