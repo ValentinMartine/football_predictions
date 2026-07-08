@@ -80,6 +80,7 @@ def main() -> None:
     goal = _pick(pm.columns, "goals")
     ast = _pick(pm.columns, "assists")
     xgc = _pick(pm.columns, "xg")
+    xac = _pick(pm.columns, "xa")
     sgid = _pick(sched.columns, "game_id", "game")
     sh, sa, sdt = _pick(sched.columns, "home_team"), _pick(sched.columns, "away_team"), _pick(sched.columns, "date")
 
@@ -215,6 +216,7 @@ def main() -> None:
                 "g": int(r[goal]) if goal and pd.notna(r[goal]) else 0,
                 "a": int(r[ast]) if ast and pd.notna(r[ast]) else 0,
                 "xg": round(float(r[xgc]), 2) if xgc and pd.notna(r[xgc]) else 0.0,
+                "xa": round(float(r[xac]), 2) if xac and pd.notna(r[xac]) else 0.0,
             })
         return _pair_substitutions(out)
 
@@ -228,8 +230,11 @@ def main() -> None:
                 return g
         return None
 
+    # Compos limitées aux matchs les plus récents (Understat = saison courante ;
+    # borne la taille du JSON chargé côté site).
+    recent = sorted(preds["recent_matches"], key=lambda m: m["date"], reverse=True)[:200]
     lineups, matched, missing = {}, 0, []
-    for m in preds["recent_matches"]:
+    for m in recent:
         gid = find_game(m)
         if gid is None:
             missing.append(f"{m['date']} {m['home']}-{m['away']} (pas de match Understat)")
@@ -249,7 +254,7 @@ def main() -> None:
         matched += 1
 
     OUT.write_text(json.dumps(lineups, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"lineups matched: {matched}/{len(preds['recent_matches'])} matches -> {OUT.name}")
+    print(f"lineups matched: {matched}/{len(recent)} matches -> {OUT.name}")
     if missing:
         print("not matched:")
         for x in missing:

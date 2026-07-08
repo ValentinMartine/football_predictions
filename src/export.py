@@ -5,6 +5,8 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import pandas as pd
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from src.backtesting import ROBUST_POLICY, simulate, threshold_curve
@@ -16,6 +18,12 @@ from src.walk_forward import run_walk_forward
 OUT = Path(__file__).resolve().parents[1] / "data" / "predictions.json"
 LABELS = ["H", "D", "A"]
 LABEL_NAMES = ["home", "draw", "away"]
+
+
+def _season_label(d) -> str:
+    """Libellé de saison football (aoû→mai) à partir d'une date."""
+    start = d.year if d.month >= 8 else d.year - 1
+    return f"{start}-{start + 1}"
 
 
 def _prediction_payload(row, probs, stage: str) -> dict:
@@ -64,7 +72,8 @@ def main() -> None:
     _, val_backtest = simulate(val, pb_val, **policy_args)
     bets, test_backtest = simulate(test, pb_test, **policy_args)
 
-    recent = test.tail(40).copy()
+    # Tous les matchs des deux dernières saisons (filtrables par saison côté site)
+    recent = test[test["date"] >= pd.Timestamp("2024-08-01")].copy()
     pe_recent = elo_probabilities(train, recent)
     pm_recent = model.predict_proba(recent[FEATURE_COLS])
     pb_recent = weight * pm_recent + (1 - weight) * pe_recent
@@ -74,6 +83,7 @@ def main() -> None:
         pred = int(probs.argmax())
         matches.append({
             "date": row.date.strftime("%Y-%m-%d"),
+            "season": _season_label(row.date),
             "league": row.league_name,
             "home": row.home_team,
             "away": row.away_team,
