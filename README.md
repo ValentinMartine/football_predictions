@@ -26,6 +26,9 @@ Actualisation en une commande :
 python scripts/update_pipeline.py
 ```
 
+Une GitHub Action exécute aussi ce pipeline chaque matin. Le site récupère
+ensuite le JSON publié par ce dépôt via son propre workflow planifié.
+
 ## Méthode
 
 - Pipeline chronologique sans fuite de données.
