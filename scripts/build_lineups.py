@@ -71,6 +71,8 @@ def main() -> None:
     pm = us.read_player_match_stats().reset_index()
     shots = us.read_shot_events().reset_index()
     preds = json.loads((ROOT / "data" / "predictions.json").read_text(encoding="utf-8"))
+    ev_path = ROOT / "data" / "match_events.json"
+    match_events = json.loads(ev_path.read_text(encoding="utf-8")) if ev_path.exists() else {}
 
     gcol = _pick(pm.columns, "game_id", "game")
     pcol = _pick(pm.columns, "player")
@@ -167,6 +169,14 @@ def main() -> None:
                 entrant["pair_confidence"] = "late_minute_inferred" if int(entrant["smin"]) >= 85 else "minute_inferred"
                 group_id += 1
 
+        return _display_order(players)
+
+    def _display_order(players: list[dict]) -> list[dict]:
+        """Titulaires triés par poste ; chaque remplaçant affiché juste sous le joueur
+        qu'il remplace (via substitution_group)."""
+        by_team: dict[str, list[dict]] = {}
+        for player in players:
+            by_team.setdefault(player["team"], []).append(player)
         display: list[dict] = []
         for team_players in by_team.values():
             starters = sorted(
@@ -192,7 +202,51 @@ def main() -> None:
             display.extend(sorted(unpaired_entrants, key=lambda p: (p["smin"] or 0, p["player"])))
         return display
 
-    def players_for(game_id):
+    def _factual_pairing(players: list[dict], ev: dict) -> list[dict]:
+        """Appariement factuel via les événements FBref (entrant/sortant + minute)."""
+        for p in players:
+            p["display_pos"] = p["pos"]
+            p["paired_with"] = None
+            p["substitution_group"] = None
+            p["pair_confidence"] = None
+            if not p["on"]:
+                p["off"] = False   # les faits fixeront les sorties
+                p["smin"] = None
+        idx: dict[str, dict] = {}
+        for p in players:
+            idx.setdefault(norm(p["player"]), p)
+        gid = 1
+        for s in ev.get("subs", []):
+            pin = idx.get(norm(s.get("in", "")))
+            pout = idx.get(norm(s.get("out", "")))
+            minute = s.get("minute")
+            if pin is not None:
+                pin["on"] = True
+                pin["smin"] = minute
+                pin["off"] = False
+            if pout is not None:
+                pout["off"] = True
+                pout["on"] = False
+                pout["smin"] = minute
+            if pin is not None and pout is not None:
+                pin["paired_with"] = pout["player"]
+                pout["paired_with"] = pin["player"]
+                pin["display_pos"] = pout["pos"]
+                pin["substitution_group"] = gid
+                pout["substitution_group"] = gid
+                pin["pair_confidence"] = pout["pair_confidence"] = "fbref"
+                gid += 1
+        goal_by_player: dict[str, list[int]] = {}
+        for g in ev.get("goals", []):
+            if g.get("minute") is not None:
+                goal_by_player.setdefault(norm(g.get("scorer", "")), []).append(int(g["minute"]))
+        for p in players:
+            gm = goal_by_player.get(norm(p["player"]))
+            if gm:
+                p["gmin"] = sorted(gm)
+        return _display_order(players)
+
+    def players_for(game_id, ev=None):
         sub = pm[pm[gcol] == game_id]
         out = []
         for _, r in sub.iterrows():
@@ -218,6 +272,9 @@ def main() -> None:
                 "xg": round(float(r[xgc]), 2) if xgc and pd.notna(r[xgc]) else 0.0,
                 "xa": round(float(r[xac]), 2) if xac and pd.notna(r[xac]) else 0.0,
             })
+        # Faits FBref si disponibles (entrant/sortant exacts), sinon appariement inféré.
+        if ev and ev.get("subs"):
+            return _factual_pairing(out, ev)
         return _pair_substitutions(out)
 
     def find_game(m):
@@ -240,7 +297,8 @@ def main() -> None:
             missing.append(f"{m['date']} {m['home']}-{m['away']} (pas de match Understat)")
             continue
         hteam, ateam = game_info[gid]
-        players = players_for(gid)
+        mkey = f"{m['date']}|{m['home']}|{m['away']}"
+        players = players_for(gid, match_events.get(mkey))
         if not players:
             missing.append(f"{m['date']} {m['home']}-{m['away']} (Understat sans stats joueurs)")
             continue

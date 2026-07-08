@@ -9,7 +9,8 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.backtesting import ROBUST_POLICY, simulate, threshold_curve
+from src.backtesting import ROBUST_POLICY, select_policy, simulate, threshold_curve
+from src.calibration import TemperatureScaling
 from src.lineups import lineup_adjusted_prediction
 from src.modeling import elo_probabilities, fit_lgbm, metrics, temporal_split, tune_blend
 from src.pipeline import FEATURE_COLS, build_features
@@ -61,7 +62,14 @@ def main() -> None:
     pb_val = weight * pm_val + (1 - weight) * pe_val
     pb_test = weight * pm_test + (1 - weight) * pe_test
 
-    val_curve = threshold_curve(val, pb_val, min_bets=50)
+    # Calibration isotone ajustée sur la validation (probas honnêtes -> edge de pari réel).
+    calibrator = TemperatureScaling().fit(pb_val, val["outcome"].to_numpy())
+    pbc_val = calibrator.transform(pb_val)
+    pbc_test = calibrator.transform(pb_test)
+
+    # Politique de pari : fixe robuste + politique choisie sur la validation (probas calibrées).
+    val_curve = threshold_curve(val, pbc_val, min_bets=50)
+    selected = select_policy(val_curve, min_bets=100)
     policy = ROBUST_POLICY.copy()
     policy_args = {
         "min_confidence": policy["threshold"],
@@ -69,17 +77,25 @@ def main() -> None:
         "min_odds": policy["min_odds"],
         "max_odds": policy["max_odds"],
     }
-    _, val_backtest = simulate(val, pb_val, **policy_args)
-    bets, test_backtest = simulate(test, pb_test, **policy_args)
+    selected_args = {
+        "min_confidence": selected["threshold"],
+        "min_edge": selected["min_edge"],
+        "min_odds": selected["min_odds"],
+        "max_odds": selected["max_odds"],
+    }
+    _, val_backtest = simulate(val, pbc_val, **policy_args)
+    bets, test_backtest = simulate(test, pbc_test, **policy_args)
+    _, test_backtest_selected = simulate(test, pbc_test, **selected_args)
 
     # Tous les matchs des deux dernières saisons (filtrables par saison côté site)
     recent = test[test["date"] >= pd.Timestamp("2024-08-01")].copy()
     pe_recent = elo_probabilities(train, recent)
     pm_recent = model.predict_proba(recent[FEATURE_COLS])
     pb_recent = weight * pm_recent + (1 - weight) * pe_recent
+    pbc_recent = calibrator.transform(pb_recent)
     matches = []
     for i, row in enumerate(recent.itertuples(index=False)):
-        probs = pb_recent[i]
+        probs = pbc_recent[i]
         pred = int(probs.argmax())
         matches.append({
             "date": row.date.strftime("%Y-%m-%d"),
@@ -104,6 +120,7 @@ def main() -> None:
         "data_source": "football-data.co.uk CSV, Big Five leagues, seasons 2015-2016 to 2025-2026",
         "n_matches": int(len(df)),
         "blend_weight": round(weight, 2),
+        "calibration_temperature": round(calibrator.T, 3),
         "selected_threshold": policy["threshold"],
         "betting_policy": {
             "selection_source": policy.get("source", "fixed"),
@@ -122,15 +139,19 @@ def main() -> None:
             "elo": metrics(val["outcome"].to_numpy(), pe_val),
             "ml": metrics(val["outcome"].to_numpy(), pm_val),
             "blend": metrics(val["outcome"].to_numpy(), pb_val),
+            "blend_calibrated": metrics(val["outcome"].to_numpy(), pbc_val),
         },
         "test_metrics": {
             "elo": metrics(test["outcome"].to_numpy(), pe_test),
             "ml": metrics(test["outcome"].to_numpy(), pm_test),
             "blend": metrics(test["outcome"].to_numpy(), pb_test),
+            "blend_calibrated": metrics(test["outcome"].to_numpy(), pbc_test),
         },
         "backtest": {
             "validation": val_backtest,
             "test": test_backtest,
+            "test_selected_policy": test_backtest_selected,
+            "selected_policy": {k: selected[k] for k in ("threshold", "min_edge", "min_odds", "max_odds")},
             "threshold_curve_validation": sorted(val_curve, key=lambda r: r["final_bankroll"], reverse=True)[:30],
         },
         "walk_forward": run_walk_forward(df),
