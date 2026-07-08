@@ -2,6 +2,7 @@ lightgbm
 numpy
 pandas
 requests
+soccerdata
 scikit-learn
 scipy
 soccerdata

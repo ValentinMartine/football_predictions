@@ -16,7 +16,6 @@ import soccerdata as sd
 
 ROOT = Path(__file__).resolve().parents[1]
 STATS = ROOT / "data" / "understat_stats.json"
-SITE = Path("C:/Users/valen/Documents/Projets/Projets_Informatiques/Perso/valentinmartine/public/data/understat_stats.json")
 LEAGUES = ["ENG-Premier League", "ESP-La Liga", "ITA-Serie A", "GER-Bundesliga", "FRA-Ligue 1"]
 
 # Code FIFA/FBref (3 lettres) -> ISO 3166-1 alpha-2 (pour l'emoji drapeau)
@@ -98,7 +97,6 @@ def main() -> None:
                 p["flag"] = f
                 hit += 1
     STATS.write_text(json.dumps(stats, ensure_ascii=False, indent=2), encoding="utf-8")
-    SITE.write_text(json.dumps(stats, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"drapeaux ajoutés : {hit}/{tot} entrées joueurs ({len(name_to_flag)} joueurs FBref mappés)")
 
 

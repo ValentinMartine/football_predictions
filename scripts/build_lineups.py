@@ -23,7 +23,7 @@ import pandas as pd
 import soccerdata as sd
 
 ROOT = Path(__file__).resolve().parents[1]
-SITE_OUT = Path("C:/Users/valen/Documents/Projets/Projets_Informatiques/Perso/valentinmartine/public/data/lineups.json")
+OUT = ROOT / "data" / "lineups.json"
 LEAGUES = ["ENG-Premier League", "ESP-La Liga", "ITA-Serie A", "GER-Bundesliga", "FRA-Ligue 1"]
 
 # Ordre d'affichage habituel (GK, défense centre->droite->gauche, milieux, attaque, banc).
@@ -151,8 +151,8 @@ def main() -> None:
         }
         matched += 1
 
-    SITE_OUT.write_text(json.dumps(lineups, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"compos appariées : {matched}/{len(preds['recent_matches'])} matchs -> {SITE_OUT.name}")
+    OUT.write_text(json.dumps(lineups, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"compos appariées : {matched}/{len(preds['recent_matches'])} matchs -> {OUT.name}")
     if missing:
         print("NON appariés :")
         for x in missing:

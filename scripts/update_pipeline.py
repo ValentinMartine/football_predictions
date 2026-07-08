@@ -14,6 +14,10 @@ def run(command: list[str]) -> None:
 def main() -> None:
     run([sys.executable, "scripts/download_data.py"])
     run([sys.executable, "-m", "src.export"])
+    run([sys.executable, "scripts/fetch_understat_stats.py"])
+    run([sys.executable, "scripts/add_player_flags.py"])
+    run([sys.executable, "scripts/build_lineups.py"])
+    run([sys.executable, "scripts/build_national_player_form.py"])
 
 
 if __name__ == "__main__":

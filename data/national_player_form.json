@@ -1,0 +1,6557 @@
+{
+  "generated_at": "2026-07-08T12:58:49+00:00",
+  "source": "Understat player season stats + FBref nationalities via soccerdata",
+  "season": "2025-2026",
+  "coverage": "Players in Big Five leagues with at least 300 minutes.",
+  "limitations": "This is a national-player-pool proxy, not an official national-team roster. It must be joined to official squad lists before it is used as a prediction feature.",
+  "n_players_matched": 1609,
+  "countries": [
+    {
+      "fifa_code": "ESP",
+      "team": "Spain",
+      "flag": "🇪🇸",
+      "players": 251,
+      "minutes": 421789,
+      "goals": 484,
+      "assists": 397,
+      "xg": 550.94,
+      "xa": 487.78,
+      "xg_xa": 1038.71,
+      "top_players": [
+        {
+          "player": "Ferrán Torres",
+          "team": "Barcelona",
+          "minutes": 2025,
+          "goals": 16,
+          "assists": 2,
+          "xg": 16.18,
+          "xa": 3.16
+        },
+        {
+          "player": "Mikel Oyarzabal",
+          "team": "Real Sociedad",
+          "minutes": 2727,
+          "goals": 15,
+          "assists": 4,
+          "xg": 16.03,
+          "xa": 5.96
+        },
+        {
+          "player": "Lamine Yamal",
+          "team": "Barcelona",
+          "minutes": 2291,
+          "goals": 16,
+          "assists": 11,
+          "xg": 14.66,
+          "xa": 12.57
+        },
+        {
+          "player": "Jorge De Frutos",
+          "team": "Rayo Vallecano",
+          "minutes": 2526,
+          "goals": 10,
+          "assists": 1,
+          "xg": 12.13,
+          "xa": 3.34
+        },
+        {
+          "player": "Gorka Guruzeta",
+          "team": "Athletic Club",
+          "minutes": 2401,
+          "goals": 10,
+          "assists": 3,
+          "xg": 11.73,
+          "xa": 3.5
+        },
+        {
+          "player": "Borja Iglesias",
+          "team": "Celta Vigo",
+          "minutes": 1903,
+          "goals": 14,
+          "assists": 2,
+          "xg": 11.61,
+          "xa": 1.66
+        },
+        {
+          "player": "Anssumane Fati",
+          "team": "Monaco",
+          "minutes": 1058,
+          "goals": 11,
+          "assists": 0,
+          "xg": 11.29,
+          "xa": 1.9
+        },
+        {
+          "player": "Hugo Duro",
+          "team": "Valencia",
+          "minutes": 1979,
+          "goals": 10,
+          "assists": 0,
+          "xg": 10.06,
+          "xa": 1.74
+        },
+        {
+          "player": "Carlos Espí",
+          "team": "Levante",
+          "minutes": 1328,
+          "goals": 11,
+          "assists": 0,
+          "xg": 9.88,
+          "xa": 0.69
+        },
+        {
+          "player": "Iván Romero",
+          "team": "Levante",
+          "minutes": 2339,
+          "goals": 7,
+          "assists": 1,
+          "xg": 9.59,
+          "xa": 2.89
+        },
+        {
+          "player": "Roberto Fernández",
+          "team": "Espanyol",
+          "minutes": 2388,
+          "goals": 7,
+          "assists": 3,
+          "xg": 9.3,
+          "xa": 3.16
+        },
+        {
+          "player": "Dani Olmo",
+          "team": "Barcelona",
+          "minutes": 2109,
+          "goals": 7,
+          "assists": 8,
+          "xg": 8.75,
+          "xa": 6.66
+        }
+      ]
+    },
+    {
+      "fifa_code": "FRA",
+      "team": "France",
+      "flag": "🇫🇷",
+      "players": 193,
+      "minutes": 302811,
+      "goals": 439,
+      "assists": 331,
+      "xg": 471.97,
+      "xa": 373.29,
+      "xg_xa": 845.26,
+      "top_players": [
+        {
+          "player": "Jean-Philippe Mateta",
+          "team": "Crystal Palace",
+          "minutes": 2225,
+          "goals": 12,
+          "assists": 0,
+          "xg": 15.98,
+          "xa": 1.25
+        },
+        {
+          "player": "Esteban Lepaul",
+          "team": "Angers",
+          "minutes": 2761,
+          "goals": 21,
+          "assists": 5,
+          "xg": 15.73,
+          "xa": 3.39
+        },
+        {
+          "player": "Odsonne Edouard",
+          "team": "Lens",
+          "minutes": 1879,
+          "goals": 12,
+          "assists": 3,
+          "xg": 13.34,
+          "xa": 2.1
+        },
+        {
+          "player": "Juan Camilo Hernández",
+          "team": "Real Betis",
+          "minutes": 2623,
+          "goals": 11,
+          "assists": 3,
+          "xg": 12.4,
+          "xa": 4.87
+        },
+        {
+          "player": "Florian Thauvin",
+          "team": "Lens",
+          "minutes": 2510,
+          "goals": 11,
+          "assists": 6,
+          "xg": 12.1,
+          "xa": 9.86
+        },
+        {
+          "player": "Wesley Said",
+          "team": "Lens",
+          "minutes": 2061,
+          "goals": 12,
+          "assists": 2,
+          "xg": 12.06,
+          "xa": 5.92
+        },
+        {
+          "player": "Hugo Ekitike",
+          "team": "Liverpool",
+          "minutes": 1835,
+          "goals": 11,
+          "assists": 4,
+          "xg": 11.93,
+          "xa": 2.49
+        },
+        {
+          "player": "Bradley Barcola",
+          "team": "Paris Saint Germain",
+          "minutes": 1778,
+          "goals": 11,
+          "assists": 1,
+          "xg": 11.66,
+          "xa": 4.78
+        },
+        {
+          "player": "Michael Olise",
+          "team": "Bayern Munich",
+          "minutes": 2308,
+          "goals": 15,
+          "assists": 19,
+          "xg": 11.55,
+          "xa": 17.04
+        },
+        {
+          "player": "Corentin Tolisso",
+          "team": "Lyon",
+          "minutes": 2319,
+          "goals": 11,
+          "assists": 4,
+          "xg": 10.56,
+          "xa": 4.52
+        },
+        {
+          "player": "Ludovic Ajorque",
+          "team": "Brest",
+          "minutes": 2834,
+          "goals": 8,
+          "assists": 9,
+          "xg": 9.86,
+          "xa": 3.82
+        },
+        {
+          "player": "Thierno Barry",
+          "team": "Everton",
+          "minutes": 1921,
+          "goals": 8,
+          "assists": 0,
+          "xg": 9.15,
+          "xa": 1.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "GER",
+      "team": "Germany",
+      "flag": "🇩🇪",
+      "players": 164,
+      "minutes": 266966,
+      "goals": 392,
+      "assists": 261,
+      "xg": 433.85,
+      "xa": 310.53,
+      "xg_xa": 744.37,
+      "top_players": [
+        {
+          "player": "Deniz Undav",
+          "team": "VfB Stuttgart",
+          "minutes": 2261,
+          "goals": 19,
+          "assists": 6,
+          "xg": 19.06,
+          "xa": 5.58
+        },
+        {
+          "player": "Jonathan Burkardt",
+          "team": "Eintracht Frankfurt",
+          "minutes": 1351,
+          "goals": 13,
+          "assists": 1,
+          "xg": 13.12,
+          "xa": 0.67
+        },
+        {
+          "player": "Said El Mala",
+          "team": "FC Cologne",
+          "minutes": 1965,
+          "goals": 13,
+          "assists": 4,
+          "xg": 12.58,
+          "xa": 4.19
+        },
+        {
+          "player": "Kevin Schade",
+          "team": "Brentford",
+          "minutes": 2781,
+          "goals": 8,
+          "assists": 3,
+          "xg": 11.83,
+          "xa": 4.57
+        },
+        {
+          "player": "Phillip Tietz",
+          "team": "Augsburg",
+          "minutes": 1811,
+          "goals": 6,
+          "assists": 2,
+          "xg": 11.6,
+          "xa": 1.92
+        },
+        {
+          "player": "Ragnar Ache",
+          "team": "FC Cologne",
+          "minutes": 1739,
+          "goals": 7,
+          "assists": 4,
+          "xg": 11.0,
+          "xa": 2.97
+        },
+        {
+          "player": "Nadiem Amiri",
+          "team": "Mainz 05",
+          "minutes": 2112,
+          "goals": 12,
+          "assists": 2,
+          "xg": 10.7,
+          "xa": 6.56
+        },
+        {
+          "player": "Tim Lemperle",
+          "team": "Hoffenheim",
+          "minutes": 2008,
+          "goals": 8,
+          "assists": 2,
+          "xg": 9.41,
+          "xa": 2.58
+        },
+        {
+          "player": "Dzenan Pejcinovic",
+          "team": "Wolfsburg",
+          "minutes": 1445,
+          "goals": 8,
+          "assists": 0,
+          "xg": 8.29,
+          "xa": 1.65
+        },
+        {
+          "player": "Nick Woltemade",
+          "team": "Newcastle United",
+          "minutes": 1953,
+          "goals": 8,
+          "assists": 3,
+          "xg": 8.26,
+          "xa": 2.9
+        },
+        {
+          "player": "Maximilian Beier",
+          "team": "Borussia Dortmund",
+          "minutes": 2069,
+          "goals": 9,
+          "assists": 6,
+          "xg": 8.25,
+          "xa": 4.96
+        },
+        {
+          "player": "Lukas Nmecha",
+          "team": "Leeds",
+          "minutes": 1076,
+          "goals": 6,
+          "assists": 1,
+          "xg": 8.14,
+          "xa": 1.68
+        }
+      ]
+    },
+    {
+      "fifa_code": "ENG",
+      "team": "England",
+      "flag": "🇬🇧",
+      "players": 127,
+      "minutes": 210010,
+      "goals": 341,
+      "assists": 232,
+      "xg": 369.82,
+      "xa": 272.37,
+      "xg_xa": 642.19,
+      "top_players": [
+        {
+          "player": "Harry Kane",
+          "team": "Bayern Munich",
+          "minutes": 2385,
+          "goals": 36,
+          "assists": 5,
+          "xg": 29.58,
+          "xa": 7.4
+        },
+        {
+          "player": "Ollie Watkins",
+          "team": "Aston Villa",
+          "minutes": 2908,
+          "goals": 16,
+          "assists": 3,
+          "xg": 18.83,
+          "xa": 2.82
+        },
+        {
+          "player": "Dominic Calvert-Lewin",
+          "team": "Leeds",
+          "minutes": 2732,
+          "goals": 14,
+          "assists": 1,
+          "xg": 18.67,
+          "xa": 1.54
+        },
+        {
+          "player": "Mason Greenwood",
+          "team": "Marseille",
+          "minutes": 2503,
+          "goals": 16,
+          "assists": 7,
+          "xg": 14.34,
+          "xa": 7.64
+        },
+        {
+          "player": "Danny Welbeck",
+          "team": "Brighton",
+          "minutes": 2286,
+          "goals": 13,
+          "assists": 1,
+          "xg": 12.72,
+          "xa": 2.26
+        },
+        {
+          "player": "Morgan Gibbs-White",
+          "team": "Nottingham Forest",
+          "minutes": 3142,
+          "goals": 15,
+          "assists": 4,
+          "xg": 11.67,
+          "xa": 4.5
+        },
+        {
+          "player": "Cole Palmer",
+          "team": "Chelsea",
+          "minutes": 2007,
+          "goals": 10,
+          "assists": 1,
+          "xg": 10.26,
+          "xa": 2.12
+        },
+        {
+          "player": "Marcus Tavernier",
+          "team": "Bournemouth",
+          "minutes": 2779,
+          "goals": 7,
+          "assists": 4,
+          "xg": 9.4,
+          "xa": 6.16
+        },
+        {
+          "player": "Anthony Gordon",
+          "team": "Newcastle United",
+          "minutes": 1888,
+          "goals": 6,
+          "assists": 2,
+          "xg": 8.76,
+          "xa": 3.71
+        },
+        {
+          "player": "Bukayo Saka",
+          "team": "Arsenal",
+          "minutes": 2239,
+          "goals": 7,
+          "assists": 5,
+          "xg": 8.7,
+          "xa": 8.55
+        },
+        {
+          "player": "Marcus Rashford",
+          "team": "Barcelona",
+          "minutes": 1739,
+          "goals": 8,
+          "assists": 7,
+          "xg": 8.7,
+          "xa": 4.96
+        },
+        {
+          "player": "Jarrod Bowen",
+          "team": "West Ham",
+          "minutes": 3416,
+          "goals": 9,
+          "assists": 11,
+          "xg": 8.27,
+          "xa": 8.43
+        }
+      ]
+    },
+    {
+      "fifa_code": "BRA",
+      "team": "Brazil",
+      "flag": "🇧🇷",
+      "players": 59,
+      "minutes": 100202,
+      "goals": 212,
+      "assists": 96,
+      "xg": 229.23,
+      "xa": 117.41,
+      "xg_xa": 346.65,
+      "top_players": [
+        {
+          "player": "Thiago",
+          "team": "Brentford",
+          "minutes": 3292,
+          "goals": 22,
+          "assists": 1,
+          "xg": 24.69,
+          "xa": 3.45
+        },
+        {
+          "player": "Rômulo",
+          "team": "RasenBallsport Leipzig",
+          "minutes": 2246,
+          "goals": 9,
+          "assists": 4,
+          "xg": 15.94,
+          "xa": 3.61
+        },
+        {
+          "player": "João Pedro",
+          "team": "Chelsea",
+          "minutes": 2698,
+          "goals": 15,
+          "assists": 5,
+          "xg": 15.72,
+          "xa": 3.98
+        },
+        {
+          "player": "Vinícius Júnior",
+          "team": "Real Madrid",
+          "minutes": 2865,
+          "goals": 16,
+          "assists": 5,
+          "xg": 14.4,
+          "xa": 7.16
+        },
+        {
+          "player": "Evanilson",
+          "team": "Bournemouth",
+          "minutes": 2810,
+          "goals": 6,
+          "assists": 1,
+          "xg": 11.83,
+          "xa": 3.07
+        },
+        {
+          "player": "Raphinha",
+          "team": "Barcelona",
+          "minutes": 1424,
+          "goals": 13,
+          "assists": 3,
+          "xg": 11.13,
+          "xa": 5.91
+        },
+        {
+          "player": "Richarlison",
+          "team": "Tottenham",
+          "minutes": 1926,
+          "goals": 11,
+          "assists": 4,
+          "xg": 9.87,
+          "xa": 3.41
+        },
+        {
+          "player": "Antony",
+          "team": "Real Betis",
+          "minutes": 2495,
+          "goals": 8,
+          "assists": 6,
+          "xg": 9.02,
+          "xa": 6.64
+        },
+        {
+          "player": "Emersonn",
+          "team": "Toulouse",
+          "minutes": 1517,
+          "goals": 7,
+          "assists": 2,
+          "xg": 7.42,
+          "xa": 1.88
+        },
+        {
+          "player": "Igor Jesus",
+          "team": "Nottingham Forest",
+          "minutes": 2379,
+          "goals": 6,
+          "assists": 4,
+          "xg": 7.2,
+          "xa": 2.28
+        },
+        {
+          "player": "Matheus Cunha",
+          "team": "Manchester United",
+          "minutes": 2506,
+          "goals": 10,
+          "assists": 2,
+          "xg": 7.08,
+          "xa": 3.7
+        },
+        {
+          "player": "Lucas Da Cunha",
+          "team": "Como",
+          "minutes": 2765,
+          "goals": 6,
+          "assists": 4,
+          "xg": 6.93,
+          "xa": 6.02
+        }
+      ]
+    },
+    {
+      "fifa_code": "ARG",
+      "team": "Argentina",
+      "flag": "🇦🇷",
+      "players": 50,
+      "minutes": 81758,
+      "goals": 117,
+      "assists": 73,
+      "xg": 140.83,
+      "xa": 93.36,
+      "xg_xa": 234.19,
+      "top_players": [
+        {
+          "player": "Joaquín Panichelli",
+          "team": "Strasbourg",
+          "minutes": 2202,
+          "goals": 16,
+          "assists": 1,
+          "xg": 14.72,
+          "xa": 2.95
+        },
+        {
+          "player": "Enzo Fernández",
+          "team": "Chelsea",
+          "minutes": 3149,
+          "goals": 10,
+          "assists": 4,
+          "xg": 11.92,
+          "xa": 8.87
+        },
+        {
+          "player": "Giovanni Simeone",
+          "team": "Torino",
+          "minutes": 2273,
+          "goals": 11,
+          "assists": 0,
+          "xg": 11.18,
+          "xa": 1.86
+        },
+        {
+          "player": "Lucas Boyé",
+          "team": "Alaves",
+          "minutes": 1960,
+          "goals": 11,
+          "assists": 1,
+          "xg": 11.1,
+          "xa": 2.71
+        },
+        {
+          "player": "Julián Álvarez",
+          "team": "Atletico Madrid",
+          "minutes": 1926,
+          "goals": 8,
+          "assists": 4,
+          "xg": 8.89,
+          "xa": 6.27
+        },
+        {
+          "player": "Valentín Castellanos",
+          "team": "West Ham",
+          "minutes": 1430,
+          "goals": 6,
+          "assists": 0,
+          "xg": 7.12,
+          "xa": 0.75
+        },
+        {
+          "player": "Giuliano Simeone",
+          "team": "Atletico Madrid",
+          "minutes": 2153,
+          "goals": 4,
+          "assists": 6,
+          "xg": 6.1,
+          "xa": 5.53
+        },
+        {
+          "player": "Nicolás González",
+          "team": "Atletico Madrid",
+          "minutes": 1480,
+          "goals": 5,
+          "assists": 0,
+          "xg": 5.67,
+          "xa": 1.72
+        },
+        {
+          "player": "Lucas Beltrán",
+          "team": "Valencia",
+          "minutes": 1377,
+          "goals": 1,
+          "assists": 2,
+          "xg": 4.76,
+          "xa": 1.99
+        },
+        {
+          "player": "Alejandro Garnacho",
+          "team": "Chelsea",
+          "minutes": 1285,
+          "goals": 1,
+          "assists": 4,
+          "xg": 4.11,
+          "xa": 4.22
+        },
+        {
+          "player": "Alexis Mac Allister",
+          "team": "Liverpool",
+          "minutes": 2683,
+          "goals": 2,
+          "assists": 4,
+          "xg": 4.07,
+          "xa": 2.85
+        },
+        {
+          "player": "Santiago Hidalgo",
+          "team": "Toulouse",
+          "minutes": 1297,
+          "goals": 4,
+          "assists": 6,
+          "xg": 4.0,
+          "xa": 2.72
+        }
+      ]
+    },
+    {
+      "fifa_code": "POR",
+      "team": "Portugal",
+      "flag": "🇵🇹",
+      "players": 44,
+      "minutes": 79127,
+      "goals": 118,
+      "assists": 114,
+      "xg": 119.85,
+      "xa": 108.4,
+      "xg_xa": 228.25,
+      "top_players": [
+        {
+          "player": "Bruno Fernandes",
+          "team": "Manchester United",
+          "minutes": 3082,
+          "goals": 9,
+          "assists": 21,
+          "xg": 11.93,
+          "xa": 17.76
+        },
+        {
+          "player": "André Silva",
+          "team": "Elche",
+          "minutes": 1858,
+          "goals": 10,
+          "assists": 0,
+          "xg": 10.84,
+          "xa": 1.56
+        },
+        {
+          "player": "Gonçalo Ramos",
+          "team": "Paris Saint Germain",
+          "minutes": 1293,
+          "goals": 6,
+          "assists": 1,
+          "xg": 9.37,
+          "xa": 1.53
+        },
+        {
+          "player": "Vitinha",
+          "team": "Genoa",
+          "minutes": 2262,
+          "goals": 5,
+          "assists": 1,
+          "xg": 6.91,
+          "xa": 2.18
+        },
+        {
+          "player": "Felix Correia",
+          "team": "Lille",
+          "minutes": 2124,
+          "goals": 4,
+          "assists": 5,
+          "xg": 5.81,
+          "xa": 5.87
+        },
+        {
+          "player": "Tiago Tomás",
+          "team": "VfB Stuttgart",
+          "minutes": 996,
+          "goals": 5,
+          "assists": 3,
+          "xg": 5.53,
+          "xa": 1.26
+        },
+        {
+          "player": "Pedro Neto",
+          "team": "Chelsea",
+          "minutes": 2667,
+          "goals": 5,
+          "assists": 6,
+          "xg": 5.15,
+          "xa": 7.93
+        },
+        {
+          "player": "Fábio Vieira",
+          "team": "Hamburger SV",
+          "minutes": 2241,
+          "goals": 7,
+          "assists": 5,
+          "xg": 4.89,
+          "xa": 4.64
+        },
+        {
+          "player": "Rodrigo Ribeiro",
+          "team": "Augsburg",
+          "minutes": 629,
+          "goals": 2,
+          "assists": 0,
+          "xg": 4.63,
+          "xa": 0.03
+        },
+        {
+          "player": "Pereira Lage",
+          "team": "St. Pauli",
+          "minutes": 2067,
+          "goals": 2,
+          "assists": 2,
+          "xg": 4.43,
+          "xa": 2.06
+        },
+        {
+          "player": "Samú Costa",
+          "team": "Mallorca",
+          "minutes": 2731,
+          "goals": 7,
+          "assists": 2,
+          "xg": 4.28,
+          "xa": 1.98
+        },
+        {
+          "player": "Gonçalo Guedes",
+          "team": "Real Sociedad",
+          "minutes": 1833,
+          "goals": 8,
+          "assists": 4,
+          "xg": 4.14,
+          "xa": 2.67
+        }
+      ]
+    },
+    {
+      "fifa_code": "NED",
+      "team": "Netherlands",
+      "flag": "🇳🇱",
+      "players": 53,
+      "minutes": 88812,
+      "goals": 110,
+      "assists": 73,
+      "xg": 127.57,
+      "xa": 81.42,
+      "xg_xa": 208.98,
+      "top_players": [
+        {
+          "player": "Donyell Malen",
+          "team": "Roma",
+          "minutes": 1499,
+          "goals": 14,
+          "assists": 2,
+          "xg": 15.2,
+          "xa": 1.55
+        },
+        {
+          "player": "Cody Gakpo",
+          "team": "Liverpool",
+          "minutes": 2758,
+          "goals": 7,
+          "assists": 5,
+          "xg": 9.83,
+          "xa": 6.59
+        },
+        {
+          "player": "Zian Flemming",
+          "team": "Burnley",
+          "minutes": 1795,
+          "goals": 11,
+          "assists": 0,
+          "xg": 9.55,
+          "xa": 0.68
+        },
+        {
+          "player": "Brian Brobbey",
+          "team": "Sunderland",
+          "minutes": 1943,
+          "goals": 7,
+          "assists": 1,
+          "xg": 7.11,
+          "xa": 1.51
+        },
+        {
+          "player": "Crysencio Summerville",
+          "team": "West Ham",
+          "minutes": 2509,
+          "goals": 5,
+          "assists": 2,
+          "xg": 5.7,
+          "xa": 3.24
+        },
+        {
+          "player": "Virgil van Dijk",
+          "team": "Liverpool",
+          "minutes": 3420,
+          "goals": 6,
+          "assists": 0,
+          "xg": 4.89,
+          "xa": 0.33
+        },
+        {
+          "player": "Danilho Doekhi",
+          "team": "Union Berlin",
+          "minutes": 3060,
+          "goals": 5,
+          "assists": 0,
+          "xg": 4.88,
+          "xa": 0.55
+        },
+        {
+          "player": "Tijjani Reijnders",
+          "team": "Manchester City",
+          "minutes": 1642,
+          "goals": 5,
+          "assists": 2,
+          "xg": 4.86,
+          "xa": 3.07
+        },
+        {
+          "player": "Donyell Malen",
+          "team": "Aston Villa",
+          "minutes": 600,
+          "goals": 4,
+          "assists": 1,
+          "xg": 4.74,
+          "xa": 0.37
+        },
+        {
+          "player": "Emanuel Emegha",
+          "team": "Strasbourg",
+          "minutes": 427,
+          "goals": 4,
+          "assists": 2,
+          "xg": 4.25,
+          "xa": 1.26
+        },
+        {
+          "player": "Wouter Burger",
+          "team": "Hoffenheim",
+          "minutes": 2486,
+          "goals": 4,
+          "assists": 5,
+          "xg": 4.21,
+          "xa": 5.88
+        },
+        {
+          "player": "Jurriën Timber",
+          "team": "Arsenal",
+          "minutes": 2475,
+          "goals": 3,
+          "assists": 5,
+          "xg": 4.03,
+          "xa": 2.59
+        }
+      ]
+    },
+    {
+      "fifa_code": "SEN",
+      "team": "Senegal",
+      "flag": "🇸🇳",
+      "players": 34,
+      "minutes": 57531,
+      "goals": 81,
+      "assists": 48,
+      "xg": 105.54,
+      "xa": 44.5,
+      "xg_xa": 150.05,
+      "top_players": [
+        {
+          "player": "Issa Soumaré",
+          "team": "Le Havre",
+          "minutes": 2942,
+          "goals": 8,
+          "assists": 5,
+          "xg": 14.25,
+          "xa": 4.38
+        },
+        {
+          "player": "Ismaila Sarr",
+          "team": "Crystal Palace",
+          "minutes": 2181,
+          "goals": 9,
+          "assists": 1,
+          "xg": 11.54,
+          "xa": 2.2
+        },
+        {
+          "player": "Ahmadou Bamba Dieng",
+          "team": "Lorient",
+          "minutes": 1239,
+          "goals": 10,
+          "assists": 1,
+          "xg": 9.47,
+          "xa": 1.15
+        },
+        {
+          "player": "Nicolas Jackson",
+          "team": "Bayern Munich",
+          "minutes": 991,
+          "goals": 8,
+          "assists": 1,
+          "xg": 8.49,
+          "xa": 2.09
+        },
+        {
+          "player": "Sambou Soumano",
+          "team": "Lorient",
+          "minutes": 891,
+          "goals": 4,
+          "assists": 2,
+          "xg": 6.81,
+          "xa": 1.81
+        },
+        {
+          "player": "Iliman Ndiaye",
+          "team": "Everton",
+          "minutes": 2805,
+          "goals": 6,
+          "assists": 3,
+          "xg": 6.14,
+          "xa": 4.46
+        },
+        {
+          "player": "Habib Diallo",
+          "team": "Metz",
+          "minutes": 1908,
+          "goals": 4,
+          "assists": 1,
+          "xg": 5.93,
+          "xa": 0.74
+        },
+        {
+          "player": "Pape Alassane Gueye",
+          "team": "Villarreal",
+          "minutes": 2280,
+          "goals": 5,
+          "assists": 2,
+          "xg": 5.21,
+          "xa": 2.22
+        },
+        {
+          "player": "Pathé Ciss",
+          "team": "Rayo Vallecano",
+          "minutes": 1974,
+          "goals": 2,
+          "assists": 1,
+          "xg": 3.96,
+          "xa": 0.48
+        },
+        {
+          "player": "Pathé Mboup",
+          "team": "Brest",
+          "minutes": 1028,
+          "goals": 1,
+          "assists": 0,
+          "xg": 3.55,
+          "xa": 1.46
+        },
+        {
+          "player": "Ibrahim Mbaye",
+          "team": "Paris Saint Germain",
+          "minutes": 973,
+          "goals": 3,
+          "assists": 2,
+          "xg": 3.43,
+          "xa": 2.36
+        },
+        {
+          "player": "Abdallah Sima",
+          "team": "Lens",
+          "minutes": 693,
+          "goals": 2,
+          "assists": 2,
+          "xg": 3.33,
+          "xa": 0.76
+        }
+      ]
+    },
+    {
+      "fifa_code": "DEN",
+      "team": "Denmark",
+      "flag": "🇩🇰",
+      "players": 29,
+      "minutes": 44313,
+      "goals": 73,
+      "assists": 51,
+      "xg": 71.49,
+      "xa": 59.74,
+      "xg_xa": 131.23,
+      "top_players": [
+        {
+          "player": "Rasmus Højlund",
+          "team": "Napoli",
+          "minutes": 2784,
+          "goals": 13,
+          "assists": 5,
+          "xg": 13.31,
+          "xa": 3.27
+        },
+        {
+          "player": "Jens Stage",
+          "team": "Werder Bremen",
+          "minutes": 2489,
+          "goals": 10,
+          "assists": 2,
+          "xg": 6.1,
+          "xa": 3.48
+        },
+        {
+          "player": "Christian Eriksen",
+          "team": "Wolfsburg",
+          "minutes": 2446,
+          "goals": 3,
+          "assists": 9,
+          "xg": 5.57,
+          "xa": 7.9
+        },
+        {
+          "player": "William Osula",
+          "team": "Newcastle United",
+          "minutes": 777,
+          "goals": 7,
+          "assists": 0,
+          "xg": 4.92,
+          "xa": 0.45
+        },
+        {
+          "player": "Conrad Harder",
+          "team": "RasenBallsport Leipzig",
+          "minutes": 886,
+          "goals": 3,
+          "assists": 3,
+          "xg": 4.68,
+          "xa": 2.82
+        },
+        {
+          "player": "Nikolas Nartey",
+          "team": "VfB Stuttgart",
+          "minutes": 1255,
+          "goals": 4,
+          "assists": 3,
+          "xg": 4.4,
+          "xa": 3.35
+        },
+        {
+          "player": "Pierre-Emile Højbjerg",
+          "team": "Marseille",
+          "minutes": 2716,
+          "goals": 4,
+          "assists": 5,
+          "xg": 3.92,
+          "xa": 4.43
+        },
+        {
+          "player": "Mika Biereth",
+          "team": "Monaco",
+          "minutes": 1051,
+          "goals": 2,
+          "assists": 2,
+          "xg": 3.21,
+          "xa": 2.31
+        },
+        {
+          "player": "Adam Daghim",
+          "team": "Wolfsburg",
+          "minutes": 1328,
+          "goals": 2,
+          "assists": 3,
+          "xg": 3.11,
+          "xa": 3.07
+        },
+        {
+          "player": "Patrick Dorgu",
+          "team": "Manchester United",
+          "minutes": 1436,
+          "goals": 4,
+          "assists": 4,
+          "xg": 2.99,
+          "xa": 3.11
+        },
+        {
+          "player": "Mikkel Damsgaard",
+          "team": "Brentford",
+          "minutes": 2085,
+          "goals": 4,
+          "assists": 4,
+          "xg": 2.97,
+          "xa": 6.47
+        },
+        {
+          "player": "Thomas Thiesson Kristensen",
+          "team": "Udinese",
+          "minutes": 2482,
+          "goals": 3,
+          "assists": 0,
+          "xg": 1.88,
+          "xa": 0.22
+        }
+      ]
+    },
+    {
+      "fifa_code": "BEL",
+      "team": "Belgium",
+      "flag": "🇧🇪",
+      "players": 36,
+      "minutes": 56454,
+      "goals": 55,
+      "assists": 52,
+      "xg": 66.0,
+      "xa": 60.26,
+      "xg_xa": 126.26,
+      "top_players": [
+        {
+          "player": "Matias Fernandez-Pardo",
+          "team": "Lille",
+          "minutes": 2408,
+          "goals": 8,
+          "assists": 5,
+          "xg": 11.11,
+          "xa": 4.86
+        },
+        {
+          "player": "Leandro Trossard",
+          "team": "Arsenal",
+          "minutes": 2026,
+          "goals": 6,
+          "assists": 6,
+          "xg": 6.75,
+          "xa": 4.99
+        },
+        {
+          "player": "Largie Ramazani",
+          "team": "Valencia",
+          "minutes": 1200,
+          "goals": 6,
+          "assists": 1,
+          "xg": 6.47,
+          "xa": 2.46
+        },
+        {
+          "player": "Jéremy Doku",
+          "team": "Manchester City",
+          "minutes": 1783,
+          "goals": 5,
+          "assists": 5,
+          "xg": 4.0,
+          "xa": 7.55
+        },
+        {
+          "player": "Loïs Openda",
+          "team": "Juventus",
+          "minutes": 631,
+          "goals": 1,
+          "assists": 0,
+          "xg": 3.65,
+          "xa": 0.6
+        },
+        {
+          "player": "Amadou Onana",
+          "team": "Aston Villa",
+          "minutes": 1793,
+          "goals": 2,
+          "assists": 0,
+          "xg": 2.77,
+          "xa": 0.5
+        },
+        {
+          "player": "Cyril Ngonge",
+          "team": "Torino",
+          "minutes": 987,
+          "goals": 1,
+          "assists": 1,
+          "xg": 2.76,
+          "xa": 0.56
+        },
+        {
+          "player": "Malick Fofana",
+          "team": "Lyon",
+          "minutes": 766,
+          "goals": 2,
+          "assists": 1,
+          "xg": 2.71,
+          "xa": 2.26
+        },
+        {
+          "player": "Axel Witsel",
+          "team": "Girona",
+          "minutes": 2546,
+          "goals": 1,
+          "assists": 2,
+          "xg": 2.59,
+          "xa": 2.22
+        },
+        {
+          "player": "Johan Bakayoko",
+          "team": "RasenBallsport Leipzig",
+          "minutes": 764,
+          "goals": 2,
+          "assists": 0,
+          "xg": 2.38,
+          "xa": 1.31
+        },
+        {
+          "player": "Diego Moreira",
+          "team": "Strasbourg",
+          "minutes": 2063,
+          "goals": 4,
+          "assists": 7,
+          "xg": 2.22,
+          "xa": 6.94
+        },
+        {
+          "player": "Youri Tielemans",
+          "team": "Aston Villa",
+          "minutes": 1861,
+          "goals": 0,
+          "assists": 4,
+          "xg": 1.84,
+          "xa": 2.98
+        }
+      ]
+    },
+    {
+      "fifa_code": "AUT",
+      "team": "Austria",
+      "flag": "🇦🇹",
+      "players": 26,
+      "minutes": 43641,
+      "goals": 56,
+      "assists": 49,
+      "xg": 72.83,
+      "xa": 53.19,
+      "xg_xa": 126.02,
+      "top_players": [
+        {
+          "player": "Christoph Baumgartner",
+          "team": "RasenBallsport Leipzig",
+          "minutes": 2811,
+          "goals": 13,
+          "assists": 8,
+          "xg": 18.02,
+          "xa": 4.29
+        },
+        {
+          "player": "Romano Schmid",
+          "team": "Werder Bremen",
+          "minutes": 3004,
+          "goals": 4,
+          "assists": 8,
+          "xg": 7.94,
+          "xa": 10.28
+        },
+        {
+          "player": "Michael Gregoritsch",
+          "team": "Augsburg",
+          "minutes": 926,
+          "goals": 6,
+          "assists": 2,
+          "xg": 6.22,
+          "xa": 1.52
+        },
+        {
+          "player": "Marco Grüll",
+          "team": "Werder Bremen",
+          "minutes": 2039,
+          "goals": 3,
+          "assists": 1,
+          "xg": 4.23,
+          "xa": 2.31
+        },
+        {
+          "player": "Leopold Querfeld",
+          "team": "Union Berlin",
+          "minutes": 2701,
+          "goals": 3,
+          "assists": 0,
+          "xg": 3.89,
+          "xa": 2.3
+        },
+        {
+          "player": "Patrick Wimmer",
+          "team": "Wolfsburg",
+          "minutes": 1678,
+          "goals": 4,
+          "assists": 3,
+          "xg": 3.64,
+          "xa": 2.25
+        },
+        {
+          "player": "Mathias Honsak",
+          "team": "FC Heidenheim",
+          "minutes": 1263,
+          "goals": 2,
+          "assists": 1,
+          "xg": 3.32,
+          "xa": 1.45
+        },
+        {
+          "player": "Konrad Laimer",
+          "team": "Bayern Munich",
+          "minutes": 1997,
+          "goals": 3,
+          "assists": 9,
+          "xg": 2.83,
+          "xa": 4.99
+        },
+        {
+          "player": "Carney Chukwuemeka",
+          "team": "Borussia Dortmund",
+          "minutes": 869,
+          "goals": 2,
+          "assists": 0,
+          "xg": 2.45,
+          "xa": 0.63
+        },
+        {
+          "player": "Samson Baidoo",
+          "team": "Lens",
+          "minutes": 1823,
+          "goals": 2,
+          "assists": 1,
+          "xg": 2.39,
+          "xa": 0.46
+        },
+        {
+          "player": "Xaver Schlager",
+          "team": "RasenBallsport Leipzig",
+          "minutes": 1844,
+          "goals": 3,
+          "assists": 1,
+          "xg": 2.16,
+          "xa": 2.2
+        },
+        {
+          "player": "Kevin Stöger",
+          "team": "Borussia M.Gladbach",
+          "minutes": 1322,
+          "goals": 1,
+          "assists": 1,
+          "xg": 2.05,
+          "xa": 2.05
+        }
+      ]
+    },
+    {
+      "fifa_code": "CIV",
+      "team": "Côte d'Ivoire",
+      "flag": "🇨🇮",
+      "players": 25,
+      "minutes": 35028,
+      "goals": 70,
+      "assists": 54,
+      "xg": 73.58,
+      "xa": 51.63,
+      "xg_xa": 125.22,
+      "top_players": [
+        {
+          "player": "Nicolas Pepe",
+          "team": "Villarreal",
+          "minutes": 2497,
+          "goals": 9,
+          "assists": 8,
+          "xg": 9.8,
+          "xa": 8.08
+        },
+        {
+          "player": "Martial Godo",
+          "team": "Strasbourg",
+          "minutes": 1602,
+          "goals": 10,
+          "assists": 1,
+          "xg": 8.61,
+          "xa": 2.26
+        },
+        {
+          "player": "Yan Diomande",
+          "team": "RasenBallsport Leipzig",
+          "minutes": 2507,
+          "goals": 12,
+          "assists": 8,
+          "xg": 8.03,
+          "xa": 10.05
+        },
+        {
+          "player": "Bazoumana Touré",
+          "team": "Hoffenheim",
+          "minutes": 2379,
+          "goals": 5,
+          "assists": 9,
+          "xg": 5.14,
+          "xa": 7.23
+        },
+        {
+          "player": "Jean-Phillipe Krasso",
+          "team": "Paris FC",
+          "minutes": 1082,
+          "goals": 2,
+          "assists": 2,
+          "xg": 4.3,
+          "xa": 3.16
+        },
+        {
+          "player": "Sepe Elye Wahi",
+          "team": "Nice",
+          "minutes": 937,
+          "goals": 5,
+          "assists": 1,
+          "xg": 4.23,
+          "xa": 0.8
+        },
+        {
+          "player": "Jeremie Boga",
+          "team": "Juventus",
+          "minutes": 666,
+          "goals": 4,
+          "assists": 0,
+          "xg": 4.13,
+          "xa": 1.67
+        },
+        {
+          "player": "Sinaly Diomande",
+          "team": "Auxerre",
+          "minutes": 2138,
+          "goals": 2,
+          "assists": 2,
+          "xg": 2.95,
+          "xa": 0.51
+        },
+        {
+          "player": "Simon Adingra",
+          "team": "Monaco",
+          "minutes": 871,
+          "goals": 3,
+          "assists": 2,
+          "xg": 2.9,
+          "xa": 1.46
+        },
+        {
+          "player": "Mohamed Bamba",
+          "team": "Lorient",
+          "minutes": 664,
+          "goals": 1,
+          "assists": 2,
+          "xg": 2.88,
+          "xa": 1.63
+        },
+        {
+          "player": "Hamed Junior Traore",
+          "team": "Marseille",
+          "minutes": 612,
+          "goals": 2,
+          "assists": 1,
+          "xg": 2.75,
+          "xa": 0.89
+        },
+        {
+          "player": "Ibrahim Diabate",
+          "team": "Alaves",
+          "minutes": 579,
+          "goals": 2,
+          "assists": 0,
+          "xg": 2.73,
+          "xa": 0.15
+        }
+      ]
+    },
+    {
+      "fifa_code": "MAR",
+      "team": "Morocco",
+      "flag": "🇲🇦",
+      "players": 29,
+      "minutes": 39835,
+      "goals": 66,
+      "assists": 53,
+      "xg": 69.56,
+      "xa": 54.28,
+      "xg_xa": 123.85,
+      "top_players": [
+        {
+          "player": "Abdessamad Ezzalzouli",
+          "team": "Real Betis",
+          "minutes": 2275,
+          "goals": 10,
+          "assists": 8,
+          "xg": 10.3,
+          "xa": 6.22
+        },
+        {
+          "player": "Sofiane Diop",
+          "team": "Nice",
+          "minutes": 2191,
+          "goals": 8,
+          "assists": 2,
+          "xg": 8.18,
+          "xa": 3.58
+        },
+        {
+          "player": "Ilyas Chaira",
+          "team": "Real Oviedo",
+          "minutes": 2584,
+          "goals": 7,
+          "assists": 2,
+          "xg": 7.22,
+          "xa": 2.08
+        },
+        {
+          "player": "Amine Sbaï",
+          "team": "Angers",
+          "minutes": 1865,
+          "goals": 3,
+          "assists": 1,
+          "xg": 4.35,
+          "xa": 2.76
+        },
+        {
+          "player": "Youssef El-Arabi",
+          "team": "Nantes",
+          "minutes": 943,
+          "goals": 3,
+          "assists": 0,
+          "xg": 4.2,
+          "xa": 0.57
+        },
+        {
+          "player": "Azz-Eddine Ounahi",
+          "team": "Girona",
+          "minutes": 1777,
+          "goals": 5,
+          "assists": 2,
+          "xg": 3.85,
+          "xa": 5.44
+        },
+        {
+          "player": "Hamza Igamane",
+          "team": "Lille",
+          "minutes": 406,
+          "goals": 5,
+          "assists": 1,
+          "xg": 3.76,
+          "xa": 0.66
+        },
+        {
+          "player": "Amine Adli",
+          "team": "Bournemouth",
+          "minutes": 1036,
+          "goals": 3,
+          "assists": 1,
+          "xg": 3.57,
+          "xa": 1.28
+        },
+        {
+          "player": "Bilal El Khannouss",
+          "team": "VfB Stuttgart",
+          "minutes": 1654,
+          "goals": 4,
+          "assists": 5,
+          "xg": 3.09,
+          "xa": 5.28
+        },
+        {
+          "player": "Achraf Hakimi",
+          "team": "Paris Saint Germain",
+          "minutes": 1382,
+          "goals": 2,
+          "assists": 2,
+          "xg": 2.8,
+          "xa": 1.46
+        },
+        {
+          "player": "Ilias Akhomach",
+          "team": "Rayo Vallecano",
+          "minutes": 876,
+          "goals": 0,
+          "assists": 1,
+          "xg": 2.6,
+          "xa": 1.56
+        },
+        {
+          "player": "Chemsdine Talbi",
+          "team": "Sunderland",
+          "minutes": 1556,
+          "goals": 4,
+          "assists": 1,
+          "xg": 2.32,
+          "xa": 0.6
+        }
+      ]
+    },
+    {
+      "fifa_code": "NOR",
+      "team": null,
+      "flag": "🇳🇴",
+      "players": 18,
+      "minutes": 28345,
+      "goals": 53,
+      "assists": 39,
+      "xg": 69.41,
+      "xa": 42.18,
+      "xg_xa": 111.59,
+      "top_players": [
+        {
+          "player": "Erling Haaland",
+          "team": "Manchester City",
+          "minutes": 2979,
+          "goals": 27,
+          "assists": 8,
+          "xg": 28.8,
+          "xa": 5.51
+        },
+        {
+          "player": "Alexander Sørloth",
+          "team": "Atletico Madrid",
+          "minutes": 1955,
+          "goals": 13,
+          "assists": 0,
+          "xg": 13.93,
+          "xa": 1.22
+        },
+        {
+          "player": "Jørgen Strand Larsen",
+          "team": "Crystal Palace",
+          "minutes": 2353,
+          "goals": 4,
+          "assists": 1,
+          "xg": 6.51,
+          "xa": 0.69
+        },
+        {
+          "player": "Antonio Nusa",
+          "team": "RasenBallsport Leipzig",
+          "minutes": 2048,
+          "goals": 4,
+          "assists": 3,
+          "xg": 5.2,
+          "xa": 4.75
+        },
+        {
+          "player": "Aron Dønnum",
+          "team": "Toulouse",
+          "minutes": 2438,
+          "goals": 4,
+          "assists": 4,
+          "xg": 4.6,
+          "xa": 6.29
+        },
+        {
+          "player": "Warren Kamanzi",
+          "team": "Toulouse",
+          "minutes": 825,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.5,
+          "xa": 0.56
+        },
+        {
+          "player": "Sebastian Sebulonsen",
+          "team": "FC Cologne",
+          "minutes": 2519,
+          "goals": 0,
+          "assists": 0,
+          "xg": 1.49,
+          "xa": 2.76
+        },
+        {
+          "player": "Oscar Bobb",
+          "team": "Fulham",
+          "minutes": 1046,
+          "goals": 0,
+          "assists": 1,
+          "xg": 1.43,
+          "xa": 2.02
+        },
+        {
+          "player": "Sander Berge",
+          "team": "Fulham",
+          "minutes": 2935,
+          "goals": 0,
+          "assists": 1,
+          "xg": 1.35,
+          "xa": 1.99
+        },
+        {
+          "player": "Julian Ryerson",
+          "team": "Borussia Dortmund",
+          "minutes": 2288,
+          "goals": 0,
+          "assists": 15,
+          "xg": 1.09,
+          "xa": 10.86
+        },
+        {
+          "player": "Kristoffer Ajer",
+          "team": "Brentford",
+          "minutes": 1809,
+          "goals": 0,
+          "assists": 1,
+          "xg": 1.05,
+          "xa": 0.9
+        },
+        {
+          "player": "Mathias Rasmussen",
+          "team": "St. Pauli",
+          "minutes": 692,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.79,
+          "xa": 0.26
+        }
+      ]
+    },
+    {
+      "fifa_code": "NGA",
+      "team": "Nigeria",
+      "flag": "🇳🇬",
+      "players": 21,
+      "minutes": 24023,
+      "goals": 51,
+      "assists": 28,
+      "xg": 62.45,
+      "xa": 31.72,
+      "xg_xa": 94.16,
+      "top_players": [
+        {
+          "player": "Akor Adams",
+          "team": "Sevilla",
+          "minutes": 2048,
+          "goals": 10,
+          "assists": 3,
+          "xg": 10.05,
+          "xa": 1.15
+        },
+        {
+          "player": "Tolu Arokodare",
+          "team": "Wolverhampton Wanderers",
+          "minutes": 1357,
+          "goals": 3,
+          "assists": 1,
+          "xg": 7.43,
+          "xa": 1.16
+        },
+        {
+          "player": "Prosper Peter",
+          "team": "Angers",
+          "minutes": 1257,
+          "goals": 5,
+          "assists": 0,
+          "xg": 6.07,
+          "xa": 0.9
+        },
+        {
+          "player": "Umar Sadiq",
+          "team": "Real Sociedad",
+          "minutes": 1028,
+          "goals": 4,
+          "assists": 2,
+          "xg": 5.45,
+          "xa": 1.72
+        },
+        {
+          "player": "Ademola Lookman",
+          "team": "Atletico Madrid",
+          "minutes": 638,
+          "goals": 4,
+          "assists": 0,
+          "xg": 4.46,
+          "xa": 1.69
+        },
+        {
+          "player": "Taiwo Awoniyi",
+          "team": "Nottingham Forest",
+          "minutes": 441,
+          "goals": 4,
+          "assists": 1,
+          "xg": 4.35,
+          "xa": 1.32
+        },
+        {
+          "player": "Ademola Lookman",
+          "team": "Atalanta",
+          "minutes": 803,
+          "goals": 2,
+          "assists": 0,
+          "xg": 3.85,
+          "xa": 2.28
+        },
+        {
+          "player": "Moses Simon",
+          "team": "Paris FC",
+          "minutes": 2062,
+          "goals": 3,
+          "assists": 3,
+          "xg": 2.88,
+          "xa": 4.33
+        },
+        {
+          "player": "Nathan Tella",
+          "team": "Bayer Leverkusen",
+          "minutes": 890,
+          "goals": 1,
+          "assists": 4,
+          "xg": 2.78,
+          "xa": 3.82
+        },
+        {
+          "player": "Terem Igobor Moffi",
+          "team": "Nice",
+          "minutes": 484,
+          "goals": 2,
+          "assists": 0,
+          "xg": 2.45,
+          "xa": 0.66
+        },
+        {
+          "player": "Alex Iwobi",
+          "team": "Fulham",
+          "minutes": 2473,
+          "goals": 4,
+          "assists": 3,
+          "xg": 2.4,
+          "xa": 3.63
+        },
+        {
+          "player": "Samuel Chukwueze",
+          "team": "Fulham",
+          "minutes": 1052,
+          "goals": 3,
+          "assists": 4,
+          "xg": 2.33,
+          "xa": 2.84
+        }
+      ]
+    },
+    {
+      "fifa_code": "URU",
+      "team": "Uruguay",
+      "flag": "🇺🇾",
+      "players": 21,
+      "minutes": 32423,
+      "goals": 55,
+      "assists": 26,
+      "xg": 65.5,
+      "xa": 27.51,
+      "xg_xa": 93.01,
+      "top_players": [
+        {
+          "player": "Alvaro Rodríguez",
+          "team": "Elche",
+          "minutes": 2199,
+          "goals": 7,
+          "assists": 5,
+          "xg": 12.18,
+          "xa": 3.86
+        },
+        {
+          "player": "Federico Viñas",
+          "team": "Real Oviedo",
+          "minutes": 2575,
+          "goals": 9,
+          "assists": 1,
+          "xg": 9.88,
+          "xa": 3.03
+        },
+        {
+          "player": "Mauro Arambarri",
+          "team": "Getafe",
+          "minutes": 3279,
+          "goals": 6,
+          "assists": 2,
+          "xg": 8.08,
+          "xa": 0.98
+        },
+        {
+          "player": "Cristhian Stuani",
+          "team": "Girona",
+          "minutes": 359,
+          "goals": 5,
+          "assists": 0,
+          "xg": 5.82,
+          "xa": 0.13
+        },
+        {
+          "player": "Martín Satriano",
+          "team": "Getafe",
+          "minutes": 1609,
+          "goals": 6,
+          "assists": 1,
+          "xg": 4.71,
+          "xa": 2.49
+        },
+        {
+          "player": "Santiago Giménez",
+          "team": "AC Milan",
+          "minutes": 905,
+          "goals": 0,
+          "assists": 1,
+          "xg": 3.79,
+          "xa": 0.55
+        },
+        {
+          "player": "Leandro Cabrera",
+          "team": "Espanyol",
+          "minutes": 3330,
+          "goals": 3,
+          "assists": 0,
+          "xg": 3.65,
+          "xa": 1.09
+        },
+        {
+          "player": "Ronald Araújo",
+          "team": "Barcelona",
+          "minutes": 1049,
+          "goals": 3,
+          "assists": 0,
+          "xg": 2.3,
+          "xa": 0.6
+        },
+        {
+          "player": "Federico Valverde",
+          "team": "Real Madrid",
+          "minutes": 2765,
+          "goals": 5,
+          "assists": 8,
+          "xg": 2.24,
+          "xa": 5.01
+        },
+        {
+          "player": "Martín Satriano",
+          "team": "Lyon",
+          "minutes": 696,
+          "goals": 2,
+          "assists": 1,
+          "xg": 2.15,
+          "xa": 1.25
+        },
+        {
+          "player": "Alfonso Espino",
+          "team": "Rayo Vallecano",
+          "minutes": 1472,
+          "goals": 2,
+          "assists": 0,
+          "xg": 2.06,
+          "xa": 3.07
+        },
+        {
+          "player": "Santiago Bueno",
+          "team": "Wolverhampton Wanderers",
+          "minutes": 2549,
+          "goals": 3,
+          "assists": 1,
+          "xg": 2.0,
+          "xa": 0.9
+        }
+      ]
+    },
+    {
+      "fifa_code": "SUI",
+      "team": "Switzerland",
+      "flag": "🇨🇭",
+      "players": 29,
+      "minutes": 49877,
+      "goals": 51,
+      "assists": 46,
+      "xg": 48.97,
+      "xa": 43.77,
+      "xg_xa": 92.73,
+      "top_players": [
+        {
+          "player": "Breel Embolo",
+          "team": "Rennes",
+          "minutes": 1870,
+          "goals": 9,
+          "assists": 3,
+          "xg": 9.04,
+          "xa": 1.47
+        },
+        {
+          "player": "Noah Okafor",
+          "team": "Leeds",
+          "minutes": 1592,
+          "goals": 8,
+          "assists": 1,
+          "xg": 6.3,
+          "xa": 2.26
+        },
+        {
+          "player": "Fabian Rieder",
+          "team": "Augsburg",
+          "minutes": 2387,
+          "goals": 6,
+          "assists": 3,
+          "xg": 4.17,
+          "xa": 5.38
+        },
+        {
+          "player": "Johan Manzambi",
+          "team": "Freiburg",
+          "minutes": 2145,
+          "goals": 5,
+          "assists": 4,
+          "xg": 4.02,
+          "xa": 3.58
+        },
+        {
+          "player": "Ruben Vargas",
+          "team": "Sevilla",
+          "minutes": 1670,
+          "goals": 3,
+          "assists": 6,
+          "xg": 3.43,
+          "xa": 3.11
+        },
+        {
+          "player": "Silvan Widmer",
+          "team": "Mainz 05",
+          "minutes": 1855,
+          "goals": 2,
+          "assists": 1,
+          "xg": 2.74,
+          "xa": 1.81
+        },
+        {
+          "player": "Denis Zakaria",
+          "team": "Monaco",
+          "minutes": 2039,
+          "goals": 2,
+          "assists": 1,
+          "xg": 2.55,
+          "xa": 1.43
+        },
+        {
+          "player": "Cameron Puertas",
+          "team": "Werder Bremen",
+          "minutes": 1867,
+          "goals": 1,
+          "assists": 2,
+          "xg": 2.22,
+          "xa": 2.42
+        },
+        {
+          "player": "Cédric Zesiger",
+          "team": "Augsburg",
+          "minutes": 1798,
+          "goals": 0,
+          "assists": 0,
+          "xg": 1.75,
+          "xa": 0.56
+        },
+        {
+          "player": "Djibril Sow",
+          "team": "Sevilla",
+          "minutes": 2235,
+          "goals": 5,
+          "assists": 4,
+          "xg": 1.55,
+          "xa": 2.02
+        },
+        {
+          "player": "Eray Cömert",
+          "team": "Valencia",
+          "minutes": 1341,
+          "goals": 2,
+          "assists": 1,
+          "xg": 1.52,
+          "xa": 0.52
+        },
+        {
+          "player": "Miro Muheim",
+          "team": "Hamburger SV",
+          "minutes": 2443,
+          "goals": 0,
+          "assists": 4,
+          "xg": 1.37,
+          "xa": 3.49
+        }
+      ]
+    },
+    {
+      "fifa_code": "CRO",
+      "team": "Croatia",
+      "flag": "🇭🇷",
+      "players": 14,
+      "minutes": 21511,
+      "goals": 64,
+      "assists": 21,
+      "xg": 62.86,
+      "xa": 25.84,
+      "xg_xa": 88.7,
+      "top_players": [
+        {
+          "player": "Ante Budimir",
+          "team": "Osasuna",
+          "minutes": 2995,
+          "goals": 17,
+          "assists": 0,
+          "xg": 19.19,
+          "xa": 1.71
+        },
+        {
+          "player": "Andrej Kramaric",
+          "team": "Hoffenheim",
+          "minutes": 2256,
+          "goals": 14,
+          "assists": 6,
+          "xg": 13.08,
+          "xa": 4.53
+        },
+        {
+          "player": "Igor Matanovic",
+          "team": "Freiburg",
+          "minutes": 1536,
+          "goals": 11,
+          "assists": 2,
+          "xg": 9.58,
+          "xa": 2.24
+        },
+        {
+          "player": "Luka Vuskovic",
+          "team": "Hamburger SV",
+          "minutes": 2440,
+          "goals": 6,
+          "assists": 0,
+          "xg": 4.68,
+          "xa": 0.57
+        },
+        {
+          "player": "Lovro Majer",
+          "team": "Wolfsburg",
+          "minutes": 1390,
+          "goals": 2,
+          "assists": 3,
+          "xg": 3.6,
+          "xa": 2.93
+        },
+        {
+          "player": "Petar Sucic",
+          "team": "Inter",
+          "minutes": 1763,
+          "goals": 2,
+          "assists": 2,
+          "xg": 2.18,
+          "xa": 4.04
+        },
+        {
+          "player": "Duje Caleta-Car",
+          "team": "Real Sociedad",
+          "minutes": 2140,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.88,
+          "xa": 0.2
+        },
+        {
+          "player": "Josko Gvardiol",
+          "team": "Manchester City",
+          "minutes": 1374,
+          "goals": 2,
+          "assists": 2,
+          "xg": 1.86,
+          "xa": 0.44
+        },
+        {
+          "player": "Luka Sucic",
+          "team": "Real Sociedad",
+          "minutes": 1003,
+          "goals": 3,
+          "assists": 1,
+          "xg": 1.76,
+          "xa": 0.36
+        },
+        {
+          "player": "Josip Stanisic",
+          "team": "Bayern Munich",
+          "minutes": 1842,
+          "goals": 2,
+          "assists": 3,
+          "xg": 1.47,
+          "xa": 3.64
+        },
+        {
+          "player": "Kristijan Jakic",
+          "team": "Augsburg",
+          "minutes": 1655,
+          "goals": 2,
+          "assists": 1,
+          "xg": 1.44,
+          "xa": 1.36
+        },
+        {
+          "player": "Patrice Covic",
+          "team": "Werder Bremen",
+          "minutes": 326,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.11,
+          "xa": 0.94
+        }
+      ]
+    },
+    {
+      "fifa_code": "ALG",
+      "team": null,
+      "flag": "🇩🇿",
+      "players": 16,
+      "minutes": 26380,
+      "goals": 44,
+      "assists": 34,
+      "xg": 49.77,
+      "xa": 38.26,
+      "xg_xa": 88.03,
+      "top_players": [
+        {
+          "player": "Mohammed Amoura",
+          "team": "Wolfsburg",
+          "minutes": 1949,
+          "goals": 8,
+          "assists": 3,
+          "xg": 9.96,
+          "xa": 3.97
+        },
+        {
+          "player": "Amine Gouiri",
+          "team": "Marseille",
+          "minutes": 1318,
+          "goals": 8,
+          "assists": 3,
+          "xg": 7.24,
+          "xa": 3.99
+        },
+        {
+          "player": "Ilan Kebbal",
+          "team": "Paris FC",
+          "minutes": 2247,
+          "goals": 9,
+          "assists": 4,
+          "xg": 6.2,
+          "xa": 5.01
+        },
+        {
+          "player": "Ibrahim Maza",
+          "team": "Bayer Leverkusen",
+          "minutes": 1845,
+          "goals": 3,
+          "assists": 4,
+          "xg": 6.01,
+          "xa": 4.39
+        },
+        {
+          "player": "Farès Chaïbi",
+          "team": "Eintracht Frankfurt",
+          "minutes": 1822,
+          "goals": 2,
+          "assists": 9,
+          "xg": 3.52,
+          "xa": 5.04
+        },
+        {
+          "player": "Ramy Bensebaini",
+          "team": "Borussia Dortmund",
+          "minutes": 1524,
+          "goals": 5,
+          "assists": 2,
+          "xg": 3.26,
+          "xa": 0.72
+        },
+        {
+          "player": "Abderrahmane Rebbach",
+          "team": "Alaves",
+          "minutes": 1479,
+          "goals": 1,
+          "assists": 4,
+          "xg": 2.96,
+          "xa": 4.95
+        },
+        {
+          "player": "Hichem Boudaoui",
+          "team": "Nice",
+          "minutes": 1697,
+          "goals": 1,
+          "assists": 2,
+          "xg": 2.29,
+          "xa": 1.6
+        },
+        {
+          "player": "Himad Abdelli",
+          "team": "Angers",
+          "minutes": 1075,
+          "goals": 2,
+          "assists": 0,
+          "xg": 1.93,
+          "xa": 0.55
+        },
+        {
+          "player": "Samir Chergui",
+          "team": "Paris FC",
+          "minutes": 1157,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.74,
+          "xa": 0.15
+        },
+        {
+          "player": "Yanis Zouaoui",
+          "team": "Le Havre",
+          "minutes": 2380,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.28,
+          "xa": 3.18
+        },
+        {
+          "player": "Nabil Bentaleb",
+          "team": "Lille",
+          "minutes": 1253,
+          "goals": 2,
+          "assists": 2,
+          "xg": 1.2,
+          "xa": 1.77
+        }
+      ]
+    },
+    {
+      "fifa_code": "SWE",
+      "team": null,
+      "flag": "🇸🇪",
+      "players": 20,
+      "minutes": 27956,
+      "goals": 51,
+      "assists": 31,
+      "xg": 53.07,
+      "xa": 29.86,
+      "xg_xa": 82.93,
+      "top_players": [
+        {
+          "player": "Viktor Gyokeres",
+          "team": "Arsenal",
+          "minutes": 2255,
+          "goals": 14,
+          "assists": 1,
+          "xg": 13.87,
+          "xa": 2.65
+        },
+        {
+          "player": "Albert Gudmundsson",
+          "team": "Fiorentina",
+          "minutes": 2290,
+          "goals": 5,
+          "assists": 4,
+          "xg": 5.8,
+          "xa": 3.78
+        },
+        {
+          "player": "Williot Swedberg",
+          "team": "Celta Vigo",
+          "minutes": 1237,
+          "goals": 5,
+          "assists": 5,
+          "xg": 5.19,
+          "xa": 1.98
+        },
+        {
+          "player": "Sebastian Nanasi",
+          "team": "Strasbourg",
+          "minutes": 1039,
+          "goals": 7,
+          "assists": 2,
+          "xg": 4.77,
+          "xa": 2.44
+        },
+        {
+          "player": "Alexander Isak",
+          "team": "Liverpool",
+          "minutes": 717,
+          "goals": 3,
+          "assists": 1,
+          "xg": 3.25,
+          "xa": 0.85
+        },
+        {
+          "player": "Mattias Svanberg",
+          "team": "Wolfsburg",
+          "minutes": 814,
+          "goals": 3,
+          "assists": 1,
+          "xg": 3.0,
+          "xa": 0.85
+        },
+        {
+          "player": "Daniel Svensson",
+          "team": "Borussia Dortmund",
+          "minutes": 2454,
+          "goals": 2,
+          "assists": 2,
+          "xg": 2.93,
+          "xa": 4.3
+        },
+        {
+          "player": "Yasin Ayari",
+          "team": "Brighton",
+          "minutes": 1918,
+          "goals": 3,
+          "assists": 3,
+          "xg": 2.12,
+          "xa": 1.4
+        },
+        {
+          "player": "Roony Bardghji",
+          "team": "Barcelona",
+          "minutes": 612,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.75,
+          "xa": 1.91
+        },
+        {
+          "player": "Anthony Elanga",
+          "team": "Newcastle United",
+          "minutes": 1289,
+          "goals": 0,
+          "assists": 1,
+          "xg": 1.45,
+          "xa": 1.75
+        },
+        {
+          "player": "Lucas Bergvall",
+          "team": "Tottenham",
+          "minutes": 956,
+          "goals": 1,
+          "assists": 3,
+          "xg": 1.43,
+          "xa": 0.29
+        },
+        {
+          "player": "Hugo Larsson",
+          "team": "Eintracht Frankfurt",
+          "minutes": 1839,
+          "goals": 2,
+          "assists": 2,
+          "xg": 1.42,
+          "xa": 1.19
+        }
+      ]
+    },
+    {
+      "fifa_code": "CMR",
+      "team": null,
+      "flag": "🇨🇲",
+      "players": 14,
+      "minutes": 21381,
+      "goals": 40,
+      "assists": 19,
+      "xg": 50.76,
+      "xa": 24.59,
+      "xg_xa": 75.36,
+      "top_players": [
+        {
+          "player": "Bryan Mbeumo",
+          "team": "Manchester United",
+          "minutes": 2676,
+          "goals": 11,
+          "assists": 3,
+          "xg": 13.31,
+          "xa": 5.09
+        },
+        {
+          "player": "Etta Eyong",
+          "team": "Levante",
+          "minutes": 1657,
+          "goals": 7,
+          "assists": 4,
+          "xg": 11.02,
+          "xa": 2.82
+        },
+        {
+          "player": "Christian Kofane",
+          "team": "Bayer Leverkusen",
+          "minutes": 1231,
+          "goals": 5,
+          "assists": 4,
+          "xg": 8.05,
+          "xa": 2.24
+        },
+        {
+          "player": "Eric Junior Dina Ebimbe",
+          "team": "Brest",
+          "minutes": 1161,
+          "goals": 5,
+          "assists": 0,
+          "xg": 4.38,
+          "xa": 1.19
+        },
+        {
+          "player": "Frank Magri",
+          "team": "Toulouse",
+          "minutes": 1297,
+          "goals": 5,
+          "assists": 1,
+          "xg": 4.2,
+          "xa": 0.84
+        },
+        {
+          "player": "Ignatius Ganago",
+          "team": "Nantes",
+          "minutes": 844,
+          "goals": 3,
+          "assists": 1,
+          "xg": 3.5,
+          "xa": 0.75
+        },
+        {
+          "player": "Simon Ebonog",
+          "team": "Le Havre",
+          "minutes": 1775,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.96,
+          "xa": 0.34
+        },
+        {
+          "player": "Enzo Boyomo",
+          "team": "Osasuna",
+          "minutes": 2544,
+          "goals": 1,
+          "assists": 2,
+          "xg": 1.16,
+          "xa": 1.42
+        },
+        {
+          "player": "Arthur Avom",
+          "team": "Lorient",
+          "minutes": 2095,
+          "goals": 2,
+          "assists": 1,
+          "xg": 1.05,
+          "xa": 3.18
+        },
+        {
+          "player": "Darline Yongwa",
+          "team": "Lorient",
+          "minutes": 1285,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.74,
+          "xa": 2.4
+        },
+        {
+          "player": "Mahamadou Nagida",
+          "team": "Rennes",
+          "minutes": 780,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.58,
+          "xa": 0.14
+        },
+        {
+          "player": "Carlos Baleba",
+          "team": "Brighton",
+          "minutes": 1692,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.57,
+          "xa": 0.81
+        }
+      ]
+    },
+    {
+      "fifa_code": "JPN",
+      "team": "Japan",
+      "flag": "🇯🇵",
+      "players": 17,
+      "minutes": 28394,
+      "goals": 26,
+      "assists": 29,
+      "xg": 36.97,
+      "xa": 38.19,
+      "xg_xa": 75.16,
+      "top_players": [
+        {
+          "player": "Kaoru Mitoma",
+          "team": "Brighton",
+          "minutes": 1723,
+          "goals": 3,
+          "assists": 1,
+          "xg": 4.79,
+          "xa": 3.54
+        },
+        {
+          "player": "Yuito Suzuki",
+          "team": "Freiburg",
+          "minutes": 1645,
+          "goals": 4,
+          "assists": 2,
+          "xg": 4.18,
+          "xa": 2.1
+        },
+        {
+          "player": "Ritsu Doan",
+          "team": "Eintracht Frankfurt",
+          "minutes": 2425,
+          "goals": 5,
+          "assists": 5,
+          "xg": 4.13,
+          "xa": 6.52
+        },
+        {
+          "player": "Shuto Machino",
+          "team": "Borussia M.Gladbach",
+          "minutes": 1046,
+          "goals": 3,
+          "assists": 1,
+          "xg": 3.82,
+          "xa": 1.08
+        },
+        {
+          "player": "Takumi Minamino",
+          "team": "Monaco",
+          "minutes": 976,
+          "goals": 3,
+          "assists": 2,
+          "xg": 3.37,
+          "xa": 2.1
+        },
+        {
+          "player": "Takefusa Kubo",
+          "team": "Real Sociedad",
+          "minutes": 1531,
+          "goals": 2,
+          "assists": 4,
+          "xg": 2.66,
+          "xa": 4.56
+        },
+        {
+          "player": "Takuma Asano",
+          "team": "Mallorca",
+          "minutes": 662,
+          "goals": 1,
+          "assists": 0,
+          "xg": 2.24,
+          "xa": 1.02
+        },
+        {
+          "player": "Ao Tanaka",
+          "team": "Leeds",
+          "minutes": 1330,
+          "goals": 2,
+          "assists": 0,
+          "xg": 2.2,
+          "xa": 1.36
+        },
+        {
+          "player": "Yukinari Sugawara",
+          "team": "Werder Bremen",
+          "minutes": 2444,
+          "goals": 0,
+          "assists": 6,
+          "xg": 1.67,
+          "xa": 2.44
+        },
+        {
+          "player": "Kaishu Sano",
+          "team": "Mainz 05",
+          "minutes": 3060,
+          "goals": 1,
+          "assists": 2,
+          "xg": 1.6,
+          "xa": 3.62
+        },
+        {
+          "player": "Hiroki Ito",
+          "team": "Bayern Munich",
+          "minutes": 918,
+          "goals": 1,
+          "assists": 2,
+          "xg": 1.5,
+          "xa": 1.1
+        },
+        {
+          "player": "Daichi Kamada",
+          "team": "Crystal Palace",
+          "minutes": 1924,
+          "goals": 0,
+          "assists": 0,
+          "xg": 1.49,
+          "xa": 2.59
+        }
+      ]
+    },
+    {
+      "fifa_code": "USA",
+      "team": "USA",
+      "flag": "🇺🇸",
+      "players": 18,
+      "minutes": 30555,
+      "goals": 35,
+      "assists": 22,
+      "xg": 41.6,
+      "xa": 31.66,
+      "xg_xa": 73.26,
+      "top_players": [
+        {
+          "player": "Folarin Balogun",
+          "team": "Monaco",
+          "minutes": 2281,
+          "goals": 13,
+          "assists": 4,
+          "xg": 14.09,
+          "xa": 4.19
+        },
+        {
+          "player": "Brenden Aaronson",
+          "team": "Leeds",
+          "minutes": 2517,
+          "goals": 4,
+          "assists": 5,
+          "xg": 5.88,
+          "xa": 5.66
+        },
+        {
+          "player": "Malik Tillman",
+          "team": "Bayer Leverkusen",
+          "minutes": 1681,
+          "goals": 6,
+          "assists": 1,
+          "xg": 5.12,
+          "xa": 3.6
+        },
+        {
+          "player": "Timothy Weah",
+          "team": "Marseille",
+          "minutes": 2286,
+          "goals": 2,
+          "assists": 2,
+          "xg": 2.79,
+          "xa": 3.78
+        },
+        {
+          "player": "Joe Scally",
+          "team": "Borussia M.Gladbach",
+          "minutes": 2615,
+          "goals": 2,
+          "assists": 3,
+          "xg": 2.7,
+          "xa": 1.62
+        },
+        {
+          "player": "Tanner Tessmann",
+          "team": "Lyon",
+          "minutes": 1938,
+          "goals": 1,
+          "assists": 0,
+          "xg": 2.57,
+          "xa": 1.4
+        },
+        {
+          "player": "Chris Richards",
+          "team": "Crystal Palace",
+          "minutes": 2819,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.78,
+          "xa": 0.49
+        },
+        {
+          "player": "Noahkai Banks",
+          "team": "Augsburg",
+          "minutes": 1746,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.23,
+          "xa": 0.93
+        },
+        {
+          "player": "Antonee Robinson",
+          "team": "Fulham",
+          "minutes": 1484,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.98,
+          "xa": 1.09
+        },
+        {
+          "player": "Tyler Adams",
+          "team": "Bournemouth",
+          "minutes": 1805,
+          "goals": 2,
+          "assists": 2,
+          "xg": 0.93,
+          "xa": 1.23
+        },
+        {
+          "player": "James Sands",
+          "team": "St. Pauli",
+          "minutes": 1957,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.87,
+          "xa": 0.97
+        },
+        {
+          "player": "Giovanni Reyna",
+          "team": "Borussia M.Gladbach",
+          "minutes": 485,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.67,
+          "xa": 1.55
+        }
+      ]
+    },
+    {
+      "fifa_code": "GHA",
+      "team": "Ghana",
+      "flag": "🇬🇭",
+      "players": 18,
+      "minutes": 30213,
+      "goals": 31,
+      "assists": 23,
+      "xg": 43.14,
+      "xa": 22.18,
+      "xg_xa": 65.32,
+      "top_players": [
+        {
+          "player": "Antoine Semenyo",
+          "team": "Bournemouth",
+          "minutes": 3220,
+          "goals": 17,
+          "assists": 4,
+          "xg": 12.84,
+          "xa": 4.13
+        },
+        {
+          "player": "Iñaki Williams",
+          "team": "Athletic Club",
+          "minutes": 2188,
+          "goals": 3,
+          "assists": 6,
+          "xg": 8.66,
+          "xa": 4.21
+        },
+        {
+          "player": "Ransford Königsdörffer",
+          "team": "Hamburger SV",
+          "minutes": 2425,
+          "goals": 5,
+          "assists": 0,
+          "xg": 8.1,
+          "xa": 1.29
+        },
+        {
+          "player": "Derrick Köhn",
+          "team": "Union Berlin",
+          "minutes": 1887,
+          "goals": 1,
+          "assists": 2,
+          "xg": 2.38,
+          "xa": 3.09
+        },
+        {
+          "player": "Mohammed Kudus",
+          "team": "Tottenham",
+          "minutes": 1577,
+          "goals": 2,
+          "assists": 5,
+          "xg": 2.36,
+          "xa": 2.57
+        },
+        {
+          "player": "Ibrahim Osman",
+          "team": "Auxerre",
+          "minutes": 631,
+          "goals": 0,
+          "assists": 2,
+          "xg": 1.94,
+          "xa": 1.18
+        },
+        {
+          "player": "Marvin Senaya",
+          "team": "Auxerre",
+          "minutes": 1796,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.4,
+          "xa": 0.24
+        },
+        {
+          "player": "Kojo Peprah Oppong",
+          "team": "Nice",
+          "minutes": 2440,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.31,
+          "xa": 0.59
+        },
+        {
+          "player": "Terry Yegbe",
+          "team": "Metz",
+          "minutes": 1977,
+          "goals": 0,
+          "assists": 1,
+          "xg": 1.28,
+          "xa": 0.44
+        },
+        {
+          "player": "Mohammed Salisu",
+          "team": "Monaco",
+          "minutes": 1080,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.88,
+          "xa": 0.15
+        },
+        {
+          "player": "Nathaniel Adjei",
+          "team": "Lorient",
+          "minutes": 830,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.54,
+          "xa": 0.07
+        },
+        {
+          "player": "Thomas Partey",
+          "team": "Villarreal",
+          "minutes": 892,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.51,
+          "xa": 0.33
+        }
+      ]
+    },
+    {
+      "fifa_code": "CZE",
+      "team": null,
+      "flag": "🇨🇿",
+      "players": 9,
+      "minutes": 15397,
+      "goals": 36,
+      "assists": 15,
+      "xg": 39.54,
+      "xa": 18.93,
+      "xg_xa": 58.47,
+      "top_players": [
+        {
+          "player": "Patrik Schick",
+          "team": "Bayer Leverkusen",
+          "minutes": 2005,
+          "goals": 16,
+          "assists": 3,
+          "xg": 19.42,
+          "xa": 3.19
+        },
+        {
+          "player": "Pavel Sulc",
+          "team": "Lyon",
+          "minutes": 1562,
+          "goals": 10,
+          "assists": 3,
+          "xg": 8.2,
+          "xa": 3.45
+        },
+        {
+          "player": "Tomas Soucek",
+          "team": "West Ham",
+          "minutes": 2206,
+          "goals": 5,
+          "assists": 0,
+          "xg": 5.21,
+          "xa": 0.82
+        },
+        {
+          "player": "Robin Hranác",
+          "team": "Hoffenheim",
+          "minutes": 2261,
+          "goals": 1,
+          "assists": 0,
+          "xg": 2.07,
+          "xa": 0.13
+        },
+        {
+          "player": "Ladislav Krejcí",
+          "team": "Wolverhampton Wanderers",
+          "minutes": 2385,
+          "goals": 2,
+          "assists": 1,
+          "xg": 1.72,
+          "xa": 1.49
+        },
+        {
+          "player": "Adam Karabec",
+          "team": "Lyon",
+          "minutes": 922,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.56,
+          "xa": 2.1
+        },
+        {
+          "player": "Vladimir Coufal",
+          "team": "Hoffenheim",
+          "minutes": 3032,
+          "goals": 1,
+          "assists": 8,
+          "xg": 0.99,
+          "xa": 7.48
+        },
+        {
+          "player": "Alex Kral",
+          "team": "Union Berlin",
+          "minutes": 394,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.36,
+          "xa": 0.27
+        },
+        {
+          "player": "Antonín Kinsky",
+          "team": "Tottenham",
+          "minutes": 630,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "COL",
+      "team": "Colombia",
+      "flag": "🇨🇴",
+      "players": 10,
+      "minutes": 15480,
+      "goals": 20,
+      "assists": 24,
+      "xg": 29.4,
+      "xa": 26.9,
+      "xg_xa": 56.3,
+      "top_players": [
+        {
+          "player": "Luis Díaz",
+          "team": "Bayern Munich",
+          "minutes": 2464,
+          "goals": 15,
+          "assists": 14,
+          "xg": 14.86,
+          "xa": 10.12
+        },
+        {
+          "player": "Jhon Arias",
+          "team": "Wolverhampton Wanderers",
+          "minutes": 1140,
+          "goals": 1,
+          "assists": 0,
+          "xg": 3.29,
+          "xa": 0.9
+        },
+        {
+          "player": "Daniel Muñoz",
+          "team": "Crystal Palace",
+          "minutes": 2417,
+          "goals": 4,
+          "assists": 3,
+          "xg": 3.15,
+          "xa": 5.07
+        },
+        {
+          "player": "Yerson Mosquera",
+          "team": "Wolverhampton Wanderers",
+          "minutes": 2154,
+          "goals": 0,
+          "assists": 0,
+          "xg": 2.97,
+          "xa": 1.2
+        },
+        {
+          "player": "Jefferson Lerma",
+          "team": "Crystal Palace",
+          "minutes": 1693,
+          "goals": 0,
+          "assists": 2,
+          "xg": 2.21,
+          "xa": 1.78
+        },
+        {
+          "player": "Deiver Machado",
+          "team": "Lens",
+          "minutes": 1201,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.91,
+          "xa": 1.39
+        },
+        {
+          "player": "Johan Mojica",
+          "team": "Mallorca",
+          "minutes": 2723,
+          "goals": 0,
+          "assists": 4,
+          "xg": 0.81,
+          "xa": 3.93
+        },
+        {
+          "player": "Yáser Asprilla",
+          "team": "Girona",
+          "minutes": 601,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.56,
+          "xa": 1.78
+        },
+        {
+          "player": "Nelson Deossa",
+          "team": "Real Betis",
+          "minutes": 725,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.47,
+          "xa": 0.65
+        },
+        {
+          "player": "Jhon Solis",
+          "team": "Girona",
+          "minutes": 362,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.18,
+          "xa": 0.06
+        }
+      ]
+    },
+    {
+      "fifa_code": "ITA",
+      "team": "Italy",
+      "flag": "🇮🇹",
+      "players": 20,
+      "minutes": 25913,
+      "goals": 22,
+      "assists": 20,
+      "xg": 28.23,
+      "xa": 27.07,
+      "xg_xa": 55.3,
+      "top_players": [
+        {
+          "player": "Vincenzo Grifo",
+          "team": "Freiburg",
+          "minutes": 1733,
+          "goals": 7,
+          "assists": 4,
+          "xg": 5.46,
+          "xa": 5.39
+        },
+        {
+          "player": "Giacomo Raspadori",
+          "team": "Atalanta",
+          "minutes": 784,
+          "goals": 3,
+          "assists": 1,
+          "xg": 3.49,
+          "xa": 1.2
+        },
+        {
+          "player": "Riccardo Calafiori",
+          "team": "Arsenal",
+          "minutes": 1755,
+          "goals": 1,
+          "assists": 2,
+          "xg": 3.47,
+          "xa": 0.65
+        },
+        {
+          "player": "Luca Koleosho",
+          "team": "Paris FC",
+          "minutes": 517,
+          "goals": 3,
+          "assists": 1,
+          "xg": 2.73,
+          "xa": 1.66
+        },
+        {
+          "player": "Ciro Immobile",
+          "team": "Paris FC",
+          "minutes": 736,
+          "goals": 2,
+          "assists": 2,
+          "xg": 2.33,
+          "xa": 1.9
+        },
+        {
+          "player": "Samuele Inácio",
+          "team": "Borussia Dortmund",
+          "minutes": 371,
+          "goals": 1,
+          "assists": 0,
+          "xg": 2.01,
+          "xa": 0.92
+        },
+        {
+          "player": "Lorenzo Lucca",
+          "team": "Napoli",
+          "minutes": 381,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.91,
+          "xa": 0.66
+        },
+        {
+          "player": "Sandro Tonali",
+          "team": "Newcastle United",
+          "minutes": 2586,
+          "goals": 0,
+          "assists": 2,
+          "xg": 1.42,
+          "xa": 3.76
+        },
+        {
+          "player": "Nicolò Savona",
+          "team": "Nottingham Forest",
+          "minutes": 1036,
+          "goals": 2,
+          "assists": 0,
+          "xg": 1.24,
+          "xa": 0.59
+        },
+        {
+          "player": "Michael Kayode",
+          "team": "Brentford",
+          "minutes": 3281,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.17,
+          "xa": 3.18
+        },
+        {
+          "player": "Fabio Chiarodia",
+          "team": "Borussia M.Gladbach",
+          "minutes": 669,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.97,
+          "xa": 0.01
+        },
+        {
+          "player": "Luca Reggiani",
+          "team": "Borussia Dortmund",
+          "minutes": 515,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.46,
+          "xa": 0.04
+        }
+      ]
+    },
+    {
+      "fifa_code": "GEO",
+      "team": null,
+      "flag": "🇬🇪",
+      "players": 8,
+      "minutes": 10192,
+      "goals": 34,
+      "assists": 13,
+      "xg": 33.88,
+      "xa": 17.48,
+      "xg_xa": 51.36,
+      "top_players": [
+        {
+          "player": "Georges Mikautadze",
+          "team": "Villarreal",
+          "minutes": 2155,
+          "goals": 13,
+          "assists": 6,
+          "xg": 15.06,
+          "xa": 4.15
+        },
+        {
+          "player": "Khvicha Kvaratskhelia",
+          "team": "Paris Saint Germain",
+          "minutes": 1477,
+          "goals": 8,
+          "assists": 4,
+          "xg": 7.98,
+          "xa": 5.74
+        },
+        {
+          "player": "Budu Zivzivadze",
+          "team": "FC Heidenheim",
+          "minutes": 1148,
+          "goals": 6,
+          "assists": 0,
+          "xg": 5.82,
+          "xa": 0.91
+        },
+        {
+          "player": "Giorgi Tsitaishvili",
+          "team": "Metz",
+          "minutes": 2475,
+          "goals": 3,
+          "assists": 2,
+          "xg": 1.54,
+          "xa": 4.27
+        },
+        {
+          "player": "Giorgi Kvilitaia",
+          "team": "Metz",
+          "minutes": 503,
+          "goals": 2,
+          "assists": 0,
+          "xg": 1.32,
+          "xa": 1.19
+        },
+        {
+          "player": "Giorgi Abuashvili",
+          "team": "Metz",
+          "minutes": 655,
+          "goals": 2,
+          "assists": 0,
+          "xg": 1.18,
+          "xa": 0.58
+        },
+        {
+          "player": "Giorgi Gocholeishvili",
+          "team": "Hamburger SV",
+          "minutes": 909,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.98,
+          "xa": 0.64
+        },
+        {
+          "player": "Giorgi Mamardashvili",
+          "team": "Liverpool",
+          "minutes": 870,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "MLI",
+      "team": null,
+      "flag": "🇲🇱",
+      "players": 11,
+      "minutes": 17619,
+      "goals": 31,
+      "assists": 16,
+      "xg": 31.74,
+      "xa": 18.4,
+      "xg_xa": 50.14,
+      "top_players": [
+        {
+          "player": "Lassine Sinayoko",
+          "team": "Auxerre",
+          "minutes": 2811,
+          "goals": 12,
+          "assists": 4,
+          "xg": 13.61,
+          "xa": 4.95
+        },
+        {
+          "player": "Kamory Doumbia",
+          "team": "Brest",
+          "minutes": 1805,
+          "goals": 5,
+          "assists": 4,
+          "xg": 5.0,
+          "xa": 4.45
+        },
+        {
+          "player": "Alimami Gory",
+          "team": "Paris FC",
+          "minutes": 959,
+          "goals": 5,
+          "assists": 1,
+          "xg": 3.89,
+          "xa": 0.67
+        },
+        {
+          "player": "Mamadou Sangaré",
+          "team": "Lens",
+          "minutes": 2347,
+          "goals": 3,
+          "assists": 4,
+          "xg": 3.29,
+          "xa": 2.84
+        },
+        {
+          "player": "Fodé Doucouré",
+          "team": "Le Havre",
+          "minutes": 1271,
+          "goals": 3,
+          "assists": 1,
+          "xg": 2.58,
+          "xa": 2.51
+        },
+        {
+          "player": "Daouda Guindo",
+          "team": "Brest",
+          "minutes": 1689,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.04,
+          "xa": 0.81
+        },
+        {
+          "player": "Boubacar Traore",
+          "team": "Metz",
+          "minutes": 1414,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.94,
+          "xa": 0.22
+        },
+        {
+          "player": "Ousmane Camara",
+          "team": "Angers",
+          "minutes": 2724,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.64,
+          "xa": 0.25
+        },
+        {
+          "player": "Hamari Traore",
+          "team": "Paris FC",
+          "minutes": 1169,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.36,
+          "xa": 0.81
+        },
+        {
+          "player": "Yves Bissouma",
+          "team": "Tottenham",
+          "minutes": 619,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.21,
+          "xa": 0.0
+        },
+        {
+          "player": "Ibrahima Sissoko",
+          "team": "Nantes",
+          "minutes": 811,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.17,
+          "xa": 0.9
+        }
+      ]
+    },
+    {
+      "fifa_code": "POL",
+      "team": "Poland",
+      "flag": "🇵🇱",
+      "players": 11,
+      "minutes": 18488,
+      "goals": 28,
+      "assists": 14,
+      "xg": 29.86,
+      "xa": 19.17,
+      "xg_xa": 49.03,
+      "top_players": [
+        {
+          "player": "Robert Lewandowski",
+          "team": "Barcelona",
+          "minutes": 1630,
+          "goals": 14,
+          "assists": 2,
+          "xg": 16.07,
+          "xa": 2.28
+        },
+        {
+          "player": "Jakub Kaminski",
+          "team": "FC Cologne",
+          "minutes": 3031,
+          "goals": 7,
+          "assists": 3,
+          "xg": 7.97,
+          "xa": 5.59
+        },
+        {
+          "player": "Kacper Potulski",
+          "team": "Mainz 05",
+          "minutes": 1061,
+          "goals": 1,
+          "assists": 0,
+          "xg": 2.62,
+          "xa": 0.62
+        },
+        {
+          "player": "Matthew Cash",
+          "team": "Aston Villa",
+          "minutes": 3040,
+          "goals": 3,
+          "assists": 3,
+          "xg": 1.22,
+          "xa": 3.21
+        },
+        {
+          "player": "Arkadiusz Pyrka",
+          "team": "St. Pauli",
+          "minutes": 2596,
+          "goals": 0,
+          "assists": 1,
+          "xg": 1.01,
+          "xa": 2.22
+        },
+        {
+          "player": "Sebastian Szymanski",
+          "team": "Rennes",
+          "minutes": 796,
+          "goals": 1,
+          "assists": 3,
+          "xg": 0.53,
+          "xa": 2.57
+        },
+        {
+          "player": "Przemyslaw Frankowski",
+          "team": "Rennes",
+          "minutes": 1230,
+          "goals": 1,
+          "assists": 2,
+          "xg": 0.34,
+          "xa": 2.62
+        },
+        {
+          "player": "Maxi Oyedele",
+          "team": "Strasbourg",
+          "minutes": 456,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.08,
+          "xa": 0.02
+        },
+        {
+          "player": "Kamil Grabara",
+          "team": "Wolfsburg",
+          "minutes": 3060,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.04,
+          "xa": 0.04
+        },
+        {
+          "player": "Radoslaw Majecki",
+          "team": "Brest",
+          "minutes": 868,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        },
+        {
+          "player": "Wojciech Szczesny",
+          "team": "Barcelona",
+          "minutes": 720,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "KVX",
+      "team": null,
+      "flag": "🇽🇰",
+      "players": 6,
+      "minutes": 13131,
+      "goals": 36,
+      "assists": 11,
+      "xg": 35.31,
+      "xa": 12.52,
+      "xg_xa": 47.83,
+      "top_players": [
+        {
+          "player": "Vedat Muriqi",
+          "team": "Mallorca",
+          "minutes": 3150,
+          "goals": 23,
+          "assists": 1,
+          "xg": 21.63,
+          "xa": 2.49
+        },
+        {
+          "player": "Fisnik Asllani",
+          "team": "Hoffenheim",
+          "minutes": 2429,
+          "goals": 10,
+          "assists": 7,
+          "xg": 9.5,
+          "xa": 5.4
+        },
+        {
+          "player": "Albian Hajdari",
+          "team": "Hoffenheim",
+          "minutes": 2449,
+          "goals": 1,
+          "assists": 2,
+          "xg": 1.95,
+          "xa": 1.47
+        },
+        {
+          "player": "Kristjan Asllani",
+          "team": "Torino",
+          "minutes": 1145,
+          "goals": 0,
+          "assists": 0,
+          "xg": 1.16,
+          "xa": 1.13
+        },
+        {
+          "player": "Elvis Rexhbecaj",
+          "team": "Augsburg",
+          "minutes": 1098,
+          "goals": 2,
+          "assists": 0,
+          "xg": 0.54,
+          "xa": 0.71
+        },
+        {
+          "player": "Leon Avdullahu",
+          "team": "Hoffenheim",
+          "minutes": 2860,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.52,
+          "xa": 1.33
+        }
+      ]
+    },
+    {
+      "fifa_code": "HUN",
+      "team": null,
+      "flag": "🇭🇺",
+      "players": 7,
+      "minutes": 16281,
+      "goals": 19,
+      "assists": 11,
+      "xg": 23.81,
+      "xa": 16.26,
+      "xg_xa": 40.07,
+      "top_players": [
+        {
+          "player": "Gift Orban",
+          "team": "Verona",
+          "minutes": 2055,
+          "goals": 7,
+          "assists": 2,
+          "xg": 12.24,
+          "xa": 2.53
+        },
+        {
+          "player": "Dominik Szoboszlai",
+          "team": "Liverpool",
+          "minutes": 3236,
+          "goals": 6,
+          "assists": 7,
+          "xg": 4.72,
+          "xa": 8.84
+        },
+        {
+          "player": "Willi Orban",
+          "team": "RasenBallsport Leipzig",
+          "minutes": 2952,
+          "goals": 2,
+          "assists": 0,
+          "xg": 3.14,
+          "xa": 0.71
+        },
+        {
+          "player": "Andras Schafer",
+          "team": "Union Berlin",
+          "minutes": 1420,
+          "goals": 2,
+          "assists": 1,
+          "xg": 1.78,
+          "xa": 0.78
+        },
+        {
+          "player": "Milos Kerkez",
+          "team": "Liverpool",
+          "minutes": 2271,
+          "goals": 2,
+          "assists": 1,
+          "xg": 1.39,
+          "xa": 1.86
+        },
+        {
+          "player": "Loïc Négo",
+          "team": "Le Havre",
+          "minutes": 2339,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.53,
+          "xa": 1.54
+        },
+        {
+          "player": "Péter Gulácsi",
+          "team": "RasenBallsport Leipzig",
+          "minutes": 2008,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "WAL",
+      "team": "Wales",
+      "flag": "🇬🇧",
+      "players": 8,
+      "minutes": 17456,
+      "goals": 18,
+      "assists": 15,
+      "xg": 21.36,
+      "xa": 17.5,
+      "xg_xa": 38.86,
+      "top_players": [
+        {
+          "player": "David Brooks",
+          "team": "Bournemouth",
+          "minutes": 1191,
+          "goals": 1,
+          "assists": 3,
+          "xg": 6.54,
+          "xa": 4.2
+        },
+        {
+          "player": "Harry Wilson",
+          "team": "Fulham",
+          "minutes": 2751,
+          "goals": 10,
+          "assists": 7,
+          "xg": 5.76,
+          "xa": 5.5
+        },
+        {
+          "player": "Brennan Johnson",
+          "team": "Crystal Palace",
+          "minutes": 1709,
+          "goals": 2,
+          "assists": 1,
+          "xg": 2.59,
+          "xa": 1.28
+        },
+        {
+          "player": "Ethan Ampadu",
+          "team": "Leeds",
+          "minutes": 3130,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.95,
+          "xa": 1.18
+        },
+        {
+          "player": "Neco Williams",
+          "team": "Nottingham Forest",
+          "minutes": 3203,
+          "goals": 2,
+          "assists": 3,
+          "xg": 1.87,
+          "xa": 4.4
+        },
+        {
+          "player": "Joe Rodon",
+          "team": "Leeds",
+          "minutes": 2954,
+          "goals": 2,
+          "assists": 0,
+          "xg": 1.85,
+          "xa": 0.46
+        },
+        {
+          "player": "Daniel James",
+          "team": "Leeds",
+          "minutes": 538,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.8,
+          "xa": 0.49
+        },
+        {
+          "player": "Karl Darlow",
+          "team": "Leeds",
+          "minutes": 1980,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "TUR",
+      "team": null,
+      "flag": "🇹🇷",
+      "players": 8,
+      "minutes": 15285,
+      "goals": 18,
+      "assists": 16,
+      "xg": 20.34,
+      "xa": 16.59,
+      "xg_xa": 36.93,
+      "top_players": [
+        {
+          "player": "Arda Güler",
+          "team": "Real Madrid",
+          "minutes": 2076,
+          "goals": 4,
+          "assists": 9,
+          "xg": 4.81,
+          "xa": 8.85
+        },
+        {
+          "player": "Ozan Kabak",
+          "team": "Hoffenheim",
+          "minutes": 1731,
+          "goals": 4,
+          "assists": 0,
+          "xg": 4.64,
+          "xa": 0.45
+        },
+        {
+          "player": "Can Uzun",
+          "team": "Eintracht Frankfurt",
+          "minutes": 1178,
+          "goals": 8,
+          "assists": 4,
+          "xg": 4.54,
+          "xa": 2.63
+        },
+        {
+          "player": "Livan Burcu",
+          "team": "Union Berlin",
+          "minutes": 621,
+          "goals": 1,
+          "assists": 1,
+          "xg": 2.16,
+          "xa": 0.51
+        },
+        {
+          "player": "Ferdi Kadioglu",
+          "team": "Brighton",
+          "minutes": 3145,
+          "goals": 1,
+          "assists": 0,
+          "xg": 2.02,
+          "xa": 2.24
+        },
+        {
+          "player": "Cenk Özkacar",
+          "team": "FC Cologne",
+          "minutes": 1786,
+          "goals": 0,
+          "assists": 0,
+          "xg": 1.1,
+          "xa": 0.21
+        },
+        {
+          "player": "Atakan Karazor",
+          "team": "VfB Stuttgart",
+          "minutes": 1906,
+          "goals": 0,
+          "assists": 1,
+          "xg": 1.06,
+          "xa": 1.62
+        },
+        {
+          "player": "Berke Özer",
+          "team": "Lille",
+          "minutes": 2842,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.0,
+          "xa": 0.08
+        }
+      ]
+    },
+    {
+      "fifa_code": "GUI",
+      "team": null,
+      "flag": "🇬🇳",
+      "players": 7,
+      "minutes": 8125,
+      "goals": 23,
+      "assists": 6,
+      "xg": 27.43,
+      "xa": 8.02,
+      "xg_xa": 35.45,
+      "top_players": [
+        {
+          "player": "Serhou Guirassy",
+          "team": "Borussia Dortmund",
+          "minutes": 2366,
+          "goals": 17,
+          "assists": 1,
+          "xg": 19.91,
+          "xa": 1.93
+        },
+        {
+          "player": "Morgan Guilavogui",
+          "team": "Lens",
+          "minutes": 444,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.79,
+          "xa": 1.16
+        },
+        {
+          "player": "Ilaix Moriba",
+          "team": "Celta Vigo",
+          "minutes": 2484,
+          "goals": 2,
+          "assists": 3,
+          "xg": 1.78,
+          "xa": 2.51
+        },
+        {
+          "player": "Abdoulaye Touré",
+          "team": "Le Havre",
+          "minutes": 740,
+          "goals": 2,
+          "assists": 0,
+          "xg": 1.53,
+          "xa": 0.19
+        },
+        {
+          "player": "Mohamed Kaba",
+          "team": "Nantes",
+          "minutes": 938,
+          "goals": 0,
+          "assists": 2,
+          "xg": 1.35,
+          "xa": 1.95
+        },
+        {
+          "player": "Mouctar Diakhaby",
+          "team": "Valencia",
+          "minutes": 539,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.63,
+          "xa": 0.06
+        },
+        {
+          "player": "Mohamed Kaba",
+          "team": "Lecce",
+          "minutes": 614,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.44,
+          "xa": 0.22
+        }
+      ]
+    },
+    {
+      "fifa_code": "BIH",
+      "team": null,
+      "flag": "🇧🇦",
+      "players": 6,
+      "minutes": 11101,
+      "goals": 26,
+      "assists": 7,
+      "xg": 25.1,
+      "xa": 6.76,
+      "xg_xa": 31.86,
+      "top_players": [
+        {
+          "player": "Haris Tabakovic",
+          "team": "Borussia M.Gladbach",
+          "minutes": 2424,
+          "goals": 13,
+          "assists": 2,
+          "xg": 14.34,
+          "xa": 1.88
+        },
+        {
+          "player": "Ermedin Demirovic",
+          "team": "VfB Stuttgart",
+          "minutes": 1507,
+          "goals": 12,
+          "assists": 3,
+          "xg": 8.66,
+          "xa": 2.18
+        },
+        {
+          "player": "Mehmet Zeki Çelik",
+          "team": "Roma",
+          "minutes": 2747,
+          "goals": 1,
+          "assists": 2,
+          "xg": 1.77,
+          "xa": 2.41
+        },
+        {
+          "player": "Denis Huseinbasic",
+          "team": "FC Cologne",
+          "minutes": 726,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.21,
+          "xa": 0.29
+        },
+        {
+          "player": "Nidal Celik",
+          "team": "Lens",
+          "minutes": 637,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.12,
+          "xa": 0.0
+        },
+        {
+          "player": "Nikola Vasilj",
+          "team": "St. Pauli",
+          "minutes": 3060,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "BFA",
+      "team": null,
+      "flag": "🇧🇫",
+      "players": 8,
+      "minutes": 12231,
+      "goals": 15,
+      "assists": 12,
+      "xg": 15.75,
+      "xa": 14.0,
+      "xg_xa": 29.76,
+      "top_players": [
+        {
+          "player": "Dango Ouattara",
+          "team": "Brentford",
+          "minutes": 2303,
+          "goals": 7,
+          "assists": 3,
+          "xg": 8.69,
+          "xa": 5.86
+        },
+        {
+          "player": "Edmond Tapsoba",
+          "team": "Bayer Leverkusen",
+          "minutes": 2579,
+          "goals": 5,
+          "assists": 3,
+          "xg": 4.24,
+          "xa": 1.71
+        },
+        {
+          "player": "Arsène Kouassi",
+          "team": "Lorient",
+          "minutes": 2642,
+          "goals": 2,
+          "assists": 6,
+          "xg": 0.64,
+          "xa": 4.93
+        },
+        {
+          "player": "Bertrand Traoré",
+          "team": "Sunderland",
+          "minutes": 675,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.62,
+          "xa": 0.99
+        },
+        {
+          "player": "Cyriaque Irié",
+          "team": "Freiburg",
+          "minutes": 331,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.6,
+          "xa": 0.13
+        },
+        {
+          "player": "Nianzou Kouassi",
+          "team": "Sevilla",
+          "minutes": 670,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.6,
+          "xa": 0.14
+        },
+        {
+          "player": "Enzo Koffi",
+          "team": "Le Havre",
+          "minutes": 370,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.35,
+          "xa": 0.24
+        },
+        {
+          "player": "Kouakou Herve Koffi",
+          "team": "Angers",
+          "minutes": 2661,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "SRB",
+      "team": "Serbia",
+      "flag": "🇷🇸",
+      "players": 10,
+      "minutes": 18412,
+      "goals": 12,
+      "assists": 12,
+      "xg": 19.88,
+      "xa": 9.49,
+      "xg_xa": 29.37,
+      "top_players": [
+        {
+          "player": "Andrej Ilic",
+          "team": "Union Berlin",
+          "minutes": 2238,
+          "goals": 5,
+          "assists": 9,
+          "xg": 11.11,
+          "xa": 4.75
+        },
+        {
+          "player": "Sasa Lukic",
+          "team": "Fulham",
+          "minutes": 1731,
+          "goals": 1,
+          "assists": 2,
+          "xg": 2.34,
+          "xa": 2.16
+        },
+        {
+          "player": "Jovan Milosevic",
+          "team": "Werder Bremen",
+          "minutes": 476,
+          "goals": 3,
+          "assists": 1,
+          "xg": 2.32,
+          "xa": 0.24
+        },
+        {
+          "player": "Luka Ilic",
+          "team": "Real Oviedo",
+          "minutes": 731,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.76,
+          "xa": 0.42
+        },
+        {
+          "player": "Nemanja Gudelj",
+          "team": "Sevilla",
+          "minutes": 2349,
+          "goals": 2,
+          "assists": 0,
+          "xg": 1.48,
+          "xa": 0.83
+        },
+        {
+          "player": "Nikola Milenkovic",
+          "team": "Nottingham Forest",
+          "minutes": 3360,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.51,
+          "xa": 0.27
+        },
+        {
+          "player": "Veljko Milosavljevic",
+          "team": "Bournemouth",
+          "minutes": 363,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.36,
+          "xa": 0.07
+        },
+        {
+          "player": "Djordje Petrovic",
+          "team": "Bournemouth",
+          "minutes": 3420,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        },
+        {
+          "player": "Marko Dmitrovic",
+          "team": "Espanyol",
+          "minutes": 3330,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.03
+        },
+        {
+          "player": "Ivan Ilic",
+          "team": "Torino",
+          "minutes": 414,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.72
+        }
+      ]
+    },
+    {
+      "fifa_code": "EGY",
+      "team": null,
+      "flag": "🇪🇬",
+      "players": 4,
+      "minutes": 5945,
+      "goals": 14,
+      "assists": 13,
+      "xg": 17.58,
+      "xa": 11.49,
+      "xg_xa": 29.08,
+      "top_players": [
+        {
+          "player": "Mohamed Salah",
+          "team": "Liverpool",
+          "minutes": 2163,
+          "goals": 7,
+          "assists": 7,
+          "xg": 8.84,
+          "xa": 6.43
+        },
+        {
+          "player": "Omar Marmoush",
+          "team": "Manchester City",
+          "minutes": 693,
+          "goals": 3,
+          "assists": 3,
+          "xg": 3.77,
+          "xa": 2.13
+        },
+        {
+          "player": "Mostafa Mohamed",
+          "team": "Nantes",
+          "minutes": 1152,
+          "goals": 4,
+          "assists": 0,
+          "xg": 3.02,
+          "xa": 1.14
+        },
+        {
+          "player": "Haissem Hassan",
+          "team": "Real Oviedo",
+          "minutes": 1937,
+          "goals": 0,
+          "assists": 3,
+          "xg": 1.96,
+          "xa": 1.8
+        }
+      ]
+    },
+    {
+      "fifa_code": "SCO",
+      "team": null,
+      "flag": "🇬🇧",
+      "players": 6,
+      "minutes": 7437,
+      "goals": 16,
+      "assists": 6,
+      "xg": 13.24,
+      "xa": 11.57,
+      "xg_xa": 24.81,
+      "top_players": [
+        {
+          "player": "Oliver Burke",
+          "team": "Union Berlin",
+          "minutes": 1699,
+          "goals": 6,
+          "assists": 2,
+          "xg": 6.04,
+          "xa": 2.29
+        },
+        {
+          "player": "John McGinn",
+          "team": "Aston Villa",
+          "minutes": 2221,
+          "goals": 5,
+          "assists": 4,
+          "xg": 3.0,
+          "xa": 4.86
+        },
+        {
+          "player": "Ryan Christie",
+          "team": "Bournemouth",
+          "minutes": 942,
+          "goals": 2,
+          "assists": 0,
+          "xg": 1.79,
+          "xa": 1.62
+        },
+        {
+          "player": "Andrew Robertson",
+          "team": "Liverpool",
+          "minutes": 1160,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.05,
+          "xa": 1.51
+        },
+        {
+          "player": "Tom Cairney",
+          "team": "Fulham",
+          "minutes": 747,
+          "goals": 2,
+          "assists": 0,
+          "xg": 0.81,
+          "xa": 0.69
+        },
+        {
+          "player": "Aaron Hickey",
+          "team": "Brentford",
+          "minutes": 668,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.55,
+          "xa": 0.6
+        }
+      ]
+    },
+    {
+      "fifa_code": "ISL",
+      "team": null,
+      "flag": "🇮🇸",
+      "players": 3,
+      "minutes": 5169,
+      "goals": 19,
+      "assists": 4,
+      "xg": 16.97,
+      "xa": 7.42,
+      "xg_xa": 24.38,
+      "top_players": [
+        {
+          "player": "Hákon Haraldsson",
+          "team": "Lille",
+          "minutes": 2517,
+          "goals": 8,
+          "assists": 2,
+          "xg": 8.2,
+          "xa": 4.53
+        },
+        {
+          "player": "Orri Óskarsson",
+          "team": "Real Sociedad",
+          "minutes": 822,
+          "goals": 9,
+          "assists": 0,
+          "xg": 7.34,
+          "xa": 0.47
+        },
+        {
+          "player": "Ísak Bergmann Jóhannesson",
+          "team": "FC Cologne",
+          "minutes": 1830,
+          "goals": 2,
+          "assists": 2,
+          "xg": 1.43,
+          "xa": 2.41
+        }
+      ]
+    },
+    {
+      "fifa_code": "GAB",
+      "team": null,
+      "flag": "🇬🇦",
+      "players": 3,
+      "minutes": 5072,
+      "goals": 10,
+      "assists": 5,
+      "xg": 16.66,
+      "xa": 6.53,
+      "xg_xa": 23.19,
+      "top_players": [
+        {
+          "player": "Pierre-Emerick Aubameyang",
+          "team": "Marseille",
+          "minutes": 2074,
+          "goals": 10,
+          "assists": 5,
+          "xg": 15.53,
+          "xa": 5.14
+        },
+        {
+          "player": "Jacques Ekomie",
+          "team": "Angers",
+          "minutes": 2242,
+          "goals": 0,
+          "assists": 0,
+          "xg": 1.02,
+          "xa": 1.39
+        },
+        {
+          "player": "Michel Mboula",
+          "team": "Metz",
+          "minutes": 756,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.11,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "PAR",
+      "team": null,
+      "flag": "🇵🇾",
+      "players": 3,
+      "minutes": 6912,
+      "goals": 9,
+      "assists": 8,
+      "xg": 15.64,
+      "xa": 7.12,
+      "xg_xa": 22.76,
+      "top_players": [
+        {
+          "player": "Julio Enciso",
+          "team": "Strasbourg",
+          "minutes": 1918,
+          "goals": 3,
+          "assists": 6,
+          "xg": 7.68,
+          "xa": 4.42
+        },
+        {
+          "player": "Diego Gómez",
+          "team": "Brighton",
+          "minutes": 2186,
+          "goals": 5,
+          "assists": 1,
+          "xg": 6.42,
+          "xa": 2.09
+        },
+        {
+          "player": "Omar Alderete",
+          "team": "Sunderland",
+          "minutes": 2808,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.55,
+          "xa": 0.61
+        }
+      ]
+    },
+    {
+      "fifa_code": "COD",
+      "team": null,
+      "flag": "🇨🇩",
+      "players": 11,
+      "minutes": 12011,
+      "goals": 9,
+      "assists": 4,
+      "xg": 16.37,
+      "xa": 6.25,
+      "xg_xa": 22.62,
+      "top_players": [
+        {
+          "player": "Cédric Bakambu",
+          "team": "Real Betis",
+          "minutes": 542,
+          "goals": 3,
+          "assists": 1,
+          "xg": 4.45,
+          "xa": 1.08
+        },
+        {
+          "player": "Yoane Wissa",
+          "team": "Newcastle United",
+          "minutes": 492,
+          "goals": 1,
+          "assists": 0,
+          "xg": 3.24,
+          "xa": 0.17
+        },
+        {
+          "player": "Ngal'ayel Mukau",
+          "team": "Lille",
+          "minutes": 1548,
+          "goals": 1,
+          "assists": 0,
+          "xg": 2.58,
+          "xa": 0.51
+        },
+        {
+          "player": "Noah Sadiki",
+          "team": "Sunderland",
+          "minutes": 2914,
+          "goals": 0,
+          "assists": 1,
+          "xg": 1.62,
+          "xa": 0.93
+        },
+        {
+          "player": "Samuel Essende",
+          "team": "Augsburg",
+          "minutes": 361,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.46,
+          "xa": 0.43
+        },
+        {
+          "player": "Grady Diangana",
+          "team": "Elche",
+          "minutes": 937,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.36,
+          "xa": 1.09
+        },
+        {
+          "player": "Charles Pickel",
+          "team": "Espanyol",
+          "minutes": 658,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.78,
+          "xa": 0.04
+        },
+        {
+          "player": "Axel Tuanzebe",
+          "team": "Burnley",
+          "minutes": 1209,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.56,
+          "xa": 0.0
+        },
+        {
+          "player": "Chancel Mbemba",
+          "team": "Lille",
+          "minutes": 949,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.34,
+          "xa": 0.59
+        },
+        {
+          "player": "Aaron Wan-Bissaka",
+          "team": "West Ham",
+          "minutes": 2093,
+          "goals": 0,
+          "assists": 2,
+          "xg": 0.0,
+          "xa": 1.43
+        },
+        {
+          "player": "Lionel Mpasi",
+          "team": "Le Havre",
+          "minutes": 308,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "GRE",
+      "team": null,
+      "flag": "🇬🇷",
+      "players": 7,
+      "minutes": 12076,
+      "goals": 13,
+      "assists": 12,
+      "xg": 11.0,
+      "xa": 10.67,
+      "xg_xa": 21.67,
+      "top_players": [
+        {
+          "player": "Konstantinos Koulierakis",
+          "team": "Wolfsburg",
+          "minutes": 2476,
+          "goals": 4,
+          "assists": 1,
+          "xg": 3.56,
+          "xa": 1.77
+        },
+        {
+          "player": "Konstantinos Mavropanos",
+          "team": "West Ham",
+          "minutes": 2518,
+          "goals": 3,
+          "assists": 0,
+          "xg": 2.79,
+          "xa": 0.49
+        },
+        {
+          "player": "Charalampos Kostoulas",
+          "team": "Brighton",
+          "minutes": 309,
+          "goals": 2,
+          "assists": 1,
+          "xg": 2.26,
+          "xa": 1.28
+        },
+        {
+          "player": "Dimitris Giannoulis",
+          "team": "Augsburg",
+          "minutes": 1957,
+          "goals": 2,
+          "assists": 5,
+          "xg": 0.97,
+          "xa": 3.86
+        },
+        {
+          "player": "Panos Katseris",
+          "team": "Lorient",
+          "minutes": 728,
+          "goals": 1,
+          "assists": 2,
+          "xg": 0.88,
+          "xa": 2.37
+        },
+        {
+          "player": "Manolis Saliakas",
+          "team": "St. Pauli",
+          "minutes": 1118,
+          "goals": 1,
+          "assists": 3,
+          "xg": 0.55,
+          "xa": 0.9
+        },
+        {
+          "player": "Odisseas Vlachodimos",
+          "team": "Sevilla",
+          "minutes": 2970,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "UKR",
+      "team": null,
+      "flag": "🇺🇦",
+      "players": 6,
+      "minutes": 8806,
+      "goals": 14,
+      "assists": 3,
+      "xg": 13.7,
+      "xa": 4.47,
+      "xg_xa": 18.17,
+      "top_players": [
+        {
+          "player": "Vladyslav Vanat",
+          "team": "Girona",
+          "minutes": 2003,
+          "goals": 9,
+          "assists": 1,
+          "xg": 9.5,
+          "xa": 2.1
+        },
+        {
+          "player": "Roman Yaremchuk",
+          "team": "Lyon",
+          "minutes": 566,
+          "goals": 4,
+          "assists": 1,
+          "xg": 3.28,
+          "xa": 0.6
+        },
+        {
+          "player": "Illia Zabarnyi",
+          "team": "Paris Saint Germain",
+          "minutes": 2387,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.57,
+          "xa": 0.16
+        },
+        {
+          "player": "Vitalii Mykolenko",
+          "team": "Everton",
+          "minutes": 2963,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.28,
+          "xa": 1.14
+        },
+        {
+          "player": "Oleksandr Zinchenko",
+          "team": "Nottingham Forest",
+          "minutes": 347,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.08,
+          "xa": 0.45
+        },
+        {
+          "player": "Andriy Lunin",
+          "team": "Real Madrid",
+          "minutes": 540,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "KOR",
+      "team": "Korea Republic",
+      "flag": "🇰🇷",
+      "players": 3,
+      "minutes": 4761,
+      "goals": 7,
+      "assists": 6,
+      "xg": 8.19,
+      "xa": 8.49,
+      "xg_xa": 16.67,
+      "top_players": [
+        {
+          "player": "Jens Castrop",
+          "team": "Borussia M.Gladbach",
+          "minutes": 1613,
+          "goals": 3,
+          "assists": 1,
+          "xg": 4.3,
+          "xa": 1.41
+        },
+        {
+          "player": "Lee Kang-In",
+          "team": "Paris Saint Germain",
+          "minutes": 1527,
+          "goals": 3,
+          "assists": 4,
+          "xg": 3.16,
+          "xa": 6.61
+        },
+        {
+          "player": "Kim Min-Jae",
+          "team": "Bayern Munich",
+          "minutes": 1621,
+          "goals": 1,
+          "assists": 1,
+          "xg": 0.73,
+          "xa": 0.47
+        }
+      ]
+    },
+    {
+      "fifa_code": "TUN",
+      "team": "Tunisia",
+      "flag": "🇹🇳",
+      "players": 6,
+      "minutes": 9828,
+      "goals": 9,
+      "assists": 6,
+      "xg": 7.42,
+      "xa": 9.0,
+      "xg_xa": 16.42,
+      "top_players": [
+        {
+          "player": "Ali Abdi",
+          "team": "Nice",
+          "minutes": 1156,
+          "goals": 3,
+          "assists": 0,
+          "xg": 2.4,
+          "xa": 2.05
+        },
+        {
+          "player": "Rani Khedira",
+          "team": "Union Berlin",
+          "minutes": 2854,
+          "goals": 5,
+          "assists": 1,
+          "xg": 2.27,
+          "xa": 2.32
+        },
+        {
+          "player": "Montassar Talbi",
+          "team": "Lorient",
+          "minutes": 2610,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.86,
+          "xa": 0.87
+        },
+        {
+          "player": "Ellyes Skhiri",
+          "team": "Eintracht Frankfurt",
+          "minutes": 1439,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.76,
+          "xa": 0.31
+        },
+        {
+          "player": "Hannibal Mejbri",
+          "team": "Burnley",
+          "minutes": 1251,
+          "goals": 1,
+          "assists": 4,
+          "xg": 0.75,
+          "xa": 2.84
+        },
+        {
+          "player": "Elias Saad",
+          "team": "Augsburg",
+          "minutes": 518,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.37,
+          "xa": 0.62
+        }
+      ]
+    },
+    {
+      "fifa_code": "SVN",
+      "team": null,
+      "flag": "🇸🇮",
+      "players": 3,
+      "minutes": 6231,
+      "goals": 12,
+      "assists": 3,
+      "xg": 13.22,
+      "xa": 2.0,
+      "xg_xa": 15.22,
+      "top_players": [
+        {
+          "player": "Benjamin Sesko",
+          "team": "Manchester United",
+          "minutes": 1636,
+          "goals": 11,
+          "assists": 1,
+          "xg": 12.5,
+          "xa": 0.6
+        },
+        {
+          "player": "Jaka Bijol",
+          "team": "Leeds",
+          "minutes": 1895,
+          "goals": 1,
+          "assists": 2,
+          "xg": 0.72,
+          "xa": 1.4
+        },
+        {
+          "player": "Jan Oblak",
+          "team": "Atletico Madrid",
+          "minutes": 2700,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "MEX",
+      "team": "Mexico",
+      "flag": "🇲🇽",
+      "players": 3,
+      "minutes": 3524,
+      "goals": 10,
+      "assists": 4,
+      "xg": 12.74,
+      "xa": 2.34,
+      "xg_xa": 15.08,
+      "top_players": [
+        {
+          "player": "Raúl Jiménez",
+          "team": "Fulham",
+          "minutes": 2215,
+          "goals": 9,
+          "assists": 3,
+          "xg": 12.02,
+          "xa": 1.94
+        },
+        {
+          "player": "Álvaro Fidalgo",
+          "team": "Real Betis",
+          "minutes": 567,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.53,
+          "xa": 0.2
+        },
+        {
+          "player": "Obed Vargas",
+          "team": "Atletico Madrid",
+          "minutes": 742,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.2,
+          "xa": 0.2
+        }
+      ]
+    },
+    {
+      "fifa_code": "CAN",
+      "team": "Canada",
+      "flag": "🇨🇦",
+      "players": 4,
+      "minutes": 3804,
+      "goals": 11,
+      "assists": 6,
+      "xg": 8.37,
+      "xa": 6.15,
+      "xg_xa": 14.52,
+      "top_players": [
+        {
+          "player": "Tani Oluwaseyi",
+          "team": "Villarreal",
+          "minutes": 949,
+          "goals": 2,
+          "assists": 2,
+          "xg": 3.62,
+          "xa": 2.05
+        },
+        {
+          "player": "Tajon Buchanan",
+          "team": "Villarreal",
+          "minutes": 1873,
+          "goals": 7,
+          "assists": 1,
+          "xg": 2.74,
+          "xa": 2.6
+        },
+        {
+          "player": "Jacen Russell-Rowe",
+          "team": "Toulouse",
+          "minutes": 461,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.57,
+          "xa": 0.2
+        },
+        {
+          "player": "Alphonso Davies",
+          "team": "Bayern Munich",
+          "minutes": 521,
+          "goals": 1,
+          "assists": 3,
+          "xg": 0.44,
+          "xa": 1.3
+        }
+      ]
+    },
+    {
+      "fifa_code": "HAI",
+      "team": null,
+      "flag": null,
+      "players": 4,
+      "minutes": 5972,
+      "goals": 8,
+      "assists": 4,
+      "xg": 9.43,
+      "xa": 4.71,
+      "xg_xa": 14.14,
+      "top_players": [
+        {
+          "player": "Wilson Isidor",
+          "team": "Sunderland",
+          "minutes": 1142,
+          "goals": 6,
+          "assists": 0,
+          "xg": 5.62,
+          "xa": 0.0
+        },
+        {
+          "player": "Josué Casimir",
+          "team": "Auxerre",
+          "minutes": 1509,
+          "goals": 1,
+          "assists": 0,
+          "xg": 2.74,
+          "xa": 1.41
+        },
+        {
+          "player": "Jean-Ricner Bellegarde",
+          "team": "Wolverhampton Wanderers",
+          "minutes": 1268,
+          "goals": 1,
+          "assists": 1,
+          "xg": 0.87,
+          "xa": 1.22
+        },
+        {
+          "player": "Carlens Arcus",
+          "team": "Angers",
+          "minutes": 2053,
+          "goals": 0,
+          "assists": 3,
+          "xg": 0.2,
+          "xa": 2.09
+        }
+      ]
+    },
+    {
+      "fifa_code": "NIR",
+      "team": null,
+      "flag": "🇬🇧",
+      "players": 4,
+      "minutes": 6908,
+      "goals": 5,
+      "assists": 2,
+      "xg": 8.87,
+      "xa": 5.19,
+      "xg_xa": 14.06,
+      "top_players": [
+        {
+          "player": "Dan Ballard",
+          "team": "Sunderland",
+          "minutes": 2143,
+          "goals": 2,
+          "assists": 0,
+          "xg": 3.7,
+          "xa": 1.58
+        },
+        {
+          "player": "Trai Hume",
+          "team": "Sunderland",
+          "minutes": 3041,
+          "goals": 2,
+          "assists": 1,
+          "xg": 2.71,
+          "xa": 2.08
+        },
+        {
+          "player": "Justin Devenny",
+          "team": "Crystal Palace",
+          "minutes": 762,
+          "goals": 1,
+          "assists": 0,
+          "xg": 2.25,
+          "xa": 0.33
+        },
+        {
+          "player": "Conor Bradley",
+          "team": "Liverpool",
+          "minutes": 962,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.22,
+          "xa": 1.19
+        }
+      ]
+    },
+    {
+      "fifa_code": "GAM",
+      "team": null,
+      "flag": "🇬🇲",
+      "players": 2,
+      "minutes": 3344,
+      "goals": 4,
+      "assists": 5,
+      "xg": 6.3,
+      "xa": 6.14,
+      "xg_xa": 12.44,
+      "top_players": [
+        {
+          "player": "Yankuba Minteh",
+          "team": "Brighton",
+          "minutes": 2410,
+          "goals": 3,
+          "assists": 4,
+          "xg": 4.75,
+          "xa": 5.84
+        },
+        {
+          "player": "Bakery Jatta",
+          "team": "Hamburger SV",
+          "minutes": 934,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.55,
+          "xa": 0.3
+        }
+      ]
+    },
+    {
+      "fifa_code": "VEN",
+      "team": null,
+      "flag": "🇻🇪",
+      "players": 4,
+      "minutes": 6987,
+      "goals": 5,
+      "assists": 3,
+      "xg": 8.23,
+      "xa": 3.83,
+      "xg_xa": 12.07,
+      "top_players": [
+        {
+          "player": "Salomón Rondón",
+          "team": "Real Oviedo",
+          "minutes": 1054,
+          "goals": 2,
+          "assists": 0,
+          "xg": 3.78,
+          "xa": 0.19
+        },
+        {
+          "player": "Jon Aramburu",
+          "team": "Real Sociedad",
+          "minutes": 2789,
+          "goals": 1,
+          "assists": 0,
+          "xg": 2.06,
+          "xa": 0.44
+        },
+        {
+          "player": "Cristian Cásseres Jr.",
+          "team": "Toulouse",
+          "minutes": 2506,
+          "goals": 2,
+          "assists": 3,
+          "xg": 1.7,
+          "xa": 3.14
+        },
+        {
+          "player": "Yangel Herrera",
+          "team": "Girona",
+          "minutes": 638,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.69,
+          "xa": 0.05
+        }
+      ]
+    },
+    {
+      "fifa_code": "GNB",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 1552,
+      "goals": 9,
+      "assists": 1,
+      "xg": 10.95,
+      "xa": 1.0,
+      "xg_xa": 11.95,
+      "top_players": [
+        {
+          "player": "Beto",
+          "team": "Everton",
+          "minutes": 1552,
+          "goals": 9,
+          "assists": 1,
+          "xg": 10.95,
+          "xa": 1.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "IRL",
+      "team": null,
+      "flag": "🇮🇪",
+      "players": 6,
+      "minutes": 13133,
+      "goals": 5,
+      "assists": 5,
+      "xg": 6.25,
+      "xa": 5.25,
+      "xg_xa": 11.5,
+      "top_players": [
+        {
+          "player": "Nathan Collins",
+          "team": "Brentford",
+          "minutes": 2966,
+          "goals": 1,
+          "assists": 2,
+          "xg": 2.92,
+          "xa": 2.43
+        },
+        {
+          "player": "Jake O'Brien",
+          "team": "Everton",
+          "minutes": 3146,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.31,
+          "xa": 0.72
+        },
+        {
+          "player": "Josh Cullen",
+          "team": "Burnley",
+          "minutes": 1533,
+          "goals": 2,
+          "assists": 2,
+          "xg": 1.01,
+          "xa": 1.82
+        },
+        {
+          "player": "Andrew Omobamidele",
+          "team": "Strasbourg",
+          "minutes": 1336,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.93,
+          "xa": 0.0
+        },
+        {
+          "player": "Matt Doherty",
+          "team": "Wolverhampton Wanderers",
+          "minutes": 822,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.08,
+          "xa": 0.17
+        },
+        {
+          "player": "Caoimhin Kelleher",
+          "team": "Brentford",
+          "minutes": 3330,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.11
+        }
+      ]
+    },
+    {
+      "fifa_code": "GLP",
+      "team": null,
+      "flag": null,
+      "players": 2,
+      "minutes": 3028,
+      "goals": 8,
+      "assists": 2,
+      "xg": 7.66,
+      "xa": 3.35,
+      "xg_xa": 11.01,
+      "top_players": [
+        {
+          "player": "Remy Labeau Lascary",
+          "team": "Brest",
+          "minutes": 1177,
+          "goals": 5,
+          "assists": 1,
+          "xg": 5.34,
+          "xa": 2.66
+        },
+        {
+          "player": "Noah Cadiou",
+          "team": "Lorient",
+          "minutes": 1851,
+          "goals": 3,
+          "assists": 1,
+          "xg": 2.32,
+          "xa": 0.69
+        }
+      ]
+    },
+    {
+      "fifa_code": "CHI",
+      "team": null,
+      "flag": "🇨🇱",
+      "players": 4,
+      "minutes": 4644,
+      "goals": 6,
+      "assists": 4,
+      "xg": 5.65,
+      "xa": 4.93,
+      "xg_xa": 10.58,
+      "top_players": [
+        {
+          "player": "Alexis Sánchez",
+          "team": "Sevilla",
+          "minutes": 1278,
+          "goals": 4,
+          "assists": 2,
+          "xg": 3.5,
+          "xa": 1.83
+        },
+        {
+          "player": "Lucas Cepeda",
+          "team": "Elche",
+          "minutes": 390,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.11,
+          "xa": 0.27
+        },
+        {
+          "player": "Francisco Sierralta",
+          "team": "Auxerre",
+          "minutes": 869,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.73,
+          "xa": 0.04
+        },
+        {
+          "player": "Gabriel Suazo",
+          "team": "Sevilla",
+          "minutes": 2107,
+          "goals": 0,
+          "assists": 2,
+          "xg": 0.31,
+          "xa": 2.79
+        }
+      ]
+    },
+    {
+      "fifa_code": "ECU",
+      "team": "Ecuador",
+      "flag": "🇪🇨",
+      "players": 5,
+      "minutes": 7333,
+      "goals": 5,
+      "assists": 3,
+      "xg": 4.34,
+      "xa": 5.34,
+      "xg_xa": 9.68,
+      "top_players": [
+        {
+          "player": "Moisés Caicedo",
+          "team": "Chelsea",
+          "minutes": 2811,
+          "goals": 3,
+          "assists": 1,
+          "xg": 1.53,
+          "xa": 2.63
+        },
+        {
+          "player": "Kendry Páez",
+          "team": "Strasbourg",
+          "minutes": 411,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.08,
+          "xa": 0.45
+        },
+        {
+          "player": "Nilson Angulo",
+          "team": "Sunderland",
+          "minutes": 415,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.91,
+          "xa": 0.05
+        },
+        {
+          "player": "Piero Hincapié",
+          "team": "Arsenal",
+          "minutes": 1786,
+          "goals": 1,
+          "assists": 2,
+          "xg": 0.41,
+          "xa": 2.13
+        },
+        {
+          "player": "William Pacho",
+          "team": "Paris Saint Germain",
+          "minutes": 1910,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.41,
+          "xa": 0.09
+        }
+      ]
+    },
+    {
+      "fifa_code": "LUX",
+      "team": null,
+      "flag": "🇱🇺",
+      "players": 1,
+      "minutes": 2080,
+      "goals": 5,
+      "assists": 3,
+      "xg": 5.75,
+      "xa": 3.71,
+      "xg_xa": 9.45,
+      "top_players": [
+        {
+          "player": "Danel Sinani",
+          "team": "St. Pauli",
+          "minutes": 2080,
+          "goals": 5,
+          "assists": 3,
+          "xg": 5.75,
+          "xa": 3.71
+        }
+      ]
+    },
+    {
+      "fifa_code": "RUS",
+      "team": null,
+      "flag": "🇷🇺",
+      "players": 3,
+      "minutes": 3469,
+      "goals": 5,
+      "assists": 5,
+      "xg": 5.8,
+      "xa": 3.53,
+      "xg_xa": 9.33,
+      "top_players": [
+        {
+          "player": "Aleksandr Golovin",
+          "team": "Monaco",
+          "minutes": 1695,
+          "goals": 5,
+          "assists": 5,
+          "xg": 4.7,
+          "xa": 2.31
+        },
+        {
+          "player": "Arsen Zakharyan",
+          "team": "Real Sociedad",
+          "minutes": 424,
+          "goals": 0,
+          "assists": 0,
+          "xg": 1.1,
+          "xa": 1.12
+        },
+        {
+          "player": "Matvey Safonov",
+          "team": "Paris Saint Germain",
+          "minutes": 1350,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.1
+        }
+      ]
+    },
+    {
+      "fifa_code": "ROU",
+      "team": null,
+      "flag": "🇷🇴",
+      "players": 3,
+      "minutes": 6724,
+      "goals": 0,
+      "assists": 4,
+      "xg": 2.58,
+      "xa": 6.34,
+      "xg_xa": 8.92,
+      "top_players": [
+        {
+          "player": "Andrei Ratiu",
+          "team": "Rayo Vallecano",
+          "minutes": 2791,
+          "goals": 0,
+          "assists": 4,
+          "xg": 2.37,
+          "xa": 6.19
+        },
+        {
+          "player": "Radu Dragusin",
+          "team": "Tottenham",
+          "minutes": 513,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.21,
+          "xa": 0.0
+        },
+        {
+          "player": "Ionut Radu",
+          "team": "Celta Vigo",
+          "minutes": 3420,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.14
+        }
+      ]
+    },
+    {
+      "fifa_code": "SUR",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 975,
+      "goals": 3,
+      "assists": 3,
+      "xg": 4.82,
+      "xa": 3.54,
+      "xg_xa": 8.36,
+      "top_players": [
+        {
+          "player": "Sheraldo Becker",
+          "team": "Mainz 05",
+          "minutes": 975,
+          "goals": 3,
+          "assists": 3,
+          "xg": 4.82,
+          "xa": 3.54
+        }
+      ]
+    },
+    {
+      "fifa_code": "SVK",
+      "team": null,
+      "flag": "🇸🇰",
+      "players": 6,
+      "minutes": 13293,
+      "goals": 2,
+      "assists": 3,
+      "xg": 5.56,
+      "xa": 2.73,
+      "xg_xa": 8.3,
+      "top_players": [
+        {
+          "player": "Denis Vavro",
+          "team": "Wolfsburg",
+          "minutes": 1168,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.66,
+          "xa": 0.18
+        },
+        {
+          "player": "David Hancko",
+          "team": "Atletico Madrid",
+          "minutes": 2443,
+          "goals": 0,
+          "assists": 2,
+          "xg": 1.64,
+          "xa": 2.15
+        },
+        {
+          "player": "Mário Sauer",
+          "team": "Toulouse",
+          "minutes": 611,
+          "goals": 1,
+          "assists": 0,
+          "xg": 1.29,
+          "xa": 0.13
+        },
+        {
+          "player": "Martin Valjent",
+          "team": "Mallorca",
+          "minutes": 3311,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.97,
+          "xa": 0.14
+        },
+        {
+          "player": "Martin Dubravka",
+          "team": "Burnley",
+          "minutes": 3150,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        },
+        {
+          "player": "Dominik Greif",
+          "team": "Lyon",
+          "minutes": 2610,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.0,
+          "xa": 0.13
+        }
+      ]
+    },
+    {
+      "fifa_code": "TAN",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 1550,
+      "goals": 2,
+      "assists": 1,
+      "xg": 5.86,
+      "xa": 1.91,
+      "xg_xa": 7.77,
+      "top_players": [
+        {
+          "player": "Mbwana Samatta",
+          "team": "Le Havre",
+          "minutes": 1550,
+          "goals": 2,
+          "assists": 1,
+          "xg": 5.86,
+          "xa": 1.91
+        }
+      ]
+    },
+    {
+      "fifa_code": "ZIM",
+      "team": null,
+      "flag": null,
+      "players": 2,
+      "minutes": 1848,
+      "goals": 5,
+      "assists": 2,
+      "xg": 5.98,
+      "xa": 1.22,
+      "xg_xa": 7.2,
+      "top_players": [
+        {
+          "player": "Marshall Munetsi",
+          "team": "Paris FC",
+          "minutes": 985,
+          "goals": 4,
+          "assists": 1,
+          "xg": 4.14,
+          "xa": 0.84
+        },
+        {
+          "player": "Marshall Munetsi",
+          "team": "Wolverhampton Wanderers",
+          "minutes": 863,
+          "goals": 1,
+          "assists": 1,
+          "xg": 1.84,
+          "xa": 0.38
+        }
+      ]
+    },
+    {
+      "fifa_code": "BEN",
+      "team": null,
+      "flag": "🇧🇯",
+      "players": 1,
+      "minutes": 1092,
+      "goals": 4,
+      "assists": 0,
+      "xg": 4.96,
+      "xa": 0.71,
+      "xg_xa": 5.66,
+      "top_players": [
+        {
+          "player": "Andréas Hountondji",
+          "team": "St. Pauli",
+          "minutes": 1092,
+          "goals": 4,
+          "assists": 0,
+          "xg": 4.96,
+          "xa": 0.71
+        }
+      ]
+    },
+    {
+      "fifa_code": "IDN",
+      "team": null,
+      "flag": null,
+      "players": 2,
+      "minutes": 3257,
+      "goals": 5,
+      "assists": 0,
+      "xg": 4.23,
+      "xa": 1.4,
+      "xg_xa": 5.63,
+      "top_players": [
+        {
+          "player": "Kevin Diks",
+          "team": "Borussia M.Gladbach",
+          "minutes": 2472,
+          "goals": 5,
+          "assists": 0,
+          "xg": 4.18,
+          "xa": 0.7
+        },
+        {
+          "player": "Calvin Verdonk",
+          "team": "Lille",
+          "minutes": 785,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.04,
+          "xa": 0.7
+        }
+      ]
+    },
+    {
+      "fifa_code": "TOG",
+      "team": null,
+      "flag": "🇹🇬",
+      "players": 2,
+      "minutes": 2462,
+      "goals": 1,
+      "assists": 2,
+      "xg": 2.03,
+      "xa": 3.53,
+      "xg_xa": 5.56,
+      "top_players": [
+        {
+          "player": "Dermane Karim",
+          "team": "Lorient",
+          "minutes": 1371,
+          "goals": 1,
+          "assists": 2,
+          "xg": 1.36,
+          "xa": 2.48
+        },
+        {
+          "player": "Lorenz Assignon",
+          "team": "VfB Stuttgart",
+          "minutes": 1091,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.68,
+          "xa": 1.05
+        }
+      ]
+    },
+    {
+      "fifa_code": "ANG",
+      "team": null,
+      "flag": "🇦🇴",
+      "players": 3,
+      "minutes": 4972,
+      "goals": 4,
+      "assists": 0,
+      "xg": 4.55,
+      "xa": 0.72,
+      "xg_xa": 5.27,
+      "top_players": [
+        {
+          "player": "Randy Nteka",
+          "team": "Rayo Vallecano",
+          "minutes": 342,
+          "goals": 3,
+          "assists": 0,
+          "xg": 3.42,
+          "xa": 0.13
+        },
+        {
+          "player": "David Carmo",
+          "team": "Real Oviedo",
+          "minutes": 1785,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.96,
+          "xa": 0.51
+        },
+        {
+          "player": "Clinton Mata",
+          "team": "Lyon",
+          "minutes": 2845,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.17,
+          "xa": 0.09
+        }
+      ]
+    },
+    {
+      "fifa_code": "RSA",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 1375,
+      "goals": 3,
+      "assists": 2,
+      "xg": 3.59,
+      "xa": 1.15,
+      "xg_xa": 4.74,
+      "top_players": [
+        {
+          "player": "Lyle Foster",
+          "team": "Burnley",
+          "minutes": 1375,
+          "goals": 3,
+          "assists": 2,
+          "xg": 3.59,
+          "xa": 1.15
+        }
+      ]
+    },
+    {
+      "fifa_code": "AUS",
+      "team": "Australia",
+      "flag": "🇦🇺",
+      "players": 3,
+      "minutes": 5393,
+      "goals": 0,
+      "assists": 3,
+      "xg": 2.46,
+      "xa": 2.07,
+      "xg_xa": 4.53,
+      "top_players": [
+        {
+          "player": "Jackson Irvine",
+          "team": "St. Pauli",
+          "minutes": 1617,
+          "goals": 0,
+          "assists": 1,
+          "xg": 1.63,
+          "xa": 0.91
+        },
+        {
+          "player": "Connor Metcalfe",
+          "team": "St. Pauli",
+          "minutes": 536,
+          "goals": 0,
+          "assists": 2,
+          "xg": 0.74,
+          "xa": 1.16
+        },
+        {
+          "player": "Mat Ryan",
+          "team": "Levante",
+          "minutes": 3240,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.09,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "ALB",
+      "team": null,
+      "flag": "🇦🇱",
+      "players": 3,
+      "minutes": 1828,
+      "goals": 1,
+      "assists": 1,
+      "xg": 3.53,
+      "xa": 0.73,
+      "xg_xa": 4.26,
+      "top_players": [
+        {
+          "player": "Armando Broja",
+          "team": "Burnley",
+          "minutes": 822,
+          "goals": 1,
+          "assists": 1,
+          "xg": 2.52,
+          "xa": 0.61
+        },
+        {
+          "player": "Iván Balliu",
+          "team": "Rayo Vallecano",
+          "minutes": 572,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.93,
+          "xa": 0.09
+        },
+        {
+          "player": "Marash Kumbulla",
+          "team": "Mallorca",
+          "minutes": 434,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.09,
+          "xa": 0.02
+        }
+      ]
+    },
+    {
+      "fifa_code": "MTN",
+      "team": null,
+      "flag": null,
+      "players": 2,
+      "minutes": 4579,
+      "goals": 0,
+      "assists": 2,
+      "xg": 1.7,
+      "xa": 2.36,
+      "xg_xa": 4.07,
+      "top_players": [
+        {
+          "player": "Lamine Sy",
+          "team": "Auxerre",
+          "minutes": 1519,
+          "goals": 0,
+          "assists": 0,
+          "xg": 1.07,
+          "xa": 1.47
+        },
+        {
+          "player": "Jordan Lefort",
+          "team": "Angers",
+          "minutes": 3060,
+          "goals": 0,
+          "assists": 2,
+          "xg": 0.64,
+          "xa": 0.9
+        }
+      ]
+    },
+    {
+      "fifa_code": "CTA",
+      "team": null,
+      "flag": null,
+      "players": 2,
+      "minutes": 1304,
+      "goals": 2,
+      "assists": 1,
+      "xg": 3.65,
+      "xa": 0.4,
+      "xg_xa": 4.05,
+      "top_players": [
+        {
+          "player": "Goduine Koyalipou",
+          "team": "Angers",
+          "minutes": 669,
+          "goals": 2,
+          "assists": 1,
+          "xg": 3.38,
+          "xa": 0.3
+        },
+        {
+          "player": "Geoffrey Kondogbia",
+          "team": "Marseille",
+          "minutes": 635,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.28,
+          "xa": 0.09
+        }
+      ]
+    },
+    {
+      "fifa_code": "MAD",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 2793,
+      "goals": 0,
+      "assists": 3,
+      "xg": 0.24,
+      "xa": 3.7,
+      "xg_xa": 3.94,
+      "top_players": [
+        {
+          "player": "Kenny Lala",
+          "team": "Brest",
+          "minutes": 2793,
+          "goals": 0,
+          "assists": 3,
+          "xg": 0.24,
+          "xa": 3.7
+        }
+      ]
+    },
+    {
+      "fifa_code": "KSA",
+      "team": null,
+      "flag": "🇸🇦",
+      "players": 1,
+      "minutes": 1335,
+      "goals": 2,
+      "assists": 4,
+      "xg": 1.1,
+      "xa": 2.75,
+      "xg_xa": 3.85,
+      "top_players": [
+        {
+          "player": "Saud Abdulhamid",
+          "team": "Lens",
+          "minutes": 1335,
+          "goals": 2,
+          "assists": 4,
+          "xg": 1.1,
+          "xa": 2.75
+        }
+      ]
+    },
+    {
+      "fifa_code": "MNE",
+      "team": null,
+      "flag": "🇲🇪",
+      "players": 1,
+      "minutes": 720,
+      "goals": 0,
+      "assists": 4,
+      "xg": 0.92,
+      "xa": 2.88,
+      "xg_xa": 3.8,
+      "top_players": [
+        {
+          "player": "Andrija Bulatovic",
+          "team": "Lens",
+          "minutes": 720,
+          "goals": 0,
+          "assists": 4,
+          "xg": 0.92,
+          "xa": 2.88
+        }
+      ]
+    },
+    {
+      "fifa_code": "NZL",
+      "team": null,
+      "flag": "🇳🇿",
+      "players": 1,
+      "minutes": 913,
+      "goals": 3,
+      "assists": 0,
+      "xg": 3.37,
+      "xa": 0.32,
+      "xg_xa": 3.69,
+      "top_players": [
+        {
+          "player": "Chris Wood",
+          "team": "Nottingham Forest",
+          "minutes": 913,
+          "goals": 3,
+          "assists": 0,
+          "xg": 3.37,
+          "xa": 0.32
+        }
+      ]
+    },
+    {
+      "fifa_code": "ISR",
+      "team": null,
+      "flag": "🇮🇱",
+      "players": 1,
+      "minutes": 872,
+      "goals": 2,
+      "assists": 1,
+      "xg": 1.01,
+      "xa": 2.41,
+      "xg_xa": 3.42,
+      "top_players": [
+        {
+          "player": "Manor Solomon",
+          "team": "Fiorentina",
+          "minutes": 872,
+          "goals": 2,
+          "assists": 1,
+          "xg": 1.01,
+          "xa": 2.41
+        }
+      ]
+    },
+    {
+      "fifa_code": "SLE",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 1947,
+      "goals": 0,
+      "assists": 0,
+      "xg": 1.13,
+      "xa": 1.56,
+      "xg_xa": 2.69,
+      "top_players": [
+        {
+          "player": "Juma Bah",
+          "team": "Nice",
+          "minutes": 1947,
+          "goals": 0,
+          "assists": 0,
+          "xg": 1.13,
+          "xa": 1.56
+        }
+      ]
+    },
+    {
+      "fifa_code": "JAM",
+      "team": null,
+      "flag": "🇯🇲",
+      "players": 3,
+      "minutes": 2082,
+      "goals": 0,
+      "assists": 2,
+      "xg": 0.86,
+      "xa": 1.43,
+      "xg_xa": 2.3,
+      "top_players": [
+        {
+          "player": "Leon Bailey",
+          "team": "Aston Villa",
+          "minutes": 437,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.71,
+          "xa": 1.12
+        },
+        {
+          "player": "Rico Henry",
+          "team": "Brentford",
+          "minutes": 1315,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.15,
+          "xa": 0.32
+        },
+        {
+          "player": "Ethan Pinnock",
+          "team": "Brentford",
+          "minutes": 330,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.01,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "HON",
+      "team": null,
+      "flag": "🇭🇳",
+      "players": 1,
+      "minutes": 1511,
+      "goals": 3,
+      "assists": 3,
+      "xg": 1.09,
+      "xa": 1.16,
+      "xg_xa": 2.25,
+      "top_players": [
+        {
+          "player": "Kervin Arriaga",
+          "team": "Levante",
+          "minutes": 1511,
+          "goals": 3,
+          "assists": 3,
+          "xg": 1.09,
+          "xa": 1.16
+        }
+      ]
+    },
+    {
+      "fifa_code": "BUL",
+      "team": null,
+      "flag": "🇧🇬",
+      "players": 1,
+      "minutes": 1310,
+      "goals": 0,
+      "assists": 3,
+      "xg": 0.73,
+      "xa": 1.49,
+      "xg_xa": 2.23,
+      "top_players": [
+        {
+          "player": "Ilia Gruev",
+          "team": "Leeds",
+          "minutes": 1310,
+          "goals": 0,
+          "assists": 3,
+          "xg": 0.73,
+          "xa": 1.49
+        }
+      ]
+    },
+    {
+      "fifa_code": "DOM",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 846,
+      "goals": 0,
+      "assists": 1,
+      "xg": 0.44,
+      "xa": 0.96,
+      "xg_xa": 1.4,
+      "top_players": [
+        {
+          "player": "Júnior Firpo",
+          "team": "Real Betis",
+          "minutes": 846,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.44,
+          "xa": 0.96
+        }
+      ]
+    },
+    {
+      "fifa_code": "UZB",
+      "team": null,
+      "flag": "🇺🇿",
+      "players": 1,
+      "minutes": 1421,
+      "goals": 0,
+      "assists": 0,
+      "xg": 0.67,
+      "xa": 0.57,
+      "xg_xa": 1.24,
+      "top_players": [
+        {
+          "player": "Abduqodir Khusanov",
+          "team": "Manchester City",
+          "minutes": 1421,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.67,
+          "xa": 0.57
+        }
+      ]
+    },
+    {
+      "fifa_code": "EQG",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 2251,
+      "goals": 2,
+      "assists": 2,
+      "xg": 0.37,
+      "xa": 0.61,
+      "xg_xa": 0.98,
+      "top_players": [
+        {
+          "player": "Omar Mascarell",
+          "team": "Mallorca",
+          "minutes": 2251,
+          "goals": 2,
+          "assists": 2,
+          "xg": 0.37,
+          "xa": 0.61
+        }
+      ]
+    },
+    {
+      "fifa_code": "EST",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 1938,
+      "goals": 1,
+      "assists": 0,
+      "xg": 0.77,
+      "xa": 0.17,
+      "xg_xa": 0.94,
+      "top_players": [
+        {
+          "player": "Karol Mets",
+          "team": "St. Pauli",
+          "minutes": 1938,
+          "goals": 1,
+          "assists": 0,
+          "xg": 0.77,
+          "xa": 0.17
+        }
+      ]
+    },
+    {
+      "fifa_code": "LBY",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 1257,
+      "goals": 0,
+      "assists": 0,
+      "xg": 0.6,
+      "xa": 0.17,
+      "xg_xa": 0.78,
+      "top_players": [
+        {
+          "player": "Daniel Elfadli",
+          "team": "Hamburger SV",
+          "minutes": 1257,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.6,
+          "xa": 0.17
+        }
+      ]
+    },
+    {
+      "fifa_code": "MAS",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 786,
+      "goals": 0,
+      "assists": 0,
+      "xg": 0.62,
+      "xa": 0.0,
+      "xg_xa": 0.62,
+      "top_players": [
+        {
+          "player": "Facundo Garcés",
+          "team": "Alaves",
+          "minutes": 786,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.62,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "COM",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 1606,
+      "goals": 0,
+      "assists": 1,
+      "xg": 0.07,
+      "xa": 0.41,
+      "xg_xa": 0.47,
+      "top_players": [
+        {
+          "player": "Warmed Omari",
+          "team": "Hamburger SV",
+          "minutes": 1606,
+          "goals": 0,
+          "assists": 1,
+          "xg": 0.07,
+          "xa": 0.41
+        }
+      ]
+    },
+    {
+      "fifa_code": "LVA",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 312,
+      "goals": 0,
+      "assists": 0,
+      "xg": 0.07,
+      "xa": 0.0,
+      "xg_xa": 0.07,
+      "top_players": [
+        {
+          "player": "Dennis Cirkin",
+          "team": "Sunderland",
+          "minutes": 312,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.07,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "GUF",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 2465,
+      "goals": 0,
+      "assists": 0,
+      "xg": 0.0,
+      "xa": 0.06,
+      "xg_xa": 0.06,
+      "top_players": [
+        {
+          "player": "Donovan Léon",
+          "team": "Auxerre",
+          "minutes": 2465,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.06
+        }
+      ]
+    },
+    {
+      "fifa_code": "FIN",
+      "team": null,
+      "flag": "🇫🇮",
+      "players": 2,
+      "minutes": 1895,
+      "goals": 0,
+      "assists": 0,
+      "xg": 0.0,
+      "xa": 0.0,
+      "xg_xa": 0.0,
+      "top_players": [
+        {
+          "player": "Lukas Hradecky",
+          "team": "Monaco",
+          "minutes": 1445,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        },
+        {
+          "player": "Lucas Bergström",
+          "team": "Mallorca",
+          "minutes": 450,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "MKD",
+      "team": null,
+      "flag": "🇲🇰",
+      "players": 1,
+      "minutes": 1800,
+      "goals": 0,
+      "assists": 0,
+      "xg": 0.0,
+      "xa": 0.0,
+      "xg_xa": 0.0,
+      "top_players": [
+        {
+          "player": "Stole Dimitrievski",
+          "team": "Valencia",
+          "minutes": 1800,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    },
+    {
+      "fifa_code": "MTQ",
+      "team": null,
+      "flag": null,
+      "players": 1,
+      "minutes": 589,
+      "goals": 0,
+      "assists": 0,
+      "xg": 0.0,
+      "xa": 0.0,
+      "xg_xa": 0.0,
+      "top_players": [
+        {
+          "player": "Théo De Percin",
+          "team": "Auxerre",
+          "minutes": 589,
+          "goals": 0,
+          "assists": 0,
+          "xg": 0.0,
+          "xa": 0.0
+        }
+      ]
+    }
+  ]
+}
