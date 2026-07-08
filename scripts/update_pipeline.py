@@ -16,6 +16,7 @@ def main() -> None:
     run([sys.executable, "-m", "src.export"])
     run([sys.executable, "scripts/fetch_understat_stats.py"])
     run([sys.executable, "scripts/add_player_flags.py"])
+    run([sys.executable, "scripts/fetch_sofascore_ratings.py"])
     run([sys.executable, "scripts/fetch_match_events.py"])
     run([sys.executable, "scripts/build_lineups.py"])
     run([sys.executable, "scripts/build_national_player_form.py"])
