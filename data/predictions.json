@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T09:16:03+00:00",
+  "generated_at": "2026-07-08T09:24:28+00:00",
   "method": "Club Elo + rolling form/shots + LightGBM, blend tuned on temporal validation",
   "data_source": "football-data.co.uk CSV, Big Five leagues, seasons 2015-2016 to 2025-2026",
   "n_matches": 19763,
