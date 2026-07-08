@@ -5,6 +5,7 @@ en récupérant la nationalité via FBref (soccerdata) et en la mappant en emoji
 from __future__ import annotations
 
 import json
+import subprocess
 import sys
 import unicodedata
 from pathlib import Path
@@ -56,8 +57,13 @@ def _nation_code(val) -> str | None:
 
 
 def main() -> None:
-    fb = sd.FBref(leagues=LEAGUES, seasons="2025")
-    ps = fb.read_player_season_stats(stat_type="standard").reset_index()
+    try:
+        fb = sd.FBref(leagues=LEAGUES, seasons="2025")
+        ps = fb.read_player_season_stats(stat_type="standard").reset_index()
+    except Exception as exc:
+        _restore_tracked_stats()
+        print(f"FBref indisponible, conservation du fichier versionné : {exc}")
+        return
     ps.columns = [c[0] if isinstance(c, tuple) else c for c in ps.columns]
 
     name_to_flag: dict[str, str] = {}
@@ -98,6 +104,19 @@ def main() -> None:
                 hit += 1
     STATS.write_text(json.dumps(stats, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"drapeaux ajoutés : {hit}/{tot} entrées joueurs ({len(name_to_flag)} joueurs FBref mappés)")
+
+
+def _restore_tracked_stats() -> None:
+    try:
+        content = subprocess.check_output(
+            ["git", "show", "HEAD:data/understat_stats.json"],
+            cwd=ROOT,
+            text=True,
+            encoding="utf-8",
+        )
+    except Exception:
+        return
+    STATS.write_text(content, encoding="utf-8")
 
 
 if __name__ == "__main__":

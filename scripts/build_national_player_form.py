@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import sys
 import unicodedata
 from datetime import datetime, timezone
@@ -100,9 +101,14 @@ def _lookup_nation(player: str, exact: dict[str, str], surname: dict[str, str], 
 
 
 def main() -> None:
-    exact, surname, dupes = _fbref_nations()
-    understat = sd.Understat(leagues=LEAGUES, seasons=SEASON)
-    players = understat.read_player_season_stats().reset_index()
+    try:
+        exact, surname, dupes = _fbref_nations()
+        understat = sd.Understat(leagues=LEAGUES, seasons=SEASON)
+        players = understat.read_player_season_stats().reset_index()
+    except Exception as exc:
+        _restore_tracked_form()
+        print(f"Données joueurs nationales indisponibles, conservation du fichier versionné : {exc}")
+        return
     players = players[players["minutes"] >= MINUTES_MIN].copy()
     players["fifa_code"] = players["player"].map(lambda name: _lookup_nation(name, exact, surname, dupes))
     players = players.dropna(subset=["fifa_code"]).copy()
@@ -150,6 +156,19 @@ def main() -> None:
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"écrit {OUT} ({len(players)} joueurs, {len(rows)} pays)")
+
+
+def _restore_tracked_form() -> None:
+    try:
+        content = subprocess.check_output(
+            ["git", "show", "HEAD:data/national_player_form.json"],
+            cwd=ROOT,
+            text=True,
+            encoding="utf-8",
+        )
+    except Exception:
+        return
+    OUT.write_text(content, encoding="utf-8")
 
 
 if __name__ == "__main__":
