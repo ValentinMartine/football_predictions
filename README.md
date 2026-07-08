@@ -1,29 +1,73 @@
-# Football clubs predictions
+# Prédictions au football
 
-Predictions for the Premier League, La Liga, Serie A, Bundesliga and Ligue 1.
+Prédictions pour les cinq grands championnats européens : Premier League, La Liga,
+Serie A, Bundesliga et Ligue 1.
 
-Data comes from football-data.co.uk CSV files: match results, match statistics and real bookmaker odds.
+## Données
 
-## Run
+- Source : [football-data.co.uk](https://www.football-data.co.uk/)
+- Championnats : E0, SP1, I1, D1, F1
+- Saisons : 2015-2016 à 2025-2026
+- Contenu exploité : résultats, statistiques de match et cotes bookmakers réelles.
+
+## Lancer le pipeline
 
 ```bash
 pip install -r requirements.txt
 python scripts/download_data.py
 python scripts/train_and_backtest.py
+python scripts/walk_forward_backtest.py
 python -m src.export
 ```
 
-## Method
+Actualisation en une commande :
 
-- Chronological feature pipeline without leakage.
-- Club Elo baseline with home advantage and margin-of-victory update.
-- Rolling form, goals, shots, shots on target and rest features.
-- LightGBM 3-class model for home/draw/away.
-- Blend ML + Elo tuned on temporal validation.
-- Selective betting backtest on real closing odds with fractional Kelly.
+```bash
+python scripts/update_pipeline.py
+```
 
-## Data
+## Méthode
 
-- Source: https://www.football-data.co.uk/
-- Leagues: E0, SP1, I1, D1, F1.
-- Seasons: 2015-2016 to 2025-2026.
+- Pipeline chronologique sans fuite de données.
+- Baseline Elo clubs avec avantage domicile et marge de victoire.
+- Features de forme récente, buts, tirs, tirs cadrés et repos.
+- Modèle LightGBM 3 classes : domicile, nul, extérieur.
+- Blend LightGBM + Elo réglé sur validation temporelle.
+- Backtest de paris sur cotes réelles avec Kelly fractionné, plafonné à 2 % du capital.
+
+## Résultats actuels
+
+Sur le split de test final, le blend bat l'Elo :
+
+| Modèle | Accuracy | Log-loss |
+| --- | ---: | ---: |
+| Elo | 52,14 % | 0,994 |
+| LightGBM | 52,91 % | 0,985 |
+| Blend | 53,11 % | 0,980 |
+
+La couche de pari n'est pas résolue. La politique fixe walk-forward
+`confiance >= 0,50`, `expected value >= 10 %`, `1,80 <= cote <= 3,00`
+est positive en agrégé sur quatre saisons, mais pas sur chaque saison.
+
+| Validation | Paris | ROI | Profit |
+| --- | ---: | ---: | ---: |
+| Walk-forward, politique fixe | 261 | +4,53 % | +241,02 |
+| Politiques choisies sur validation | 501 | -4,57 % | -397,54 |
+| Split final, politique fixe | 135 | -4,81 % | -121,36 |
+
+Interprétation : le signal de valeur existe peut-être, mais il est encore
+instable. Les politiques optimisées sur validation overfitent nettement.
+
+## Prédictions avant match et après compositions
+
+Le JSON exporté expose deux niveaux :
+
+- `prediction_initiale` : modèle long terme avant match, basé sur Elo, forme,
+  repos, tirs et cotes de marché.
+- `prediction_apres_compositions` : schéma prêt pour les compositions
+  officielles, absents, formations et charge récente de minutes.
+
+La seconde prédiction est volontairement neutre pour l'instant : aucune source
+fiable et historisée de compositions officielles n'est encore connectée. Elle
+sera activée seulement quand la couverture historique permettra d'entraîner et
+de tester le poids réel de ces variables.

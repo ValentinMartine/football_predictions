@@ -7,12 +7,37 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.backtesting import simulate, threshold_curve
+from src.backtesting import ROBUST_POLICY, simulate, threshold_curve
+from src.lineups import lineup_adjusted_prediction
 from src.modeling import elo_probabilities, fit_lgbm, metrics, temporal_split, tune_blend
 from src.pipeline import FEATURE_COLS, build_features
+from src.walk_forward import run_walk_forward
 
 OUT = Path(__file__).resolve().parents[1] / "data" / "predictions.json"
 LABELS = ["H", "D", "A"]
+LABEL_NAMES = ["home", "draw", "away"]
+
+
+def _prediction_payload(row, probs, stage: str) -> dict:
+    if stage == "lineups":
+        probs, lineup_features = lineup_adjusted_prediction(probs, None)
+    else:
+        lineup_features = None
+    pred = int(probs.argmax())
+    confidence = float(probs[pred])
+    return {
+        "stage": stage,
+        "available": stage == "initial",
+        "home": row.home_team,
+        "away": row.away_team,
+        "p_home": round(float(probs[0]), 3),
+        "p_draw": round(float(probs[1]), 3),
+        "p_away": round(float(probs[2]), 3),
+        "pred_outcome": LABELS[pred],
+        "pred_side": LABEL_NAMES[pred],
+        "confidence": round(confidence, 3),
+        "lineup_features": lineup_features,
+    }
 
 
 def main() -> None:
@@ -28,11 +53,16 @@ def main() -> None:
     pb_val = weight * pm_val + (1 - weight) * pe_val
     pb_test = weight * pm_test + (1 - weight) * pe_test
 
-    val_curve = threshold_curve(val, pb_val)
-    candidates = [row for row in val_curve if row["n_bets"] >= 80]
-    threshold = max(candidates, key=lambda r: (r["final_bankroll"], r["roi_pct"]))["threshold"] if candidates else 0.6
-    _, val_backtest = simulate(val, pb_val, min_confidence=threshold)
-    bets, test_backtest = simulate(test, pb_test, min_confidence=threshold)
+    val_curve = threshold_curve(val, pb_val, min_bets=50)
+    policy = ROBUST_POLICY.copy()
+    policy_args = {
+        "min_confidence": policy["threshold"],
+        "min_edge": policy["min_edge"],
+        "min_odds": policy["min_odds"],
+        "max_odds": policy["max_odds"],
+    }
+    _, val_backtest = simulate(val, pb_val, **policy_args)
+    bets, test_backtest = simulate(test, pb_test, **policy_args)
 
     recent = test.tail(40).copy()
     pe_recent = elo_probabilities(train, recent)
@@ -54,6 +84,8 @@ def main() -> None:
             "actual_outcome": LABELS[int(row.outcome)],
             "actual_score": f"{int(row.home_goals)}-{int(row.away_goals)}",
             "correct": pred == int(row.outcome),
+            "prediction_initiale": _prediction_payload(row, probs, "initial"),
+            "prediction_apres_compositions": _prediction_payload(row, probs, "lineups"),
         })
 
     payload = {
@@ -62,7 +94,20 @@ def main() -> None:
         "data_source": "football-data.co.uk CSV, Big Five leagues, seasons 2015-2016 to 2025-2026",
         "n_matches": int(len(df)),
         "blend_weight": round(weight, 2),
-        "selected_threshold": threshold,
+        "selected_threshold": policy["threshold"],
+        "betting_policy": {
+            "selection_source": policy.get("source", "fixed"),
+            "min_confidence": policy["threshold"],
+            "min_expected_value": policy["min_edge"],
+            "min_odds": policy["min_odds"],
+            "max_odds": policy["max_odds"],
+            "staking": "quarter Kelly capped at 2% bankroll",
+            "edge_formula": "expected_value = model_probability * decimal_odds - 1",
+        },
+        "prediction_schema": {
+            "prediction_initiale": "Long-term pre-match model: Elo, market odds, rolling form, rest, shots and league context.",
+            "prediction_apres_compositions": "Reserved for late pre-match updates from official lineups, absences, formations and minute load.",
+        },
         "validation_metrics": {
             "elo": metrics(val["outcome"].to_numpy(), pe_val),
             "ml": metrics(val["outcome"].to_numpy(), pm_val),
@@ -76,8 +121,9 @@ def main() -> None:
         "backtest": {
             "validation": val_backtest,
             "test": test_backtest,
-            "threshold_curve_validation": val_curve,
+            "threshold_curve_validation": sorted(val_curve, key=lambda r: r["final_bankroll"], reverse=True)[:30],
         },
+        "walk_forward": run_walk_forward(df),
         "recent_matches": matches,
         "recent_bets": [] if bets.empty else bets.tail(20).assign(date=lambda x: x["date"].dt.strftime("%Y-%m-%d")).to_dict("records"),
     }

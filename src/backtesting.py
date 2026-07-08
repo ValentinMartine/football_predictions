@@ -4,6 +4,13 @@ import numpy as np
 import pandas as pd
 
 ODDS_COLS = ["odds_home", "odds_draw", "odds_away"]
+ROBUST_POLICY = {
+    "threshold": 0.50,
+    "min_edge": 0.10,
+    "min_odds": 1.80,
+    "max_odds": 3.00,
+    "source": "fixed_walk_forward",
+}
 
 
 def kelly_fraction(prob: float, odds: float, fraction: float = 0.25, max_stake: float = 0.02) -> float:
@@ -18,6 +25,10 @@ def simulate(
     probs: np.ndarray,
     min_confidence: float,
     min_edge: float = 0.03,
+    min_odds: float = 1.2,
+    max_odds: float = 4.0,
+    kelly_fraction_value: float = 0.25,
+    max_stake: float = 0.02,
     initial_bankroll: float = 1000.0,
 ) -> tuple[pd.DataFrame, dict]:
     bankroll = initial_bankroll
@@ -33,10 +44,12 @@ def simulate(
         best_side = int(np.argmax(probs[i] * odds[i] - 1))
         prob = float(probs[i, best_side])
         price = float(odds[i, best_side])
-        edge = prob - (1 / price)
-        if prob < min_confidence or edge < min_edge:
+        expected_value = prob * price - 1
+        implied_probability = 1 / price
+        probability_edge = prob - implied_probability
+        if prob < min_confidence or expected_value < min_edge or price < min_odds or price > max_odds:
             continue
-        stake = bankroll * kelly_fraction(prob, price)
+        stake = bankroll * kelly_fraction(prob, price, fraction=kelly_fraction_value, max_stake=max_stake)
         if stake < 0.01:
             continue
         won = int(row.outcome) == best_side
@@ -51,7 +64,9 @@ def simulate(
             "bet_side": best_side,
             "prob": prob,
             "odds": price,
-            "edge": edge,
+            "expected_value": expected_value,
+            "edge": expected_value,
+            "probability_edge": probability_edge,
             "stake": stake,
             "profit": profit,
             "bankroll": bankroll,
@@ -75,15 +90,52 @@ def simulate(
         "max_drawdown_pct": round(float(100 * bets["drawdown"].min()), 2),
         "win_rate_pct": round(float(100 * bets["won"].mean()), 2),
         "avg_odds": round(float(bets["odds"].mean()), 3),
-        "avg_edge_pct": round(float(100 * bets["edge"].mean()), 2),
+        "avg_ev_pct": round(float(100 * bets["expected_value"].mean()), 2),
+        "avg_edge_pct": round(float(100 * bets["expected_value"].mean()), 2),
+        "total_staked": round(float(bets["stake"].sum()), 2),
+        "total_profit": round(float(bets["profit"].sum()), 2),
     }
     return bets, stats
 
 
-def threshold_curve(df: pd.DataFrame, probs: np.ndarray, thresholds=None) -> list[dict]:
-    thresholds = thresholds or [0.45, 0.50, 0.55, 0.60, 0.65, 0.70]
+def threshold_curve(
+    df: pd.DataFrame,
+    probs: np.ndarray,
+    thresholds=None,
+    min_edges=None,
+    odds_ranges=None,
+    min_bets: int = 0,
+) -> list[dict]:
+    thresholds = thresholds or [0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70]
+    min_edges = min_edges or [0.00, 0.04, 0.08, 0.10, 0.12, 0.15]
+    odds_ranges = odds_ranges or [(1.2, 4.0), (1.4, 3.0), (1.5, 2.5), (1.6, 2.3), (1.8, 3.0)]
     out = []
     for threshold in thresholds:
-        _, stats = simulate(df, probs, min_confidence=threshold)
-        out.append({"threshold": threshold, **stats})
+        for min_edge in min_edges:
+            for min_odds, max_odds in odds_ranges:
+                _, stats = simulate(
+                    df,
+                    probs,
+                    min_confidence=threshold,
+                    min_edge=min_edge,
+                    min_odds=min_odds,
+                    max_odds=max_odds,
+                )
+                if stats["n_bets"] >= min_bets:
+                    out.append({
+                        "threshold": threshold,
+                        "min_edge": min_edge,
+                        "min_odds": min_odds,
+                        "max_odds": max_odds,
+                        **stats,
+                    })
     return out
+
+
+def select_policy(curve: list[dict], min_bets: int = 100) -> dict:
+    candidates = [row for row in curve if row["n_bets"] >= min_bets]
+    if not candidates:
+        candidates = curve
+    if not candidates:
+        return ROBUST_POLICY.copy()
+    return max(candidates, key=lambda r: (r["final_bankroll"], r["roi_pct"], r["n_bets"]))
