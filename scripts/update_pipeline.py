@@ -18,6 +18,7 @@ def main() -> None:
     run([sys.executable, "scripts/add_player_flags.py"])
     run([sys.executable, "scripts/build_lineups.py"])
     run([sys.executable, "scripts/build_national_player_form.py"])
+    run([sys.executable, "scripts/sync_to_site.py"])
 
 
 if __name__ == "__main__":
