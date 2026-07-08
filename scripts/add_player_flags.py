@@ -62,18 +62,38 @@ def main() -> None:
     ps.columns = [c[0] if isinstance(c, tuple) else c for c in ps.columns]
 
     name_to_flag: dict[str, str] = {}
+    surname_flag: dict[str, str] = {}
+    surname_dupe: set[str] = set()
     for _, r in ps.iterrows():
         code = _nation_code(r.get("nation"))
         iso = FIFA2ISO.get(code) if code else None
-        if iso:
-            name_to_flag[_norm(r["player"])] = _iso_to_emoji(iso)
+        if not iso:
+            continue
+        flag = _iso_to_emoji(iso)
+        n = _norm(r["player"])
+        name_to_flag[n] = flag
+        toks = n.split()
+        if toks:
+            key = toks[-1]
+            if key in surname_flag and surname_flag[key] != flag:
+                surname_dupe.add(key)
+            surname_flag[key] = flag
+
+    def lookup(name: str) -> str | None:
+        n = _norm(name)
+        if n in name_to_flag:
+            return name_to_flag[n]
+        toks = n.split()
+        if toks and toks[-1] not in surname_dupe:
+            return surname_flag.get(toks[-1])
+        return None
 
     stats = json.loads(STATS.read_text(encoding="utf-8"))
     hit = tot = 0
     for lst in ("top_scorers", "top_assists", "top_xg", "top_xa"):
         for p in stats.get(lst, []):
             tot += 1
-            f = name_to_flag.get(_norm(p["player"]))
+            f = lookup(p["player"])
             if f:
                 p["flag"] = f
                 hit += 1

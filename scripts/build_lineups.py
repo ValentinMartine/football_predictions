@@ -2,10 +2,9 @@
 Assemble les compositions par match (Understat) et les apparie aux matchs récents des
 prédictions, pour l'affichage sur le site.
 
-Lit data/_sched2025.parquet + data/_pm2025.parquet (produits par le fetch), apparie
-chaque match récent par date + noms d'équipes normalisés, et écrit lineups.json :
-{ "AAAA-MM-JJ|home|away": {home:[joueurs], away:[joueurs]} }
-Chaque joueur : nom, minutes, buts, passes déc., xG.
+Pour chaque match apparié (date + équipes normalisées), on exporte les joueurs des deux
+équipes avec : poste, statut (titulaire / entré / sorti), minutes, buts, passes déc., xG.
+On désigne aussi l'homme du match (proxy : contribution buts/passes + xG).
 """
 from __future__ import annotations
 
@@ -17,9 +16,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import pandas as pd
+import soccerdata as sd
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_OUT = Path("C:/Users/valen/Documents/Projets/Projets_Informatiques/Perso/valentinmartine/public/data/lineups.json")
+LEAGUES = ["ENG-Premier League", "ESP-La Liga", "ITA-Serie A", "GER-Bundesliga", "FRA-Ligue 1"]
 
 
 def norm(s: str) -> str:
@@ -40,60 +41,75 @@ def _pick(cols, *cands):
 
 
 def main() -> None:
-    sched = pd.read_parquet(ROOT / "data" / "_sched2025.parquet")
-    pm = pd.read_parquet(ROOT / "data" / "_pm2025.parquet")
+    us = sd.Understat(leagues=LEAGUES, seasons="2025")
+    sched = us.read_schedule().reset_index()
+    pm = us.read_player_match_stats().reset_index()
     preds = json.loads((ROOT / "data" / "predictions.json").read_text(encoding="utf-8"))
 
     gcol = _pick(pm.columns, "game_id", "game")
     pcol = _pick(pm.columns, "player")
     tcol = _pick(pm.columns, "team")
+    poscol = _pick(pm.columns, "position")
     mcol = _pick(pm.columns, "minutes", "time")
     goal = _pick(pm.columns, "goals")
     ast = _pick(pm.columns, "assists")
     xgc = _pick(pm.columns, "xg")
     sgid = _pick(sched.columns, "game_id", "game")
-    sh = _pick(sched.columns, "home_team")
-    sa = _pick(sched.columns, "away_team")
-    sd_ = _pick(sched.columns, "date")
+    sh, sa, sdt = _pick(sched.columns, "home_team"), _pick(sched.columns, "away_team"), _pick(sched.columns, "date")
 
     sched = sched.copy()
-    sched["day"] = pd.to_datetime(sched[sd_]).dt.strftime("%Y-%m-%d")
-    # game_id -> (day, home, away)
-    game_info = {r[sgid]: (r["day"], r[sh], r[sa]) for _, r in sched.iterrows()}
-    # (day, norm home, norm away) -> game_id
+    sched["day"] = pd.to_datetime(sched[sdt]).dt.strftime("%Y-%m-%d")
+    game_info = {r[sgid]: (r[sh], r[sa]) for _, r in sched.iterrows()}
     key_to_game = {(r["day"], norm(r[sh]), norm(r[sa])): r[sgid] for _, r in sched.iterrows()}
 
     def players_for(game_id):
         sub = pm[pm[gcol] == game_id]
         out = []
         for _, r in sub.iterrows():
+            mins = int(r[mcol]) if pd.notna(r[mcol]) else 0
+            if mins <= 0:
+                continue
+            pos = str(r[poscol]) if poscol and pd.notna(r[poscol]) else ""
+            is_sub = pos.lower() == "sub"
             out.append({
                 "player": str(r[pcol]), "team": str(r[tcol]),
-                "min": int(r[mcol]) if pd.notna(r[mcol]) else 0,
+                "pos": "" if is_sub else pos,
+                "on": is_sub,                       # entré en jeu (flèche verte)
+                "off": (not is_sub) and mins < 88,  # sorti (flèche rouge)
+                "min": mins,
                 "g": int(r[goal]) if goal and pd.notna(r[goal]) else 0,
                 "a": int(r[ast]) if ast and pd.notna(r[ast]) else 0,
                 "xg": round(float(r[xgc]), 2) if xgc and pd.notna(r[xgc]) else 0.0,
             })
-        return sorted(out, key=lambda x: -x["min"])
+        # titulaires d'abord (par minutes), puis remplaçants
+        return sorted(out, key=lambda x: (x["on"], -x["min"]))
 
-    lineups = {}
-    matched = 0
-    for m in preds["recent_matches"]:
-        key = f"{m['date']}|{m['home']}|{m['away']}"
+    def find_game(m):
         gid = key_to_game.get((m["date"], norm(m["home"]), norm(m["away"])))
-        if gid is None:
-            # tolérance ±1 jour + appariement approximatif par jointure de tokens
-            for (day, nh, na), g in key_to_game.items():
-                if day == m["date"] and (norm(m["home"]) in nh or nh in norm(m["home"])) and (norm(m["away"]) in na or na in norm(m["away"])):
-                    gid = g
-                    break
+        if gid is not None:
+            return gid
+        for (day, nh, na), g in key_to_game.items():
+            if day == m["date"] and (norm(m["home"]) in nh or nh in norm(m["home"])) \
+               and (norm(m["away"]) in na or na in norm(m["away"])):
+                return g
+        return None
+
+    lineups, matched = {}, 0
+    for m in preds["recent_matches"]:
+        gid = find_game(m)
         if gid is None:
             continue
-        _, hteam, ateam = game_info[gid]
+        hteam, ateam = game_info[gid]
         players = players_for(gid)
-        lineups[key] = {
-            "home": [p for p in players if p["team"] == hteam][:14],
-            "away": [p for p in players if p["team"] == ateam][:14],
+        if not players:
+            continue
+        # homme du match : meilleure contribution (buts x3 + passes x2 + xG)
+        motm = max(players, key=lambda p: p["g"] * 3 + p["a"] * 2 + p["xg"])
+        for p in players:
+            p["motm"] = (p["player"] == motm["player"] and p["team"] == motm["team"])
+        lineups[f"{m['date']}|{m['home']}|{m['away']}"] = {
+            "home": [p for p in players if p["team"] == hteam][:16],
+            "away": [p for p in players if p["team"] == ateam][:16],
         }
         matched += 1
 

@@ -60,7 +60,8 @@
       "goals": 22,
       "assists": 1,
       "xg": 24.69,
-      "xa": 3.45
+      "xa": 3.45,
+      "flag": "🇧🇷"
     },
     {
       "player": "Esteban Lepaul",
@@ -370,7 +371,8 @@
       "goals": 4,
       "assists": 12,
       "xg": 4.64,
-      "xa": 10.78
+      "xa": 10.78,
+      "flag": "🇫🇷"
     },
     {
       "player": "Jarrod Bowen",
@@ -643,7 +645,8 @@
       "goals": 22,
       "assists": 1,
       "xg": 24.69,
-      "xa": 3.45
+      "xa": 3.45,
+      "flag": "🇧🇷"
     },
     {
       "player": "Vedat Muriqi",
@@ -998,7 +1001,8 @@
       "goals": 4,
       "assists": 12,
       "xg": 4.64,
-      "xa": 10.78
+      "xa": 10.78,
+      "flag": "🇫🇷"
     },
     {
       "player": "Charles De Ketelaere",
@@ -1139,7 +1143,8 @@
       "goals": 2,
       "assists": 2,
       "xg": 4.37,
-      "xa": 8.5
+      "xa": 8.5,
+      "flag": "🇪🇸"
     },
     {
       "player": "Adrien Thomasson",
