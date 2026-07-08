@@ -87,6 +87,12 @@ def main() -> None:
     bets, test_backtest = simulate(test, pbc_test, **policy_args)
     _, test_backtest_selected = simulate(test, pbc_test, **selected_args)
 
+    # Line shopping : parier à la meilleure cote de clôture disponible (colonnes best_*).
+    test_best = test.copy()
+    for side in ("home", "draw", "away"):
+        test_best[f"odds_{side}"] = pd.to_numeric(test_best[f"best_{side}"], errors="coerce")
+    _, test_backtest_best = simulate(test_best, pbc_test, **policy_args)
+
     # Tous les matchs des deux dernières saisons (filtrables par saison côté site)
     recent = test[test["date"] >= pd.Timestamp("2024-08-01")].copy()
     pe_recent = elo_probabilities(train, recent)
@@ -130,6 +136,7 @@ def main() -> None:
             "max_odds": policy["max_odds"],
             "staking": "quarter Kelly capped at 2% bankroll",
             "edge_formula": "expected_value = model_probability * decimal_odds - 1",
+            "line_shopping": "Toujours parier à la meilleure cote disponible (colonnes best_*) : gain de prix mécanique et fiable, à la différence du ROI qui reste bruité.",
         },
         "prediction_schema": {
             "prediction_initiale": "Long-term pre-match model: Elo, market odds, rolling form, rest, shots and league context.",
@@ -150,6 +157,7 @@ def main() -> None:
         "backtest": {
             "validation": val_backtest,
             "test": test_backtest,
+            "test_line_shopping": test_backtest_best,
             "test_selected_policy": test_backtest_selected,
             "selected_policy": {k: selected[k] for k in ("threshold", "min_edge", "min_odds", "max_odds")},
             "threshold_curve_validation": sorted(val_curve, key=lambda r: r["final_bankroll"], reverse=True)[:30],

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T16:58:43+00:00",
+  "generated_at": "2026-07-08T21:25:23+00:00",
   "method": "Club Elo + rolling form/shots + LightGBM, blend tuned on temporal validation",
   "data_source": "football-data.co.uk CSV, Big Five leagues, seasons 2015-2016 to 2025-2026",
   "n_matches": 19763,
@@ -13,7 +13,8 @@
     "min_odds": 1.8,
     "max_odds": 3.0,
     "staking": "quarter Kelly capped at 2% bankroll",
-    "edge_formula": "expected_value = model_probability * decimal_odds - 1"
+    "edge_formula": "expected_value = model_probability * decimal_odds - 1",
+    "line_shopping": "Toujours parier à la meilleure cote disponible (colonnes best_*) : gain de prix mécanique et fiable, à la différence du ROI qui reste bruité."
   },
   "prediction_schema": {
     "prediction_initiale": "Long-term pre-match model: Elo, market odds, rolling form, rest, shots and league context.",
@@ -79,6 +80,18 @@
       "avg_edge_pct": 16.9,
       "total_staked": 3974.06,
       "total_profit": 287.77
+    },
+    "test_line_shopping": {
+      "n_bets": 280,
+      "roi_pct": 8.74,
+      "final_bankroll": 1693.12,
+      "max_drawdown_pct": -24.48,
+      "win_rate_pct": 52.86,
+      "avg_odds": 2.094,
+      "avg_ev_pct": 18.4,
+      "avg_edge_pct": 18.4,
+      "total_staked": 7931.73,
+      "total_profit": 693.12
     },
     "test_selected_policy": {
       "n_bets": 426,
