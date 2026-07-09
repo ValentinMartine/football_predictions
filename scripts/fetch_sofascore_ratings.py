@@ -56,21 +56,26 @@ def main() -> int:
         except Exception as exc:  # noqa: BLE001
             print(f"  ignoré {sofa_name}: {type(exc).__name__}")
             continue
-        df = df[pd.to_numeric(df.get("appearances"), errors="coerce").fillna(0) >= MIN_APPS]
+        df = df[pd.to_numeric(df.get("appearances"), errors="coerce").fillna(0) >= 1]
         for team, grp in df.groupby("team"):
             grp = grp.sort_values("minutesPlayed", ascending=False)
-            core = grp.head(XI)
-            players = [{
-                "player": str(r["player"]),
-                "rating": _f(r, "rating"),
-                "apps": int(_f(r, "appearances")),
-                "min": int(_f(r, "minutesPlayed")),
-                "g": int(_f(r, "goals")), "a": int(_f(r, "assists")),
-                "xg": _f(r, "expectedGoals"), "xa": _f(r, "expectedAssists"),
-                "drib": _f(r, "successfulDribblesPercentage"),
-                "key_passes": _f(r, "keyPasses"), "tackles": _f(r, "tackles"),
-            } for _, r in core.iterrows()]
-            power = round(sum(p["rating"] for p in players), 1)
+
+            def rec(r):
+                return {
+                    "player": str(r["player"]),
+                    "rating": _f(r, "rating"),
+                    "apps": int(_f(r, "appearances")),
+                    "min": int(_f(r, "minutesPlayed")),
+                    "g": int(_f(r, "goals")), "a": int(_f(r, "assists")),
+                    "xg": _f(r, "expectedGoals"), "xa": _f(r, "expectedAssists"),
+                    "drib": _f(r, "successfulDribblesPercentage"),
+                    "key_passes": _f(r, "keyPasses"), "tackles": _f(r, "tackles"),
+                }
+
+            # Tous les joueurs ayant joué au moins un match, triés par temps de jeu.
+            players = [rec(r) for _, r in grp.iterrows()]
+            # Puissance /110 = somme des notes du XI le plus utilisé.
+            power = round(sum(p["rating"] for p in players[:XI]), 1)
             teams.append({
                 "team": str(team), "team_norm": _norm(team), "league": league_id,
                 "power": power, "players": players,
