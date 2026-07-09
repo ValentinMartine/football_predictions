@@ -30,22 +30,11 @@ def _poisson_reg() -> LGBMRegressor:
                          min_child_samples=35, random_state=42, verbose=-1)
 
 
-def _likely_score(lam_h: float, lam_a: float, outcome: int, max_goals: int = 8) -> str:
-    """Score le plus probable cohérent avec l'issue prédite (0 = victoire domicile, 1 = nul,
-    2 = victoire extérieur). Un nul n'est presque jamais l'issue la plus probable même si le
-    modèle lui donne ~25 % : c'est normal (bien calibré), pas une erreur."""
-    ph = [poisson.pmf(i, lam_h) for i in range(max_goals + 1)]
-    pa = [poisson.pmf(j, lam_a) for j in range(max_goals + 1)]
-    best = -1.0
-    bi, bj = (1, 0) if outcome == 0 else ((1, 1) if outcome == 1 else (0, 1))
-    for i in range(max_goals + 1):
-        for j in range(max_goals + 1):
-            if (outcome == 0 and i <= j) or (outcome == 1 and i != j) or (outcome == 2 and i >= j):
-                continue
-            p = ph[i] * pa[j]
-            if p > best:
-                best, bi, bj = p, i, j
-    return f"{bi}-{bj}"
+def _likely_score(lam_h: float, lam_a: float, outcome: int | None = None) -> str:
+    """Score attendu = buts attendus (Poisson) arrondis. Montre naturellement les scores nuls
+    (1-1, 0-0) quand les deux équipes sont proches et peu prolifiques, sans forcer la cohérence
+    avec l'issue argmax (le nul est rarement l'issue la plus probable, ce qui est normal)."""
+    return f"{int(lam_h + 0.5)}-{int(lam_a + 0.5)}"
 
 
 def _season_label(d) -> str:
