@@ -72,7 +72,8 @@ def main() -> int:
             run([sys.executable, "scripts/fetch_wc_odds.py"], WORLDCUP)
             run([sys.executable, "scripts/predict_wc_upcoming.py"], WORLDCUP)
             run([sys.executable, "scripts/build_wc_bracket.py"], WORLDCUP)
-            log("  Coupe du Monde : cotes + prédictions rafraîchies")
+            run([sys.executable, "scripts/montecarlo_wc.py"], WORLDCUP)
+            log("  Coupe du Monde : cotes + prédictions + Monte Carlo rafraîchis")
         except Exception as exc:  # noqa: BLE001
             log(f"  Coupe du Monde ignorée (non bloquant) : {exc}")
 
