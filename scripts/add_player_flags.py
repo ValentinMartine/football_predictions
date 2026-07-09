@@ -21,7 +21,7 @@ LEAGUES = ["ENG-Premier League", "ESP-La Liga", "ITA-Serie A", "GER-Bundesliga",
 
 # Code FIFA/FBref (3 lettres) -> ISO 3166-1 alpha-2 (pour l'emoji drapeau)
 FIFA2ISO = {
-    "ENG": "GB", "SCO": "GB", "WAL": "GB", "NIR": "GB", "FRA": "FR", "ESP": "ES", "GER": "DE",
+    "ENG": "EN", "SCO": "GB", "WAL": "GB", "NIR": "GB", "FRA": "FR", "ESP": "ES", "GER": "DE",
     "ITA": "IT", "POR": "PT", "NED": "NL", "BEL": "BE", "BRA": "BR", "ARG": "AR", "URU": "UY",
     "COL": "CO", "CHI": "CL", "ECU": "EC", "PER": "PE", "PAR": "PY", "VEN": "VE", "MEX": "MX",
     "USA": "US", "CAN": "CA", "CRO": "HR", "SRB": "RS", "SUI": "CH", "AUT": "AT", "DEN": "DK",
