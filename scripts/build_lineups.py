@@ -257,6 +257,12 @@ def main() -> None:
             is_sub = pos.lower() == "sub"
             off = (not is_sub) and mins < 90
             smin = (90 - mins) if is_sub else (mins if off else None)
+            g_ = int(r[goal]) if goal and pd.notna(r[goal]) else 0
+            a_ = int(r[ast]) if ast and pd.notna(r[ast]) else 0
+            xg_ = round(float(r[xgc]), 2) if xgc and pd.notna(r[xgc]) else 0.0
+            xa_ = round(float(r[xac]), 2) if xac and pd.notna(r[xac]) else 0.0
+            # "ma note" /10 : base 6, bonifiée par la contribution offensive (données Understat)
+            note = round(min(10.0, 6.0 + 1.3 * g_ + 0.8 * a_ + 0.5 * xg_ + 0.5 * xa_), 1)
             out.append({
                 "player": str(r[pcol]),
                 "team": str(r[tcol]),
@@ -267,10 +273,7 @@ def main() -> None:
                 "off": off,
                 "smin": smin,
                 "gmin": goal_min.get((game_id, str(r[pcol])), []),
-                "g": int(r[goal]) if goal and pd.notna(r[goal]) else 0,
-                "a": int(r[ast]) if ast and pd.notna(r[ast]) else 0,
-                "xg": round(float(r[xgc]), 2) if xgc and pd.notna(r[xgc]) else 0.0,
-                "xa": round(float(r[xac]), 2) if xac and pd.notna(r[xac]) else 0.0,
+                "g": g_, "a": a_, "xg": xg_, "xa": xa_, "note": note,
             })
         # Faits FBref si disponibles (entrant/sortant exacts), sinon appariement inféré.
         if ev and ev.get("subs"):
