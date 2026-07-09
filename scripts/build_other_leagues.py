@@ -17,6 +17,7 @@ SRC = ROOT / "data" / "european" / "Matches.csv"
 OUT = ROOT / "data" / "other_leagues.json"
 SITE = Path("C:/Users/valen/Documents/Projets/Projets_Informatiques/Perso/valentinmartine/public/data/other_leagues.json")
 SINCE = "2019-01-01"
+BIG5 = {"E0", "SP1", "I1", "D1", "F1"}  # déjà couverts par le projet principal -> exclus (pas de doublon)
 
 # code division -> (nom, drapeau)
 DIV = {
@@ -51,7 +52,7 @@ def main() -> int:
             "HomeCorners", "AwayCorners", "HomeYellow", "AwayYellow", "HomeRed", "AwayRed",
             "HomeShots", "AwayShots"]
     df = pd.read_csv(SRC, usecols=cols)
-    df = df[df["MatchDate"] >= SINCE].dropna(subset=["FTHome", "FTAway", "FTResult"])
+    df = df[(df["MatchDate"] >= SINCE) & (~df["Division"].isin(BIG5))].dropna(subset=["FTHome", "FTAway", "FTResult"])
     df["goals"] = df["FTHome"] + df["FTAway"]
     df["corners"] = df["HomeCorners"] + df["AwayCorners"]
     df["cards"] = df[["HomeYellow", "AwayYellow", "HomeRed", "AwayRed"]].sum(axis=1)

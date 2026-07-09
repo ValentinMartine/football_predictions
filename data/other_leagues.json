@@ -3,20 +3,6 @@
  "note": "Statistiques descriptives par championnat : rythme de jeu, issues, buts, cartons.",
  "leagues": [
   {
-   "code": "D1",
-   "name": "Allemagne - Bundesliga",
-   "flag": "🇩🇪",
-   "matches": 1989,
-   "goals_per_match": 3.16,
-   "home_pct": 43.3,
-   "draw_pct": 24.7,
-   "away_pct": 32.0,
-   "over25_pct": 61.1,
-   "corners_per_match": 9.7,
-   "cards_per_match": 4.0,
-   "shots_per_match": 25.9
-  },
-  {
    "code": "N1",
    "name": "Pays-Bas - Eredivisie",
    "flag": "🇳🇱",
@@ -115,20 +101,6 @@
    "shots_per_match": 24.5
   },
   {
-   "code": "E0",
-   "name": "Angleterre - Premier League",
-   "flag": "🇬🇧",
-   "matches": 2460,
-   "goals_per_match": 2.88,
-   "home_pct": 44.0,
-   "draw_pct": 22.6,
-   "away_pct": 33.3,
-   "over25_pct": 54.8,
-   "corners_per_match": 10.4,
-   "cards_per_match": 3.7,
-   "shots_per_match": 25.5
-  },
-  {
    "code": "CHN",
    "name": "Chine - Super League",
    "flag": "🇨🇳",
@@ -185,20 +157,6 @@
    "shots_per_match": null
   },
   {
-   "code": "I1",
-   "name": "Italie - Serie A",
-   "flag": "🇮🇹",
-   "matches": 2470,
-   "goals_per_match": 2.78,
-   "home_pct": 41.1,
-   "draw_pct": 26.4,
-   "away_pct": 32.5,
-   "over25_pct": 53.2,
-   "corners_per_match": 9.8,
-   "cards_per_match": 4.7,
-   "shots_per_match": 23.7
-  },
-  {
    "code": "SWE",
    "name": "Suède - Allsvenskan",
    "flag": "🇸🇪",
@@ -225,20 +183,6 @@
    "corners_per_match": null,
    "cards_per_match": 3.5,
    "shots_per_match": null
-  },
-  {
-   "code": "F1",
-   "name": "France - Ligue 1",
-   "flag": "🇫🇷",
-   "matches": 2231,
-   "goals_per_match": 2.74,
-   "home_pct": 42.9,
-   "draw_pct": 25.1,
-   "away_pct": 32.1,
-   "over25_pct": 52.3,
-   "corners_per_match": 9.5,
-   "cards_per_match": 4.0,
-   "shots_per_match": 24.4
   },
   {
    "code": "FIN",
@@ -379,20 +323,6 @@
    "corners_per_match": null,
    "cards_per_match": 0.0,
    "shots_per_match": null
-  },
-  {
-   "code": "SP1",
-   "name": "Espagne - LaLiga",
-   "flag": "🇪🇸",
-   "matches": 2491,
-   "goals_per_match": 2.55,
-   "home_pct": 44.8,
-   "draw_pct": 27.0,
-   "away_pct": 28.2,
-   "over25_pct": 46.4,
-   "corners_per_match": 9.3,
-   "cards_per_match": 5.1,
-   "shots_per_match": 23.4
   },
   {
    "code": "E3",
