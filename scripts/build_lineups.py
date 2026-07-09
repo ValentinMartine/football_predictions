@@ -215,6 +215,23 @@ def main() -> None:
 
     def _factual_pairing(players: list[dict], ev: dict) -> list[dict]:
         """Appariement factuel via les événements FBref (entrant/sortant + minute)."""
+        import re
+
+        def clean_name(name: str) -> str:
+            name = unicodedata.normalize("NFKD", str(name)).encode("ascii", "ignore").decode()
+            name = name.lower()
+            name = re.sub(r'[^a-z0-9\s]', '', name)
+            return " ".join(name.split())
+
+        # Save original Understat sub info before resetting
+        original_sub_info = {}
+        for p in players:
+            original_sub_info[p["player"]] = {
+                "on": p["on"],
+                "off": p["off"],
+                "smin": p["smin"]
+            }
+
         for p in players:
             p["display_pos"] = p["pos"]
             p["paired_with"] = None
@@ -223,13 +240,46 @@ def main() -> None:
             if not p["on"]:
                 p["off"] = False   # les faits fixeront les sorties
                 p["smin"] = None
-        idx: dict[str, dict] = {}
+
+        # Build index for all players in this match
+        idx = {}
         for p in players:
-            idx.setdefault(norm(p["player"]), p)
+            c_name = clean_name(p["player"])
+            idx[c_name] = p
+            parts = c_name.split()
+            if len(parts) > 1:
+                idx[f"{parts[0]} {parts[-1]}"] = p
+                surname_key = parts[-1]
+                if surname_key not in idx:
+                    idx[surname_key] = p
+                else:
+                    idx[surname_key] = "AMBIGUOUS"
+
+        def find_player(raw_name: str):
+            if not raw_name:
+                return None
+            c_name = clean_name(raw_name)
+            if c_name in idx:
+                p = idx[c_name]
+                if p != "AMBIGUOUS":
+                    return p
+            parts = c_name.split()
+            if len(parts) > 1:
+                fl_name = f"{parts[0]} {parts[-1]}"
+                if fl_name in idx:
+                    p = idx[fl_name]
+                    if p != "AMBIGUOUS":
+                        return p
+                if parts[-1] in idx:
+                    p = idx[parts[-1]]
+                    if p != "AMBIGUOUS":
+                        return p
+            return None
+
         gid = 1
         for s in ev.get("subs", []):
-            pin = idx.get(norm(s.get("in", "")))
-            pout = idx.get(norm(s.get("out", "")))
+            pin = find_player(s.get("in", ""))
+            pout = find_player(s.get("out", ""))
             minute = s.get("minute")
             if pin is not None:
                 pin["on"] = True
@@ -247,6 +297,40 @@ def main() -> None:
                 pout["substitution_group"] = gid
                 pin["pair_confidence"] = pout["pair_confidence"] = "fbref"
                 gid += 1
+
+        # Fallback: restore off state and minutes from original Understat for those who went off but weren't matched
+        for p in players:
+            if not p["on"] and not p["off"] and original_sub_info.get(p["player"], {}).get("off", False):
+                orig = original_sub_info[p["player"]]
+                p["off"] = True
+                p["smin"] = orig["smin"]
+
+        # Now pair remaining unmatched incoming/outgoing players using Understat minutes
+        unmatched_in = [p for p in players if p["on"] and p["paired_with"] is None and p["smin"] is not None]
+        unmatched_out = [p for p in players if not p["on"] and p["off"] and p["paired_with"] is None]
+
+        for entrant in sorted(unmatched_in, key=lambda p: (p["smin"] or 999, p["player"])):
+            best_idx, best_score = None, None
+            team_out = [p for p in unmatched_out if p["team"] == entrant["team"] and p["paired_with"] is None]
+            for i, leaver in enumerate(team_out):
+                orig = original_sub_info.get(leaver["player"], {})
+                orig_smin = orig.get("smin")
+                if orig_smin is None:
+                    continue
+                minute_gap = abs(int(entrant["smin"]) - int(orig_smin))
+                if best_score is None or minute_gap < best_score:
+                    best_idx, best_score = i, minute_gap
+            if best_idx is not None and best_score is not None and best_score <= 5:
+                leaver = team_out[best_idx]
+                leaver["paired_with"] = entrant["player"]
+                leaver["substitution_group"] = gid
+                entrant["paired_with"] = leaver["player"]
+                entrant["display_pos"] = leaver["pos"]
+                entrant["substitution_group"] = gid
+                entrant["pair_confidence"] = "fbref_fallback"
+                leaver["pair_confidence"] = "fbref_fallback"
+                gid += 1
+
         goal_by_player: dict[str, list[int]] = {}
         for g in ev.get("goals", []):
             if g.get("minute") is not None:
