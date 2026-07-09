@@ -36794,48 +36794,6 @@
      "tackles": 0.0
     }
    ]
-  },
-  {
-   "team": "Saint-Étienne",
-   "team_norm": "saint-etienne",
-   "league": "FRA-Ligue 1",
-   "power": 7.0,
-   "players": [
-    {
-     "player": "Julien Le Cardinal",
-     "rating": 6.98,
-     "apps": 5,
-     "min": 327,
-     "g": 1,
-     "a": 0,
-     "xg": 0.82,
-     "xa": 0.14,
-     "drib": 0.0,
-     "key_passes": 1.0,
-     "tackles": 5.0
-    }
-   ]
-  },
-  {
-   "team": "Rodez AF",
-   "team_norm": "rodez af",
-   "league": "FRA-Ligue 1",
-   "power": 6.5,
-   "players": [
-    {
-     "player": "Mathis Saka",
-     "rating": 6.5,
-     "apps": 1,
-     "min": 8,
-     "g": 0,
-     "a": 0,
-     "xg": 0.0,
-     "xa": 0.0,
-     "drib": 0.0,
-     "key_passes": 0.0,
-     "tackles": 0.0
-    }
-   ]
   }
  ]
 }

@@ -32,6 +32,7 @@ LEAGUES = {
 }
 MIN_APPS = 5      # bruit : ignorer les joueurs à très peu de matchs notés
 XI = 11           # taille du noyau pour la puissance /110
+MIN_SQUAD = 15    # écarte les faux clubs (joueurs transférés attribués à un ancien club)
 
 
 def _norm(s: str) -> str:
@@ -82,6 +83,7 @@ def main() -> int:
             })
         print(f"  {sofa_name}: {df['team'].nunique()} équipes")
 
+    teams = [t for t in teams if len(t["players"]) >= MIN_SQUAD]  # vrais effectifs seulement
     teams.sort(key=lambda t: t["power"], reverse=True)
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
