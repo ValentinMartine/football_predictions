@@ -31,8 +31,9 @@ def _poisson_reg() -> LGBMRegressor:
 
 
 def _likely_score(lam_h: float, lam_a: float, outcome: int, max_goals: int = 8) -> str:
-    """Score le plus probable (deux lois de Poisson) cohérent avec l'issue prédite
-    (0 = victoire domicile, 1 = nul, 2 = victoire extérieur)."""
+    """Score le plus probable cohérent avec l'issue prédite (0 = victoire domicile, 1 = nul,
+    2 = victoire extérieur). Un nul n'est presque jamais l'issue la plus probable même si le
+    modèle lui donne ~25 % : c'est normal (bien calibré), pas une erreur."""
     ph = [poisson.pmf(i, lam_h) for i in range(max_goals + 1)]
     pa = [poisson.pmf(j, lam_a) for j in range(max_goals + 1)]
     best = -1.0

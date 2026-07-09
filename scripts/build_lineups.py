@@ -74,6 +74,17 @@ def main() -> None:
     ev_path = ROOT / "data" / "match_events.json"
     match_events = json.loads(ev_path.read_text(encoding="utf-8")) if ev_path.exists() else {}
 
+    # Notes Sofascore par match (PL + autres ligues scrapées) : index (home, away) -> {joueur: note}
+    sofa_index: dict[tuple, dict] = {}
+    sofa_files = [ROOT / "data" / "pl_player_match.json"] + sorted((ROOT / "data" / "player_match").glob("*.json")) \
+        if (ROOT / "data" / "player_match").exists() else [ROOT / "data" / "pl_player_match.json"]
+    for sf in sofa_files:
+        if not sf.exists():
+            continue
+        for r in json.loads(sf.read_text(encoding="utf-8")):
+            if r.get("rating"):
+                sofa_index.setdefault((norm(r["home"]), norm(r["away"])), {})[norm(r["player"])] = round(float(r["rating"]), 1)
+
     gcol = _pick(pm.columns, "game_id", "game")
     pcol = _pick(pm.columns, "player")
     tcol = _pick(pm.columns, "team")
@@ -306,8 +317,12 @@ def main() -> None:
             missing.append(f"{m['date']} {m['home']}-{m['away']} (Understat sans stats joueurs)")
             continue
         motm = max(players, key=lambda p: p["g"] * 3 + p["a"] * 2 + p["xg"])
+        srow = sofa_index.get((norm(m["home"]), norm(m["away"])), {})
         for p in players:
             p["motm"] = (p["player"] == motm["player"] and p["team"] == motm["team"])
+            sofa = srow.get(norm(p["player"]))
+            if sofa is not None:
+                p["sofa"] = sofa
         lineups[f"{m['date']}|{m['home']}|{m['away']}"] = {
             "home": [p for p in players if p["team"] == hteam][:18],
             "away": [p for p in players if p["team"] == ateam][:18],
