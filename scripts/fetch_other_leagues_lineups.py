@@ -76,6 +76,10 @@ def _div_meta():
 
 def _players_from_stats(ps, team_home, team_away):
     """Construit les listes home/away depuis le DataFrame player-match Sofascore."""
+    # Sofascore renvoie des colonnes en double (dont deux "position") : on garde la
+    # première occurrence, sinon r.get("position") renvoie une Series et le poste
+    # retombe sur le défaut "MC" (tous les joueurs milieux, gardiens inclus).
+    ps = ps.loc[:, ~ps.columns.duplicated()]
     home, away = [], []
     for _, r in ps.iterrows():
         mins = int(_f(r.get("minutesPlayed"), 0))
@@ -110,8 +114,20 @@ def main() -> int:
     import ScraperFC as sfc
     sofa = sfc.Sofascore()
     DIV = _div_meta()
+    # Reprise : on repart du fichier existant (le scraper peut crasher en cours).
     out = {}
-    for code, league in LEAGUE_MAP.items():
+    if OUT.exists():
+        try:
+            out = json.loads(OUT.read_text(encoding="utf-8")).get("leagues", {})
+        except Exception:
+            out = {}
+    # Argument optionnel : ne traiter qu'un seul code de ligue (isolation par processus).
+    only = sys.argv[1] if len(sys.argv) > 1 else None
+    targets = {only: LEAGUE_MAP[only]} if only in LEAGUE_MAP else LEAGUE_MAP
+    for code, league in targets.items():
+        if code in out:
+            print(f"  {code}: déjà présent, ignoré", flush=True)
+            continue
         name, flag = DIV.get(code, (league, "🏳️"))
         try:
             seasons = sofa.get_valid_seasons(league)
