@@ -149,6 +149,12 @@ def build_match(ss, match_id, h_norm):
         pos = POS_MAP.get(raw_pos, "MC")
         is_sub = to_bool(row.get("substitute"), False)
 
+        g_ = to_int(row.get("goals"), 0)
+        a_ = to_int(row.get("goalAssist"), 0)
+        xg_ = round(to_float(row.get("expectedGoals"), 0.0), 2)
+        xa_ = round(to_float(row.get("expectedAssists"), 0.0), 2)
+        # « ma note » /10 : base 6 bonifiée par la contribution offensive (comme le projet clubs).
+        ma_note = round(min(10.0, 6.0 + 1.3 * g_ + 0.8 * a_ + 0.5 * xg_ + 0.5 * xa_), 1)
         pdata = {
             "player": pname, "team": pteam,
             "pos": pos, "display_pos": pos, "ord": POS_ORD.get(pos, 2),
@@ -156,11 +162,8 @@ def build_match(ss, match_id, h_norm):
             "gmin": sorted(ev["gmin"].get(key, [])),
             "amin": sorted(ev["amin"].get(key, [])),
             "cards": ev["cards"].get(key, []),
-            "g": to_int(row.get("goals"), 0),
-            "a": to_int(row.get("goalAssist"), 0),
-            "xg": round(to_float(row.get("expectedGoals"), 0.0), 2),
-            "xa": round(to_float(row.get("expectedAssists"), 0.0), 2),
-            "note": round(to_float(row.get("rating"), 6.0), 1),
+            "g": g_, "a": a_, "xg": xg_, "xa": xa_,
+            "note": ma_note,
             "sofa": round(to_float(row.get("rating"), 6.0), 1),
             "paired_with": None, "substitution_group": None,
             "motm": pname == motm,

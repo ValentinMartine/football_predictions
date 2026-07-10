@@ -30,9 +30,21 @@ ISO2 = {
 }
 
 
+# Nations sans code ISO pays : drapeaux de sous-division (tag sequences).
+SUBDIVISION_FLAGS = {
+    "England": "\U0001F3F4\U000E0067\U000E0062\U000E0065\U000E006E\U000E0067\U000E007F",
+    "Scotland": "\U0001F3F4\U000E0067\U000E0062\U000E0073\U000E0063\U000E0074\U000E007F",
+    "Wales": "\U0001F3F4\U000E0067\U000E0062\U000E0077\U000E006C\U000E0073\U000E007F",
+}
+
+
 def flag(country: str) -> str:
+    if country in SUBDIVISION_FLAGS:
+        return SUBDIVISION_FLAGS[country]
     iso = ISO2.get(country)
-    return "".join(chr(0x1F1E6 + ord(c) - ord("A")) for c in iso) if iso else "🏳️"
+    if not iso or len(iso) != 2 or not iso.isalpha():
+        return "🏳️"
+    return "".join(chr(0x1F1E6 + ord(c) - ord("A")) for c in iso)
 
 
 def main() -> int:
