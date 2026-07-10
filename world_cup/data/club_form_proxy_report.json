@@ -1,0 +1,978 @@
+{
+  "generated_at": "2026-07-08T12:59:47+00:00",
+  "source": "C:\\Users\\valen\\Documents\\Projets\\Projets_Informatiques\\Perso\\football_clubs_predictions\\data\\national_player_form.json",
+  "definition": "National-player-pool proxy from Big Five club xG+xA and minutes, not official roster strength.",
+  "coverage": {
+    "wc_matches": 96,
+    "both_teams_covered": 27,
+    "proxy_comparable_matches": 27
+  },
+  "metrics": {
+    "proxy_accuracy_when_comparable": 0.6296,
+    "baseline_blend_wc_accuracy": 0.6458,
+    "baseline_blend_wc_log_loss": 0.8175
+  },
+  "decision": "candidate_only: this proxy is not activated in the main model until official squad lists and historical roster snapshots are joined without leakage.",
+  "matches": [
+    {
+      "date": "2026-06-11",
+      "home": "Mexico",
+      "away": "South Africa",
+      "home_form_score": 15.2,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-11",
+      "home": "South Korea",
+      "away": "Czech Republic",
+      "home_form_score": 16.81,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-12",
+      "home": "Canada",
+      "away": "Bosnia and Herzegovina",
+      "home_form_score": 14.64,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-12",
+      "home": "United States",
+      "away": "Paraguay",
+      "home_form_score": 73.61,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-13",
+      "home": "Qatar",
+      "away": "Switzerland",
+      "home_form_score": null,
+      "away_form_score": 93.18,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-13",
+      "home": "Brazil",
+      "away": "Morocco",
+      "home_form_score": 347.28,
+      "away_form_score": 124.25,
+      "proxy_pick": "H",
+      "actual_outcome": "D",
+      "proxy_correct": false
+    },
+    {
+      "date": "2026-06-13",
+      "home": "Haiti",
+      "away": "Scotland",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-13",
+      "home": "Australia",
+      "away": "Turkey",
+      "home_form_score": 4.68,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Sweden",
+      "away": "Tunisia",
+      "home_form_score": null,
+      "away_form_score": 16.62,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Netherlands",
+      "away": "Japan",
+      "home_form_score": 209.58,
+      "away_form_score": 75.5,
+      "proxy_pick": "H",
+      "actual_outcome": "D",
+      "proxy_correct": false
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "home_form_score": null,
+      "away_form_score": 9.85,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Germany",
+      "away": "Curaçao",
+      "home_form_score": 745.4,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-15",
+      "home": "Belgium",
+      "away": "Egypt",
+      "home_form_score": 126.74,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-15",
+      "home": "Iran",
+      "away": "New Zealand",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-15",
+      "home": "Spain",
+      "away": "Cape Verde",
+      "home_form_score": 1040.01,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-15",
+      "home": "Saudi Arabia",
+      "away": "Uruguay",
+      "home_form_score": null,
+      "away_form_score": 93.37,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-16",
+      "home": "France",
+      "away": "Senegal",
+      "home_form_score": 846.36,
+      "away_form_score": 150.53,
+      "proxy_pick": "H",
+      "actual_outcome": "H",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-06-16",
+      "home": "Iraq",
+      "away": "Norway",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-16",
+      "home": "Argentina",
+      "away": "Algeria",
+      "home_form_score": 234.76,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-16",
+      "home": "Austria",
+      "away": "Jordan",
+      "home_form_score": 126.44,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-17",
+      "home": "Ghana",
+      "away": "Panama",
+      "home_form_score": 65.67,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-17",
+      "home": "England",
+      "away": "Croatia",
+      "home_form_score": 643.11,
+      "away_form_score": 88.99,
+      "proxy_pick": "H",
+      "actual_outcome": "H",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-06-17",
+      "home": "Portugal",
+      "away": "DR Congo",
+      "home_form_score": 228.81,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-17",
+      "home": "Uzbekistan",
+      "away": "Colombia",
+      "home_form_score": null,
+      "away_form_score": 56.55,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Czech Republic",
+      "away": "South Africa",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Mexico",
+      "away": "South Korea",
+      "home_form_score": 15.2,
+      "away_form_score": 16.81,
+      "proxy_pick": "A",
+      "actual_outcome": "H",
+      "proxy_correct": false
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Switzerland",
+      "away": "Bosnia and Herzegovina",
+      "home_form_score": 93.18,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Canada",
+      "away": "Qatar",
+      "home_form_score": 14.64,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-19",
+      "home": "Scotland",
+      "away": "Morocco",
+      "home_form_score": null,
+      "away_form_score": 124.25,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-19",
+      "home": "Brazil",
+      "away": "Haiti",
+      "home_form_score": 347.28,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-19",
+      "home": "United States",
+      "away": "Australia",
+      "home_form_score": 73.61,
+      "away_form_score": 4.68,
+      "proxy_pick": "H",
+      "actual_outcome": "H",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-06-19",
+      "home": "Turkey",
+      "away": "Paraguay",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Ecuador",
+      "away": "Curaçao",
+      "home_form_score": 9.85,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Tunisia",
+      "away": "Japan",
+      "home_form_score": 16.62,
+      "away_form_score": 75.5,
+      "proxy_pick": "A",
+      "actual_outcome": "A",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "home_form_score": 745.4,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "home_form_score": 209.58,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Belgium",
+      "away": "Iran",
+      "home_form_score": 126.74,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-21",
+      "home": "New Zealand",
+      "away": "Egypt",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "home_form_score": 1040.01,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Uruguay",
+      "away": "Cape Verde",
+      "home_form_score": 93.37,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-22",
+      "home": "Argentina",
+      "away": "Austria",
+      "home_form_score": 234.76,
+      "away_form_score": 126.44,
+      "proxy_pick": "H",
+      "actual_outcome": "H",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-06-22",
+      "home": "France",
+      "away": "Iraq",
+      "home_form_score": 846.36,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-22",
+      "home": "Norway",
+      "away": "Senegal",
+      "home_form_score": null,
+      "away_form_score": 150.53,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-22",
+      "home": "Jordan",
+      "away": "Algeria",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Panama",
+      "away": "Croatia",
+      "home_form_score": null,
+      "away_form_score": 88.99,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-23",
+      "home": "England",
+      "away": "Ghana",
+      "home_form_score": 643.11,
+      "away_form_score": 65.67,
+      "proxy_pick": "H",
+      "actual_outcome": "D",
+      "proxy_correct": false
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "home_form_score": 56.55,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "home_form_score": 228.81,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Mexico",
+      "away": "Czech Republic",
+      "home_form_score": 15.2,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-24",
+      "home": "South Africa",
+      "away": "South Korea",
+      "home_form_score": null,
+      "away_form_score": 16.81,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Canada",
+      "away": "Switzerland",
+      "home_form_score": 14.64,
+      "away_form_score": 93.18,
+      "proxy_pick": "A",
+      "actual_outcome": "A",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Bosnia and Herzegovina",
+      "away": "Qatar",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Scotland",
+      "away": "Brazil",
+      "home_form_score": null,
+      "away_form_score": 347.28,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Morocco",
+      "away": "Haiti",
+      "home_form_score": 124.25,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "home_form_score": 16.62,
+      "away_form_score": 209.58,
+      "proxy_pick": "A",
+      "actual_outcome": "A",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Japan",
+      "away": "Sweden",
+      "home_form_score": 75.5,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Ecuador",
+      "away": "Germany",
+      "home_form_score": 9.85,
+      "away_form_score": 745.4,
+      "proxy_pick": "A",
+      "actual_outcome": "H",
+      "proxy_correct": false
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Paraguay",
+      "away": "Australia",
+      "home_form_score": null,
+      "away_form_score": 4.68,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-25",
+      "home": "United States",
+      "away": "Turkey",
+      "home_form_score": 73.61,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Curaçao",
+      "away": "Ivory Coast",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Egypt",
+      "away": "Iran",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-26",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "home_form_score": null,
+      "away_form_score": 126.74,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Cape Verde",
+      "away": "Saudi Arabia",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Uruguay",
+      "away": "Spain",
+      "home_form_score": 93.37,
+      "away_form_score": 1040.01,
+      "proxy_pick": "A",
+      "actual_outcome": "A",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Norway",
+      "away": "France",
+      "home_form_score": null,
+      "away_form_score": 846.36,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Senegal",
+      "away": "Iraq",
+      "home_form_score": 150.53,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Croatia",
+      "away": "Ghana",
+      "home_form_score": 88.99,
+      "away_form_score": 65.67,
+      "proxy_pick": "H",
+      "actual_outcome": "H",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Panama",
+      "away": "England",
+      "home_form_score": null,
+      "away_form_score": 643.11,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-27",
+      "home": "DR Congo",
+      "away": "Uzbekistan",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Jordan",
+      "away": "Argentina",
+      "home_form_score": null,
+      "away_form_score": 234.76,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Algeria",
+      "away": "Austria",
+      "home_form_score": null,
+      "away_form_score": 126.44,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Colombia",
+      "away": "Portugal",
+      "home_form_score": 56.55,
+      "away_form_score": 228.81,
+      "proxy_pick": "A",
+      "actual_outcome": "D",
+      "proxy_correct": false
+    },
+    {
+      "date": "2026-06-28",
+      "home": "South Africa",
+      "away": "Canada",
+      "home_form_score": null,
+      "away_form_score": 14.64,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-29",
+      "home": "Brazil",
+      "away": "Japan",
+      "home_form_score": 347.28,
+      "away_form_score": 75.5,
+      "proxy_pick": "H",
+      "actual_outcome": "H",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-06-29",
+      "home": "Germany",
+      "away": "Paraguay",
+      "home_form_score": 745.4,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-29",
+      "home": "Netherlands",
+      "away": "Morocco",
+      "home_form_score": 209.58,
+      "away_form_score": 124.25,
+      "proxy_pick": "H",
+      "actual_outcome": "D",
+      "proxy_correct": false
+    },
+    {
+      "date": "2026-06-30",
+      "home": "Ivory Coast",
+      "away": "Norway",
+      "home_form_score": null,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-30",
+      "home": "France",
+      "away": "Sweden",
+      "home_form_score": 846.36,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-06-30",
+      "home": "Mexico",
+      "away": "Ecuador",
+      "home_form_score": 15.2,
+      "away_form_score": 9.85,
+      "proxy_pick": "H",
+      "actual_outcome": "H",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-07-01",
+      "home": "Belgium",
+      "away": "Senegal",
+      "home_form_score": 126.74,
+      "away_form_score": 150.53,
+      "proxy_pick": "A",
+      "actual_outcome": "H",
+      "proxy_correct": false
+    },
+    {
+      "date": "2026-07-01",
+      "home": "United States",
+      "away": "Bosnia and Herzegovina",
+      "home_form_score": 73.61,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-07-01",
+      "home": "England",
+      "away": "DR Congo",
+      "home_form_score": 643.11,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-07-02",
+      "home": "Spain",
+      "away": "Austria",
+      "home_form_score": 1040.01,
+      "away_form_score": 126.44,
+      "proxy_pick": "H",
+      "actual_outcome": "H",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-07-02",
+      "home": "Portugal",
+      "away": "Croatia",
+      "home_form_score": 228.81,
+      "away_form_score": 88.99,
+      "proxy_pick": "H",
+      "actual_outcome": "H",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-07-02",
+      "home": "Switzerland",
+      "away": "Algeria",
+      "home_form_score": 93.18,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-07-03",
+      "home": "Australia",
+      "away": "Egypt",
+      "home_form_score": 4.68,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "D",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-07-03",
+      "home": "Argentina",
+      "away": "Cape Verde",
+      "home_form_score": 234.76,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-07-03",
+      "home": "Colombia",
+      "away": "Ghana",
+      "home_form_score": 56.55,
+      "away_form_score": 65.67,
+      "proxy_pick": "A",
+      "actual_outcome": "H",
+      "proxy_correct": false
+    },
+    {
+      "date": "2026-07-04",
+      "home": "Canada",
+      "away": "Morocco",
+      "home_form_score": 14.64,
+      "away_form_score": 124.25,
+      "proxy_pick": "A",
+      "actual_outcome": "A",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-07-04",
+      "home": "Paraguay",
+      "away": "France",
+      "home_form_score": null,
+      "away_form_score": 846.36,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-07-05",
+      "home": "Brazil",
+      "away": "Norway",
+      "home_form_score": 347.28,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "A",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-07-05",
+      "home": "Mexico",
+      "away": "England",
+      "home_form_score": 15.2,
+      "away_form_score": 643.11,
+      "proxy_pick": "A",
+      "actual_outcome": "A",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-07-06",
+      "home": "Portugal",
+      "away": "Spain",
+      "home_form_score": 228.81,
+      "away_form_score": 1040.01,
+      "proxy_pick": "A",
+      "actual_outcome": "A",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-07-06",
+      "home": "United States",
+      "away": "Belgium",
+      "home_form_score": 73.61,
+      "away_form_score": 126.74,
+      "proxy_pick": "A",
+      "actual_outcome": "A",
+      "proxy_correct": true
+    },
+    {
+      "date": "2026-07-07",
+      "home": "Argentina",
+      "away": "Egypt",
+      "home_form_score": 234.76,
+      "away_form_score": null,
+      "proxy_pick": null,
+      "actual_outcome": "H",
+      "proxy_correct": null
+    },
+    {
+      "date": "2026-07-07",
+      "home": "Switzerland",
+      "away": "Colombia",
+      "home_form_score": 93.18,
+      "away_form_score": 56.55,
+      "proxy_pick": "H",
+      "actual_outcome": "D",
+      "proxy_correct": false
+    }
+  ]
+}

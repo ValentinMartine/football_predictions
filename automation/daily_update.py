@@ -19,7 +19,8 @@ from pathlib import Path
 CLUBS = Path(__file__).resolve().parents[1]
 PERSO = CLUBS.parent
 SITE = PERSO / "valentinmartine"
-WORLDCUP = PERSO / "worldcup_2026_predictions"
+# Monorepo football : la Coupe du Monde vit désormais dans clubs/world_cup/.
+WORLDCUP = CLUBS / "world_cup"
 LOG_DIR = CLUBS / "automation" / "logs"
 AUTHOR_EMAIL = "212414673+ValentinMartine@users.noreply.github.com"
 AUTHOR_NAME = "ValentinMartine"

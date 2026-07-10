@@ -1,0 +1,303 @@
+{
+ "stage_reached": "Huitièmes de finale (8es)",
+ "note": "Bracket réel de la Coupe du Monde 2026 jusqu'au tour le plus récent joué.",
+ "teams": [
+  {
+   "name": "South Africa",
+   "flag": "🇿🇦",
+   "advanced": false
+  },
+  {
+   "name": "Canada",
+   "flag": "🇨🇦",
+   "advanced": true
+  },
+  {
+   "name": "Netherlands",
+   "flag": "🇳🇱",
+   "advanced": false
+  },
+  {
+   "name": "Morocco",
+   "flag": "🇲🇦",
+   "advanced": true
+  },
+  {
+   "name": "Germany",
+   "flag": "🇩🇪",
+   "advanced": false
+  },
+  {
+   "name": "Paraguay",
+   "flag": "🇵🇾",
+   "advanced": true
+  },
+  {
+   "name": "France",
+   "flag": "🇫🇷",
+   "advanced": true
+  },
+  {
+   "name": "Sweden",
+   "flag": "🇸🇪",
+   "advanced": false
+  },
+  {
+   "name": "Brazil",
+   "flag": "🇧🇷",
+   "advanced": true
+  },
+  {
+   "name": "Japan",
+   "flag": "🇯🇵",
+   "advanced": false
+  },
+  {
+   "name": "Ivory Coast",
+   "flag": "🇨🇮",
+   "advanced": false
+  },
+  {
+   "name": "Norway",
+   "flag": "🇳🇴",
+   "advanced": true
+  },
+  {
+   "name": "Mexico",
+   "flag": "🇲🇽",
+   "advanced": true
+  },
+  {
+   "name": "Ecuador",
+   "flag": "🇪🇨",
+   "advanced": false
+  },
+  {
+   "name": "England",
+   "flag": "🇪🇳",
+   "advanced": true
+  },
+  {
+   "name": "DR Congo",
+   "flag": "🇨🇩",
+   "advanced": false
+  },
+  {
+   "name": "Portugal",
+   "flag": "🇵🇹",
+   "advanced": true
+  },
+  {
+   "name": "Croatia",
+   "flag": "🇭🇷",
+   "advanced": false
+  },
+  {
+   "name": "Spain",
+   "flag": "🇪🇸",
+   "advanced": true
+  },
+  {
+   "name": "Austria",
+   "flag": "🇦🇹",
+   "advanced": false
+  },
+  {
+   "name": "United States",
+   "flag": "🇺🇸",
+   "advanced": true
+  },
+  {
+   "name": "Bosnia and Herzegovina",
+   "flag": "🇧🇦",
+   "advanced": false
+  },
+  {
+   "name": "Belgium",
+   "flag": "🇧🇪",
+   "advanced": true
+  },
+  {
+   "name": "Senegal",
+   "flag": "🇸🇳",
+   "advanced": false
+  },
+  {
+   "name": "Argentina",
+   "flag": "🇦🇷",
+   "advanced": true
+  },
+  {
+   "name": "Cape Verde",
+   "flag": "🇨🇻",
+   "advanced": false
+  },
+  {
+   "name": "Australia",
+   "flag": "🇦🇺",
+   "advanced": false
+  },
+  {
+   "name": "Egypt",
+   "flag": "🇪🇬",
+   "advanced": true
+  },
+  {
+   "name": "Switzerland",
+   "flag": "🇨🇭",
+   "advanced": true
+  },
+  {
+   "name": "Algeria",
+   "flag": "🇩🇿",
+   "advanced": false
+  },
+  {
+   "name": "Colombia",
+   "flag": "🇨🇴",
+   "advanced": true
+  },
+  {
+   "name": "Ghana",
+   "flag": "🇬🇭",
+   "advanced": false
+  }
+ ],
+ "r32": [
+  {
+   "winner": "Canada",
+   "flag": "🇨🇦"
+  },
+  {
+   "winner": "Morocco",
+   "flag": "🇲🇦"
+  },
+  {
+   "winner": "Paraguay",
+   "flag": "🇵🇾"
+  },
+  {
+   "winner": "France",
+   "flag": "🇫🇷"
+  },
+  {
+   "winner": "Brazil",
+   "flag": "🇧🇷"
+  },
+  {
+   "winner": "Norway",
+   "flag": "🇳🇴"
+  },
+  {
+   "winner": "Mexico",
+   "flag": "🇲🇽"
+  },
+  {
+   "winner": "England",
+   "flag": "🇪🇳"
+  },
+  {
+   "winner": "Portugal",
+   "flag": "🇵🇹"
+  },
+  {
+   "winner": "Spain",
+   "flag": "🇪🇸"
+  },
+  {
+   "winner": "United States",
+   "flag": "🇺🇸"
+  },
+  {
+   "winner": "Belgium",
+   "flag": "🇧🇪"
+  },
+  {
+   "winner": "Argentina",
+   "flag": "🇦🇷"
+  },
+  {
+   "winner": "Egypt",
+   "flag": "🇪🇬"
+  },
+  {
+   "winner": "Switzerland",
+   "flag": "🇨🇭"
+  },
+  {
+   "winner": "Colombia",
+   "flag": "🇨🇴"
+  }
+ ],
+ "r16": [
+  {
+   "winner": "Morocco",
+   "flag": "🇲🇦",
+   "label": "Canada 0-3 Morocco"
+  },
+  {
+   "winner": "France",
+   "flag": "🇫🇷",
+   "label": "Paraguay 0-1 France"
+  },
+  {
+   "winner": "Norway",
+   "flag": "🇳🇴",
+   "label": "Brazil 1-2 Norway"
+  },
+  {
+   "winner": "England",
+   "flag": "🇪🇳",
+   "label": "Mexico 2-3 England"
+  },
+  {
+   "winner": "Spain",
+   "flag": "🇪🇸",
+   "label": "Portugal 0-1 Spain"
+  },
+  {
+   "winner": "Belgium",
+   "flag": "🇧🇪",
+   "label": "United States 1-4 Belgium"
+  },
+  {
+   "winner": "Argentina",
+   "flag": "🇦🇷",
+   "label": "Argentina 3-2 Egypt"
+  },
+  {
+   "winner": "Switzerland",
+   "flag": "🇨🇭",
+   "label": "Switzerland 0-0 Colombia"
+  }
+ ],
+ "qf": [
+  {
+   "winner": null,
+   "flag": null
+  },
+  {
+   "winner": null,
+   "flag": null
+  },
+  {
+   "winner": null,
+   "flag": null
+  },
+  {
+   "winner": null,
+   "flag": null
+  }
+ ],
+ "sf": [
+  {
+   "winner": null,
+   "flag": null
+  },
+  {
+   "winner": null,
+   "flag": null
+  }
+ ],
+ "winner": null
+}

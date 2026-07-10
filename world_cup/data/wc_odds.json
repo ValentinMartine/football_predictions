@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-07-08T23:19:37+00:00",
+  "source": "The Odds API (soccer_fifa_world_cup, h2h, regions eu/uk)",
+  "quota_remaining": "495",
+  "matches": [
+    {
+      "home": "France",
+      "away": "Morocco",
+      "commence": "2026-07-09T20:00:00Z",
+      "n_books": 41,
+      "avg": [
+        1.574,
+        3.916,
+        6.456
+      ],
+      "best": [
+        1.62,
+        4.1,
+        7.2
+      ],
+      "market_implied": [
+        0.608,
+        0.244,
+        0.148
+      ],
+      "model_prob": [
+        0.528,
+        0.219,
+        0.253
+      ],
+      "edge": [
+        -0.145,
+        -0.102,
+        0.822
+      ],
+      "bet": {
+        "side": "2",
+        "best_odds": 7.2,
+        "edge": 0.822,
+        "plausible_value": false,
+        "verdict": "désaccord, le marché est probablement juste"
+      }
+    },
+    {
+      "home": "Spain",
+      "away": "Belgium",
+      "commence": "2026-07-10T19:00:00Z",
+      "n_books": 40,
+      "avg": [
+        1.629,
+        3.97,
+        5.583
+      ],
+      "best": [
+        1.68,
+        4.1,
+        6.25
+      ],
+      "market_implied": [
+        0.588,
+        0.241,
+        0.171
+      ],
+      "model_prob": [
+        0.457,
+        0.195,
+        0.349
+      ],
+      "edge": [
+        -0.232,
+        -0.201,
+        1.181
+      ],
+      "bet": {
+        "side": "2",
+        "best_odds": 6.25,
+        "edge": 1.181,
+        "plausible_value": false,
+        "verdict": "désaccord, le marché est probablement juste"
+      }
+    },
+    {
+      "home": "Norway",
+      "away": "England",
+      "commence": "2026-07-11T21:00:00Z",
+      "n_books": 40,
+      "avg": [
+        4.179,
+        3.697,
+        1.861
+      ],
+      "best": [
+        4.5,
+        3.9,
+        1.93
+      ],
+      "market_implied": [
+        0.229,
+        0.258,
+        0.513
+      ],
+      "model_prob": [
+        0.193,
+        0.308,
+        0.499
+      ],
+      "edge": [
+        -0.131,
+        0.201,
+        -0.037
+      ],
+      "bet": {
+        "side": "N",
+        "best_odds": 3.9,
+        "edge": 0.201,
+        "plausible_value": false,
+        "verdict": "désaccord, le marché est probablement juste"
+      }
+    },
+    {
+      "home": "Argentina",
+      "away": "Switzerland",
+      "commence": "2026-07-12T01:00:00Z",
+      "n_books": 41,
+      "avg": [
+        1.705,
+        3.565,
+        5.539
+      ],
+      "best": [
+        1.77,
+        3.7,
+        6.0
+      ],
+      "market_implied": [
+        0.56,
+        0.268,
+        0.172
+      ],
+      "model_prob": [
+        0.622,
+        0.177,
+        0.201
+      ],
+      "edge": [
+        0.101,
+        -0.345,
+        0.206
+      ],
+      "bet": {
+        "side": "2",
+        "best_odds": 6.0,
+        "edge": 0.206,
+        "plausible_value": false,
+        "verdict": "désaccord, le marché est probablement juste"
+      }
+    }
+  ],
+  "model_note": "Probabilités calibrées du modèle (Elo, FIFA, forme, LightGBM) comparées au marché (marge retirée). Le modèle est en désaccord avec le marché sur 4/4 matchs et se montre moins tranché sur les favoris. Ses écarts élevés viennent de son imprécision, pas d'un avantage réel. Sur ce marché très suivi, le marché reste le meilleur estimateur. Aucun pari recommandé."
+}
