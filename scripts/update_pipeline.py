@@ -26,6 +26,8 @@ def main() -> None:
     run([sys.executable, "scripts/build_national_player_form.py"], check=False)
     run([sys.executable, "scripts/over_under_backtest.py"], check=False)
     run([sys.executable, "scripts/build_club_logos.py"], check=False)
+    # Compos + notes des autres championnats (Sofascore) : best-effort (scraping).
+    run([sys.executable, "scripts/fetch_other_leagues_lineups.py"], check=False)
     # Normalisation des noms (données + clés de logos) : après tous les builders, avant sync.
     run([sys.executable, "scripts/normalize_names.py"], check=False)
     run([sys.executable, "scripts/sync_to_site.py"])

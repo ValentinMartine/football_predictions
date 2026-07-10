@@ -23,6 +23,7 @@ FILES = [
     ("bigfive_player_extra.json", "bigfive_player_extra.json"),
     ("other_leagues.json", "other_leagues.json"),
     ("other_leagues_matches.json", "other_leagues_matches.json"),
+    ("other_leagues_lineups.json", "other_leagues_lineups.json"),
 ]
 
 
