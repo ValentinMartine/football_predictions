@@ -59,23 +59,92 @@ def main() -> int:
     df["FTHome"] = df["FTHome"].astype(int)
     df["FTAway"] = df["FTAway"].astype(int)
 
+    # Load 2025-2026 matches from predictions.json
+    pred_path = ROOT / "data" / "predictions.json"
+    pred_matches = []
+    if pred_path.exists():
+        try:
+            pred_data = json.loads(pred_path.read_text(encoding="utf-8"))
+            for m in pred_data.get("recent_matches", []):
+                if m.get("season") == "2025-2026" and m.get("actual_score"):
+                    sc = m["actual_score"].split("-")
+                    if len(sc) == 2:
+                        try:
+                            hg, ag = int(sc[0]), int(sc[1])
+                            res = "H" if hg > ag else ("A" if ag > hg else "D")
+                            div_map = {
+                                "Premier League": "E0",
+                                "La Liga": "SP1",
+                                "Serie A": "I1",
+                                "Bundesliga": "D1",
+                                "Ligue 1": "F1",
+                            }
+                            div_code = div_map.get(m.get("league"))
+                            if div_code:
+                                pred_matches.append({
+                                    "Division": div_code,
+                                    "MatchDate": m.get("date"),
+                                    "HomeTeam": m.get("home"),
+                                    "AwayTeam": m.get("away"),
+                                    "FTHome": hg,
+                                    "FTAway": ag,
+                                    "FTResult": res,
+                                    "date": pd.to_datetime(m.get("date")),
+                                    "season": "2025-2026"
+                                })
+                        except Exception:
+                            pass
+        except Exception as e:
+            print(f"Error loading predictions.json: {e}")
+
+    # Build matches list
+    matches_list = []
+    for r in df.itertuples(index=False):
+        matches_list.append({
+            "Division": str(r.Division),
+            "MatchDate": str(r.MatchDate),
+            "HomeTeam": str(r.HomeTeam),
+            "AwayTeam": str(r.AwayTeam),
+            "FTHome": int(r.FTHome),
+            "FTAway": int(r.FTAway),
+            "FTResult": str(r.FTResult),
+            "season": str(r.season)
+        })
+    for pm in pred_matches:
+        matches_list.append({
+            "Division": pm["Division"],
+            "MatchDate": pm["MatchDate"],
+            "HomeTeam": pm["HomeTeam"],
+            "AwayTeam": pm["AwayTeam"],
+            "FTHome": pm["FTHome"],
+            "FTAway": pm["FTAway"],
+            "FTResult": pm["FTResult"],
+            "season": pm["season"]
+        })
+
+    # Group by division and season
+    grouped_matches = {}
+    for m in matches_list:
+        k = (m["Division"], m["season"])
+        grouped_matches.setdefault(k, []).append(m)
+
     out: dict[str, dict] = {}
-    for (div, season), g in df.groupby(["Division", "season"]):
-        if str(div) not in DIV:
+    for (div, season), matches in grouped_matches.items():
+        if div not in DIV:
             continue
         tbl: dict[str, dict] = {}
 
         def row(team):
             return tbl.setdefault(team, {"team": team, "played": 0, "win": 0, "draw": 0, "loss": 0, "gf": 0, "ga": 0})
 
-        for m in g.itertuples(index=False):
-            h, a = row(str(m.HomeTeam)), row(str(m.AwayTeam))
+        for m in matches:
+            h, a = row(m["HomeTeam"]), row(m["AwayTeam"])
             h["played"] += 1; a["played"] += 1
-            h["gf"] += m.FTHome; h["ga"] += m.FTAway
-            a["gf"] += m.FTAway; a["ga"] += m.FTHome
-            if m.FTResult == "H":
+            h["gf"] += m["FTHome"]; h["ga"] += m["FTAway"]
+            a["gf"] += m["FTAway"]; a["ga"] += m["FTHome"]
+            if m["FTResult"] == "H":
                 h["win"] += 1; a["loss"] += 1
-            elif m.FTResult == "A":
+            elif m["FTResult"] == "A":
                 a["win"] += 1; h["loss"] += 1
             else:
                 h["draw"] += 1; a["draw"] += 1
@@ -86,9 +155,9 @@ def main() -> int:
         rows.sort(key=lambda r: (r["pts"], r["gd"], r["gf"]), reverse=True)
         for i, r in enumerate(rows, 1):
             r["rank"] = i
-        name, flag = DIV[str(div)]
-        out.setdefault(str(div), {"name": name, "flag": flag, "seasons": {}})
-        out[str(div)]["seasons"][str(season)] = rows
+        name, flag = DIV[div]
+        out.setdefault(div, {"name": name, "flag": flag, "seasons": {}})
+        out[div]["seasons"][season] = rows
 
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     if SITE.parent.exists():
