@@ -19,9 +19,16 @@ ROOT = Path(__file__).resolve().parents[1]
 STATS = ROOT / "data" / "understat_stats.json"
 LEAGUES = ["ENG-Premier League", "ESP-La Liga", "ITA-Serie A", "GER-Bundesliga", "FRA-Ligue 1"]
 
+# Nations britanniques : pas d'ISO alpha-2 valide -> emoji « tag sequence » dédié.
+SUBDIVISION_FLAGS = {
+    "ENG": "\U0001F3F4\U000E0067\U000E0062\U000E0065\U000E006E\U000E0067\U000E007F",  # Angleterre
+    "SCO": "\U0001F3F4\U000E0067\U000E0062\U000E0073\U000E0063\U000E0074\U000E007F",  # Écosse
+    "WAL": "\U0001F3F4\U000E0067\U000E0062\U000E0077\U000E006C\U000E0073\U000E007F",  # Pays de Galles
+}
+
 # Code FIFA/FBref (3 lettres) -> ISO 3166-1 alpha-2 (pour l'emoji drapeau)
 FIFA2ISO = {
-    "ENG": "EN", "SCO": "GB", "WAL": "GB", "NIR": "GB", "FRA": "FR", "ESP": "ES", "GER": "DE",
+    "NIR": "GB", "FRA": "FR", "ESP": "ES", "GER": "DE",
     "ITA": "IT", "POR": "PT", "NED": "NL", "BEL": "BE", "BRA": "BR", "ARG": "AR", "URU": "UY",
     "COL": "CO", "CHI": "CL", "ECU": "EC", "PER": "PE", "PAR": "PY", "VEN": "VE", "MEX": "MX",
     "USA": "US", "CAN": "CA", "CRO": "HR", "SRB": "RS", "SUI": "CH", "AUT": "AT", "DEN": "DK",
@@ -71,10 +78,12 @@ def main() -> None:
     surname_dupe: set[str] = set()
     for _, r in ps.iterrows():
         code = _nation_code(r.get("nation"))
-        iso = FIFA2ISO.get(code) if code else None
-        if not iso:
-            continue
-        flag = _iso_to_emoji(iso)
+        flag = SUBDIVISION_FLAGS.get(code) if code else None
+        if not flag:
+            iso = FIFA2ISO.get(code) if code else None
+            if not iso:
+                continue
+            flag = _iso_to_emoji(iso)
         n = _norm(r["player"])
         name_to_flag[n] = flag
         toks = n.split()
