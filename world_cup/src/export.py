@@ -59,19 +59,27 @@ def _load_shootouts() -> dict[tuple[str, str, str], dict[str, str | None]]:
     return out
 
 
-def _shootout_rates(k: float = 6.0) -> dict[str, float]:
-    """Taux de victoire historique aux tirs au but par équipe, régularisé vers 50 %
-    (prior de force k) car les échantillons sont petits. Sert au départage des KO nuls."""
+def _shootout_rates(k: float = 6.0, halflife_years: float = 8.0) -> dict[str, float]:
+    """Taux de victoire aux tirs au but par équipe, régularisé vers 50 % (prior k) et
+    PONDÉRÉ PAR LA RÉCENCE : une séance récente compte bien plus qu'une séance d'il y a
+    des décennies (décroissance exponentielle, demi-vie halflife_years). Départage des KO nuls."""
     if not SHOOTOUTS.exists():
         return {}
     s = pd.read_csv(SHOOTOUTS).dropna(subset=["home_team", "away_team", "winner"])
-    played: dict[str, int] = {}
-    won: dict[str, int] = {}
+    s["date"] = pd.to_datetime(s["date"], errors="coerce")
+    ref = s["date"].max()
+    played_w: dict[str, float] = {}
+    won_w: dict[str, float] = {}
     for row in s.itertuples(index=False):
+        if pd.isna(row.date):
+            w = 0.5 ** (30.0 / halflife_years)  # date manquante : traitée comme ancienne
+        else:
+            age_years = (ref - row.date).days / 365.25
+            w = 0.5 ** (age_years / halflife_years)
         for team in (str(row.home_team), str(row.away_team)):
-            played[team] = played.get(team, 0) + 1
-        won[str(row.winner)] = won.get(str(row.winner), 0) + 1
-    return {t: (won.get(t, 0) + 0.5 * k) / (n + k) for t, n in played.items()}
+            played_w[team] = played_w.get(team, 0.0) + w
+        won_w[str(row.winner)] = won_w.get(str(row.winner), 0.0) + w
+    return {t: (won_w.get(t, 0.0) + 0.5 * k) / (pw + k) for t, pw in played_w.items()}
 
 
 def _elo_probs(df, b, mu):
