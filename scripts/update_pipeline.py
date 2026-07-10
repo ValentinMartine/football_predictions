@@ -7,8 +7,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def run(command: list[str]) -> None:
-    subprocess.run(command, cwd=ROOT, check=True)
+def run(command: list[str], check: bool = True) -> None:
+    subprocess.run(command, cwd=ROOT, check=check)
 
 
 def main() -> None:
@@ -21,6 +21,10 @@ def main() -> None:
     run([sys.executable, "scripts/build_lineups.py"])
     run([sys.executable, "scripts/build_national_player_form.py"])
     run([sys.executable, "scripts/over_under_backtest.py"])
+    # Logos : best-effort (dépend d'une API externe) pour ne pas bloquer le pipeline.
+    run([sys.executable, "scripts/build_club_logos.py"], check=False)
+    # Normalisation des noms (données + clés de logos) : après tous les builders, avant sync.
+    run([sys.executable, "scripts/normalize_names.py"])
     run([sys.executable, "scripts/sync_to_site.py"])
 
 

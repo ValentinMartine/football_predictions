@@ -17,6 +17,12 @@ FILES = [
     ("national_player_form.json", "national_player_form.json"),
     ("team_power.json", "team_power.json"),
     ("over_under_report.json", "over_under_report.json"),
+    ("club_logos.json", "club_logos.json"),
+    ("standings.json", "standings.json"),
+    ("bigfive_team_stats.json", "bigfive_team_stats.json"),
+    ("bigfive_player_extra.json", "bigfive_player_extra.json"),
+    ("other_leagues.json", "other_leagues.json"),
+    ("other_leagues_matches.json", "other_leagues_matches.json"),
 ]
 
 
