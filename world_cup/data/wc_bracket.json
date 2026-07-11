@@ -278,9 +278,8 @@
    "label": "France 2-0 Morocco"
   },
   {
-   "winner": "Spain",
-   "flag": "🇪🇸",
-   "label": "Spain 2-1 Belgium"
+   "winner": null,
+   "flag": null
   },
   {
    "winner": null,
