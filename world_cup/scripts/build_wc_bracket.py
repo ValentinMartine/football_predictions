@@ -30,21 +30,23 @@ ISO2 = {
 }
 
 
-# Nations sans code ISO pays : drapeaux de sous-division (tag sequences).
-SUBDIVISION_FLAGS = {
-    "England": "\U0001F3F4\U000E0067\U000E0062\U000E0065\U000E006E\U000E0067\U000E007F",
-    "Scotland": "\U0001F3F4\U000E0067\U000E0062\U000E0073\U000E0063\U000E0074\U000E007F",
-    "Wales": "\U0001F3F4\U000E0067\U000E0062\U000E0077\U000E006C\U000E0073\U000E007F",
-}
+# Arbre RÉEL du tableau 2026 : l'ordre des 8es par date entrelace les deux moitiés, ce qui
+# plaçait France et Espagne dans des moitiés opposées. On réordonne selon le vrai tableau
+# (une équipe repère par 8e, dans l'ordre de l'arbre) pour que les quarts adjacents
+# nourrissent la bonne demi-finale :
+#   Moitié haute : (France-Maroc) + (Espagne-Belgique)  -> demie France/Espagne
+#   Moitié basse : (Norvège-Angleterre) + (Argentine-Suisse)
+BRACKET_ORDER = ["Morocco", "France", "Spain", "Belgium", "Norway", "England", "Argentina", "Switzerland"]
+
+# Angleterre : pas d'ISO alpha-2 valide -> emoji « tag sequence ».
+ENGLAND_FLAG = "\U0001F3F4\U000E0067\U000E0062\U000E0065\U000E006E\U000E0067\U000E007F"
 
 
 def flag(country: str) -> str:
-    if country in SUBDIVISION_FLAGS:
-        return SUBDIVISION_FLAGS[country]
+    if country == "England":
+        return ENGLAND_FLAG
     iso = ISO2.get(country)
-    if not iso or len(iso) != 2 or not iso.isalpha():
-        return "🏳️"
-    return "".join(chr(0x1F1E6 + ord(c) - ord("A")) for c in iso)
+    return "".join(chr(0x1F1E6 + ord(c) - ord("A")) for c in iso) if iso else "🏳️"
 
 
 def main() -> int:
@@ -62,6 +64,14 @@ def main() -> int:
 
     r32 = [m for m in wm if R32_RANGE[0] <= m["date"] <= R32_RANGE[1]]
     r16 = [m for m in wm if R16_RANGE[0] <= m["date"] <= R16_RANGE[1]]
+
+    # Réordonne les 8es selon l'arbre réel du tableau (au lieu de l'ordre par date).
+    def bracket_pos(m):
+        for i, anchor in enumerate(BRACKET_ORDER):
+            if anchor in (m["home"], m["away"]):
+                return i
+        return 99
+    r16.sort(key=bracket_pos)
 
     def feeder(team):
         for m in r32:

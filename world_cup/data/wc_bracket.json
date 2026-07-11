@@ -43,46 +43,6 @@
    "advanced": false
   },
   {
-   "name": "Brazil",
-   "flag": "🇧🇷",
-   "advanced": true
-  },
-  {
-   "name": "Japan",
-   "flag": "🇯🇵",
-   "advanced": false
-  },
-  {
-   "name": "Ivory Coast",
-   "flag": "🇨🇮",
-   "advanced": false
-  },
-  {
-   "name": "Norway",
-   "flag": "🇳🇴",
-   "advanced": true
-  },
-  {
-   "name": "Mexico",
-   "flag": "🇲🇽",
-   "advanced": true
-  },
-  {
-   "name": "Ecuador",
-   "flag": "🇪🇨",
-   "advanced": false
-  },
-  {
-   "name": "England",
-   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "advanced": true
-  },
-  {
-   "name": "DR Congo",
-   "flag": "🇨🇩",
-   "advanced": false
-  },
-  {
    "name": "Portugal",
    "flag": "🇵🇹",
    "advanced": true
@@ -120,6 +80,46 @@
   {
    "name": "Senegal",
    "flag": "🇸🇳",
+   "advanced": false
+  },
+  {
+   "name": "Brazil",
+   "flag": "🇧🇷",
+   "advanced": true
+  },
+  {
+   "name": "Japan",
+   "flag": "🇯🇵",
+   "advanced": false
+  },
+  {
+   "name": "Ivory Coast",
+   "flag": "🇨🇮",
+   "advanced": false
+  },
+  {
+   "name": "Norway",
+   "flag": "🇳🇴",
+   "advanced": true
+  },
+  {
+   "name": "Mexico",
+   "flag": "🇲🇽",
+   "advanced": true
+  },
+  {
+   "name": "Ecuador",
+   "flag": "🇪🇨",
+   "advanced": false
+  },
+  {
+   "name": "England",
+   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "advanced": true
+  },
+  {
+   "name": "DR Congo",
+   "flag": "🇨🇩",
    "advanced": false
   },
   {
@@ -181,22 +181,6 @@
    "flag": "🇫🇷"
   },
   {
-   "winner": "Brazil",
-   "flag": "🇧🇷"
-  },
-  {
-   "winner": "Norway",
-   "flag": "🇳🇴"
-  },
-  {
-   "winner": "Mexico",
-   "flag": "🇲🇽"
-  },
-  {
-   "winner": "England",
-   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
-  },
-  {
    "winner": "Portugal",
    "flag": "🇵🇹"
   },
@@ -211,6 +195,22 @@
   {
    "winner": "Belgium",
    "flag": "🇧🇪"
+  },
+  {
+   "winner": "Brazil",
+   "flag": "🇧🇷"
+  },
+  {
+   "winner": "Norway",
+   "flag": "🇳🇴"
+  },
+  {
+   "winner": "Mexico",
+   "flag": "🇲🇽"
+  },
+  {
+   "winner": "England",
+   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
   },
   {
    "winner": "Argentina",
@@ -241,16 +241,6 @@
    "label": "Paraguay 0-1 France"
   },
   {
-   "winner": "Norway",
-   "flag": "🇳🇴",
-   "label": "Brazil 1-2 Norway"
-  },
-  {
-   "winner": "England",
-   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "label": "Mexico 2-3 England"
-  },
-  {
    "winner": "Spain",
    "flag": "🇪🇸",
    "label": "Portugal 0-1 Spain"
@@ -259,6 +249,16 @@
    "winner": "Belgium",
    "flag": "🇧🇪",
    "label": "United States 1-4 Belgium"
+  },
+  {
+   "winner": "Norway",
+   "flag": "🇳🇴",
+   "label": "Brazil 1-2 Norway"
+  },
+  {
+   "winner": "England",
+   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "label": "Mexico 2-3 England"
   },
   {
    "winner": "Argentina",
@@ -273,12 +273,14 @@
  ],
  "qf": [
   {
-   "winner": null,
-   "flag": null
+   "winner": "France",
+   "flag": "🇫🇷",
+   "label": "France 2-0 Morocco"
   },
   {
-   "winner": null,
-   "flag": null
+   "winner": "Spain",
+   "flag": "🇪🇸",
+   "label": "Spain 2-1 Belgium"
   },
   {
    "winner": null,

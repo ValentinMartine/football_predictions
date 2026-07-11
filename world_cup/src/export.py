@@ -59,29 +59,6 @@ def _load_shootouts() -> dict[tuple[str, str, str], dict[str, str | None]]:
     return out
 
 
-def _shootout_rates(k: float = 6.0, halflife_years: float = 8.0) -> dict[str, float]:
-    """Taux de victoire aux tirs au but par équipe, régularisé vers 50 % (prior k) et
-    PONDÉRÉ PAR LA RÉCENCE : une séance récente compte bien plus qu'une séance d'il y a
-    des décennies (décroissance exponentielle, demi-vie halflife_years). Départage des KO nuls."""
-    if not SHOOTOUTS.exists():
-        return {}
-    s = pd.read_csv(SHOOTOUTS).dropna(subset=["home_team", "away_team", "winner"])
-    s["date"] = pd.to_datetime(s["date"], errors="coerce")
-    ref = s["date"].max()
-    played_w: dict[str, float] = {}
-    won_w: dict[str, float] = {}
-    for row in s.itertuples(index=False):
-        if pd.isna(row.date):
-            w = 0.5 ** (30.0 / halflife_years)  # date manquante : traitée comme ancienne
-        else:
-            age_years = (ref - row.date).days / 365.25
-            w = 0.5 ** (age_years / halflife_years)
-        for team in (str(row.home_team), str(row.away_team)):
-            played_w[team] = played_w.get(team, 0.0) + w
-        won_w[str(row.winner)] = won_w.get(str(row.winner), 0.0) + w
-    return {t: (won_w.get(t, 0.0) + 0.5 * k) / (pw + k) for t, pw in played_w.items()}
-
-
 def _elo_probs(df, b, mu):
     probs, scores = [], []
     for ed in df["elo_diff"].values:
@@ -108,7 +85,6 @@ def _outcome_consistent_scores(df, probs, b, mu):
 def main():
     df = build_features()
     shootouts = _load_shootouts()
-    shootout_rates = _shootout_rates()
     train = df[df["date"] < TRAIN_END]
     val = df[(df["date"] >= TRAIN_END) & (df["date"] < TEST_START)]
     test = df[df["date"] >= TEST_START]
@@ -164,16 +140,7 @@ def main():
         shootout = shootouts.get((r["date"].strftime("%Y-%m-%d"), r["home_team"], r["away_team"]))
         actual_score_winner = _score_winner(r["home_team"], r["away_team"], actual_home, actual_away)
         pred_score_winner = _score_winner(r["home_team"], r["away_team"], score_home, score_away)
-        # Départage d'un nul en KO : force du match (proba de victoire) + compétence
-        # historique aux tirs au but (régularisée), combinées.
-        denom = probs[0] + probs[2]
-        home_share = float(probs[0] / denom) if denom > 0 else 0.5
-        sr_home = shootout_rates.get(r["home_team"], 0.5)
-        sr_away = shootout_rates.get(r["away_team"], 0.5)
-        TB_LAMBDA = 0.5
-        home_tb = home_share + TB_LAMBDA * (sr_home - 0.5)
-        away_tb = (1.0 - home_share) + TB_LAMBDA * (sr_away - 0.5)
-        pred_tiebreak_winner = r["home_team"] if home_tb >= away_tb else r["away_team"]
+        pred_tiebreak_winner = r["home_team"] if probs[0] >= probs[2] else r["away_team"]
         pred_decisive_winner = pred_score_winner or pred_tiebreak_winner
         actual_decisive_winner = actual_score_winner or (shootout["winner"] if shootout else None)
         is_knockout = bool(r.get("is_world_cup_knockout_stage", 0))

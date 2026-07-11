@@ -25,10 +25,39 @@ PREDS_PATH = ROOT / "data" / "predictions.json"
 OUT = ROOT / "data" / "worldcup_lineups.json"
 SITE = Path("C:/Users/valen/Documents/Projets/Projets_Informatiques/Perso/valentinmartine/public/data/worldcup_lineups.json")
 API = "https://api.sofascore.com/api/v1"
-SCHEMA = 2  # bump quand la structure change -> invalide le cache
+SCHEMA = 3  # bump quand la structure change -> invalide le cache
 
 POS_MAP = {"G": "GK", "D": "DC", "M": "MC", "F": "FW"}
 POS_ORD = {"GK": 0, "DC": 1, "MC": 2, "FW": 3}
+POS_GROUP = {"GK": "GK", "DC": "DEF", "MC": "MID", "FW": "ATT"}
+
+
+def compute_note(group: str, g: int, a: int, xg: float, xa: float, conceded: int) -> float:
+    """« Ma note » /10 calculée et consciente du poste (indépendante de la note Sofascore).
+
+    Apport offensif pour tous ; gardiens et défenseurs valorisés/pénalisés selon les buts
+    encaissés par leur équipe. Aligné sur le calcul du projet clubs.
+    """
+    off = 1.3 * g + 0.8 * a + 0.5 * xg + 0.5 * xa
+
+    def csb(strong: float, weak: float) -> float:
+        if conceded <= 0:
+            return strong
+        if conceded == 1:
+            return weak
+        if conceded == 2:
+            return 0.0
+        return -0.4 * (conceded - 2)
+
+    if group == "GK":
+        note = 6.4 + csb(1.4, 0.6) + 0.5 * off
+    elif group == "DEF":
+        note = 6.0 + csb(1.1, 0.4) + off
+    elif group == "MID":
+        note = 6.0 + off + csb(0.3, 0.1)
+    else:
+        note = 6.0 + off
+    return round(min(10.0, max(3.5, note)), 1)
 
 
 def to_int(val, default=0):
@@ -149,12 +178,6 @@ def build_match(ss, match_id, h_norm):
         pos = POS_MAP.get(raw_pos, "MC")
         is_sub = to_bool(row.get("substitute"), False)
 
-        g_ = to_int(row.get("goals"), 0)
-        a_ = to_int(row.get("goalAssist"), 0)
-        xg_ = round(to_float(row.get("expectedGoals"), 0.0), 2)
-        xa_ = round(to_float(row.get("expectedAssists"), 0.0), 2)
-        # « ma note » /10 : base 6 bonifiée par la contribution offensive (comme le projet clubs).
-        ma_note = round(min(10.0, 6.0 + 1.3 * g_ + 0.8 * a_ + 0.5 * xg_ + 0.5 * xa_), 1)
         pdata = {
             "player": pname, "team": pteam,
             "pos": pos, "display_pos": pos, "ord": POS_ORD.get(pos, 2),
@@ -162,14 +185,25 @@ def build_match(ss, match_id, h_norm):
             "gmin": sorted(ev["gmin"].get(key, [])),
             "amin": sorted(ev["amin"].get(key, [])),
             "cards": ev["cards"].get(key, []),
-            "g": g_, "a": a_, "xg": xg_, "xa": xa_,
-            "note": ma_note,
+            "g": to_int(row.get("goals"), 0),
+            "a": to_int(row.get("goalAssist"), 0),
+            "xg": round(to_float(row.get("expectedGoals"), 0.0), 2),
+            "xa": round(to_float(row.get("expectedAssists"), 0.0), 2),
+            "note": None,  # « ma note » calculée après le split par équipe (buts encaissés)
             "sofa": round(to_float(row.get("rating"), 6.0), 1),
             "paired_with": None, "substitution_group": None,
             "motm": pname == motm,
             "_mins": mins,
         }
         (home_players if norm(pteam) == h_norm else away_players).append(pdata)
+
+    # « Ma note » consciente du poste : les buts encaissés = buts de l'équipe adverse.
+    home_goals = sum(int(p["g"]) for p in home_players)
+    away_goals = sum(int(p["g"]) for p in away_players)
+    for p in home_players:
+        p["note"] = compute_note(POS_GROUP.get(p["pos"], "ATT"), p["g"], p["a"], p["xg"], p["xa"], away_goals)
+    for p in away_players:
+        p["note"] = compute_note(POS_GROUP.get(p["pos"], "ATT"), p["g"], p["a"], p["xg"], p["xa"], home_goals)
 
     # Appariement EXACT des changements via les incidents.
     def apply_subs(players):

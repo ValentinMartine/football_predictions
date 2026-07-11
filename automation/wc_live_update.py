@@ -25,7 +25,7 @@ for _stream in (sys.stdout, sys.stderr):
 CLUBS = Path(__file__).resolve().parents[1]
 PERSO = CLUBS.parent
 SITE = PERSO / "valentinmartine"
-WORLDCUP = PERSO / "worldcup_2026_predictions"
+WORLDCUP = CLUBS / "world_cup"  # Coupe du Monde désormais dans le monorepo clubs
 SITE_DATA = SITE / "public" / "data"
 LOG_DIR = CLUBS / "automation" / "logs"
 AUTHOR_EMAIL = "212414673+ValentinMartine@users.noreply.github.com"
