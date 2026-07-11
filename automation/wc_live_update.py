@@ -69,6 +69,8 @@ def commit_and_push(repo: Path, path_spec: str, message: str) -> None:
     run(["git", "add", "--", path_spec], repo)
     run(["git", "-c", f"user.email={AUTHOR_EMAIL}", "-c", f"user.name={AUTHOR_NAME}",
          "commit", "-q", "-m", message], repo)
+    # Se synchroniser avec l'origine (le cloud/une autre tâche a pu pousser entre-temps).
+    subprocess.run(["git", "pull", "--rebase", "-q"], cwd=repo)
     run(["git", "push", "-q"], repo)
     log(f"  [{repo.name}] poussé : {message}")
 
