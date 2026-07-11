@@ -96,6 +96,8 @@ def main() -> int:
         try:
             run([sys.executable, "scripts/download_fifa_rankings.py"], WORLDCUP, check=False)
             run([sys.executable, "scripts/download_match_data.py"], WORLDCUP)
+            # Résultats live Sofascore pour les matchs pas encore publiés par martj42 (retard).
+            run([sys.executable, "scripts/patch_wc_results_from_sofascore.py"], WORLDCUP, check=False)
             run([sys.executable, "scripts/download_worldcup_metadata.py"], WORLDCUP, check=False)
             run([sys.executable, "scripts/train_and_backtest.py"], WORLDCUP)
             run([sys.executable, "-m", "src.export"], WORLDCUP)
