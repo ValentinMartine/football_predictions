@@ -14,6 +14,14 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+# Sortie robuste sous Windows (la console/redirection est en cp1252 : évite les crashs
+# d'encodage quand la sortie d'un sous-processus contient des caractères non cp1252).
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 CLUBS = Path(__file__).resolve().parents[1]
 PERSO = CLUBS.parent
 SITE = PERSO / "valentinmartine"
