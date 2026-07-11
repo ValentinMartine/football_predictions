@@ -90,10 +90,26 @@ def commit_and_push(repo: Path, path_spec: str, message: str) -> None:
     run(["git", "add", "--", path_spec], repo)
     run(["git", "-c", f"user.email={AUTHOR_EMAIL}", "-c", f"user.name={AUTHOR_NAME}",
          "commit", "-q", "-m", message], repo)
-    # Se synchroniser avec l'origine (le cloud/une autre tâche a pu pousser entre-temps).
-    subprocess.run(["git", "pull", "--rebase", "-q"], cwd=repo)
-    run(["git", "push", "-q"], repo)
+    if not _push_resilient(repo):
+        return
     log(f"  [{repo.name}] données poussées : {message}")
+
+
+def _push_resilient(repo: Path) -> bool:
+    """Pousse ; si l'origine a avancé, rebase en gardant NOS données (les plus fraîches).
+    En cas d'échec du rebase, on l'abandonne proprement et on réessaiera au prochain run."""
+    if subprocess.run(["git", "push", "-q"], cwd=repo).returncode == 0:
+        return True
+    subprocess.run(["git", "fetch", "origin", "-q"], cwd=repo)
+    rb = subprocess.run(["git", "rebase", "-X", "theirs", "@{u}"], cwd=repo,
+                        capture_output=True, text=True)
+    if rb.returncode != 0:
+        subprocess.run(["git", "rebase", "--abort"], cwd=repo)
+        log(f"  [{repo.name}] push rejeté, non résolu — réessai au prochain run")
+        return False
+    if subprocess.run(["git", "push", "-q"], cwd=repo).returncode != 0:
+        return False
+    return True
 
 
 def main() -> int:
