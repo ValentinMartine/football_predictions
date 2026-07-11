@@ -35,6 +35,7 @@ WC_TO_SITE = {
     "predictions.json": "worldcup_predictions.json",
     "wc_bracket.json": "wc_bracket.json",
     "wc_montecarlo.json": "wc_montecarlo.json",
+    "worldcup_lineups.json": "worldcup_lineups.json",
 }
 
 LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -102,6 +103,9 @@ def main() -> int:
         run([sys.executable, "-m", "src.export"], WORLDCUP)
         run([sys.executable, "scripts/build_wc_bracket.py"], WORLDCUP)
         run([sys.executable, "scripts/montecarlo_wc.py"], WORLDCUP)
+        # Compositions + notes (« ma note » / Sofascore) : scraping best-effort, non bloquant.
+        # fetch_wc_lineups copie lui-même worldcup_lineups.json vers le site.
+        run([sys.executable, "scripts/fetch_wc_lineups.py"], WORLDCUP, check=False)
         if SITE_DATA.exists():
             for src_name, dst_name in WC_TO_SITE.items():
                 src = WORLDCUP / "data" / src_name
