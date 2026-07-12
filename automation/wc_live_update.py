@@ -36,6 +36,7 @@ WC_TO_SITE = {
     "wc_bracket.json": "wc_bracket.json",
     "wc_montecarlo.json": "wc_montecarlo.json",
     "worldcup_lineups.json": "worldcup_lineups.json",
+    "wc_odds.json": "wc_odds.json",
 }
 
 LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -104,6 +105,10 @@ def main() -> int:
         run([sys.executable, "-m", "src.export"], WORLDCUP)
         run([sys.executable, "scripts/build_wc_bracket.py"], WORLDCUP)
         run([sys.executable, "scripts/montecarlo_wc.py"], WORLDCUP)
+        # Cotes des prochains matchs (The Odds API) + prédictions du modèle sur ces matchs :
+        # best-effort (quota API), pour que « Prochains matchs » suive demies puis finale.
+        run([sys.executable, "scripts/fetch_wc_odds.py"], WORLDCUP, check=False)
+        run([sys.executable, "scripts/predict_wc_upcoming.py"], WORLDCUP, check=False)
         # Compositions + notes (« ma note » / Sofascore) : scraping best-effort, non bloquant.
         # fetch_wc_lineups copie lui-même worldcup_lineups.json vers le site.
         run([sys.executable, "scripts/fetch_wc_lineups.py"], WORLDCUP, check=False)
