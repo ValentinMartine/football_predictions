@@ -43,8 +43,27 @@ def _f(v, default=0.0):
         return default
 
 
-def compute_note(group, g, a, xg, xa, conceded):
-    off = 1.3 * g + 0.8 * a + 0.5 * xg + 0.5 * xa
+# Colonnes Sofascore par match -> clés compactes stockées par joueur.
+EXTRA_STATS = {
+    "saves": "sv", "goalsPrevented": "gp", "penaltySave": "ps",
+    "wonTackle": "tw", "interceptionWon": "itc", "totalClearance": "clr",
+    "blockedScoringAttempt": "blk", "outfielderBlock": "oblk",
+    "duelWon": "dw", "duelLost": "dl", "aerialWon": "aw",
+    "errorLeadToAShot": "els", "keyPass": "kp",
+    "bigChanceCreated": "bcc", "bigChanceMissed": "bcm",
+}
+
+
+def compute_note(group, p, conceded):
+    """« Ma note » v2 /10 : poste, minutes, actions individuelles (voir fetch_wc_lineups)."""
+    mins = p.get("mins", 90) or 90
+    w = min(1.0, max(0.2, mins / 90.0))
+    off = (1.3 * p.get("g", 0) + 0.8 * p.get("a", 0) + 0.4 * p.get("xg", 0.0) + 0.4 * p.get("xa", 0.0)
+           + 0.3 * p.get("bcc", 0) + 0.12 * p.get("kp", 0) - 0.3 * p.get("bcm", 0))
+    dact = min(1.5, 0.09 * (p.get("tw", 0) + p.get("itc", 0))
+               + 0.05 * (p.get("clr", 0) + p.get("blk", 0) + p.get("oblk", 0))
+               + 0.04 * (p.get("dw", 0) - p.get("dl", 0)) + 0.04 * p.get("aw", 0))
+    errors = -0.7 * p.get("els", 0)
 
     def csb(strong, weak):
         if conceded <= 0:
@@ -56,14 +75,16 @@ def compute_note(group, g, a, xg, xa, conceded):
         return -0.4 * (conceded - 2)
 
     if group == "GK":
-        note = 6.4 + csb(1.4, 0.6) + 0.5 * off
+        gp = max(-2.0, min(2.0, p.get("gp", 0.0)))
+        note = (6.4 + w * (0.65 * gp + 0.10 * p.get("sv", 0) + 0.8 * p.get("ps", 0))
+                + w * csb(0.6, 0.25) + 0.4 * off + errors)
     elif group == "DEF":
-        note = 6.0 + csb(1.1, 0.4) + off
+        note = 6.0 + off + w * dact + w * csb(0.8, 0.3) + errors
     elif group == "MID":
-        note = 6.0 + off + csb(0.3, 0.1)
+        note = 6.0 + off + w * 0.6 * dact + w * csb(0.25, 0.1) + errors
     else:
-        note = 6.0 + off
-    return round(min(10.0, max(3.5, note)), 1)
+        note = 6.0 + off + w * 0.3 * dact + errors
+    return round(min(10.0, max(3.0, note)), 1)
 
 
 def _div_meta():
@@ -94,17 +115,20 @@ def _players_from_stats(ps, team_home, team_away):
             "g": int(_f(r.get("goals"), 0)), "a": int(_f(r.get("goalAssist"), 0)),
             "xg": round(_f(r.get("expectedGoals"), 0.0), 2),
             "xa": round(_f(r.get("expectedAssists"), 0.0), 2),
-            "note": None, "sofa": rating, "_mins": mins,
+            "note": None, "sofa": rating, "mins": mins,
         }
+        # Stats brutes Sofascore (composantes de la note v2, gardées pour recalibrage).
+        for col, short in EXTRA_STATS.items():
+            v = _f(r.get(col), 0.0)
+            if v:
+                pdata[short] = round(v, 2) if col == "goalsPrevented" else int(v)
         (home if pdata["team"] == team_home else away).append(pdata)
     hg = sum(p["g"] for p in home)
     ag = sum(p["g"] for p in away)
     for p in home:
-        p["note"] = compute_note(POS_GROUP.get(p["pos"], "ATT"), p["g"], p["a"], p["xg"], p["xa"], ag)
+        p["note"] = compute_note(POS_GROUP.get(p["pos"], "ATT"), p, ag)
     for p in away:
-        p["note"] = compute_note(POS_GROUP.get(p["pos"], "ATT"), p["g"], p["a"], p["xg"], p["xa"], hg)
-    for p in home + away:
-        p.pop("_mins", None)
+        p["note"] = compute_note(POS_GROUP.get(p["pos"], "ATT"), p, hg)
     home.sort(key=lambda p: p["ord"])
     away.sort(key=lambda p: p["ord"])
     return home[:18], away[:18]

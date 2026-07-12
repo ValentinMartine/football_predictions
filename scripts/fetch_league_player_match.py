@@ -29,7 +29,13 @@ LEAGUES = {
 RICH = {"rating": "rating", "minutesPlayed": "min", "goals": "g", "goalAssist": "a",
         "onTargetScoringAttempt": "sot", "accuratePass": "acc_pass", "totalPass": "tot_pass",
         "wonContest": "dribbles", "totalContest": "drib_att", "totalTackle": "tackles",
-        "keyPass": "key_pass"}
+        "keyPass": "key_pass",
+        # Stats défensives / gardien (note v2) : accumulées pour les prochaines saisons.
+        "saves": "sv", "goalsPrevented": "gp", "penaltySave": "ps",
+        "wonTackle": "tw", "interceptionWon": "itc", "totalClearance": "clr",
+        "blockedScoringAttempt": "blk", "outfielderBlock": "oblk",
+        "duelWon": "dw", "duelLost": "dl", "aerialWon": "aw",
+        "errorLeadToAShot": "els", "bigChanceCreated": "bcc", "bigChanceMissed": "bcm"}
 
 
 def _num(v):

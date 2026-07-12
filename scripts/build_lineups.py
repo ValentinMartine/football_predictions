@@ -37,15 +37,19 @@ POS_GROUP = {
 }
 
 
-def player_note(group: str, g: int, a: int, xg: float, xa: float, conceded: int) -> float:
-    """« Ma note » /10 consciente du poste.
+def player_note(group: str, g: int, a: int, xg: float, xa: float, conceded: int,
+                mins: int = 90) -> float:
+    """« Ma note » /10 consciente du poste, composante collective pondérée par les minutes.
 
     Tous les joueurs sont crédités de leur apport offensif ; gardiens et défenseurs
     reçoivent en plus une composante défensive fondée sur les buts encaissés par leur
-    équipe (clean sheet valorisé, encaissements pénalisés). Corrige le fait que la
-    formule purement offensive laissait défenseurs et gardiens à ~6,0.
+    équipe (clean sheet valorisé, encaissements pénalisés), pondérée par le temps de
+    jeu — un remplaçant entré en fin de match ne s'approprie plus le clean sheet.
+    (Les stats défensives individuelles ne sont pas disponibles via Understat ;
+    la note v2 complète existe côté Coupe du Monde et autres championnats.)
     """
     off = 1.3 * g + 0.8 * a + 0.5 * xg + 0.5 * xa
+    w = min(1.0, max(0.2, (mins or 90) / 90.0))
 
     def clean_sheet_bonus(strong: float, weak: float) -> float:
         if conceded <= 0:
@@ -57,11 +61,11 @@ def player_note(group: str, g: int, a: int, xg: float, xa: float, conceded: int)
         return -0.4 * (conceded - 2)
 
     if group == "GK":
-        note = 6.4 + clean_sheet_bonus(1.4, 0.6) + 0.5 * off
+        note = 6.4 + w * clean_sheet_bonus(1.4, 0.6) + 0.5 * off
     elif group == "DEF":
-        note = 6.0 + clean_sheet_bonus(1.1, 0.4) + off
+        note = 6.0 + w * clean_sheet_bonus(1.1, 0.4) + off
     elif group == "MID":
-        note = 6.0 + off + clean_sheet_bonus(0.3, 0.1)
+        note = 6.0 + off + w * clean_sheet_bonus(0.3, 0.1)
     else:  # ATT, SUB, poste inconnu : purement offensif
         note = 6.0 + off
     return round(min(10.0, max(3.5, note)), 1)
@@ -396,7 +400,7 @@ def main() -> None:
                 "off": off,
                 "smin": smin,
                 "gmin": goal_min.get((game_id, str(r[pcol])), []),
-                "g": g_, "a": a_, "xg": xg_, "xa": xa_,
+                "g": g_, "a": a_, "xg": xg_, "xa": xa_, "mins": mins,
             })
         # « Ma note » consciente du poste : les buts encaissés = buts de l'équipe adverse.
         team_goals: dict[str, int] = {}
@@ -405,7 +409,7 @@ def main() -> None:
         total_goals = sum(team_goals.values())
         for p in out:
             conceded = total_goals - team_goals.get(p["team"], 0)
-            p["note"] = player_note(POS_GROUP.get(p["pos"], "ATT"), p["g"], p["a"], p["xg"], p["xa"], conceded)
+            p["note"] = player_note(POS_GROUP.get(p["pos"], "ATT"), p["g"], p["a"], p["xg"], p["xa"], conceded, p.get("mins", 90))
         # Faits FBref si disponibles (entrant/sortant exacts), sinon appariement inféré.
         if ev and ev.get("subs"):
             return _factual_pairing(out, ev)
