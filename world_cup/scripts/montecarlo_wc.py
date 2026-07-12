@@ -104,9 +104,19 @@ def main() -> int:
     teams_r32 = [t["name"] for t in bracket["teams"]]                 # 32
     teams_r16 = [n["winner"] for n in bracket["r32"] if n.get("winner")]  # 16
     teams_qf = [n["winner"] for n in bracket["r16"] if n.get("winner")]   # 8
+    teams_sf = [n["winner"] for n in bracket.get("qf", []) if n.get("winner")]     # 4
+    teams_final = [n["winner"] for n in bracket.get("sf", []) if n.get("winner")]  # 2
 
-    stages = {}
-    for key, teams in (("round_of_32", teams_r32), ("round_of_16", teams_r16), ("quarter_final", teams_qf)):
+    # Clés « *_start » = simulation à partir des équipes réellement qualifiées pour ce stade.
+    stage_defs = (
+        ("round_of_32_start", teams_r32, 32),
+        ("round_of_16_start", teams_r16, 16),
+        ("quarter_final_start", teams_qf, 8),
+        ("semi_final_start", teams_sf, 4),
+        ("final_start", teams_final, 2),
+    )
+    stages, latest_key = {}, None
+    for key, teams, expected in stage_defs:
         if len(teams) < 2:
             continue
         prob = simulate(teams, ratings, initial, b, mu, N_SIMS)
@@ -117,6 +127,8 @@ def main() -> int:
             "champion_pct": round(100 * champ[1], 1),
             "top": top_list(prob, flags),
         }
+        if len(teams) == expected:  # stade entièrement déterminé -> candidat « dernier stade »
+            latest_key = key
 
     # Justesse rétrospective en KO : part des matchs où le favori du modèle s'est qualifié.
     ko_n = ko_ok = 0
@@ -137,6 +149,7 @@ def main() -> int:
                  "buts (nul en KO tranché par la probabilité Elo). La simulation part des "
                  "32es (1er tour à élimination directe) : la phase de groupes n'est pas resimulée."),
         "current_stage": bracket.get("stage_reached"),
+        "latest_completed_stage_key": latest_key,
         "stages": stages,
         "knockout_accuracy": {"n": ko_n, "correct": ko_ok,
                               "pct": round(100 * ko_ok / ko_n, 1) if ko_n else None},
@@ -145,9 +158,9 @@ def main() -> int:
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     if SITE.parent.exists():
         SITE.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
-    cur = stages.get("quarter_final") or {}
+    cur = stages.get(latest_key) or {}
     print(f"OK -> {OUT.name}")
-    print(f"  champion prédit (quarts) : {cur.get('champion')} {cur.get('champion_pct')}%")
+    print(f"  champion prédit ({latest_key}) : {cur.get('champion')} {cur.get('champion_pct')}%")
     print(f"  justesse KO : {ko_ok}/{ko_n}")
     return 0
 
