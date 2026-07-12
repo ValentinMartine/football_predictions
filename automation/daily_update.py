@@ -32,6 +32,7 @@ CLUBS = Path(__file__).resolve().parents[1]
 PERSO = CLUBS.parent
 SITE = PERSO / "valentinmartine"
 WORLDCUP = CLUBS / "world_cup"  # Coupe du Monde désormais dans le monorepo clubs
+TENNIS = PERSO / "tennis_predictions"
 SITE_DATA = SITE / "public" / "data"
 LOG_DIR = CLUBS / "automation" / "logs"
 AUTHOR_EMAIL = "212414673+ValentinMartine@users.noreply.github.com"
@@ -136,9 +137,20 @@ def main() -> int:
         except Exception as exc:  # noqa: BLE001
             log(f"  Coupe du Monde ignorée (non bloquant) : {exc}")
 
+        log("Tennis ATP (download -> patch Sofascore Grands Chelems -> train -> export)...")
+        try:
+            run([sys.executable, "scripts/download_data.py"], TENNIS)
+            run([sys.executable, "scripts/patch_results_from_sofascore.py"], TENNIS, check=False)
+            run([sys.executable, "scripts/train_and_backtest.py"], TENNIS)
+            run([sys.executable, "-m", "src.export"], TENNIS)  # copie aussi vers le site
+            log("  Tennis régénéré + copié vers le site")
+        except Exception as exc:  # noqa: BLE001
+            log(f"  Tennis ignoré (non bloquant) : {exc}")
+
         today = f"{datetime.now():%Y-%m-%d}"
         commit_and_push(CLUBS, "data", f"chore(data): mise à jour quotidienne clubs ({today})")
         commit_and_push(WORLDCUP, "data", f"chore(data): mise à jour quotidienne Coupe du Monde ({today})")
+        commit_and_push(TENNIS, "data", f"chore(data): mise à jour quotidienne tennis ({today})")
         commit_and_push(SITE, "public/data", f"chore(data): rafraîchissement quotidien du site ({today})")
 
         log("=== Fin : succès ===")
