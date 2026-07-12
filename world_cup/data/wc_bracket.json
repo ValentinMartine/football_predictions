@@ -1,5 +1,5 @@
 {
- "stage_reached": "Huitièmes de finale (8es)",
+ "stage_reached": "Quarts de finale",
  "note": "Bracket réel de la Coupe du Monde 2026 jusqu'au tour le plus récent joué.",
  "teams": [
   {
@@ -283,12 +283,14 @@
    "label": "Spain 2-1 Belgium"
   },
   {
-   "winner": null,
-   "flag": null
+   "winner": "England",
+   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "label": "Norway 1-2 England"
   },
   {
-   "winner": null,
-   "flag": null
+   "winner": "Argentina",
+   "flag": "🇦🇷",
+   "label": "Argentina 3-1 Switzerland"
   }
  ],
  "sf": [

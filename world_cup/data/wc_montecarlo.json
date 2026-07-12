@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-11T17:01:47+00:00",
+ "generated_at": "2026-07-12T15:05:33+00:00",
  "n_sims": 20000,
  "elo_asof": "2026-06-11",
  "note": "Simulation Monte Carlo du tableau final à partir des équipes réellement présentes à chaque stade, via l'Elo pré-tournoi et un tirage Poisson des buts (nul en KO tranché par la probabilité Elo). La simulation part des 32es (1er tour à élimination directe) : la phase de groupes n'est pas resimulée.",
- "current_stage": "Huitièmes de finale (8es)",
+ "current_stage": "Quarts de finale",
  "stages": {
   "round_of_32": {
    "n_teams": 32,
@@ -125,7 +125,7 @@
     {
      "team": "England",
      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-     "pct": 13.2
+     "pct": 13.1
     },
     {
      "team": "Norway",
@@ -151,9 +151,9 @@
   }
  },
  "knockout_accuracy": {
-  "n": 30,
-  "correct": 25,
-  "pct": 83.3
+  "n": 32,
+  "correct": 27,
+  "pct": 84.4
  },
  "blend": {
   "b": 0.00559,
