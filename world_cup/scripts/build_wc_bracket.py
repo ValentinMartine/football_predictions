@@ -141,8 +141,22 @@ def main() -> int:
         fw = winner(final_match)
         winner_node = {"winner": fw, "flag": flag(fw) if fw else None}
 
+    # Stade atteint calculé dynamiquement à partir des tours réellement décidés.
+    decided_qf = sum(1 for n in qf_nodes if n.get("winner"))
+    decided_sf = sum(1 for n in sf_nodes if n.get("winner"))
+    if winner_node and winner_node.get("winner"):
+        stage_reached = "Finale jouée"
+    elif decided_sf:
+        stage_reached = "Demi-finales"
+    elif decided_qf:
+        stage_reached = "Quarts de finale"
+    elif r16_nodes:
+        stage_reached = "Huitièmes de finale"
+    else:
+        stage_reached = "32es de finale"
+
     payload = {
-        "stage_reached": "Huitièmes de finale (8es)",
+        "stage_reached": stage_reached,
         "note": "Bracket réel de la Coupe du Monde 2026 jusqu'au tour le plus récent joué.",
         "teams": teams,
         "r32": r32_nodes,

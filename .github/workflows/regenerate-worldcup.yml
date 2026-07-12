@@ -41,6 +41,13 @@ jobs:
           python scripts/download_match_data.py
           python scripts/download_worldcup_metadata.py
 
+      # Résultats live via l'API football-data.org (gratuite, fonctionne en CI).
+      # C'est ce qui rend le site « live » quand le PC local est éteint.
+      - name: Patch live results from football-data.org
+        env:
+          FOOTBALL_DATA_API_TOKEN: ${{ secrets.FOOTBALL_DATA_API_TOKEN }}
+        run: python scripts/patch_wc_results_from_football_data.py
+
       # Résultats live depuis Sofascore pour les matchs pas encore publiés par martj42.
       # Best-effort (scraper navigateur) : non bloquant si l'IP du runner est filtrée.
       - name: Patch live results from Sofascore (best effort)

@@ -101,7 +101,8 @@ def _push_resilient(repo: Path) -> bool:
     if subprocess.run(["git", "push", "-q"], cwd=repo).returncode == 0:
         return True
     subprocess.run(["git", "fetch", "origin", "-q"], cwd=repo)
-    rb = subprocess.run(["git", "rebase", "-X", "theirs", "@{u}"], cwd=repo,
+    # --autostash : un fichier modifié non commité (travail en cours) ne bloque plus le rebase.
+    rb = subprocess.run(["git", "rebase", "--autostash", "-X", "theirs", "@{u}"], cwd=repo,
                         capture_output=True, text=True)
     if rb.returncode != 0:
         subprocess.run(["git", "rebase", "--abort"], cwd=repo)
