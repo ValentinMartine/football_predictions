@@ -1,0 +1,10415 @@
+{
+ "note": "Moyennes saison complète (toutes journées Understat), formule « ma note » v1.5.",
+ "teams": {
+  "Bournemouth": {
+   "power": 70.6,
+   "matches": 38
+  },
+  "Liverpool": {
+   "power": 71.0,
+   "matches": 38
+  },
+  "Aston Villa": {
+   "power": 70.4,
+   "matches": 38
+  },
+  "Newcastle United": {
+   "power": 70.3,
+   "matches": 38
+  },
+  "Brighton": {
+   "power": 70.7,
+   "matches": 38
+  },
+  "Fulham": {
+   "power": 69.9,
+   "matches": 38
+  },
+  "Sunderland": {
+   "power": 70.2,
+   "matches": 38
+  },
+  "West Ham": {
+   "power": 69.5,
+   "matches": 38
+  },
+  "Burnley": {
+   "power": 68.3,
+   "matches": 38
+  },
+  "Tottenham": {
+   "power": 69.8,
+   "matches": 38
+  },
+  "Manchester City": {
+   "power": 72.9,
+   "matches": 38
+  },
+  "Wolverhampton Wanderers": {
+   "power": 68.3,
+   "matches": 38
+  },
+  "Chelsea": {
+   "power": 70.7,
+   "matches": 38
+  },
+  "Crystal Palace": {
+   "power": 70.1,
+   "matches": 38
+  },
+  "Brentford": {
+   "power": 70.9,
+   "matches": 38
+  },
+  "Nottingham Forest": {
+   "power": 70.4,
+   "matches": 38
+  },
+  "Arsenal": {
+   "power": 72.6,
+   "matches": 38
+  },
+  "Manchester United": {
+   "power": 71.3,
+   "matches": 38
+  },
+  "Everton": {
+   "power": 70.5,
+   "matches": 38
+  },
+  "Leeds": {
+   "power": 69.8,
+   "matches": 38
+  },
+  "Girona": {
+   "power": 69.5,
+   "matches": 38
+  },
+  "Rayo Vallecano": {
+   "power": 70.3,
+   "matches": 38
+  },
+  "Real Oviedo": {
+   "power": 68.5,
+   "matches": 38
+  },
+  "Villarreal": {
+   "power": 71.3,
+   "matches": 38
+  },
+  "Barcelona": {
+   "power": 73.1,
+   "matches": 38
+  },
+  "Mallorca": {
+   "power": 69.7,
+   "matches": 38
+  },
+  "Alaves": {
+   "power": 69.5,
+   "matches": 38
+  },
+  "Levante": {
+   "power": 69.7,
+   "matches": 38
+  },
+  "Real Sociedad": {
+   "power": 70.0,
+   "matches": 38
+  },
+  "Valencia": {
+   "power": 69.8,
+   "matches": 38
+  },
+  "Celta Vigo": {
+   "power": 70.1,
+   "matches": 38
+  },
+  "Getafe": {
+   "power": 70.8,
+   "matches": 38
+  },
+  "Athletic Club": {
+   "power": 69.4,
+   "matches": 38
+  },
+  "Sevilla": {
+   "power": 69.2,
+   "matches": 38
+  },
+  "Atletico Madrid": {
+   "power": 71.2,
+   "matches": 38
+  },
+  "Espanyol": {
+   "power": 69.7,
+   "matches": 38
+  },
+  "Elche": {
+   "power": 69.4,
+   "matches": 38
+  },
+  "Real Betis": {
+   "power": 70.9,
+   "matches": 38
+  },
+  "Osasuna": {
+   "power": 69.8,
+   "matches": 38
+  },
+  "Real Madrid": {
+   "power": 72.5,
+   "matches": 38
+  },
+  "Marseille": {
+   "power": 71.4,
+   "matches": 34
+  },
+  "Rennes": {
+   "power": 70.6,
+   "matches": 34
+  },
+  "Lens": {
+   "power": 72.1,
+   "matches": 34
+  },
+  "Lyon": {
+   "power": 71.3,
+   "matches": 34
+  },
+  "Le Havre": {
+   "power": 69.7,
+   "matches": 34
+  },
+  "Monaco": {
+   "power": 70.4,
+   "matches": 34
+  },
+  "Nice": {
+   "power": 68.9,
+   "matches": 34
+  },
+  "Toulouse": {
+   "power": 70.1,
+   "matches": 33
+  },
+  "Brest": {
+   "power": 69.8,
+   "matches": 34
+  },
+  "Lille": {
+   "power": 71.1,
+   "matches": 34
+  },
+  "Auxerre": {
+   "power": 70.0,
+   "matches": 34
+  },
+  "Lorient": {
+   "power": 70.0,
+   "matches": 34
+  },
+  "Angers": {
+   "power": 69.2,
+   "matches": 34
+  },
+  "Paris FC": {
+   "power": 69.9,
+   "matches": 34
+  },
+  "Metz": {
+   "power": 67.8,
+   "matches": 34
+  },
+  "Strasbourg": {
+   "power": 70.9,
+   "matches": 34
+  },
+  "Nantes": {
+   "power": 69.0,
+   "matches": 33
+  },
+  "Paris Saint Germain": {
+   "power": 73.1,
+   "matches": 34
+  },
+  "Genoa": {
+   "power": 69.5,
+   "matches": 38
+  },
+  "Lecce": {
+   "power": 69.3,
+   "matches": 38
+  },
+  "Napoli": {
+   "power": 71.2,
+   "matches": 38
+  },
+  "Sassuolo": {
+   "power": 70.0,
+   "matches": 38
+  },
+  "AC Milan": {
+   "power": 71.4,
+   "matches": 38
+  },
+  "Cremonese": {
+   "power": 68.9,
+   "matches": 38
+  },
+  "Bologna": {
+   "power": 70.1,
+   "matches": 38
+  },
+  "Roma": {
+   "power": 71.4,
+   "matches": 38
+  },
+  "Cagliari": {
+   "power": 69.6,
+   "matches": 38
+  },
+  "Fiorentina": {
+   "power": 69.9,
+   "matches": 38
+  },
+  "Como": {
+   "power": 71.9,
+   "matches": 38
+  },
+  "Lazio": {
+   "power": 70.3,
+   "matches": 38
+  },
+  "Atalanta": {
+   "power": 70.9,
+   "matches": 38
+  },
+  "Pisa": {
+   "power": 67.9,
+   "matches": 38
+  },
+  "Juventus": {
+   "power": 71.6,
+   "matches": 38
+  },
+  "Parma Calcio 1913": {
+   "power": 69.4,
+   "matches": 38
+  },
+  "Udinese": {
+   "power": 69.8,
+   "matches": 38
+  },
+  "Verona": {
+   "power": 68.6,
+   "matches": 38
+  },
+  "Inter": {
+   "power": 72.7,
+   "matches": 38
+  },
+  "Torino": {
+   "power": 69.0,
+   "matches": 38
+  },
+  "Bayern Munich": {
+   "power": 74.4,
+   "matches": 34
+  },
+  "RasenBallsport Leipzig": {
+   "power": 71.3,
+   "matches": 34
+  },
+  "FC Heidenheim": {
+   "power": 68.4,
+   "matches": 34
+  },
+  "Wolfsburg": {
+   "power": 69.0,
+   "matches": 34
+  },
+  "Bayer Leverkusen": {
+   "power": 71.2,
+   "matches": 34
+  },
+  "Hoffenheim": {
+   "power": 70.7,
+   "matches": 34
+  },
+  "Union Berlin": {
+   "power": 69.2,
+   "matches": 34
+  },
+  "VfB Stuttgart": {
+   "power": 71.4,
+   "matches": 34
+  },
+  "Eintracht Frankfurt": {
+   "power": 69.6,
+   "matches": 34
+  },
+  "Werder Bremen": {
+   "power": 69.1,
+   "matches": 34
+  },
+  "Augsburg": {
+   "power": 69.2,
+   "matches": 34
+  },
+  "Freiburg": {
+   "power": 69.6,
+   "matches": 34
+  },
+  "Borussia Dortmund": {
+   "power": 72.0,
+   "matches": 34
+  },
+  "St. Pauli": {
+   "power": 68.5,
+   "matches": 34
+  },
+  "FC Cologne": {
+   "power": 69.1,
+   "matches": 34
+  },
+  "Mainz 05": {
+   "power": 69.8,
+   "matches": 34
+  },
+  "Borussia M.Gladbach": {
+   "power": 69.6,
+   "matches": 34
+  },
+  "Hamburger SV": {
+   "power": 69.2,
+   "matches": 34
+  }
+ },
+ "players": {
+  "Djordje Petrovic|Bournemouth": {
+   "note": 6.91,
+   "matches": 38
+  },
+  "Bafode Diakite|Bournemouth": {
+   "note": 6.14,
+   "matches": 18
+  },
+  "Marcos Senesi|Bournemouth": {
+   "note": 6.52,
+   "matches": 37
+  },
+  "Adam Smith|Bournemouth": {
+   "note": 6.26,
+   "matches": 22
+  },
+  "Adrien Truffert|Bournemouth": {
+   "note": 6.58,
+   "matches": 38
+  },
+  "Tyler Adams|Bournemouth": {
+   "note": 6.19,
+   "matches": 25
+  },
+  "Alex Scott|Bournemouth": {
+   "note": 6.24,
+   "matches": 37
+  },
+  "Marcus Tavernier|Bournemouth": {
+   "note": 6.55,
+   "matches": 34
+  },
+  "James Hill|Bournemouth": {
+   "note": 6.49,
+   "matches": 29
+  },
+  "Antoine Semenyo|Bournemouth": {
+   "note": 7.0,
+   "matches": 20
+  },
+  "Eli Junior Kroupi|Bournemouth": {
+   "note": 6.67,
+   "matches": 33
+  },
+  "David Brooks|Bournemouth": {
+   "note": 6.28,
+   "matches": 31
+  },
+  "Evanilson|Bournemouth": {
+   "note": 6.44,
+   "matches": 36
+  },
+  "Alisson|Liverpool": {
+   "note": 6.97,
+   "matches": 26
+  },
+  "Ibrahima Konaté|Liverpool": {
+   "note": 6.41,
+   "matches": 36
+  },
+  "Virgil van Dijk|Liverpool": {
+   "note": 6.6,
+   "matches": 38
+  },
+  "Jeremie Frimpong|Liverpool": {
+   "note": 6.17,
+   "matches": 21
+  },
+  "Andrew Robertson|Liverpool": {
+   "note": 6.33,
+   "matches": 24
+  },
+  "Milos Kerkez|Liverpool": {
+   "note": 6.32,
+   "matches": 34
+  },
+  "Wataru Endo|Liverpool": {
+   "note": 6.22,
+   "matches": 8
+  },
+  "Alexis Mac Allister|Liverpool": {
+   "note": 6.25,
+   "matches": 37
+  },
+  "Curtis Jones|Liverpool": {
+   "note": 6.19,
+   "matches": 34
+  },
+  "Dominik Szoboszlai|Liverpool": {
+   "note": 6.67,
+   "matches": 36
+  },
+  "Florian Wirtz|Liverpool": {
+   "note": 6.46,
+   "matches": 33
+  },
+  "Federico Chiesa|Liverpool": {
+   "note": 6.18,
+   "matches": 26
+  },
+  "Mohamed Salah|Liverpool": {
+   "note": 6.83,
+   "matches": 27
+  },
+  "Cody Gakpo|Liverpool": {
+   "note": 6.59,
+   "matches": 36
+  },
+  "Hugo Ekitike|Liverpool": {
+   "note": 6.87,
+   "matches": 28
+  },
+  "Joseph Gomez|Liverpool": {
+   "note": 6.18,
+   "matches": 21
+  },
+  "Marco Bizot|Aston Villa": {
+   "note": 6.66,
+   "matches": 7
+  },
+  "Ezri Konsa Ngoyo|Aston Villa": {
+   "note": 6.38,
+   "matches": 34
+  },
+  "Tyrone Mings|Aston Villa": {
+   "note": 6.25,
+   "matches": 17
+  },
+  "Matthew Cash|Aston Villa": {
+   "note": 6.63,
+   "matches": 35
+  },
+  "Lucas Digne|Aston Villa": {
+   "note": 6.52,
+   "matches": 31
+  },
+  "Amadou Onana|Aston Villa": {
+   "note": 6.18,
+   "matches": 25
+  },
+  "Boubacar Kamara|Aston Villa": {
+   "note": 6.37,
+   "matches": 18
+  },
+  "Youri Tielemans|Aston Villa": {
+   "note": 6.22,
+   "matches": 25
+  },
+  "John McGinn|Aston Villa": {
+   "note": 6.46,
+   "matches": 30
+  },
+  "Donyell Malen|Aston Villa": {
+   "note": 6.4,
+   "matches": 21
+  },
+  "Morgan Rogers|Aston Villa": {
+   "note": 6.68,
+   "matches": 37
+  },
+  "Ollie Watkins|Aston Villa": {
+   "note": 6.88,
+   "matches": 37
+  },
+  "Nick Pope|Newcastle United": {
+   "note": 6.84,
+   "matches": 27
+  },
+  "Dan Burn|Newcastle United": {
+   "note": 6.37,
+   "matches": 29
+  },
+  "Fabian Schär|Newcastle United": {
+   "note": 6.36,
+   "matches": 16
+  },
+  "Kieran Trippier|Newcastle United": {
+   "note": 6.3,
+   "matches": 21
+  },
+  "Valentino Livramento|Newcastle United": {
+   "note": 6.45,
+   "matches": 17
+  },
+  "Bruno Guimarães|Newcastle United": {
+   "note": 6.78,
+   "matches": 29
+  },
+  "William Osula|Newcastle United": {
+   "note": 6.48,
+   "matches": 24
+  },
+  "Joelinton|Newcastle United": {
+   "note": 6.23,
+   "matches": 27
+  },
+  "Lewis Miley|Newcastle United": {
+   "note": 6.41,
+   "matches": 23
+  },
+  "Sandro Tonali|Newcastle United": {
+   "note": 6.13,
+   "matches": 35
+  },
+  "Anthony Gordon|Newcastle United": {
+   "note": 6.61,
+   "matches": 26
+  },
+  "Anthony Elanga|Newcastle United": {
+   "note": 6.07,
+   "matches": 32
+  },
+  "Jacob Murphy|Newcastle United": {
+   "note": 6.29,
+   "matches": 33
+  },
+  "Harvey Barnes|Newcastle United": {
+   "note": 6.41,
+   "matches": 37
+  },
+  "Bart Verbruggen|Brighton": {
+   "note": 7.03,
+   "matches": 38
+  },
+  "Jan Paul van Hecke|Brighton": {
+   "note": 6.66,
+   "matches": 36
+  },
+  "Lewis Dunk|Brighton": {
+   "note": 6.48,
+   "matches": 33
+  },
+  "Mats Wieffer|Brighton": {
+   "note": 6.63,
+   "matches": 26
+  },
+  "Maxim De Cuyper|Brighton": {
+   "note": 6.37,
+   "matches": 30
+  },
+  "Carlos Baleba|Brighton": {
+   "note": 6.05,
+   "matches": 31
+  },
+  "Danny Welbeck|Brighton": {
+   "note": 6.68,
+   "matches": 37
+  },
+  "Yasin Ayari|Brighton": {
+   "note": 6.35,
+   "matches": 29
+  },
+  "Matt O'Riley|Brighton": {
+   "note": 6.33,
+   "matches": 6
+  },
+  "James Milner|Brighton": {
+   "note": 6.17,
+   "matches": 20
+  },
+  "Yankuba Minteh|Brighton": {
+   "note": 6.36,
+   "matches": 34
+  },
+  "Ferdi Kadioglu|Brighton": {
+   "note": 6.51,
+   "matches": 37
+  },
+  "Kaoru Mitoma|Brighton": {
+   "note": 6.36,
+   "matches": 25
+  },
+  "Brajan Gruda|Brighton": {
+   "note": 6.21,
+   "matches": 18
+  },
+  "Georginio Rutter|Brighton": {
+   "note": 6.31,
+   "matches": 32
+  },
+  "Diego Gómez|Brighton": {
+   "note": 6.35,
+   "matches": 32
+  },
+  "Bernd Leno|Fulham": {
+   "note": 6.93,
+   "matches": 38
+  },
+  "Joachim Andersen|Fulham": {
+   "note": 6.41,
+   "matches": 33
+  },
+  "Jorge Cuenca|Fulham": {
+   "note": 6.31,
+   "matches": 15
+  },
+  "Timothy Castagne|Fulham": {
+   "note": 6.21,
+   "matches": 30
+  },
+  "Kenny Tete|Fulham": {
+   "note": 6.51,
+   "matches": 22
+  },
+  "Calvin Bassey|Fulham": {
+   "note": 6.4,
+   "matches": 30
+  },
+  "Sander Berge|Fulham": {
+   "note": 6.11,
+   "matches": 35
+  },
+  "Tom Cairney|Fulham": {
+   "note": 6.16,
+   "matches": 24
+  },
+  "Sasa Lukic|Fulham": {
+   "note": 6.23,
+   "matches": 26
+  },
+  "Joshua King|Fulham": {
+   "note": 6.17,
+   "matches": 32
+  },
+  "Emile Smith-Rowe|Fulham": {
+   "note": 6.17,
+   "matches": 37
+  },
+  "Harry Wilson|Fulham": {
+   "note": 6.67,
+   "matches": 36
+  },
+  "Alex Iwobi|Fulham": {
+   "note": 6.39,
+   "matches": 29
+  },
+  "Adama Traoré|Fulham": {
+   "note": 6.01,
+   "matches": 15
+  },
+  "Raúl Jiménez|Fulham": {
+   "note": 6.58,
+   "matches": 36
+  },
+  "Rodrigo Muniz|Fulham": {
+   "note": 6.21,
+   "matches": 21
+  },
+  "Robin Roefs|Sunderland": {
+   "note": 6.96,
+   "matches": 35
+  },
+  "Dan Ballard|Sunderland": {
+   "note": 6.44,
+   "matches": 29
+  },
+  "Omar Alderete|Sunderland": {
+   "note": 6.47,
+   "matches": 33
+  },
+  "Trai Hume|Sunderland": {
+   "note": 6.42,
+   "matches": 38
+  },
+  "Reinildo|Sunderland": {
+   "note": 6.43,
+   "matches": 25
+  },
+  "Granit Xhaka|Sunderland": {
+   "note": 6.3,
+   "matches": 34
+  },
+  "Chris Rigg|Sunderland": {
+   "note": 6.18,
+   "matches": 18
+  },
+  "Habib Diarra|Sunderland": {
+   "note": 6.35,
+   "matches": 20
+  },
+  "Noah Sadiki|Sunderland": {
+   "note": 6.09,
+   "matches": 33
+  },
+  "Eliezer Mayenda|Sunderland": {
+   "note": 6.2,
+   "matches": 20
+  },
+  "Enzo Le Fée|Sunderland": {
+   "note": 6.46,
+   "matches": 36
+  },
+  "Chemsdine Talbi|Sunderland": {
+   "note": 6.29,
+   "matches": 28
+  },
+  "Simon Adingra|Sunderland": {
+   "note": 6.13,
+   "matches": 14
+  },
+  "Wilson Isidor|Sunderland": {
+   "note": 6.32,
+   "matches": 32
+  },
+  "Mads Hermansen|West Ham": {
+   "note": 6.92,
+   "matches": 18
+  },
+  "Jean-Clair Todibo|West Ham": {
+   "note": 6.15,
+   "matches": 23
+  },
+  "Andy Irving|West Ham": {
+   "note": 6.01,
+   "matches": 7
+  },
+  "Max Kilman|West Ham": {
+   "note": 6.02,
+   "matches": 21
+  },
+  "Guido Rodríguez|West Ham": {
+   "note": 5.97,
+   "matches": 6
+  },
+  "Callum Wilson|West Ham": {
+   "note": 6.43,
+   "matches": 32
+  },
+  "James Ward-Prowse|West Ham": {
+   "note": 5.8,
+   "matches": 5
+  },
+  "Tomas Soucek|West Ham": {
+   "note": 6.27,
+   "matches": 35
+  },
+  "Aaron Wan-Bissaka|West Ham": {
+   "note": 6.19,
+   "matches": 25
+  },
+  "El Hadji Malick Diouf|West Ham": {
+   "note": 6.37,
+   "matches": 32
+  },
+  "Lucas Paquetá|West Ham": {
+   "note": 6.48,
+   "matches": 18
+  },
+  "Jarrod Bowen|West Ham": {
+   "note": 6.78,
+   "matches": 38
+  },
+  "Niclas Füllkrug|West Ham": {
+   "note": 6.08,
+   "matches": 8
+  },
+  "Martin Dubravka|Burnley": {
+   "note": 6.54,
+   "matches": 35
+  },
+  "Hjalmar Ekdal|Burnley": {
+   "note": 6.09,
+   "matches": 19
+  },
+  "Kyle Walker|Burnley": {
+   "note": 6.14,
+   "matches": 36
+  },
+  "Maxime Estève|Burnley": {
+   "note": 6.05,
+   "matches": 34
+  },
+  "Oliver Sonne|Burnley": {
+   "note": 6.16,
+   "matches": 7
+  },
+  "Zian Flemming|Burnley": {
+   "note": 6.67,
+   "matches": 29
+  },
+  "Quilindschy Hartman|Burnley": {
+   "note": 6.32,
+   "matches": 21
+  },
+  "Josh Cullen|Burnley": {
+   "note": 6.27,
+   "matches": 18
+  },
+  "Josh Laurent|Burnley": {
+   "note": 6.08,
+   "matches": 33
+  },
+  "Jacob Bruun Larsen|Burnley": {
+   "note": 6.08,
+   "matches": 28
+  },
+  "Hannibal Mejbri|Burnley": {
+   "note": 6.2,
+   "matches": 27
+  },
+  "Chimuanya Ugochukwu|Burnley": {
+   "note": 6.18,
+   "matches": 35
+  },
+  "Jaidon Anthony|Burnley": {
+   "note": 6.43,
+   "matches": 37
+  },
+  "Marcus Edwards|Burnley": {
+   "note": 6.26,
+   "matches": 23
+  },
+  "Lyle Foster|Burnley": {
+   "note": 6.3,
+   "matches": 26
+  },
+  "Loum Tchaouna|Burnley": {
+   "note": 6.13,
+   "matches": 29
+  },
+  "Guglielmo Vicario|Tottenham": {
+   "note": 6.73,
+   "matches": 31
+  },
+  "Cristian Romero|Tottenham": {
+   "note": 6.57,
+   "matches": 23
+  },
+  "Micky van de Ven|Tottenham": {
+   "note": 6.5,
+   "matches": 35
+  },
+  "Pedro Porro|Tottenham": {
+   "note": 6.5,
+   "matches": 34
+  },
+  "Djed Spence|Tottenham": {
+   "note": 6.3,
+   "matches": 30
+  },
+  "Archie Gray|Tottenham": {
+   "note": 6.22,
+   "matches": 24
+  },
+  "Rodrigo Bentancur|Tottenham": {
+   "note": 6.16,
+   "matches": 26
+  },
+  "Lucas Bergvall|Tottenham": {
+   "note": 6.22,
+   "matches": 23
+  },
+  "Wilson Odobert|Tottenham": {
+   "note": 6.15,
+   "matches": 24
+  },
+  "Pape Sarr|Tottenham": {
+   "note": 6.29,
+   "matches": 26
+  },
+  "Richarlison|Tottenham": {
+   "note": 6.75,
+   "matches": 32
+  },
+  "Dominic Solanke|Tottenham": {
+   "note": 6.39,
+   "matches": 15
+  },
+  "Mohammed Kudus|Tottenham": {
+   "note": 6.47,
+   "matches": 19
+  },
+  "Mathys Tel|Tottenham": {
+   "note": 6.28,
+   "matches": 31
+  },
+  "Brennan Johnson|Tottenham": {
+   "note": 6.21,
+   "matches": 16
+  },
+  "João Palhinha|Tottenham": {
+   "note": 6.29,
+   "matches": 33
+  },
+  "James Trafford|Manchester City": {
+   "note": 6.75,
+   "matches": 4
+  },
+  "John Stones|Manchester City": {
+   "note": 6.16,
+   "matches": 9
+  },
+  "Abduqodir Khusanov|Manchester City": {
+   "note": 6.37,
+   "matches": 21
+  },
+  "Rúben Dias|Manchester City": {
+   "note": 6.65,
+   "matches": 26
+  },
+  "Rico Lewis|Manchester City": {
+   "note": 6.24,
+   "matches": 11
+  },
+  "Omar Marmoush|Manchester City": {
+   "note": 6.44,
+   "matches": 21
+  },
+  "Rayan Ait Nouri|Manchester City": {
+   "note": 6.46,
+   "matches": 17
+  },
+  "Bernardo Silva|Manchester City": {
+   "note": 6.36,
+   "matches": 38
+  },
+  "Matheus Nunes|Manchester City": {
+   "note": 6.72,
+   "matches": 34
+  },
+  "Nico González|Manchester City": {
+   "note": 6.14,
+   "matches": 25
+  },
+  "Tijjani Reijnders|Manchester City": {
+   "note": 6.49,
+   "matches": 28
+  },
+  "Erling Haaland|Manchester City": {
+   "note": 7.63,
+   "matches": 35
+  },
+  "Mathis Cherki|Manchester City": {
+   "note": 6.69,
+   "matches": 33
+  },
+  "Oscar Bobb|Manchester City": {
+   "note": 6.21,
+   "matches": 9
+  },
+  "Jéremy Doku|Manchester City": {
+   "note": 6.56,
+   "matches": 30
+  },
+  "Nico O'Reilly|Manchester City": {
+   "note": 6.84,
+   "matches": 34
+  },
+  "José Sá|Wolverhampton Wanderers": {
+   "note": 6.73,
+   "matches": 23
+  },
+  "Emmanuel Agbadou|Wolverhampton Wanderers": {
+   "note": 6.05,
+   "matches": 14
+  },
+  "Matt Doherty|Wolverhampton Wanderers": {
+   "note": 6.11,
+   "matches": 11
+  },
+  "Toti|Wolverhampton Wanderers": {
+   "note": 6.08,
+   "matches": 19
+  },
+  "Ki-Jana Hoever|Wolverhampton Wanderers": {
+   "note": 5.79,
+   "matches": 8
+  },
+  "Rodrigo Gomes|Wolverhampton Wanderers": {
+   "note": 6.24,
+   "matches": 22
+  },
+  "David Møller Wolfe|Wolverhampton Wanderers": {
+   "note": 6.09,
+   "matches": 22
+  },
+  "Hugo Bueno|Wolverhampton Wanderers": {
+   "note": 6.14,
+   "matches": 35
+  },
+  "André|Wolverhampton Wanderers": {
+   "note": 6.0,
+   "matches": 35
+  },
+  "Fernando López|Wolverhampton Wanderers": {
+   "note": 6.12,
+   "matches": 9
+  },
+  "João Gomes|Wolverhampton Wanderers": {
+   "note": 6.05,
+   "matches": 35
+  },
+  "Jørgen Strand Larsen|Wolverhampton Wanderers": {
+   "note": 6.18,
+   "matches": 22
+  },
+  "Hee-Chan Hwang|Wolverhampton Wanderers": {
+   "note": 6.23,
+   "matches": 26
+  },
+  "Marshall Munetsi|Wolverhampton Wanderers": {
+   "note": 6.22,
+   "matches": 13
+  },
+  "Jean-Ricner Bellegarde|Wolverhampton Wanderers": {
+   "note": 6.07,
+   "matches": 26
+  },
+  "Jhon Arias|Wolverhampton Wanderers": {
+   "note": 6.17,
+   "matches": 23
+  },
+  "Robert Sánchez|Chelsea": {
+   "note": 6.88,
+   "matches": 35
+  },
+  "Josh Acheampong|Chelsea": {
+   "note": 6.27,
+   "matches": 17
+  },
+  "Trevoh Chalobah|Chelsea": {
+   "note": 6.49,
+   "matches": 34
+  },
+  "Reece James|Chelsea": {
+   "note": 6.49,
+   "matches": 29
+  },
+  "Malo Gusto|Chelsea": {
+   "note": 6.45,
+   "matches": 34
+  },
+  "Marc Cucurella|Chelsea": {
+   "note": 6.54,
+   "matches": 34
+  },
+  "Enzo Fernández|Chelsea": {
+   "note": 6.79,
+   "matches": 36
+  },
+  "Andrey Santos|Chelsea": {
+   "note": 6.1,
+   "matches": 27
+  },
+  "Moisés Caicedo|Chelsea": {
+   "note": 6.22,
+   "matches": 33
+  },
+  "Cole Palmer|Chelsea": {
+   "note": 6.72,
+   "matches": 26
+  },
+  "Pedro Neto|Chelsea": {
+   "note": 6.51,
+   "matches": 34
+  },
+  "Jamie Bynoe-Gittens|Chelsea": {
+   "note": 6.14,
+   "matches": 16
+  },
+  "Estêvão|Chelsea": {
+   "note": 6.35,
+   "matches": 22
+  },
+  "João Pedro|Chelsea": {
+   "note": 6.89,
+   "matches": 35
+  },
+  "Liam Delap|Chelsea": {
+   "note": 6.13,
+   "matches": 28
+  },
+  "Dean Henderson|Crystal Palace": {
+   "note": 6.9,
+   "matches": 37
+  },
+  "Chris Richards|Crystal Palace": {
+   "note": 6.44,
+   "matches": 33
+  },
+  "Marc Guehi|Crystal Palace": {
+   "note": 6.75,
+   "matches": 20
+  },
+  "Maxence Lacroix|Crystal Palace": {
+   "note": 6.51,
+   "matches": 35
+  },
+  "Daniel Muñoz|Crystal Palace": {
+   "note": 6.47,
+   "matches": 29
+  },
+  "Tyrick Mitchell|Crystal Palace": {
+   "note": 6.19,
+   "matches": 38
+  },
+  "Adam Wharton|Crystal Palace": {
+   "note": 6.28,
+   "matches": 34
+  },
+  "Will Hughes|Crystal Palace": {
+   "note": 6.1,
+   "matches": 31
+  },
+  "Jefferson Lerma|Crystal Palace": {
+   "note": 6.21,
+   "matches": 31
+  },
+  "Justin Devenny|Crystal Palace": {
+   "note": 6.14,
+   "matches": 21
+  },
+  "Ismaila Sarr|Crystal Palace": {
+   "note": 6.68,
+   "matches": 28
+  },
+  "Jean-Philippe Mateta|Crystal Palace": {
+   "note": 6.7,
+   "matches": 32
+  },
+  "Caoimhin Kelleher|Brentford": {
+   "note": 6.9,
+   "matches": 37
+  },
+  "Nathan Collins|Brentford": {
+   "note": 6.5,
+   "matches": 35
+  },
+  "Sepp van den Berg|Brentford": {
+   "note": 6.49,
+   "matches": 32
+  },
+  "Michael Kayode|Brentford": {
+   "note": 6.48,
+   "matches": 37
+  },
+  "Rico Henry|Brentford": {
+   "note": 6.24,
+   "matches": 25
+  },
+  "Mathias Jensen|Brentford": {
+   "note": 6.25,
+   "matches": 36
+  },
+  "Jordan Henderson|Brentford": {
+   "note": 6.24,
+   "matches": 32
+  },
+  "Yehor Yarmolyuk|Brentford": {
+   "note": 6.17,
+   "matches": 37
+  },
+  "Kevin Schade|Brentford": {
+   "note": 6.57,
+   "matches": 35
+  },
+  "Keane Lewis-Potter|Brentford": {
+   "note": 6.37,
+   "matches": 36
+  },
+  "Frank Onyeka|Brentford": {
+   "note": 6.17,
+   "matches": 6
+  },
+  "Fabio Carvalho|Brentford": {
+   "note": 6.27,
+   "matches": 6
+  },
+  "Aaron Hickey|Brentford": {
+   "note": 6.1,
+   "matches": 21
+  },
+  "Thiago|Brentford": {
+   "note": 7.12,
+   "matches": 38
+  },
+  "Matz Sels|Nottingham Forest": {
+   "note": 6.93,
+   "matches": 31
+  },
+  "Murillo|Nottingham Forest": {
+   "note": 6.47,
+   "matches": 25
+  },
+  "Nikola Milenkovic|Nottingham Forest": {
+   "note": 6.38,
+   "matches": 38
+  },
+  "Ola Aina|Nottingham Forest": {
+   "note": 6.55,
+   "matches": 18
+  },
+  "Neco Williams|Nottingham Forest": {
+   "note": 6.59,
+   "matches": 37
+  },
+  "Elliot Anderson|Nottingham Forest": {
+   "note": 6.38,
+   "matches": 38
+  },
+  "Ibrahim Sangare|Nottingham Forest": {
+   "note": 6.26,
+   "matches": 28
+  },
+  "Morgan Gibbs-White|Nottingham Forest": {
+   "note": 6.81,
+   "matches": 37
+  },
+  "Ryan Yates|Nottingham Forest": {
+   "note": 6.09,
+   "matches": 22
+  },
+  "Dan Ndoye|Nottingham Forest": {
+   "note": 6.15,
+   "matches": 24
+  },
+  "Callum Hudson-Odoi|Nottingham Forest": {
+   "note": 6.36,
+   "matches": 30
+  },
+  "Chris Wood|Nottingham Forest": {
+   "note": 6.37,
+   "matches": 15
+  },
+  "Igor Jesus|Nottingham Forest": {
+   "note": 6.42,
+   "matches": 37
+  },
+  "David Raya|Arsenal": {
+   "note": 7.31,
+   "matches": 37
+  },
+  "Gabriel|Arsenal": {
+   "note": 7.01,
+   "matches": 32
+  },
+  "William Saliba|Arsenal": {
+   "note": 6.74,
+   "matches": 31
+  },
+  "Ben White|Arsenal": {
+   "note": 6.62,
+   "matches": 12
+  },
+  "Jurriën Timber|Arsenal": {
+   "note": 6.95,
+   "matches": 30
+  },
+  "Riccardo Calafiori|Arsenal": {
+   "note": 6.78,
+   "matches": 26
+  },
+  "Myles Lewis-Skelly|Arsenal": {
+   "note": 6.05,
+   "matches": 20
+  },
+  "Declan Rice|Arsenal": {
+   "note": 6.59,
+   "matches": 36
+  },
+  "Mikel Merino|Arsenal": {
+   "note": 6.54,
+   "matches": 22
+  },
+  "Martin Odegaard|Arsenal": {
+   "note": 6.48,
+   "matches": 24
+  },
+  "Martín Zubimendi|Arsenal": {
+   "note": 6.4,
+   "matches": 38
+  },
+  "Viktor Gyokeres|Arsenal": {
+   "note": 6.74,
+   "matches": 36
+  },
+  "Noni Madueke|Arsenal": {
+   "note": 6.25,
+   "matches": 26
+  },
+  "Bukayo Saka|Arsenal": {
+   "note": 6.71,
+   "matches": 31
+  },
+  "Gabriel Martinelli|Arsenal": {
+   "note": 6.27,
+   "matches": 30
+  },
+  "Kai Havertz|Arsenal": {
+   "note": 6.7,
+   "matches": 12
+  },
+  "Altay Bayindir|Manchester United": {
+   "note": 6.58,
+   "matches": 6
+  },
+  "Leny Yoro|Manchester United": {
+   "note": 6.13,
+   "matches": 32
+  },
+  "Luke Shaw|Manchester United": {
+   "note": 6.42,
+   "matches": 38
+  },
+  "Harry Maguire|Manchester United": {
+   "note": 6.5,
+   "matches": 23
+  },
+  "Matthijs de Ligt|Manchester United": {
+   "note": 6.38,
+   "matches": 13
+  },
+  "Diogo Dalot|Manchester United": {
+   "note": 6.41,
+   "matches": 34
+  },
+  "Amad Diallo Traore|Manchester United": {
+   "note": 6.33,
+   "matches": 32
+  },
+  "Patrick Dorgu|Manchester United": {
+   "note": 6.42,
+   "matches": 26
+  },
+  "Bruno Fernandes|Manchester United": {
+   "note": 7.2,
+   "matches": 35
+  },
+  "Casemiro|Manchester United": {
+   "note": 6.61,
+   "matches": 34
+  },
+  "Benjamin Sesko|Manchester United": {
+   "note": 6.72,
+   "matches": 30
+  },
+  "Bryan Mbeumo|Manchester United": {
+   "note": 6.79,
+   "matches": 33
+  },
+  "Mason Mount|Manchester United": {
+   "note": 6.27,
+   "matches": 23
+  },
+  "Manuel Ugarte|Manchester United": {
+   "note": 6.02,
+   "matches": 22
+  },
+  "Matheus Cunha|Manchester United": {
+   "note": 6.6,
+   "matches": 33
+  },
+  "Jordan Pickford|Everton": {
+   "note": 6.93,
+   "matches": 38
+  },
+  "James Tarkowski|Everton": {
+   "note": 6.58,
+   "matches": 37
+  },
+  "Michael Keane|Everton": {
+   "note": 6.47,
+   "matches": 33
+  },
+  "Jake O'Brien|Everton": {
+   "note": 6.39,
+   "matches": 37
+  },
+  "James Garner|Everton": {
+   "note": 6.46,
+   "matches": 38
+  },
+  "Idrissa Gueye|Everton": {
+   "note": 6.35,
+   "matches": 25
+  },
+  "Tim Iroegbunam|Everton": {
+   "note": 6.1,
+   "matches": 29
+  },
+  "Jack Grealish|Everton": {
+   "note": 6.56,
+   "matches": 20
+  },
+  "Kiernan Dewsbury-Hall|Everton": {
+   "note": 6.63,
+   "matches": 31
+  },
+  "Carlos Alcaraz|Everton": {
+   "note": 6.09,
+   "matches": 20
+  },
+  "Thierno Barry|Everton": {
+   "note": 6.4,
+   "matches": 38
+  },
+  "Iliman Ndiaye|Everton": {
+   "note": 6.47,
+   "matches": 32
+  },
+  "Beto|Everton": {
+   "note": 6.49,
+   "matches": 37
+  },
+  "Lucas Perri|Leeds": {
+   "note": 6.66,
+   "matches": 16
+  },
+  "Joe Rodon|Leeds": {
+   "note": 6.33,
+   "matches": 35
+  },
+  "Pascal Struijk|Leeds": {
+   "note": 6.4,
+   "matches": 34
+  },
+  "Jayden Bogle|Leeds": {
+   "note": 6.25,
+   "matches": 34
+  },
+  "Gabriel Gudmundsson|Leeds": {
+   "note": 6.16,
+   "matches": 32
+  },
+  "Anton Stach|Leeds": {
+   "note": 6.47,
+   "matches": 29
+  },
+  "Sean Longstaff|Leeds": {
+   "note": 6.27,
+   "matches": 23
+  },
+  "Ao Tanaka|Leeds": {
+   "note": 6.13,
+   "matches": 28
+  },
+  "Ethan Ampadu|Leeds": {
+   "note": 6.11,
+   "matches": 35
+  },
+  "Jack Harrison|Leeds": {
+   "note": 6.03,
+   "matches": 11
+  },
+  "Joël Piroe|Leeds": {
+   "note": 6.04,
+   "matches": 16
+  },
+  "Lukas Nmecha|Leeds": {
+   "note": 6.44,
+   "matches": 31
+  },
+  "Daniel James|Leeds": {
+   "note": 6.04,
+   "matches": 19
+  },
+  "Ilia Gruev|Leeds": {
+   "note": 6.09,
+   "matches": 23
+  },
+  "Wilfried Gnonto|Leeds": {
+   "note": 6.07,
+   "matches": 23
+  },
+  "Brenden Aaronson|Leeds": {
+   "note": 6.39,
+   "matches": 37
+  },
+  "Tosin Adarabioyo|Chelsea": {
+   "note": 6.18,
+   "matches": 16
+  },
+  "Wesley Fofana|Chelsea": {
+   "note": 6.32,
+   "matches": 25
+  },
+  "Jorrel Hato|Chelsea": {
+   "note": 6.03,
+   "matches": 22
+  },
+  "Kyle Walker-Peters|West Ham": {
+   "note": 6.28,
+   "matches": 23
+  },
+  "Freddie Potts|West Ham": {
+   "note": 6.06,
+   "matches": 22
+  },
+  "Nathan Aké|Manchester City": {
+   "note": 6.25,
+   "matches": 18
+  },
+  "Phil Foden|Manchester City": {
+   "note": 6.67,
+   "matches": 33
+  },
+  "Rodri|Manchester City": {
+   "note": 6.25,
+   "matches": 21
+  },
+  "Kevin Danso|Tottenham": {
+   "note": 6.21,
+   "matches": 24
+  },
+  "Emiliano Martinez|Aston Villa": {
+   "note": 6.95,
+   "matches": 32
+  },
+  "Pau Torres|Aston Villa": {
+   "note": 6.46,
+   "matches": 21
+  },
+  "Ian Maatsen|Aston Villa": {
+   "note": 6.22,
+   "matches": 30
+  },
+  "Emiliano Buendía|Aston Villa": {
+   "note": 6.37,
+   "matches": 36
+  },
+  "Evann Guessand|Aston Villa": {
+   "note": 6.14,
+   "matches": 13
+  },
+  "Lamare Bogarde|Aston Villa": {
+   "note": 6.03,
+   "matches": 28
+  },
+  "Mikkel Damsgaard|Brentford": {
+   "note": 6.39,
+   "matches": 33
+  },
+  "Kristoffer Ajer|Brentford": {
+   "note": 6.27,
+   "matches": 27
+  },
+  "Dango Ouattara|Brentford": {
+   "note": 6.58,
+   "matches": 32
+  },
+  "Joe Worrall|Burnley": {
+   "note": 6.0,
+   "matches": 11
+  },
+  "Ryan Christie|Bournemouth": {
+   "note": 6.2,
+   "matches": 26
+  },
+  "Justin Kluivert|Bournemouth": {
+   "note": 6.24,
+   "matches": 20
+  },
+  "Amine Adli|Bournemouth": {
+   "note": 6.23,
+   "matches": 31
+  },
+  "Jackson Tchatchoua|Wolverhampton Wanderers": {
+   "note": 6.05,
+   "matches": 31
+  },
+  "Santiago Bueno|Wolverhampton Wanderers": {
+   "note": 6.38,
+   "matches": 29
+  },
+  "Cristhian Mosquera|Arsenal": {
+   "note": 6.25,
+   "matches": 20
+  },
+  "Ethan Nwaneri|Arsenal": {
+   "note": 6.02,
+   "matches": 6
+  },
+  "Leandro Trossard|Arsenal": {
+   "note": 6.59,
+   "matches": 31
+  },
+  "Max Dowman|Arsenal": {
+   "note": 6.32,
+   "matches": 6
+  },
+  "Noah Okafor|Leeds": {
+   "note": 6.52,
+   "matches": 28
+  },
+  "Romain Esse|Crystal Palace": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Omari Hutchinson|Nottingham Forest": {
+   "note": 6.26,
+   "matches": 31
+  },
+  "Arnaud Kalimuendo Muinga|Nottingham Forest": {
+   "note": 6.01,
+   "matches": 9
+  },
+  "James McAtee|Nottingham Forest": {
+   "note": 6.09,
+   "matches": 14
+  },
+  "Jack Hinshelwood|Brighton": {
+   "note": 6.46,
+   "matches": 27
+  },
+  "Dwight McNeil|Everton": {
+   "note": 6.12,
+   "matches": 22
+  },
+  "Harrison Armstrong|Everton": {
+   "note": 6.02,
+   "matches": 13
+  },
+  "Ryan Sessegnon|Fulham": {
+   "note": 6.49,
+   "matches": 27
+  },
+  "Antonee Robinson|Fulham": {
+   "note": 6.4,
+   "matches": 22
+  },
+  "Ayden Heaven|Manchester United": {
+   "note": 6.26,
+   "matches": 17
+  },
+  "Ryan Gravenberch|Liverpool": {
+   "note": 6.32,
+   "matches": 36
+  },
+  "Conor Bradley|Liverpool": {
+   "note": 6.29,
+   "matches": 15
+  },
+  "Rio Ngumoha|Liverpool": {
+   "note": 6.27,
+   "matches": 19
+  },
+  "Malick Thiaw|Newcastle United": {
+   "note": 6.5,
+   "matches": 35
+  },
+  "Lewis Hall|Newcastle United": {
+   "note": 6.31,
+   "matches": 30
+  },
+  "Jacob Ramsey|Newcastle United": {
+   "note": 6.21,
+   "matches": 28
+  },
+  "Tyrique George|Chelsea": {
+   "note": 6.05,
+   "matches": 4
+  },
+  "Iyenoma Destiny Udogie|Tottenham": {
+   "note": 6.19,
+   "matches": 20
+  },
+  "Vitalii Mykolenko|Everton": {
+   "note": 6.37,
+   "matches": 33
+  },
+  "Seamus Coleman|Everton": {
+   "note": 6.04,
+   "matches": 5
+  },
+  "Nordi Mukiele|Sunderland": {
+   "note": 6.67,
+   "matches": 32
+  },
+  "Noussair Mazraoui|Manchester United": {
+   "note": 6.19,
+   "matches": 20
+  },
+  "Kobbie Mainoo|Manchester United": {
+   "note": 6.21,
+   "matches": 28
+  },
+  "Joshua Zirkzee|Manchester United": {
+   "note": 6.24,
+   "matches": 24
+  },
+  "James Justin|Leeds": {
+   "note": 6.33,
+   "matches": 29
+  },
+  "Dominic Calvert-Lewin|Leeds": {
+   "note": 6.83,
+   "matches": 35
+  },
+  "Sven Botman|Newcastle United": {
+   "note": 6.38,
+   "matches": 25
+  },
+  "Konstantinos Mavropanos|West Ham": {
+   "note": 6.42,
+   "matches": 31
+  },
+  "Mateus Fernandes|West Ham": {
+   "note": 6.29,
+   "matches": 36
+  },
+  "Crysencio Summerville|West Ham": {
+   "note": 6.43,
+   "matches": 31
+  },
+  "Joël Veltman|Brighton": {
+   "note": 6.25,
+   "matches": 24
+  },
+  "Diego Coppola|Brighton": {
+   "note": 6.3,
+   "matches": 5
+  },
+  "Eberechi Eze|Arsenal": {
+   "note": 6.47,
+   "matches": 32
+  },
+  "Yeremi Pino|Crystal Palace": {
+   "note": 6.31,
+   "matches": 34
+  },
+  "Daichi Kamada|Crystal Palace": {
+   "note": 6.06,
+   "matches": 28
+  },
+  "Nathaniel Clyne|Crystal Palace": {
+   "note": 6.06,
+   "matches": 10
+  },
+  "Nicolò Savona|Nottingham Forest": {
+   "note": 6.54,
+   "matches": 14
+  },
+  "Morato|Nottingham Forest": {
+   "note": 6.23,
+   "matches": 21
+  },
+  "Dilane Bakwa|Nottingham Forest": {
+   "note": 6.16,
+   "matches": 14
+  },
+  "Joe Willock|Newcastle United": {
+   "note": 6.13,
+   "matches": 24
+  },
+  "Nick Woltemade|Newcastle United": {
+   "note": 6.56,
+   "matches": 33
+  },
+  "Sam Johnstone|Wolverhampton Wanderers": {
+   "note": 6.68,
+   "matches": 12
+  },
+  "Yerson Mosquera|Wolverhampton Wanderers": {
+   "note": 6.31,
+   "matches": 27
+  },
+  "Ladislav Krejcí|Wolverhampton Wanderers": {
+   "note": 6.31,
+   "matches": 28
+  },
+  "Tolu Arokodare|Wolverhampton Wanderers": {
+   "note": 6.26,
+   "matches": 33
+  },
+  "Veljko Milosavljevic|Bournemouth": {
+   "note": 6.19,
+   "matches": 7
+  },
+  "Lewis Cook|Bournemouth": {
+   "note": 6.07,
+   "matches": 17
+  },
+  "Alejandro Jiménez|Bournemouth": {
+   "note": 6.34,
+   "matches": 31
+  },
+  "Julio Soler|Bournemouth": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Stefanos Tzimas|Brighton": {
+   "note": 6.3,
+   "matches": 9
+  },
+  "Christantus Uche|Crystal Palace": {
+   "note": 6.01,
+   "matches": 14
+  },
+  "Lutsharel Geertruida|Sunderland": {
+   "note": 6.2,
+   "matches": 28
+  },
+  "Brian Brobbey|Sunderland": {
+   "note": 6.46,
+   "matches": 31
+  },
+  "Harvey Elliott|Aston Villa": {
+   "note": 6.05,
+   "matches": 4
+  },
+  "Victor Lindelöf|Aston Villa": {
+   "note": 6.2,
+   "matches": 17
+  },
+  "Merlin Röhl|Everton": {
+   "note": 6.12,
+   "matches": 16
+  },
+  "Kevin|Fulham": {
+   "note": 6.12,
+   "matches": 26
+  },
+  "Karl Darlow|Leeds": {
+   "note": 6.99,
+   "matches": 22
+  },
+  "Xavi Simons|Tottenham": {
+   "note": 6.36,
+   "matches": 28
+  },
+  "Soungoutou Magassa|West Ham": {
+   "note": 6.05,
+   "matches": 22
+  },
+  "Luis Guilherme|West Ham": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Ethan Pinnock|Brentford": {
+   "note": 6.28,
+   "matches": 4
+  },
+  "Alejandro Garnacho|Chelsea": {
+   "note": 6.36,
+   "matches": 24
+  },
+  "Florentino Luís|Burnley": {
+   "note": 6.01,
+   "matches": 31
+  },
+  "Armando Broja|Burnley": {
+   "note": 6.15,
+   "matches": 24
+  },
+  "Gianluigi Donnarumma|Manchester City": {
+   "note": 7.19,
+   "matches": 34
+  },
+  "Josko Gvardiol|Manchester City": {
+   "note": 6.76,
+   "matches": 18
+  },
+  "Sávio|Manchester City": {
+   "note": 6.2,
+   "matches": 24
+  },
+  "Tyler Dibling|Everton": {
+   "note": 6.01,
+   "matches": 14
+  },
+  "Alexander Isak|Liverpool": {
+   "note": 6.48,
+   "matches": 14
+  },
+  "Eddie Nketiah|Crystal Palace": {
+   "note": 6.33,
+   "matches": 12
+  },
+  "Alphonse Areola|West Ham": {
+   "note": 6.57,
+   "matches": 20
+  },
+  "Oleksandr Zinchenko|Nottingham Forest": {
+   "note": 6.14,
+   "matches": 5
+  },
+  "Douglas Luiz|Nottingham Forest": {
+   "note": 6.04,
+   "matches": 8
+  },
+  "Filip Jorgensen|Chelsea": {
+   "note": 6.6,
+   "matches": 5
+  },
+  "Vitaly Janelt|Brentford": {
+   "note": 6.32,
+   "matches": 25
+  },
+  "Jadon Sancho|Aston Villa": {
+   "note": 6.12,
+   "matches": 23
+  },
+  "Dan Neil|Sunderland": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Arthur Masuaku|Sunderland": {
+   "note": 6.27,
+   "matches": 3
+  },
+  "Benoit Badiashile Mukinayi|Chelsea": {
+   "note": 6.11,
+   "matches": 8
+  },
+  "Romeo Lavia|Chelsea": {
+   "note": 5.98,
+   "matches": 12
+  },
+  "Samuel Chukwueze|Fulham": {
+   "note": 6.41,
+   "matches": 23
+  },
+  "Ben Doak|Bournemouth": {
+   "note": 6.15,
+   "matches": 8
+  },
+  "Bashir Humphreys|Burnley": {
+   "note": 6.13,
+   "matches": 20
+  },
+  "Nicolás Domínguez|Nottingham Forest": {
+   "note": 6.11,
+   "matches": 27
+  },
+  "Bertrand Traoré|Sunderland": {
+   "note": 6.17,
+   "matches": 12
+  },
+  "Igor Julio|West Ham": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Issa Diop|Fulham": {
+   "note": 6.29,
+   "matches": 13
+  },
+  "Ross Barkley|Aston Villa": {
+   "note": 6.3,
+   "matches": 21
+  },
+  "Axel Tuanzebe|Burnley": {
+   "note": 6.19,
+   "matches": 14
+  },
+  "Marc Guiu|Chelsea": {
+   "note": 6.3,
+   "matches": 8
+  },
+  "Giorgi Mamardashvili|Liverpool": {
+   "note": 6.62,
+   "matches": 10
+  },
+  "Senne Lammens|Manchester United": {
+   "note": 6.97,
+   "matches": 32
+  },
+  "Jair|Nottingham Forest": {
+   "note": 6.21,
+   "matches": 9
+  },
+  "Charalampos Kostoulas|Brighton": {
+   "note": 6.24,
+   "matches": 21
+  },
+  "Ashley Barnes|Burnley": {
+   "note": 6.04,
+   "matches": 7
+  },
+  "Christian Nørgaard|Arsenal": {
+   "note": 6.01,
+   "matches": 7
+  },
+  "Mateo Kovacic|Manchester City": {
+   "note": 6.2,
+   "matches": 6
+  },
+  "Taiwo Awoniyi|Nottingham Forest": {
+   "note": 6.52,
+   "matches": 17
+  },
+  "Randal Kolo Muani|Tottenham": {
+   "note": 6.15,
+   "matches": 30
+  },
+  "Oliver Scarles|West Ham": {
+   "note": 6.08,
+   "matches": 13
+  },
+  "Piero Hincapié|Arsenal": {
+   "note": 6.56,
+   "matches": 25
+  },
+  "Borna Sosa|Crystal Palace": {
+   "note": 6.0,
+   "matches": 7
+  },
+  "Jaka Bijol|Leeds": {
+   "note": 6.43,
+   "matches": 25
+  },
+  "Tom Watson|Brighton": {
+   "note": 6.0,
+   "matches": 6
+  },
+  "Jonah Kusi-Asare|Fulham": {
+   "note": 6.0,
+   "matches": 7
+  },
+  "Reiss Nelson|Brentford": {
+   "note": 6.12,
+   "matches": 10
+  },
+  "Jaydee Canvot|Crystal Palace": {
+   "note": 6.3,
+   "matches": 20
+  },
+  "Aaron Ramsdale|Newcastle United": {
+   "note": 6.8,
+   "matches": 12
+  },
+  "Mateus Mané|Wolverhampton Wanderers": {
+   "note": 6.3,
+   "matches": 27
+  },
+  "Lucas Pires|Burnley": {
+   "note": 6.07,
+   "matches": 20
+  },
+  "Enes Ünal|Bournemouth": {
+   "note": 6.11,
+   "matches": 22
+  },
+  "Olivier Boscagli|Brighton": {
+   "note": 6.39,
+   "matches": 12
+  },
+  "Harrison Reed|Fulham": {
+   "note": 6.17,
+   "matches": 7
+  },
+  "Lisandro Martínez|Manchester United": {
+   "note": 6.43,
+   "matches": 18
+  },
+  "Romaine Mundle|Sunderland": {
+   "note": 6.01,
+   "matches": 14
+  },
+  "Sebastiaan Bornauw|Leeds": {
+   "note": 6.25,
+   "matches": 12
+  },
+  "Luke O'Nien|Sunderland": {
+   "note": 6.26,
+   "matches": 12
+  },
+  "Mohamadou Kanté|West Ham": {
+   "note": 6.01,
+   "matches": 11
+  },
+  "Ezra Mayers|West Ham": {
+   "note": 6.02,
+   "matches": 6
+  },
+  "Zach Abbott|Nottingham Forest": {
+   "note": 5.97,
+   "matches": 3
+  },
+  "Yoane Wissa|Newcastle United": {
+   "note": 6.16,
+   "matches": 19
+  },
+  "Gabriel Jesus|Arsenal": {
+   "note": 6.43,
+   "matches": 14
+  },
+  "Mike Trésor|Burnley": {
+   "note": 6.0,
+   "matches": 6
+  },
+  "John Victor|Nottingham Forest": {
+   "note": 6.72,
+   "matches": 5
+  },
+  "Ben Davies|Tottenham": {
+   "note": 6.7,
+   "matches": 3
+  },
+  "Shea Lacey|Manchester United": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Jack Fletcher|Manchester United": {
+   "note": 6.03,
+   "matches": 3
+  },
+  "Treymaurice Nyoni|Liverpool": {
+   "note": 6.03,
+   "matches": 6
+  },
+  "Nathan Patterson|Everton": {
+   "note": 6.34,
+   "matches": 7
+  },
+  "Radu Dragusin|Tottenham": {
+   "note": 5.96,
+   "matches": 10
+  },
+  "Tyrell Malacia|Manchester United": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Dennis Cirkin|Sunderland": {
+   "note": 6.22,
+   "matches": 8
+  },
+  "Andrés García|Aston Villa": {
+   "note": 6.03,
+   "matches": 6
+  },
+  "Brennan Johnson|Crystal Palace": {
+   "note": 6.11,
+   "matches": 18
+  },
+  "Pascal Groß|Brighton": {
+   "note": 6.41,
+   "matches": 19
+  },
+  "Pedro Lima|Wolverhampton Wanderers": {
+   "note": 6.02,
+   "matches": 9
+  },
+  "Pablo|West Ham": {
+   "note": 6.15,
+   "matches": 14
+  },
+  "Valentín Castellanos|West Ham": {
+   "note": 6.64,
+   "matches": 18
+  },
+  "Romelle Donovan|Brentford": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Antoine Semenyo|Manchester City": {
+   "note": 6.81,
+   "matches": 17
+  },
+  "Yves Bissouma|Tottenham": {
+   "note": 5.95,
+   "matches": 11
+  },
+  "Conor Gallagher|Tottenham": {
+   "note": 6.17,
+   "matches": 16
+  },
+  "Alex Tóth|Bournemouth": {
+   "note": 6.03,
+   "matches": 9
+  },
+  "Chadi Riad|Crystal Palace": {
+   "note": 6.3,
+   "matches": 9
+  },
+  "Jarrad Branthwaite|Everton": {
+   "note": 6.34,
+   "matches": 10
+  },
+  "Facundo Buonanotte|Leeds": {
+   "note": 6.03,
+   "matches": 3
+  },
+  "Marc Guehi|Manchester City": {
+   "note": 6.85,
+   "matches": 15
+  },
+  "Leon Bailey|Aston Villa": {
+   "note": 6.12,
+   "matches": 13
+  },
+  "Douglas Luiz|Aston Villa": {
+   "note": 6.16,
+   "matches": 13
+  },
+  "Tammy Abraham|Aston Villa": {
+   "note": 6.32,
+   "matches": 12
+  },
+  "Adama Traoré|West Ham": {
+   "note": 6.02,
+   "matches": 9
+  },
+  "Rayan|Bournemouth": {
+   "note": 6.73,
+   "matches": 15
+  },
+  "Nilson Angulo|Sunderland": {
+   "note": 6.01,
+   "matches": 8
+  },
+  "Harry Howell|Brighton": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Evann Guessand|Crystal Palace": {
+   "note": 6.31,
+   "matches": 8
+  },
+  "Jørgen Strand Larsen|Crystal Palace": {
+   "note": 6.39,
+   "matches": 14
+  },
+  "Axel Disasi|West Ham": {
+   "note": 6.54,
+   "matches": 14
+  },
+  "Tyrique George|Everton": {
+   "note": 6.07,
+   "matches": 11
+  },
+  "Oscar Bobb|Fulham": {
+   "note": 6.06,
+   "matches": 14
+  },
+  "Stefan Ortega Moreno|Nottingham Forest": {
+   "note": 6.93,
+   "matches": 3
+  },
+  "Luca Netz|Nottingham Forest": {
+   "note": 6.01,
+   "matches": 7
+  },
+  "Lorenzo Lucca|Nottingham Forest": {
+   "note": 6.47,
+   "matches": 4
+  },
+  "Souza|Tottenham": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Angel Gomes|Wolverhampton Wanderers": {
+   "note": 6.02,
+   "matches": 12
+  },
+  "Adam Armstrong|Wolverhampton Wanderers": {
+   "note": 6.45,
+   "matches": 14
+  },
+  "Alysson Edward|Aston Villa": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "James Ward-Prowse|Burnley": {
+   "note": 6.01,
+   "matches": 13
+  },
+  "Mamadou Sarr|Chelsea": {
+   "note": 6.1,
+   "matches": 3
+  },
+  "Solly March|Brighton": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Melker Ellborg|Sunderland": {
+   "note": 7.27,
+   "matches": 3
+  },
+  "Tom Edozie|Wolverhampton Wanderers": {
+   "note": 6.43,
+   "matches": 3
+  },
+  "Antonín Kinsky|Tottenham": {
+   "note": 7.06,
+   "matches": 7
+  },
+  "Dário Essugo|Chelsea": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Freddie Woodman|Liverpool": {
+   "note": 6.33,
+   "matches": 3
+  },
+  "Daniel Bentley|Wolverhampton Wanderers": {
+   "note": 6.33,
+   "matches": 3
+  },
+  "Levi Colwill|Chelsea": {
+   "note": 6.27,
+   "matches": 3
+  },
+  "Zeki Amdouni|Burnley": {
+   "note": 6.03,
+   "matches": 4
+  },
+  "Max Weiss|Burnley": {
+   "note": 6.8,
+   "matches": 3
+  },
+  "James Maddison|Tottenham": {
+   "note": 6.1,
+   "matches": 3
+  },
+  "Paulo Gazzaniga|Girona": {
+   "note": 6.87,
+   "matches": 35
+  },
+  "David López|Girona": {
+   "note": 6.06,
+   "matches": 5
+  },
+  "Arnau Martinez|Girona": {
+   "note": 6.45,
+   "matches": 35
+  },
+  "Hugo Rincón|Girona": {
+   "note": 6.26,
+   "matches": 33
+  },
+  "Daley Blind|Girona": {
+   "note": 6.26,
+   "matches": 31
+  },
+  "Vitor Reis|Girona": {
+   "note": 6.37,
+   "matches": 36
+  },
+  "Jhon Solis|Girona": {
+   "note": 5.89,
+   "matches": 12
+  },
+  "Joel Roca|Girona": {
+   "note": 6.17,
+   "matches": 32
+  },
+  "Thomas Lemar|Girona": {
+   "note": 6.24,
+   "matches": 27
+  },
+  "Viktor Tsygankov|Girona": {
+   "note": 6.5,
+   "matches": 32
+  },
+  "Yáser Asprilla|Girona": {
+   "note": 6.05,
+   "matches": 15
+  },
+  "Portu|Girona": {
+   "note": 6.08,
+   "matches": 10
+  },
+  "Augusto Batalla|Rayo Vallecano": {
+   "note": 7.06,
+   "matches": 34
+  },
+  "Florian Lejeune|Rayo Vallecano": {
+   "note": 6.56,
+   "matches": 36
+  },
+  "Luiz Felipe|Rayo Vallecano": {
+   "note": 6.34,
+   "matches": 10
+  },
+  "Andrei Ratiu|Rayo Vallecano": {
+   "note": 6.67,
+   "matches": 35
+  },
+  "Pep Chavarría|Rayo Vallecano": {
+   "note": 6.53,
+   "matches": 33
+  },
+  "Pathé Ciss|Rayo Vallecano": {
+   "note": 6.37,
+   "matches": 29
+  },
+  "Unai López|Rayo Vallecano": {
+   "note": 6.23,
+   "matches": 28
+  },
+  "Óscar Valentín|Rayo Vallecano": {
+   "note": 6.15,
+   "matches": 33
+  },
+  "Pedro Díaz|Rayo Vallecano": {
+   "note": 6.06,
+   "matches": 34
+  },
+  "Gerard Gumbau|Rayo Vallecano": {
+   "note": 6.17,
+   "matches": 28
+  },
+  "Isi Palazón|Rayo Vallecano": {
+   "note": 6.35,
+   "matches": 31
+  },
+  "Alfonso Espino|Rayo Vallecano": {
+   "note": 6.26,
+   "matches": 30
+  },
+  "Álvaro García|Rayo Vallecano": {
+   "note": 6.52,
+   "matches": 32
+  },
+  "Jorge De Frutos|Rayo Vallecano": {
+   "note": 6.61,
+   "matches": 36
+  },
+  "Randy Nteka|Rayo Vallecano": {
+   "note": 6.42,
+   "matches": 13
+  },
+  "Aarón|Real Oviedo": {
+   "note": 6.78,
+   "matches": 37
+  },
+  "Dani Calvo|Real Oviedo": {
+   "note": 6.31,
+   "matches": 21
+  },
+  "Oier Luengo|Real Oviedo": {
+   "note": 6.1,
+   "matches": 3
+  },
+  "Nacho Vidal|Real Oviedo": {
+   "note": 6.32,
+   "matches": 30
+  },
+  "Rahim Alhassane|Real Oviedo": {
+   "note": 6.12,
+   "matches": 28
+  },
+  "Santiago Cazorla|Real Oviedo": {
+   "note": 6.07,
+   "matches": 29
+  },
+  "Alberto Reina|Real Oviedo": {
+   "note": 6.27,
+   "matches": 38
+  },
+  "Kwasi Sibo|Real Oviedo": {
+   "note": 6.0,
+   "matches": 27
+  },
+  "Luka Ilic|Real Oviedo": {
+   "note": 6.12,
+   "matches": 19
+  },
+  "Haissem Hassan|Real Oviedo": {
+   "note": 6.1,
+   "matches": 38
+  },
+  "Ilyas Chaira|Real Oviedo": {
+   "note": 6.37,
+   "matches": 37
+  },
+  "Salomón Rondón|Real Oviedo": {
+   "note": 6.28,
+   "matches": 16
+  },
+  "Federico Viñas|Real Oviedo": {
+   "note": 6.56,
+   "matches": 34
+  },
+  "Luiz Júnior|Villarreal": {
+   "note": 7.09,
+   "matches": 28
+  },
+  "Juan Foyth|Villarreal": {
+   "note": 6.45,
+   "matches": 13
+  },
+  "Alberto Moleiro|Villarreal": {
+   "note": 6.64,
+   "matches": 38
+  },
+  "Rafa Marín|Villarreal": {
+   "note": 6.5,
+   "matches": 23
+  },
+  "Santiago Mouriño|Villarreal": {
+   "note": 6.53,
+   "matches": 29
+  },
+  "Sergi Cardona|Villarreal": {
+   "note": 6.49,
+   "matches": 32
+  },
+  "Pape Alassane Gueye|Villarreal": {
+   "note": 6.41,
+   "matches": 31
+  },
+  "Daniel Parejo|Villarreal": {
+   "note": 6.08,
+   "matches": 33
+  },
+  "Santiago Comesaña|Villarreal": {
+   "note": 6.44,
+   "matches": 34
+  },
+  "Thomas Partey|Villarreal": {
+   "note": 6.04,
+   "matches": 26
+  },
+  "Nicolas Pepe|Villarreal": {
+   "note": 6.75,
+   "matches": 37
+  },
+  "Alfonso|Villarreal": {
+   "note": 6.47,
+   "matches": 27
+  },
+  "Etta Eyong|Villarreal": {
+   "note": 7.33,
+   "matches": 3
+  },
+  "Gerard Moreno|Villarreal": {
+   "note": 6.81,
+   "matches": 22
+  },
+  "Tajon Buchanan|Villarreal": {
+   "note": 6.37,
+   "matches": 35
+  },
+  "Joan García|Barcelona": {
+   "note": 7.29,
+   "matches": 30
+  },
+  "Pau Cubarsí|Barcelona": {
+   "note": 6.59,
+   "matches": 31
+  },
+  "Marcus Rashford|Barcelona": {
+   "note": 6.72,
+   "matches": 32
+  },
+  "Ronald Araújo|Barcelona": {
+   "note": 6.35,
+   "matches": 24
+  },
+  "Eric Garcia|Barcelona": {
+   "note": 6.52,
+   "matches": 34
+  },
+  "Álex Balde|Barcelona": {
+   "note": 6.43,
+   "matches": 28
+  },
+  "Jofre Torrents|Barcelona": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Frenkie de Jong|Barcelona": {
+   "note": 6.4,
+   "matches": 25
+  },
+  "Pedri|Barcelona": {
+   "note": 6.54,
+   "matches": 29
+  },
+  "Fermín López|Barcelona": {
+   "note": 6.77,
+   "matches": 30
+  },
+  "Dani Olmo|Barcelona": {
+   "note": 6.75,
+   "matches": 33
+  },
+  "Lamine Yamal|Barcelona": {
+   "note": 7.54,
+   "matches": 28
+  },
+  "Raphinha|Barcelona": {
+   "note": 7.22,
+   "matches": 22
+  },
+  "Jules Koundé|Barcelona": {
+   "note": 6.67,
+   "matches": 30
+  },
+  "Ferrán Torres|Barcelona": {
+   "note": 6.94,
+   "matches": 33
+  },
+  "Gavi|Barcelona": {
+   "note": 6.13,
+   "matches": 11
+  },
+  "Leo Román|Mallorca": {
+   "note": 6.78,
+   "matches": 33
+  },
+  "Martin Valjent|Mallorca": {
+   "note": 6.26,
+   "matches": 37
+  },
+  "Raíllo|Mallorca": {
+   "note": 6.31,
+   "matches": 24
+  },
+  "Mateu Morey|Mallorca": {
+   "note": 6.14,
+   "matches": 18
+  },
+  "Johan Mojica|Mallorca": {
+   "note": 6.4,
+   "matches": 35
+  },
+  "Antonio Sánchez|Mallorca": {
+   "note": 6.02,
+   "matches": 30
+  },
+  "Manuel Morlanes|Mallorca": {
+   "note": 6.2,
+   "matches": 32
+  },
+  "Toni Lato|Mallorca": {
+   "note": 6.21,
+   "matches": 12
+  },
+  "Pablo Torre|Mallorca": {
+   "note": 6.31,
+   "matches": 35
+  },
+  "Mateo Joseph|Mallorca": {
+   "note": 6.29,
+   "matches": 29
+  },
+  "Takuma Asano|Mallorca": {
+   "note": 6.15,
+   "matches": 20
+  },
+  "Omar Mascarell|Mallorca": {
+   "note": 6.3,
+   "matches": 30
+  },
+  "Sergi Darder|Mallorca": {
+   "note": 6.26,
+   "matches": 38
+  },
+  "Vedat Muriqi|Mallorca": {
+   "note": 7.11,
+   "matches": 37
+  },
+  "Antonio Sivera|Alaves": {
+   "note": 6.79,
+   "matches": 38
+  },
+  "Facundo Garcés|Alaves": {
+   "note": 6.33,
+   "matches": 10
+  },
+  "Nahuel Tenaglia|Alaves": {
+   "note": 6.35,
+   "matches": 36
+  },
+  "Jonny|Alaves": {
+   "note": 6.24,
+   "matches": 34
+  },
+  "Victor Parada|Alaves": {
+   "note": 6.3,
+   "matches": 30
+  },
+  "Antonio Blanco|Alaves": {
+   "note": 6.17,
+   "matches": 36
+  },
+  "Youssef Lekhedim|Alaves": {
+   "note": 6.24,
+   "matches": 25
+  },
+  "Jon Guridi|Alaves": {
+   "note": 6.05,
+   "matches": 28
+  },
+  "Abderrahmane Rebbach|Alaves": {
+   "note": 6.33,
+   "matches": 30
+  },
+  "Pablo Ibáñez|Alaves": {
+   "note": 6.13,
+   "matches": 37
+  },
+  "Mariano|Alaves": {
+   "note": 6.04,
+   "matches": 10
+  },
+  "Carlos Vicente|Alaves": {
+   "note": 6.53,
+   "matches": 21
+  },
+  "Ander Guevara|Alaves": {
+   "note": 6.12,
+   "matches": 25
+  },
+  "Carles Aleñá|Alaves": {
+   "note": 6.21,
+   "matches": 34
+  },
+  "Calebe|Alaves": {
+   "note": 6.04,
+   "matches": 19
+  },
+  "Antonio Martínez|Alaves": {
+   "note": 6.78,
+   "matches": 37
+  },
+  "Adrián De la Fuente|Levante": {
+   "note": 6.5,
+   "matches": 33
+  },
+  "Jorge Cabello|Levante": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Unai Elgezabal|Levante": {
+   "note": 6.2,
+   "matches": 12
+  },
+  "Jeremy Toljan|Levante": {
+   "note": 6.44,
+   "matches": 37
+  },
+  "Manuel Sánchez|Levante": {
+   "note": 6.4,
+   "matches": 33
+  },
+  "Oriol Rey|Levante": {
+   "note": 6.03,
+   "matches": 20
+  },
+  "Matías Moreno|Levante": {
+   "note": 6.42,
+   "matches": 28
+  },
+  "Pablo Martínez|Levante": {
+   "note": 6.34,
+   "matches": 27
+  },
+  "Carlos Álvarez|Levante": {
+   "note": 6.24,
+   "matches": 30
+  },
+  "Víctor García|Levante": {
+   "note": 6.26,
+   "matches": 21
+  },
+  "Morales|Levante": {
+   "note": 6.2,
+   "matches": 20
+  },
+  "Roger Brugué|Levante": {
+   "note": 6.26,
+   "matches": 19
+  },
+  "Iván Romero|Levante": {
+   "note": 6.51,
+   "matches": 32
+  },
+  "Diego Pampín|Levante": {
+   "note": 5.97,
+   "matches": 8
+  },
+  "Remiro|Real Sociedad": {
+   "note": 6.75,
+   "matches": 37
+  },
+  "Duje Caleta-Car|Real Sociedad": {
+   "note": 6.36,
+   "matches": 27
+  },
+  "Orri Óskarsson|Real Sociedad": {
+   "note": 6.78,
+   "matches": 20
+  },
+  "Igor Zubeldia|Real Sociedad": {
+   "note": 6.25,
+   "matches": 25
+  },
+  "Jon Aramburu|Real Sociedad": {
+   "note": 6.29,
+   "matches": 35
+  },
+  "Aihen Muñoz|Real Sociedad": {
+   "note": 6.15,
+   "matches": 21
+  },
+  "Gonçalo Guedes|Real Sociedad": {
+   "note": 6.54,
+   "matches": 32
+  },
+  "Beñat Turrientes|Real Sociedad": {
+   "note": 6.12,
+   "matches": 27
+  },
+  "Sergio Gómez|Real Sociedad": {
+   "note": 6.45,
+   "matches": 35
+  },
+  "Pablo Marín|Real Sociedad": {
+   "note": 6.07,
+   "matches": 34
+  },
+  "Takefusa Kubo|Real Sociedad": {
+   "note": 6.4,
+   "matches": 24
+  },
+  "Ander Barrenetxea|Real Sociedad": {
+   "note": 6.4,
+   "matches": 30
+  },
+  "Brais Méndez|Real Sociedad": {
+   "note": 6.51,
+   "matches": 29
+  },
+  "Aritz Elustondo|Real Sociedad": {
+   "note": 6.07,
+   "matches": 16
+  },
+  "Mikel Oyarzabal|Real Sociedad": {
+   "note": 6.99,
+   "matches": 34
+  },
+  "Julen Agirrezabala|Valencia": {
+   "note": 6.78,
+   "matches": 18
+  },
+  "Copete|Valencia": {
+   "note": 6.23,
+   "matches": 21
+  },
+  "César Tárrega|Valencia": {
+   "note": 6.34,
+   "matches": 32
+  },
+  "Dimitri Foulquier|Valencia": {
+   "note": 6.17,
+   "matches": 15
+  },
+  "José Gayá|Valencia": {
+   "note": 6.44,
+   "matches": 32
+  },
+  "Baptiste Santamaria|Valencia": {
+   "note": 6.05,
+   "matches": 19
+  },
+  "Javier Guerra|Valencia": {
+   "note": 6.38,
+   "matches": 36
+  },
+  "Pepelu|Valencia": {
+   "note": 6.22,
+   "matches": 31
+  },
+  "Jesús Vázquez|Valencia": {
+   "note": 6.08,
+   "matches": 24
+  },
+  "Luis Rioja|Valencia": {
+   "note": 6.36,
+   "matches": 37
+  },
+  "Filip Ugrinic|Valencia": {
+   "note": 6.21,
+   "matches": 27
+  },
+  "Diego López|Valencia": {
+   "note": 6.22,
+   "matches": 34
+  },
+  "Hugo Duro|Valencia": {
+   "note": 6.53,
+   "matches": 36
+  },
+  "André Almeida|Valencia": {
+   "note": 6.1,
+   "matches": 22
+  },
+  "Raba|Valencia": {
+   "note": 6.08,
+   "matches": 13
+  },
+  "Arnaut Danjuma Groeneveld|Valencia": {
+   "note": 6.36,
+   "matches": 30
+  },
+  "Ionut Radu|Celta Vigo": {
+   "note": 6.95,
+   "matches": 38
+  },
+  "Javier Rodríguez|Celta Vigo": {
+   "note": 6.44,
+   "matches": 33
+  },
+  "Marcos Alonso|Celta Vigo": {
+   "note": 6.51,
+   "matches": 32
+  },
+  "Yoel Lago|Celta Vigo": {
+   "note": 6.32,
+   "matches": 12
+  },
+  "Pablo Durán|Celta Vigo": {
+   "note": 6.25,
+   "matches": 30
+  },
+  "Óscar Mingueza|Celta Vigo": {
+   "note": 6.26,
+   "matches": 34
+  },
+  "Mihailo Ristic|Celta Vigo": {
+   "note": 6.14,
+   "matches": 5
+  },
+  "Hugo Sotelo|Celta Vigo": {
+   "note": 6.08,
+   "matches": 20
+  },
+  "Fran Beltrán|Celta Vigo": {
+   "note": 6.12,
+   "matches": 10
+  },
+  "Bryan Zaragoza|Celta Vigo": {
+   "note": 6.23,
+   "matches": 19
+  },
+  "Ilaix Moriba|Celta Vigo": {
+   "note": 6.25,
+   "matches": 36
+  },
+  "Ferrán Jutglà|Celta Vigo": {
+   "note": 6.6,
+   "matches": 30
+  },
+  "Borja Iglesias|Celta Vigo": {
+   "note": 6.76,
+   "matches": 35
+  },
+  "Iago Aspas|Celta Vigo": {
+   "note": 6.41,
+   "matches": 32
+  },
+  "Williot Swedberg|Celta Vigo": {
+   "note": 6.48,
+   "matches": 29
+  },
+  "Jones El Abdellaoui|Celta Vigo": {
+   "note": 6.17,
+   "matches": 22
+  },
+  "David Soria|Getafe": {
+   "note": 7.13,
+   "matches": 38
+  },
+  "Diego Rico|Getafe": {
+   "note": 6.33,
+   "matches": 28
+  },
+  "Djené Dakonam|Getafe": {
+   "note": 6.4,
+   "matches": 34
+  },
+  "Juan Iglesias|Getafe": {
+   "note": 6.59,
+   "matches": 37
+  },
+  "Ismael Bekhoucha|Getafe": {
+   "note": 6.58,
+   "matches": 4
+  },
+  "Davinchi|Getafe": {
+   "note": 6.22,
+   "matches": 14
+  },
+  "Luis Milla|Getafe": {
+   "note": 6.47,
+   "matches": 37
+  },
+  "Mario Martín|Getafe": {
+   "note": 6.18,
+   "matches": 35
+  },
+  "Mauro Arambarri|Getafe": {
+   "note": 6.49,
+   "matches": 37
+  },
+  "Adrián Liso|Getafe": {
+   "note": 6.22,
+   "matches": 28
+  },
+  "Christantus Uche|Getafe": {
+   "note": 7.07,
+   "matches": 3
+  },
+  "Unai Simón|Athletic Club": {
+   "note": 6.82,
+   "matches": 37
+  },
+  "Aitor Paredes|Athletic Club": {
+   "note": 6.45,
+   "matches": 19
+  },
+  "Dani Vivian|Athletic Club": {
+   "note": 6.27,
+   "matches": 31
+  },
+  "Jesús Areso|Athletic Club": {
+   "note": 6.26,
+   "matches": 26
+  },
+  "Alejandro Rego|Athletic Club": {
+   "note": 6.09,
+   "matches": 29
+  },
+  "Yuri|Athletic Club": {
+   "note": 6.53,
+   "matches": 32
+  },
+  "Inigo Ruiz de Galarreta|Athletic Club": {
+   "note": 6.13,
+   "matches": 34
+  },
+  "Mikel Vesga|Athletic Club": {
+   "note": 6.01,
+   "matches": 23
+  },
+  "Mikel Jauregizar|Athletic Club": {
+   "note": 6.12,
+   "matches": 36
+  },
+  "Alex Berenguer|Athletic Club": {
+   "note": 6.33,
+   "matches": 31
+  },
+  "Gorka Guruzeta|Athletic Club": {
+   "note": 6.66,
+   "matches": 35
+  },
+  "Iñaki Williams|Athletic Club": {
+   "note": 6.51,
+   "matches": 30
+  },
+  "Nico Williams|Athletic Club": {
+   "note": 6.59,
+   "matches": 25
+  },
+  "Andoni Gorosabel|Athletic Club": {
+   "note": 6.16,
+   "matches": 24
+  },
+  "Maroan Sannadi|Athletic Club": {
+   "note": 6.2,
+   "matches": 10
+  },
+  "Roberto Navarro|Athletic Club": {
+   "note": 6.34,
+   "matches": 32
+  },
+  "Ørjan Nyland|Sevilla": {
+   "note": 6.72,
+   "matches": 5
+  },
+  "Andrés Castrín|Sevilla": {
+   "note": 6.32,
+   "matches": 19
+  },
+  "Adnan Januzaj|Sevilla": {
+   "note": 6.04,
+   "matches": 12
+  },
+  "Kike Salas|Sevilla": {
+   "note": 6.34,
+   "matches": 26
+  },
+  "Juanlu Sanchez|Sevilla": {
+   "note": 6.06,
+   "matches": 32
+  },
+  "José Ángel Carmona|Sevilla": {
+   "note": 6.3,
+   "matches": 35
+  },
+  "Nemanja Gudelj|Sevilla": {
+   "note": 6.22,
+   "matches": 34
+  },
+  "Marcão|Sevilla": {
+   "note": 6.31,
+   "matches": 13
+  },
+  "Djibril Sow|Sevilla": {
+   "note": 6.31,
+   "matches": 33
+  },
+  "Isaac Romero|Sevilla": {
+   "note": 6.29,
+   "matches": 29
+  },
+  "Lucien Agoume|Sevilla": {
+   "note": 6.15,
+   "matches": 34
+  },
+  "Chidera Ejuke|Sevilla": {
+   "note": 6.13,
+   "matches": 27
+  },
+  "Akor Adams|Sevilla": {
+   "note": 6.65,
+   "matches": 32
+  },
+  "Jan Oblak|Atletico Madrid": {
+   "note": 7.07,
+   "matches": 30
+  },
+  "David Hancko|Atletico Madrid": {
+   "note": 6.5,
+   "matches": 30
+  },
+  "Robin Le Normand|Atletico Madrid": {
+   "note": 6.41,
+   "matches": 28
+  },
+  "Marcos Llorente|Atletico Madrid": {
+   "note": 6.54,
+   "matches": 29
+  },
+  "Matteo Ruggeri|Atletico Madrid": {
+   "note": 6.52,
+   "matches": 26
+  },
+  "Conor Gallagher|Atletico Madrid": {
+   "note": 6.21,
+   "matches": 19
+  },
+  "Koke|Atletico Madrid": {
+   "note": 6.23,
+   "matches": 34
+  },
+  "Johnny Cardoso|Atletico Madrid": {
+   "note": 6.01,
+   "matches": 15
+  },
+  "Pablo Barrios Rivas|Atletico Madrid": {
+   "note": 6.27,
+   "matches": 23
+  },
+  "Álex Baena|Atletico Madrid": {
+   "note": 6.37,
+   "matches": 27
+  },
+  "Giacomo Raspadori|Atletico Madrid": {
+   "note": 6.14,
+   "matches": 12
+  },
+  "Giuliano Simeone|Atletico Madrid": {
+   "note": 6.57,
+   "matches": 31
+  },
+  "Thiago Almada|Atletico Madrid": {
+   "note": 6.33,
+   "matches": 27
+  },
+  "Antoine Griezmann|Atletico Madrid": {
+   "note": 6.56,
+   "matches": 34
+  },
+  "Julián Álvarez|Atletico Madrid": {
+   "note": 6.7,
+   "matches": 29
+  },
+  "Alexander Sørloth|Atletico Madrid": {
+   "note": 6.69,
+   "matches": 35
+  },
+  "Marko Dmitrovic|Espanyol": {
+   "note": 6.83,
+   "matches": 37
+  },
+  "Fernando Calero|Espanyol": {
+   "note": 6.28,
+   "matches": 28
+  },
+  "Miguel Ángel Rubio|Espanyol": {
+   "note": 6.13,
+   "matches": 12
+  },
+  "Leandro Cabrera|Espanyol": {
+   "note": 6.46,
+   "matches": 37
+  },
+  "Omar El Hilali|Espanyol": {
+   "note": 6.33,
+   "matches": 36
+  },
+  "Carlos Romero|Espanyol": {
+   "note": 6.71,
+   "matches": 36
+  },
+  "Edu Expósito|Espanyol": {
+   "note": 6.36,
+   "matches": 36
+  },
+  "José Salinas|Espanyol": {
+   "note": 5.97,
+   "matches": 11
+  },
+  "Pol Lozano|Espanyol": {
+   "note": 6.15,
+   "matches": 33
+  },
+  "Ramón Terrats|Espanyol": {
+   "note": 6.16,
+   "matches": 29
+  },
+  "Tyrhys Dolan|Espanyol": {
+   "note": 6.3,
+   "matches": 36
+  },
+  "Jofre Carreras|Espanyol": {
+   "note": 6.08,
+   "matches": 26
+  },
+  "Kike García|Espanyol": {
+   "note": 6.48,
+   "matches": 37
+  },
+  "Javi Puado|Espanyol": {
+   "note": 6.55,
+   "matches": 10
+  },
+  "Roberto Fernández|Espanyol": {
+   "note": 6.46,
+   "matches": 38
+  },
+  "Pere Milla|Espanyol": {
+   "note": 6.5,
+   "matches": 33
+  },
+  "Matías Dituro|Elche": {
+   "note": 6.87,
+   "matches": 22
+  },
+  "David Affengruber|Elche": {
+   "note": 6.3,
+   "matches": 36
+  },
+  "Pedro Bigas|Elche": {
+   "note": 6.49,
+   "matches": 28
+  },
+  "Álvaro Núñez|Elche": {
+   "note": 6.38,
+   "matches": 19
+  },
+  "Leo Petrot|Elche": {
+   "note": 6.13,
+   "matches": 32
+  },
+  "Rafa Mir|Elche": {
+   "note": 6.57,
+   "matches": 27
+  },
+  "Aleix Febas|Elche": {
+   "note": 6.17,
+   "matches": 36
+  },
+  "Marc Aguado|Elche": {
+   "note": 6.1,
+   "matches": 35
+  },
+  "Alvaro Rodríguez|Elche": {
+   "note": 6.61,
+   "matches": 34
+  },
+  "Martim Neto|Elche": {
+   "note": 6.32,
+   "matches": 25
+  },
+  "German Valera|Elche": {
+   "note": 6.37,
+   "matches": 36
+  },
+  "John Donald|Elche": {
+   "note": 6.1,
+   "matches": 21
+  },
+  "Rodrigo Mendoza|Elche": {
+   "note": 6.14,
+   "matches": 16
+  },
+  "Pau López|Real Betis": {
+   "note": 6.91,
+   "matches": 9
+  },
+  "Marc Bartra|Real Betis": {
+   "note": 6.38,
+   "matches": 25
+  },
+  "Natan|Real Betis": {
+   "note": 6.38,
+   "matches": 33
+  },
+  "Héctor Bellerín|Real Betis": {
+   "note": 6.59,
+   "matches": 27
+  },
+  "Ricardo Rodríguez|Real Betis": {
+   "note": 6.4,
+   "matches": 23
+  },
+  "Pablo Fornals|Real Betis": {
+   "note": 6.69,
+   "matches": 37
+  },
+  "Sergi Altimira|Real Betis": {
+   "note": 6.17,
+   "matches": 24
+  },
+  "Giovani Lo Celso|Real Betis": {
+   "note": 6.33,
+   "matches": 24
+  },
+  "Aitor Ruibal|Real Betis": {
+   "note": 6.52,
+   "matches": 27
+  },
+  "Pablo García|Real Betis": {
+   "note": 6.05,
+   "matches": 15
+  },
+  "Rodrigo Riquelme|Real Betis": {
+   "note": 6.15,
+   "matches": 25
+  },
+  "Ezequiel Ávila|Real Betis": {
+   "note": 6.14,
+   "matches": 16
+  },
+  "Juan Camilo Hernández|Real Betis": {
+   "note": 6.79,
+   "matches": 32
+  },
+  "Cédric Bakambu|Real Betis": {
+   "note": 6.41,
+   "matches": 18
+  },
+  "Sergio Herrera|Osasuna": {
+   "note": 6.89,
+   "matches": 37
+  },
+  "Alejandro Catena|Osasuna": {
+   "note": 6.55,
+   "matches": 35
+  },
+  "Enzo Boyomo|Osasuna": {
+   "note": 6.41,
+   "matches": 30
+  },
+  "Juan Cruz|Osasuna": {
+   "note": 6.22,
+   "matches": 15
+  },
+  "Raul García|Osasuna": {
+   "note": 6.39,
+   "matches": 36
+  },
+  "Valentin Rosier|Osasuna": {
+   "note": 6.35,
+   "matches": 31
+  },
+  "Abel Bretones|Osasuna": {
+   "note": 6.22,
+   "matches": 28
+  },
+  "Jon Moncayola|Osasuna": {
+   "note": 6.27,
+   "matches": 36
+  },
+  "Lucas Torró|Osasuna": {
+   "note": 6.11,
+   "matches": 34
+  },
+  "Aimar Oroz|Osasuna": {
+   "note": 6.15,
+   "matches": 31
+  },
+  "Moi Gómez|Osasuna": {
+   "note": 6.11,
+   "matches": 26
+  },
+  "Rubén García|Osasuna": {
+   "note": 6.33,
+   "matches": 35
+  },
+  "Víctor Muñoz|Osasuna": {
+   "note": 6.43,
+   "matches": 34
+  },
+  "Ante Budimir|Osasuna": {
+   "note": 6.88,
+   "matches": 37
+  },
+  "Thibaut Courtois|Real Madrid": {
+   "note": 7.2,
+   "matches": 32
+  },
+  "Dean Huijsen|Real Madrid": {
+   "note": 6.67,
+   "matches": 28
+  },
+  "Eder Militão|Real Madrid": {
+   "note": 6.75,
+   "matches": 16
+  },
+  "Trent Alexander-Arnold|Real Madrid": {
+   "note": 6.5,
+   "matches": 21
+  },
+  "Franco Mastantuono|Real Madrid": {
+   "note": 6.21,
+   "matches": 23
+  },
+  "Álvaro Fernández|Real Madrid": {
+   "note": 6.73,
+   "matches": 28
+  },
+  "Arda Güler|Real Madrid": {
+   "note": 6.64,
+   "matches": 33
+  },
+  "Dani Ceballos|Real Madrid": {
+   "note": 6.03,
+   "matches": 16
+  },
+  "Aurelien Tchouameni|Real Madrid": {
+   "note": 6.23,
+   "matches": 33
+  },
+  "Federico Valverde|Real Madrid": {
+   "note": 6.75,
+   "matches": 33
+  },
+  "Kylian Mbappe-Lottin|Real Madrid": {
+   "note": 7.71,
+   "matches": 31
+  },
+  "Brahim Diaz|Real Madrid": {
+   "note": 6.3,
+   "matches": 30
+  },
+  "Daniel Carvajal|Real Madrid": {
+   "note": 6.38,
+   "matches": 17
+  },
+  "Vinícius Júnior|Real Madrid": {
+   "note": 7.0,
+   "matches": 36
+  },
+  "Gonzalo García|Real Madrid": {
+   "note": 6.38,
+   "matches": 30
+  },
+  "Júnior Firpo|Real Betis": {
+   "note": 6.29,
+   "matches": 12
+  },
+  "Valentín Gómez|Real Betis": {
+   "note": 6.28,
+   "matches": 28
+  },
+  "Carlos Domínguez|Celta Vigo": {
+   "note": 6.12,
+   "matches": 8
+  },
+  "Manuel Fernández|Celta Vigo": {
+   "note": 6.18,
+   "matches": 14
+  },
+  "Javier Rueda|Celta Vigo": {
+   "note": 6.42,
+   "matches": 26
+  },
+  "Sergio Carreira|Celta Vigo": {
+   "note": 6.19,
+   "matches": 34
+  },
+  "Marash Kumbulla|Mallorca": {
+   "note": 6.0,
+   "matches": 8
+  },
+  "Marc Domenech|Mallorca": {
+   "note": 6.14,
+   "matches": 7
+  },
+  "Abdón Prats|Mallorca": {
+   "note": 6.03,
+   "matches": 15
+  },
+  "Nahuel Molina|Atletico Madrid": {
+   "note": 6.4,
+   "matches": 26
+  },
+  "Javi Galán|Atletico Madrid": {
+   "note": 6.02,
+   "matches": 5
+  },
+  "Victor Chust|Elche": {
+   "note": 6.21,
+   "matches": 31
+  },
+  "Federico Redondo|Elche": {
+   "note": 5.95,
+   "matches": 11
+  },
+  "André Silva|Elche": {
+   "note": 6.61,
+   "matches": 31
+  },
+  "Andreas Christensen|Barcelona": {
+   "note": 6.16,
+   "matches": 13
+  },
+  "Robert Lewandowski|Barcelona": {
+   "note": 6.9,
+   "matches": 31
+  },
+  "Marc Casadó|Barcelona": {
+   "note": 6.12,
+   "matches": 24
+  },
+  "Iker Losada|Levante": {
+   "note": 6.28,
+   "matches": 23
+  },
+  "Carlos Espí|Levante": {
+   "note": 6.78,
+   "matches": 25
+  },
+  "Asier Osambela|Osasuna": {
+   "note": 6.07,
+   "matches": 17
+  },
+  "Jorge Herrando|Osasuna": {
+   "note": 6.25,
+   "matches": 28
+  },
+  "Mouctar Diakhaby|Valencia": {
+   "note": 6.24,
+   "matches": 8
+  },
+  "Iván Martín|Girona": {
+   "note": 6.08,
+   "matches": 35
+  },
+  "Álex Moreno|Girona": {
+   "note": 6.39,
+   "matches": 31
+  },
+  "Renato Veiga|Villarreal": {
+   "note": 6.27,
+   "matches": 33
+  },
+  "Ilias Akhomach|Villarreal": {
+   "note": 6.11,
+   "matches": 9
+  },
+  "Antoniu Roca|Espanyol": {
+   "note": 6.04,
+   "matches": 13
+  },
+  "Jon Martín|Real Sociedad": {
+   "note": 6.29,
+   "matches": 25
+  },
+  "Jon Gorrotxategi|Real Sociedad": {
+   "note": 6.16,
+   "matches": 30
+  },
+  "Luka Sucic|Real Sociedad": {
+   "note": 6.26,
+   "matches": 22
+  },
+  "Antonio Rüdiger|Real Madrid": {
+   "note": 6.61,
+   "matches": 18
+  },
+  "Rodrygo|Real Madrid": {
+   "note": 6.36,
+   "matches": 19
+  },
+  "David Costas|Real Oviedo": {
+   "note": 6.31,
+   "matches": 25
+  },
+  "Leander Dendoncker|Real Oviedo": {
+   "note": 6.07,
+   "matches": 19
+  },
+  "Ovie Ejaria|Real Oviedo": {
+   "note": 5.99,
+   "matches": 9
+  },
+  "Josip Brekalo|Real Oviedo": {
+   "note": 6.06,
+   "matches": 14
+  },
+  "Unai Gómez|Athletic Club": {
+   "note": 6.13,
+   "matches": 26
+  },
+  "Oihan Sancet|Athletic Club": {
+   "note": 6.33,
+   "matches": 28
+  },
+  "Óscar Trejo|Rayo Vallecano": {
+   "note": 6.17,
+   "matches": 7
+  },
+  "Fran Pérez|Rayo Vallecano": {
+   "note": 6.19,
+   "matches": 29
+  },
+  "Sergio Camello|Rayo Vallecano": {
+   "note": 6.45,
+   "matches": 22
+  },
+  "Domingos Duarte|Getafe": {
+   "note": 6.59,
+   "matches": 34
+  },
+  "Ruben Vargas|Sevilla": {
+   "note": 6.52,
+   "matches": 24
+  },
+  "Peque|Sevilla": {
+   "note": 6.15,
+   "matches": 26
+  },
+  "Hugo Álvarez|Celta Vigo": {
+   "note": 6.32,
+   "matches": 28
+  },
+  "Álvaro Vallés|Real Betis": {
+   "note": 6.96,
+   "matches": 28
+  },
+  "Mat Ryan|Levante": {
+   "note": 6.8,
+   "matches": 36
+  },
+  "Jon Ander Olasagasti|Levante": {
+   "note": 6.23,
+   "matches": 33
+  },
+  "Coba da Costa|Getafe": {
+   "note": 6.01,
+   "matches": 14
+  },
+  "Borja Mayoral|Getafe": {
+   "note": 6.51,
+   "matches": 16
+  },
+  "Largie Ramazani|Valencia": {
+   "note": 6.51,
+   "matches": 27
+  },
+  "Moussa Diarra|Alaves": {
+   "note": 6.47,
+   "matches": 3
+  },
+  "Carlos Benavídez|Alaves": {
+   "note": 6.05,
+   "matches": 13
+  },
+  "Denis Suárez|Alaves": {
+   "note": 6.15,
+   "matches": 30
+  },
+  "Clement Lenglet|Atletico Madrid": {
+   "note": 6.33,
+   "matches": 19
+  },
+  "Jon Karrikaburu|Real Sociedad": {
+   "note": 6.04,
+   "matches": 7
+  },
+  "Axel Witsel|Girona": {
+   "note": 6.19,
+   "matches": 32
+  },
+  "Cristhian Stuani|Girona": {
+   "note": 6.46,
+   "matches": 21
+  },
+  "Gabriel Suazo|Sevilla": {
+   "note": 6.26,
+   "matches": 29
+  },
+  "Manu Bueno|Sevilla": {
+   "note": 6.03,
+   "matches": 8
+  },
+  "Alfon|Sevilla": {
+   "note": 6.2,
+   "matches": 10
+  },
+  "Jan Virgili|Mallorca": {
+   "note": 6.28,
+   "matches": 31
+  },
+  "Samú Costa|Mallorca": {
+   "note": 6.46,
+   "matches": 34
+  },
+  "Miguel Román|Celta Vigo": {
+   "note": 6.26,
+   "matches": 19
+  },
+  "Tani Oluwaseyi|Villarreal": {
+   "note": 6.25,
+   "matches": 28
+  },
+  "Ángel Ortiz|Real Betis": {
+   "note": 6.12,
+   "matches": 13
+  },
+  "Nelson Deossa|Real Betis": {
+   "note": 6.0,
+   "matches": 20
+  },
+  "Luca Koleosho|Espanyol": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Urko Gonzalez|Espanyol": {
+   "note": 6.03,
+   "matches": 35
+  },
+  "Kike Barja|Osasuna": {
+   "note": 6.19,
+   "matches": 27
+  },
+  "Iker Benito|Osasuna": {
+   "note": 6.27,
+   "matches": 6
+  },
+  "Gerard Martín|Barcelona": {
+   "note": 6.48,
+   "matches": 32
+  },
+  "Hector Fort|Elche": {
+   "note": 6.42,
+   "matches": 14
+  },
+  "Adrià Pedrosa|Elche": {
+   "note": 6.11,
+   "matches": 26
+  },
+  "César Azpilicueta|Sevilla": {
+   "note": 6.3,
+   "matches": 17
+  },
+  "Nianzou Kouassi|Sevilla": {
+   "note": 6.21,
+   "matches": 12
+  },
+  "Alexis Sánchez|Sevilla": {
+   "note": 6.33,
+   "matches": 28
+  },
+  "Batista Mendy|Sevilla": {
+   "note": 6.06,
+   "matches": 27
+  },
+  "Abdelkabir Abqar|Getafe": {
+   "note": 6.45,
+   "matches": 23
+  },
+  "Kiko Femenía|Getafe": {
+   "note": 6.42,
+   "matches": 28
+  },
+  "Yvan Neyou|Getafe": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Abu Kamara|Getafe": {
+   "note": 6.02,
+   "matches": 12
+  },
+  "Lucas Ahijado|Real Oviedo": {
+   "note": 6.12,
+   "matches": 20
+  },
+  "Javier López|Real Oviedo": {
+   "note": 6.28,
+   "matches": 26
+  },
+  "David Carmo|Real Oviedo": {
+   "note": 6.22,
+   "matches": 22
+  },
+  "Álex Forés|Real Oviedo": {
+   "note": 6.07,
+   "matches": 18
+  },
+  "Santiago Colombatto|Real Oviedo": {
+   "note": 6.05,
+   "matches": 33
+  },
+  "Goduine Koyalipou|Levante": {
+   "note": 6.19,
+   "matches": 11
+  },
+  "Kervin Arriaga|Levante": {
+   "note": 6.27,
+   "matches": 27
+  },
+  "Etta Eyong|Levante": {
+   "note": 6.51,
+   "matches": 30
+  },
+  "Sofyan Amrabat|Real Betis": {
+   "note": 6.08,
+   "matches": 17
+  },
+  "Antony|Real Betis": {
+   "note": 6.7,
+   "matches": 32
+  },
+  "Abdessamad Ezzalzouli|Real Betis": {
+   "note": 6.94,
+   "matches": 29
+  },
+  "Carl Starfelt|Celta Vigo": {
+   "note": 6.47,
+   "matches": 19
+  },
+  "Alejandro Francés|Girona": {
+   "note": 6.27,
+   "matches": 24
+  },
+  "Azz-Eddine Ounahi|Girona": {
+   "note": 6.51,
+   "matches": 24
+  },
+  "Vladyslav Vanat|Girona": {
+   "note": 6.67,
+   "matches": 27
+  },
+  "Bryan Gil Salvatierra|Girona": {
+   "note": 6.2,
+   "matches": 29
+  },
+  "Marc Pubill|Atletico Madrid": {
+   "note": 6.57,
+   "matches": 19
+  },
+  "Nicolás González|Atletico Madrid": {
+   "note": 6.52,
+   "matches": 24
+  },
+  "Ayoze Pérez|Villarreal": {
+   "note": 6.53,
+   "matches": 26
+  },
+  "Georges Mikautadze|Villarreal": {
+   "note": 6.95,
+   "matches": 33
+  },
+  "Marc Bernal|Barcelona": {
+   "note": 6.22,
+   "matches": 22
+  },
+  "Roony Bardghji|Barcelona": {
+   "note": 6.18,
+   "matches": 21
+  },
+  "Thierry Correia|Valencia": {
+   "note": 6.32,
+   "matches": 24
+  },
+  "Lucas Beltrán|Valencia": {
+   "note": 6.23,
+   "matches": 27
+  },
+  "David Alaba|Real Madrid": {
+   "note": 6.19,
+   "matches": 11
+  },
+  "Fran García|Real Madrid": {
+   "note": 6.52,
+   "matches": 13
+  },
+  "Raúl|Real Madrid": {
+   "note": 6.59,
+   "matches": 23
+  },
+  "Carlos Soler|Real Sociedad": {
+   "note": 6.34,
+   "matches": 33
+  },
+  "Mikel Goti|Real Sociedad": {
+   "note": 6.1,
+   "matches": 4
+  },
+  "Arsen Zakharyan|Real Sociedad": {
+   "note": 6.07,
+   "matches": 17
+  },
+  "Jon Pacheco Dozagarat|Alaves": {
+   "note": 6.21,
+   "matches": 22
+  },
+  "Lucas Boyé|Alaves": {
+   "note": 6.76,
+   "matches": 29
+  },
+  "Nicolás Serrano|Athletic Club": {
+   "note": 6.11,
+   "matches": 16
+  },
+  "Urko Izeta|Athletic Club": {
+   "note": 6.17,
+   "matches": 13
+  },
+  "Samu Becerra|Rayo Vallecano": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Jozhua Vertrouwd|Rayo Vallecano": {
+   "note": 6.2,
+   "matches": 9
+  },
+  "Alemão|Rayo Vallecano": {
+   "note": 6.28,
+   "matches": 26
+  },
+  "Charles Pickel|Espanyol": {
+   "note": 6.07,
+   "matches": 24
+  },
+  "Rubén Sánchez|Espanyol": {
+   "note": 6.18,
+   "matches": 21
+  },
+  "Pablo Maffeo|Mallorca": {
+   "note": 6.45,
+   "matches": 31
+  },
+  "Javi Muñoz|Getafe": {
+   "note": 6.02,
+   "matches": 17
+  },
+  "Alex Sancris|Getafe": {
+   "note": 6.11,
+   "matches": 18
+  },
+  "Diego Llorente|Real Betis": {
+   "note": 6.43,
+   "matches": 18
+  },
+  "Marc Roca|Real Betis": {
+   "note": 6.16,
+   "matches": 29
+  },
+  "Iñaki Peña|Elche": {
+   "note": 6.69,
+   "matches": 16
+  },
+  "Bambo Diaby|Elche": {
+   "note": 6.05,
+   "matches": 4
+  },
+  "Josan|Elche": {
+   "note": 6.25,
+   "matches": 19
+  },
+  "Grady Diangana|Elche": {
+   "note": 6.1,
+   "matches": 20
+  },
+  "Unai Vencedor|Levante": {
+   "note": 6.02,
+   "matches": 16
+  },
+  "Aymeric Laporte|Athletic Club": {
+   "note": 6.3,
+   "matches": 25
+  },
+  "Iván Balliu|Rayo Vallecano": {
+   "note": 6.14,
+   "matches": 14
+  },
+  "Eduardo Camavinga|Real Madrid": {
+   "note": 6.19,
+   "matches": 29
+  },
+  "Jude Bellingham|Real Madrid": {
+   "note": 6.67,
+   "matches": 28
+  },
+  "Sheraldo Becker|Osasuna": {
+   "note": 6.02,
+   "matches": 9
+  },
+  "Pau Navarro|Villarreal": {
+   "note": 6.34,
+   "matches": 24
+  },
+  "Manor Solomon|Villarreal": {
+   "note": 6.47,
+   "matches": 6
+  },
+  "Odisseas Vlachodimos|Sevilla": {
+   "note": 6.73,
+   "matches": 33
+  },
+  "Clemens Riedel|Espanyol": {
+   "note": 6.3,
+   "matches": 20
+  },
+  "Arnau Tenas|Villarreal": {
+   "note": 6.6,
+   "matches": 11
+  },
+  "Eric Bailly|Real Oviedo": {
+   "note": 6.27,
+   "matches": 16
+  },
+  "David López|Mallorca": {
+   "note": 6.08,
+   "matches": 14
+  },
+  "Umar Sadiq|Real Sociedad": {
+   "note": 6.04,
+   "matches": 5
+  },
+  "Adama Boiro|Athletic Club": {
+   "note": 6.01,
+   "matches": 14
+  },
+  "Lancinet Kourouma|Girona": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Wojciech Szczesny|Barcelona": {
+   "note": 6.55,
+   "matches": 8
+  },
+  "Dro Fernández|Barcelona": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Álvaro Odriozola|Real Sociedad": {
+   "note": 6.48,
+   "matches": 5
+  },
+  "Iker Muñoz|Osasuna": {
+   "note": 6.04,
+   "matches": 19
+  },
+  "Nyom|Getafe": {
+   "note": 6.23,
+   "matches": 15
+  },
+  "Fábio Cardoso|Sevilla": {
+   "note": 6.35,
+   "matches": 4
+  },
+  "Javi Llabrés|Mallorca": {
+   "note": 6.0,
+   "matches": 16
+  },
+  "Íñigo Lekue|Athletic Club": {
+   "note": 6.2,
+   "matches": 11
+  },
+  "Adam El Mokhtari|Elche": {
+   "note": 6.21,
+   "matches": 7
+  },
+  "Juanmi|Getafe": {
+   "note": 6.16,
+   "matches": 8
+  },
+  "Eray Cömert|Valencia": {
+   "note": 6.58,
+   "matches": 17
+  },
+  "Giménez|Atletico Madrid": {
+   "note": 6.6,
+   "matches": 16
+  },
+  "Yangel Herrera|Real Sociedad": {
+   "note": 5.97,
+   "matches": 12
+  },
+  "Nobel Mendy|Rayo Vallecano": {
+   "note": 6.5,
+   "matches": 24
+  },
+  "Joseph Aidoo|Celta Vigo": {
+   "note": 6.11,
+   "matches": 8
+  },
+  "Yago Alonso|Elche": {
+   "note": 5.96,
+   "matches": 9
+  },
+  "Lucas Bergström|Mallorca": {
+   "note": 6.88,
+   "matches": 5
+  },
+  "Alan Matturro|Levante": {
+   "note": 6.15,
+   "matches": 19
+  },
+  "Pablo Agudín|Real Oviedo": {
+   "note": 6.0,
+   "matches": 8
+  },
+  "Selton Sánchez|Athletic Club": {
+   "note": 6.14,
+   "matches": 7
+  },
+  "Abel Ruiz|Girona": {
+   "note": 6.02,
+   "matches": 9
+  },
+  "Isco|Real Betis": {
+   "note": 6.36,
+   "matches": 8
+  },
+  "Iñigo Arguibide|Osasuna": {
+   "note": 6.15,
+   "matches": 6
+  },
+  "Juan Musso|Atletico Madrid": {
+   "note": 6.8,
+   "matches": 8
+  },
+  "Gorka Carrera|Real Sociedad": {
+   "note": 6.1,
+   "matches": 3
+  },
+  "Miguel Sierra|Sevilla": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Carlos Macià|Villarreal": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Oso|Sevilla": {
+   "note": 6.42,
+   "matches": 21
+  },
+  "Joan Jordán|Sevilla": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Ugo Raghouber|Levante": {
+   "note": 6.03,
+   "matches": 16
+  },
+  "Paco Cortés|Levante": {
+   "note": 6.09,
+   "matches": 12
+  },
+  "Kareem Tunde|Levante": {
+   "note": 6.1,
+   "matches": 21
+  },
+  "Alexander Freeman|Villarreal": {
+   "note": 6.04,
+   "matches": 10
+  },
+  "Aitor Mañas|Alaves": {
+   "note": 6.07,
+   "matches": 9
+  },
+  "Nicolás Fonseca|Real Oviedo": {
+   "note": 5.97,
+   "matches": 19
+  },
+  "Javi Galán|Osasuna": {
+   "note": 6.38,
+   "matches": 20
+  },
+  "Ferland Mendy|Real Madrid": {
+   "note": 6.2,
+   "matches": 5
+  },
+  "Alejandro Mestanza|Getafe": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Thiago Borbas|Real Oviedo": {
+   "note": 6.02,
+   "matches": 12
+  },
+  "Stole Dimitrievski|Valencia": {
+   "note": 6.97,
+   "matches": 20
+  },
+  "Umar Sadiq|Valencia": {
+   "note": 6.49,
+   "matches": 20
+  },
+  "Carlos Martín|Rayo Vallecano": {
+   "note": 6.08,
+   "matches": 11
+  },
+  "João Cancelo|Barcelona": {
+   "note": 6.88,
+   "matches": 16
+  },
+  "Martín Satriano|Getafe": {
+   "note": 6.73,
+   "matches": 18
+  },
+  "Zaid Romero|Getafe": {
+   "note": 6.85,
+   "matches": 15
+  },
+  "Luis Vázquez|Getafe": {
+   "note": 6.36,
+   "matches": 17
+  },
+  "Sebastián Boselli|Getafe": {
+   "note": 6.32,
+   "matches": 11
+  },
+  "Fran Beltrán|Girona": {
+   "note": 6.16,
+   "matches": 17
+  },
+  "Claudio Echeverri|Girona": {
+   "note": 6.21,
+   "matches": 17
+  },
+  "Ilias Akhomach|Rayo Vallecano": {
+   "note": 6.2,
+   "matches": 11
+  },
+  "Neal Maupay|Sevilla": {
+   "note": 6.39,
+   "matches": 12
+  },
+  "Raul Moro|Osasuna": {
+   "note": 6.18,
+   "matches": 14
+  },
+  "Tai Abed|Levante": {
+   "note": 6.04,
+   "matches": 7
+  },
+  "Lucas Cepeda|Elche": {
+   "note": 6.16,
+   "matches": 10
+  },
+  "Fernando López|Celta Vigo": {
+   "note": 6.22,
+   "matches": 17
+  },
+  "Thiago Fernández|Real Oviedo": {
+   "note": 6.29,
+   "matches": 17
+  },
+  "Wesley|Real Sociedad": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Ángel Pérez|Alaves": {
+   "note": 6.38,
+   "matches": 16
+  },
+  "Rodrigo Mendoza|Atletico Madrid": {
+   "note": 6.16,
+   "matches": 8
+  },
+  "Ademola Lookman|Atletico Madrid": {
+   "note": 6.67,
+   "matches": 12
+  },
+  "Obed Vargas|Atletico Madrid": {
+   "note": 6.02,
+   "matches": 12
+  },
+  "Álvaro Fidalgo|Real Betis": {
+   "note": 6.22,
+   "matches": 9
+  },
+  "Gonzalo Villar|Elche": {
+   "note": 6.18,
+   "matches": 12
+  },
+  "Cyril Ngonge|Espanyol": {
+   "note": 6.26,
+   "matches": 9
+  },
+  "Unai Núñez|Valencia": {
+   "note": 6.32,
+   "matches": 13
+  },
+  "Guido Rodríguez|Valencia": {
+   "note": 6.43,
+   "matches": 16
+  },
+  "Tete Morente|Elche": {
+   "note": 6.31,
+   "matches": 13
+  },
+  "Nacho Pérez|Levante": {
+   "note": 6.03,
+   "matches": 3
+  },
+  "Zito|Mallorca": {
+   "note": 6.26,
+   "matches": 10
+  },
+  "Matías Vecino|Celta Vigo": {
+   "note": 6.02,
+   "matches": 6
+  },
+  "Buba Sangaré|Elche": {
+   "note": 6.11,
+   "matches": 12
+  },
+  "Veljko Birmancevic|Getafe": {
+   "note": 6.02,
+   "matches": 6
+  },
+  "Alfon|Villarreal": {
+   "note": 6.24,
+   "matches": 11
+  },
+  "Julio Díaz|Atletico Madrid": {
+   "note": 6.75,
+   "matches": 4
+  },
+  "Thiago Pitarch|Real Madrid": {
+   "note": 6.32,
+   "matches": 10
+  },
+  "César Palacios|Real Madrid": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Manuel Ángel|Real Madrid": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Ville Koski|Alaves": {
+   "note": 6.44,
+   "matches": 5
+  },
+  "Xavi Espart|Barcelona": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Álvaro Núñez|Celta Vigo": {
+   "note": 6.02,
+   "matches": 6
+  },
+  "Justin-Noel Kalumba|Mallorca": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Ibrahim Diabate|Alaves": {
+   "note": 6.4,
+   "matches": 10
+  },
+  "Andriy Lunin|Real Madrid": {
+   "note": 6.93,
+   "matches": 6
+  },
+  "Javier Morcillo|Atletico Madrid": {
+   "note": 6.06,
+   "matches": 5
+  },
+  "Yeray Álvarez|Athletic Club": {
+   "note": 6.23,
+   "matches": 7
+  },
+  "Javier Boñar|Atletico Madrid": {
+   "note": 6.55,
+   "matches": 4
+  },
+  "Daniel Cárdenas|Rayo Vallecano": {
+   "note": 6.7,
+   "matches": 4
+  },
+  "Renzo Saravia|Valencia": {
+   "note": 6.3,
+   "matches": 5
+  },
+  "Abdul Mumin|Rayo Vallecano": {
+   "note": 6.1,
+   "matches": 3
+  },
+  "Damián Cáceres|Getafe": {
+   "note": 6.07,
+   "matches": 3
+  },
+  "Gerónimo Rulli|Marseille": {
+   "note": 7.0,
+   "matches": 29
+  },
+  "CJ Egan-Riley|Marseille": {
+   "note": 6.25,
+   "matches": 11
+  },
+  "Geoffrey Kondogbia|Marseille": {
+   "note": 6.14,
+   "matches": 10
+  },
+  "Timothy Weah|Marseille": {
+   "note": 6.4,
+   "matches": 29
+  },
+  "Leonardo Balerdi|Marseille": {
+   "note": 6.33,
+   "matches": 26
+  },
+  "Angel Gomes|Marseille": {
+   "note": 6.45,
+   "matches": 14
+  },
+  "Pierre-Emile Højbjerg|Marseille": {
+   "note": 6.49,
+   "matches": 32
+  },
+  "Darryl Bakola|Marseille": {
+   "note": 6.0,
+   "matches": 8
+  },
+  "Amir Murillo|Marseille": {
+   "note": 6.61,
+   "matches": 16
+  },
+  "Ulisses García|Marseille": {
+   "note": 6.08,
+   "matches": 4
+  },
+  "Mason Greenwood|Marseille": {
+   "note": 7.07,
+   "matches": 32
+  },
+  "Robinio Vaz|Marseille": {
+   "note": 6.62,
+   "matches": 14
+  },
+  "Pierre-Emerick Aubameyang|Marseille": {
+   "note": 6.91,
+   "matches": 30
+  },
+  "Amine Gouiri|Marseille": {
+   "note": 6.83,
+   "matches": 22
+  },
+  "Brice Samba|Rennes": {
+   "note": 6.9,
+   "matches": 32
+  },
+  "Abdelhamid Aït Boudlal|Rennes": {
+   "note": 6.3,
+   "matches": 20
+  },
+  "Anthony Rouault|Rennes": {
+   "note": 6.53,
+   "matches": 21
+  },
+  "Jérémy Jacquet|Rennes": {
+   "note": 6.25,
+   "matches": 19
+  },
+  "Przemyslaw Frankowski|Rennes": {
+   "note": 6.31,
+   "matches": 19
+  },
+  "Quentin Merlin|Rennes": {
+   "note": 6.44,
+   "matches": 33
+  },
+  "Fabian Rieder|Rennes": {
+   "note": 5.93,
+   "matches": 3
+  },
+  "Mahdi Camara|Rennes": {
+   "note": 6.19,
+   "matches": 32
+  },
+  "Seko Fofana|Rennes": {
+   "note": 6.16,
+   "matches": 12
+  },
+  "Ludovic Blas|Rennes": {
+   "note": 6.49,
+   "matches": 32
+  },
+  "Valentin Rongier|Rennes": {
+   "note": 6.27,
+   "matches": 31
+  },
+  "Mahamadou Nagida|Rennes": {
+   "note": 6.21,
+   "matches": 19
+  },
+  "Mohamed Meïté|Rennes": {
+   "note": 6.49,
+   "matches": 17
+  },
+  "Mousa Al Tamari|Rennes": {
+   "note": 6.45,
+   "matches": 33
+  },
+  "Robin Risser|Lens": {
+   "note": 7.07,
+   "matches": 33
+  },
+  "Malang Sarr|Lens": {
+   "note": 6.55,
+   "matches": 33
+  },
+  "Matthieu Udol|Lens": {
+   "note": 6.56,
+   "matches": 34
+  },
+  "Samson Baidoo|Lens": {
+   "note": 6.74,
+   "matches": 23
+  },
+  "Ruben Aguilar|Lens": {
+   "note": 6.32,
+   "matches": 26
+  },
+  "Florian Sotoca|Lens": {
+   "note": 6.08,
+   "matches": 26
+  },
+  "Deiver Machado|Lens": {
+   "note": 6.1,
+   "matches": 5
+  },
+  "Anthony Bermont|Lens": {
+   "note": 6.0,
+   "matches": 10
+  },
+  "Adrien Thomasson|Lens": {
+   "note": 6.66,
+   "matches": 32
+  },
+  "Morgan Guilavogui|Lens": {
+   "note": 6.17,
+   "matches": 16
+  },
+  "Wesley Said|Lens": {
+   "note": 6.9,
+   "matches": 29
+  },
+  "Saud Abdulhamid|Lens": {
+   "note": 6.32,
+   "matches": 25
+  },
+  "Rayan Fofana|Lens": {
+   "note": 6.39,
+   "matches": 25
+  },
+  "Florian Thauvin|Lens": {
+   "note": 6.91,
+   "matches": 33
+  },
+  "Remy Descamps|Lyon": {
+   "note": 7.52,
+   "matches": 5
+  },
+  "Clinton Mata|Lyon": {
+   "note": 6.43,
+   "matches": 32
+  },
+  "Moussa Niakhate|Lyon": {
+   "note": 6.55,
+   "matches": 32
+  },
+  "Khalis Merah|Lyon": {
+   "note": 6.11,
+   "matches": 22
+  },
+  "Abner|Lyon": {
+   "note": 6.63,
+   "matches": 26
+  },
+  "Tanner Tessmann|Lyon": {
+   "note": 6.27,
+   "matches": 29
+  },
+  "Tyler Morton|Lyon": {
+   "note": 6.29,
+   "matches": 29
+  },
+  "Corentin Tolisso|Lyon": {
+   "note": 6.8,
+   "matches": 30
+  },
+  "Adam Karabec|Lyon": {
+   "note": 6.16,
+   "matches": 21
+  },
+  "Ainsley Maitland-Niles|Lyon": {
+   "note": 6.54,
+   "matches": 30
+  },
+  "Pavel Sulc|Lyon": {
+   "note": 6.79,
+   "matches": 27
+  },
+  "Malick Fofana|Lyon": {
+   "note": 6.48,
+   "matches": 12
+  },
+  "Mory Diaw|Le Havre": {
+   "note": 6.94,
+   "matches": 30
+  },
+  "Ayumu Seko|Le Havre": {
+   "note": 6.16,
+   "matches": 30
+  },
+  "Gautier Lloris|Le Havre": {
+   "note": 6.44,
+   "matches": 29
+  },
+  "Arouna Sangante|Le Havre": {
+   "note": 6.47,
+   "matches": 28
+  },
+  "Felix Mambimbi|Le Havre": {
+   "note": 6.11,
+   "matches": 17
+  },
+  "Yanis Zouaoui|Le Havre": {
+   "note": 6.35,
+   "matches": 30
+  },
+  "Étienne Youté|Le Havre": {
+   "note": 6.37,
+   "matches": 9
+  },
+  "Godson Kyeremeh|Le Havre": {
+   "note": 6.21,
+   "matches": 13
+  },
+  "Rassoul Ndiaye|Le Havre": {
+   "note": 6.37,
+   "matches": 33
+  },
+  "Daren Mosengo|Le Havre": {
+   "note": 6.0,
+   "matches": 7
+  },
+  "Simon Ebonog|Le Havre": {
+   "note": 6.1,
+   "matches": 30
+  },
+  "Fodé Doucouré|Le Havre": {
+   "note": 6.25,
+   "matches": 26
+  },
+  "Younes Namli|Le Havre": {
+   "note": 6.08,
+   "matches": 12
+  },
+  "Mbwana Samatta|Le Havre": {
+   "note": 6.27,
+   "matches": 27
+  },
+  "Yassine Kechta|Le Havre": {
+   "note": 6.15,
+   "matches": 30
+  },
+  "Issa Soumaré|Le Havre": {
+   "note": 6.71,
+   "matches": 34
+  },
+  "Lukas Hradecky|Monaco": {
+   "note": 6.72,
+   "matches": 17
+  },
+  "Christian Mawissa Elebi|Monaco": {
+   "note": 6.1,
+   "matches": 18
+  },
+  "Eric Dier|Monaco": {
+   "note": 6.17,
+   "matches": 9
+  },
+  "Jordan Teze|Monaco": {
+   "note": 6.18,
+   "matches": 33
+  },
+  "Caio Henrique|Monaco": {
+   "note": 6.3,
+   "matches": 22
+  },
+  "Denis Zakaria|Monaco": {
+   "note": 6.43,
+   "matches": 24
+  },
+  "Lamine Camara|Monaco": {
+   "note": 6.48,
+   "matches": 24
+  },
+  "Vanderson|Monaco": {
+   "note": 6.36,
+   "matches": 14
+  },
+  "Takumi Minamino|Monaco": {
+   "note": 6.52,
+   "matches": 15
+  },
+  "George Ilenikhena|Monaco": {
+   "note": 6.22,
+   "matches": 15
+  },
+  "Maghnes Akliouche|Monaco": {
+   "note": 6.59,
+   "matches": 31
+  },
+  "Aladji Bamba|Monaco": {
+   "note": 6.17,
+   "matches": 18
+  },
+  "Aleksandr Golovin|Monaco": {
+   "note": 6.54,
+   "matches": 25
+  },
+  "Mika Biereth|Monaco": {
+   "note": 6.21,
+   "matches": 32
+  },
+  "Paris Brunner|Monaco": {
+   "note": 6.03,
+   "matches": 7
+  },
+  "Yehvann Diouf|Nice": {
+   "note": 6.69,
+   "matches": 26
+  },
+  "Antoine Mendy|Nice": {
+   "note": 6.28,
+   "matches": 25
+  },
+  "Juma Bah|Nice": {
+   "note": 6.14,
+   "matches": 26
+  },
+  "Kojo Peprah Oppong|Nice": {
+   "note": 6.31,
+   "matches": 29
+  },
+  "Jonathan Clauss|Nice": {
+   "note": 6.35,
+   "matches": 30
+  },
+  "Melvin Bard|Nice": {
+   "note": 6.14,
+   "matches": 29
+  },
+  "Hichem Boudaoui|Nice": {
+   "note": 6.12,
+   "matches": 25
+  },
+  "Tom Louchet|Nice": {
+   "note": 6.32,
+   "matches": 27
+  },
+  "Sofiane Diop|Nice": {
+   "note": 6.55,
+   "matches": 33
+  },
+  "Bernard Nguene|Nice": {
+   "note": 6.0,
+   "matches": 6
+  },
+  "Isak Jansson|Nice": {
+   "note": 6.11,
+   "matches": 22
+  },
+  "Jeremie Boga|Nice": {
+   "note": 6.43,
+   "matches": 14
+  },
+  "Terem Igobor Moffi|Nice": {
+   "note": 6.42,
+   "matches": 10
+  },
+  "Salis Abdul Samed|Nice": {
+   "note": 5.97,
+   "matches": 18
+  },
+  "Guillaume Restes|Toulouse": {
+   "note": 6.88,
+   "matches": 33
+  },
+  "Charlie Cresswell|Toulouse": {
+   "note": 6.66,
+   "matches": 29
+  },
+  "Djibril Sidibe|Toulouse": {
+   "note": 6.42,
+   "matches": 32
+  },
+  "Mark McKenzie|Toulouse": {
+   "note": 6.37,
+   "matches": 29
+  },
+  "Aron Dønnum|Toulouse": {
+   "note": 6.47,
+   "matches": 28
+  },
+  "Dayann Methalie|Toulouse": {
+   "note": 6.18,
+   "matches": 27
+  },
+  "Rasmus Nicolaisen|Toulouse": {
+   "note": 6.32,
+   "matches": 32
+  },
+  "Mário Sauer|Toulouse": {
+   "note": 6.05,
+   "matches": 25
+  },
+  "Alexis Vossah|Toulouse": {
+   "note": 6.11,
+   "matches": 23
+  },
+  "Frank Magri|Toulouse": {
+   "note": 6.58,
+   "matches": 17
+  },
+  "Santiago Hidalgo|Toulouse": {
+   "note": 6.47,
+   "matches": 28
+  },
+  "Noah Edjouma|Toulouse": {
+   "note": 6.03,
+   "matches": 12
+  },
+  "Warren Kamanzi|Toulouse": {
+   "note": 6.11,
+   "matches": 24
+  },
+  "Yann Gboho|Toulouse": {
+   "note": 6.54,
+   "matches": 31
+  },
+  "Radoslaw Majecki|Brest": {
+   "note": 6.69,
+   "matches": 10
+  },
+  "Brendan Chardonnet|Brest": {
+   "note": 6.49,
+   "matches": 29
+  },
+  "Julien Le Cardinal|Brest": {
+   "note": 6.14,
+   "matches": 5
+  },
+  "Kenny Lala|Brest": {
+   "note": 6.33,
+   "matches": 32
+  },
+  "Bradley Locko|Brest": {
+   "note": 6.21,
+   "matches": 21
+  },
+  "Hugo Magnetti|Brest": {
+   "note": 6.04,
+   "matches": 33
+  },
+  "Hamidou Makalou|Brest": {
+   "note": 6.04,
+   "matches": 17
+  },
+  "Kamory Doumbia|Brest": {
+   "note": 6.56,
+   "matches": 24
+  },
+  "Luc Zogbe|Brest": {
+   "note": 6.09,
+   "matches": 9
+  },
+  "Ludovic Ajorque|Brest": {
+   "note": 6.74,
+   "matches": 32
+  },
+  "Romain Del Castillo|Brest": {
+   "note": 6.65,
+   "matches": 32
+  },
+  "Mama Baldé|Brest": {
+   "note": 6.32,
+   "matches": 18
+  },
+  "Berke Özer|Lille": {
+   "note": 7.1,
+   "matches": 32
+  },
+  "Alexsandro Ribeiro|Lille": {
+   "note": 6.32,
+   "matches": 9
+  },
+  "Nathan Ngoy|Lille": {
+   "note": 6.54,
+   "matches": 29
+  },
+  "Romain Perraud|Lille": {
+   "note": 6.75,
+   "matches": 30
+  },
+  "Benjamin André|Lille": {
+   "note": 6.37,
+   "matches": 27
+  },
+  "Nabil Bentaleb|Lille": {
+   "note": 6.24,
+   "matches": 26
+  },
+  "Ngal'ayel Mukau|Lille": {
+   "note": 6.05,
+   "matches": 30
+  },
+  "Hákon Haraldsson|Lille": {
+   "note": 6.57,
+   "matches": 32
+  },
+  "Ayyoub Bouaddi|Lille": {
+   "note": 6.16,
+   "matches": 30
+  },
+  "Marius Broholm|Lille": {
+   "note": 6.25,
+   "matches": 11
+  },
+  "Matias Fernandez-Pardo|Lille": {
+   "note": 6.73,
+   "matches": 29
+  },
+  "Felix Correia|Lille": {
+   "note": 6.44,
+   "matches": 34
+  },
+  "Olivier Giroud|Lille": {
+   "note": 6.51,
+   "matches": 30
+  },
+  "Donovan Léon|Auxerre": {
+   "note": 6.95,
+   "matches": 29
+  },
+  "Clément Akpa|Auxerre": {
+   "note": 6.28,
+   "matches": 26
+  },
+  "Francisco Sierralta|Auxerre": {
+   "note": 6.49,
+   "matches": 10
+  },
+  "Marvin Senaya|Auxerre": {
+   "note": 6.32,
+   "matches": 25
+  },
+  "Gideon Mensah|Auxerre": {
+   "note": 6.48,
+   "matches": 30
+  },
+  "Elisha Owusu|Auxerre": {
+   "note": 6.09,
+   "matches": 29
+  },
+  "Fredrik Oppegård|Auxerre": {
+   "note": 6.1,
+   "matches": 23
+  },
+  "Kévin Danois|Auxerre": {
+   "note": 6.29,
+   "matches": 33
+  },
+  "Josué Casimir|Auxerre": {
+   "note": 6.14,
+   "matches": 31
+  },
+  "Rudy Matondo|Auxerre": {
+   "note": 6.02,
+   "matches": 16
+  },
+  "Ibrahim Osman|Auxerre": {
+   "note": 6.25,
+   "matches": 14
+  },
+  "Lasso Coulibaly|Auxerre": {
+   "note": 6.01,
+   "matches": 17
+  },
+  "Lassine Sinayoko|Auxerre": {
+   "note": 6.89,
+   "matches": 32
+  },
+  "Bingourou Kamara|Lorient": {
+   "note": 6.4,
+   "matches": 3
+  },
+  "Igor Silva|Lorient": {
+   "note": 6.26,
+   "matches": 17
+  },
+  "Montassar Talbi|Lorient": {
+   "note": 6.36,
+   "matches": 29
+  },
+  "Joel Mvuka|Lorient": {
+   "note": 6.04,
+   "matches": 15
+  },
+  "Dermane Karim|Lorient": {
+   "note": 6.16,
+   "matches": 30
+  },
+  "Arsène Kouassi|Lorient": {
+   "note": 6.37,
+   "matches": 31
+  },
+  "Darline Yongwa|Lorient": {
+   "note": 6.33,
+   "matches": 23
+  },
+  "Arthur Avom|Lorient": {
+   "note": 6.18,
+   "matches": 31
+  },
+  "Laurent Abergel|Lorient": {
+   "note": 6.04,
+   "matches": 28
+  },
+  "Mohamed Bamba|Lorient": {
+   "note": 6.28,
+   "matches": 18
+  },
+  "Sambou Soumano|Lorient": {
+   "note": 6.35,
+   "matches": 31
+  },
+  "Aiyegun Tosin|Lorient": {
+   "note": 6.38,
+   "matches": 27
+  },
+  "Pablo Pagis|Lorient": {
+   "note": 6.83,
+   "matches": 28
+  },
+  "Panos Katseris|Lorient": {
+   "note": 6.33,
+   "matches": 16
+  },
+  "Kouakou Herve Koffi|Angers": {
+   "note": 6.99,
+   "matches": 30
+  },
+  "Carlens Arcus|Angers": {
+   "note": 6.45,
+   "matches": 26
+  },
+  "Jordan Lefort|Angers": {
+   "note": 6.39,
+   "matches": 34
+  },
+  "Ousmane Camara|Angers": {
+   "note": 6.45,
+   "matches": 32
+  },
+  "Lilian Raolisoa|Angers": {
+   "note": 6.36,
+   "matches": 32
+  },
+  "Jim Allevinah|Angers": {
+   "note": 6.28,
+   "matches": 6
+  },
+  "Florent Hanin|Angers": {
+   "note": 6.06,
+   "matches": 25
+  },
+  "Jacques Ekomie|Angers": {
+   "note": 6.27,
+   "matches": 32
+  },
+  "Haris Belkebla|Angers": {
+   "note": 6.0,
+   "matches": 33
+  },
+  "Yassin Belkhdim|Angers": {
+   "note": 6.24,
+   "matches": 27
+  },
+  "Prosper Peter|Angers": {
+   "note": 6.35,
+   "matches": 29
+  },
+  "Louis Mouton|Angers": {
+   "note": 6.18,
+   "matches": 32
+  },
+  "Sidiki Chérif|Angers": {
+   "note": 6.36,
+   "matches": 19
+  },
+  "Lanroy Machine|Angers": {
+   "note": 6.1,
+   "matches": 22
+  },
+  "Marius Courcoul|Angers": {
+   "note": 5.96,
+   "matches": 18
+  },
+  "Obed Nkambadio|Paris FC": {
+   "note": 6.65,
+   "matches": 12
+  },
+  "Mamadou Mbow|Paris FC": {
+   "note": 6.36,
+   "matches": 31
+  },
+  "Timothée Kolodziejczak|Paris FC": {
+   "note": 6.16,
+   "matches": 11
+  },
+  "Nouha Dicko|Paris FC": {
+   "note": 6.33,
+   "matches": 8
+  },
+  "Samir Chergui|Paris FC": {
+   "note": 6.15,
+   "matches": 15
+  },
+  "Nhoa Sangui|Paris FC": {
+   "note": 6.2,
+   "matches": 26
+  },
+  "Lohann Doucet|Paris FC": {
+   "note": 6.34,
+   "matches": 5
+  },
+  "Vincent Marchetti|Paris FC": {
+   "note": 6.13,
+   "matches": 23
+  },
+  "Maxime Lopez|Paris FC": {
+   "note": 6.15,
+   "matches": 26
+  },
+  "Ilan Kebbal|Paris FC": {
+   "note": 6.72,
+   "matches": 29
+  },
+  "Moses Simon|Paris FC": {
+   "note": 6.34,
+   "matches": 29
+  },
+  "Mathieu Cafaro|Paris FC": {
+   "note": 6.03,
+   "matches": 10
+  },
+  "Jean-Phillipe Krasso|Paris FC": {
+   "note": 6.32,
+   "matches": 25
+  },
+  "Alimami Gory|Paris FC": {
+   "note": 6.47,
+   "matches": 24
+  },
+  "Julien Lopez|Paris FC": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Jonathan Fischer|Metz": {
+   "note": 6.57,
+   "matches": 27
+  },
+  "Jean-Philippe Gbamin|Metz": {
+   "note": 5.99,
+   "matches": 31
+  },
+  "Michel Mboula|Metz": {
+   "note": 6.11,
+   "matches": 14
+  },
+  "Sadibou Sané|Metz": {
+   "note": 6.16,
+   "matches": 23
+  },
+  "Koffi Kouao|Metz": {
+   "note": 6.21,
+   "matches": 27
+  },
+  "Maxime Colin|Metz": {
+   "note": 6.1,
+   "matches": 22
+  },
+  "Giorgi Tsitaishvili|Metz": {
+   "note": 6.2,
+   "matches": 33
+  },
+  "Benjamin Stambouli|Metz": {
+   "note": 5.89,
+   "matches": 19
+  },
+  "Boubacar Traore|Metz": {
+   "note": 5.91,
+   "matches": 20
+  },
+  "Jessy Deminguet|Metz": {
+   "note": 5.91,
+   "matches": 31
+  },
+  "Ibou Sané|Metz": {
+   "note": 6.18,
+   "matches": 16
+  },
+  "Brian Madjo|Metz": {
+   "note": 6.04,
+   "matches": 5
+  },
+  "Idrissa Gueye|Metz": {
+   "note": 6.03,
+   "matches": 3
+  },
+  "Cheick Tidiane Sabaly|Metz": {
+   "note": 6.26,
+   "matches": 14
+  },
+  "Alpha Touré|Metz": {
+   "note": 5.96,
+   "matches": 30
+  },
+  "Mike Penders|Strasbourg": {
+   "note": 6.87,
+   "matches": 33
+  },
+  "Junior Mwanga|Strasbourg": {
+   "note": 6.2,
+   "matches": 5
+  },
+  "Lucas Høgsberg|Strasbourg": {
+   "note": 6.23,
+   "matches": 24
+  },
+  "Mamadou Sarr|Strasbourg": {
+   "note": 6.49,
+   "matches": 15
+  },
+  "Samuel Amo-Ameyaw|Strasbourg": {
+   "note": 6.26,
+   "matches": 25
+  },
+  "Kendry Páez|Strasbourg": {
+   "note": 6.13,
+   "matches": 15
+  },
+  "Guemissongui Ouattara|Strasbourg": {
+   "note": 6.28,
+   "matches": 28
+  },
+  "Dilane Bakwa|Strasbourg": {
+   "note": 7.1,
+   "matches": 3
+  },
+  "Felix Lemarechal|Strasbourg": {
+   "note": 6.3,
+   "matches": 11
+  },
+  "Samir El Mourabet|Strasbourg": {
+   "note": 6.18,
+   "matches": 33
+  },
+  "Sebastian Nanasi|Strasbourg": {
+   "note": 6.76,
+   "matches": 19
+  },
+  "Valentín Barco|Strasbourg": {
+   "note": 6.41,
+   "matches": 27
+  },
+  "Emanuel Emegha|Strasbourg": {
+   "note": 6.96,
+   "matches": 10
+  },
+  "Joaquín Panichelli|Strasbourg": {
+   "note": 7.13,
+   "matches": 27
+  },
+  "Anthony Lopes|Nantes": {
+   "note": 6.75,
+   "matches": 31
+  },
+  "Chidozie Awaziem|Nantes": {
+   "note": 6.37,
+   "matches": 26
+  },
+  "Tylel Tati|Nantes": {
+   "note": 6.12,
+   "matches": 20
+  },
+  "Kelvin Adou|Nantes": {
+   "note": 6.2,
+   "matches": 23
+  },
+  "Nicolas Cozza|Nantes": {
+   "note": 6.37,
+   "matches": 29
+  },
+  "Kwon Hyeok-Kyu|Nantes": {
+   "note": 5.96,
+   "matches": 12
+  },
+  "Amady Camara|Nantes": {
+   "note": 6.03,
+   "matches": 10
+  },
+  "Johann Lepenant|Nantes": {
+   "note": 6.1,
+   "matches": 27
+  },
+  "Dehmaine Assoumani|Nantes": {
+   "note": 6.14,
+   "matches": 27
+  },
+  "Louis Leroux|Nantes": {
+   "note": 6.18,
+   "matches": 23
+  },
+  "Yassine Benhattab|Nantes": {
+   "note": 6.0,
+   "matches": 10
+  },
+  "Matthis Abline|Nantes": {
+   "note": 6.58,
+   "matches": 32
+  },
+  "Bahereba Guirassy|Nantes": {
+   "note": 6.25,
+   "matches": 20
+  },
+  "Hong Hyun-Seok|Nantes": {
+   "note": 6.15,
+   "matches": 6
+  },
+  "Mostafa Mohamed|Nantes": {
+   "note": 6.3,
+   "matches": 24
+  },
+  "Francis Coquelin|Nantes": {
+   "note": 6.11,
+   "matches": 16
+  },
+  "Lucas Chevalier|Paris Saint Germain": {
+   "note": 7.27,
+   "matches": 17
+  },
+  "Beraldo|Paris Saint Germain": {
+   "note": 6.65,
+   "matches": 20
+  },
+  "Illia Zabarnyi|Paris Saint Germain": {
+   "note": 6.6,
+   "matches": 28
+  },
+  "Warren Zaïre-Emery|Paris Saint Germain": {
+   "note": 6.67,
+   "matches": 32
+  },
+  "Lucas Hernández|Paris Saint Germain": {
+   "note": 6.64,
+   "matches": 25
+  },
+  "Ousmane Dembélé|Paris Saint Germain": {
+   "note": 7.09,
+   "matches": 22
+  },
+  "Fabián|Paris Saint Germain": {
+   "note": 6.39,
+   "matches": 20
+  },
+  "Achraf Hakimi|Paris Saint Germain": {
+   "note": 6.76,
+   "matches": 18
+  },
+  "Lee Kang-In|Paris Saint Germain": {
+   "note": 6.48,
+   "matches": 27
+  },
+  "Nuno Mendes|Paris Saint Germain": {
+   "note": 6.97,
+   "matches": 20
+  },
+  "Vitinha|Paris Saint Germain": {
+   "note": 6.41,
+   "matches": 29
+  },
+  "Gonçalo Ramos|Paris Saint Germain": {
+   "note": 6.47,
+   "matches": 30
+  },
+  "Khvicha Kvaratskhelia|Paris Saint Germain": {
+   "note": 6.73,
+   "matches": 28
+  },
+  "Ibrahim Mbaye|Paris Saint Germain": {
+   "note": 6.37,
+   "matches": 24
+  },
+  "Désiré Doué|Paris Saint Germain": {
+   "note": 6.79,
+   "matches": 23
+  },
+  "Bradley Barcola|Paris Saint Germain": {
+   "note": 6.8,
+   "matches": 29
+  },
+  "Emmanuel Biumla|Angers": {
+   "note": 5.91,
+   "matches": 9
+  },
+  "Pierrick Capelle|Angers": {
+   "note": 6.09,
+   "matches": 16
+  },
+  "Marquinhos|Paris Saint Germain": {
+   "note": 6.59,
+   "matches": 14
+  },
+  "William Pacho|Paris Saint Germain": {
+   "note": 6.49,
+   "matches": 23
+  },
+  "João Neves|Paris Saint Germain": {
+   "note": 6.54,
+   "matches": 21
+  },
+  "Bilal Nadir|Marseille": {
+   "note": 6.21,
+   "matches": 20
+  },
+  "Otávio|Paris FC": {
+   "note": 6.31,
+   "matches": 23
+  },
+  "Adama Camara|Paris FC": {
+   "note": 6.19,
+   "matches": 29
+  },
+  "Willem Geubbels|Paris FC": {
+   "note": 6.4,
+   "matches": 24
+  },
+  "Théo De Percin|Auxerre": {
+   "note": 6.42,
+   "matches": 8
+  },
+  "Danny Namaso|Auxerre": {
+   "note": 6.41,
+   "matches": 30
+  },
+  "Lamine Sy|Auxerre": {
+   "note": 6.38,
+   "matches": 24
+  },
+  "Kevin Omoruyi|Nice": {
+   "note": 6.1,
+   "matches": 23
+  },
+  "Afonso Moreira|Lyon": {
+   "note": 6.57,
+   "matches": 27
+  },
+  "Nicolás Tagliafico|Lyon": {
+   "note": 6.53,
+   "matches": 20
+  },
+  "Ruben Kluivert|Lyon": {
+   "note": 6.25,
+   "matches": 16
+  },
+  "Gauthier Hein|Metz": {
+   "note": 6.76,
+   "matches": 29
+  },
+  "Morgan Bokele|Metz": {
+   "note": 6.04,
+   "matches": 10
+  },
+  "Giorgi Abuashvili|Metz": {
+   "note": 6.13,
+   "matches": 23
+  },
+  "Abdoulaye Faye|Lorient": {
+   "note": 6.13,
+   "matches": 17
+  },
+  "Théo Le Bris|Lorient": {
+   "note": 6.26,
+   "matches": 28
+  },
+  "Alidu Seidu|Rennes": {
+   "note": 6.21,
+   "matches": 21
+  },
+  "Djaoui Cissé|Rennes": {
+   "note": 6.02,
+   "matches": 24
+  },
+  "Youssef El-Arabi|Nantes": {
+   "note": 6.25,
+   "matches": 25
+  },
+  "Andrew Omobamidele|Strasbourg": {
+   "note": 6.28,
+   "matches": 25
+  },
+  "Ismaël Doukouré|Strasbourg": {
+   "note": 6.39,
+   "matches": 25
+  },
+  "Rafael Luís|Strasbourg": {
+   "note": 6.06,
+   "matches": 12
+  },
+  "Diego Moreira|Strasbourg": {
+   "note": 6.59,
+   "matches": 27
+  },
+  "Loïc Négo|Le Havre": {
+   "note": 6.31,
+   "matches": 30
+  },
+  "Abdoulaye Touré|Le Havre": {
+   "note": 6.42,
+   "matches": 11
+  },
+  "Jonathan Gradit|Lens": {
+   "note": 6.48,
+   "matches": 9
+  },
+  "Andrija Bulatovic|Lens": {
+   "note": 6.32,
+   "matches": 19
+  },
+  "Fodé Sylla|Lens": {
+   "note": 6.03,
+   "matches": 4
+  },
+  "Mamadou Sangaré|Lens": {
+   "note": 6.41,
+   "matches": 29
+  },
+  "Joris Chotard|Brest": {
+   "note": 6.1,
+   "matches": 33
+  },
+  "Michel Diaz|Brest": {
+   "note": 6.33,
+   "matches": 20
+  },
+  "Cristian Cásseres Jr.|Toulouse": {
+   "note": 6.23,
+   "matches": 30
+  },
+  "Thomas Meunier|Lille": {
+   "note": 6.77,
+   "matches": 25
+  },
+  "Kassoum Ouattara|Monaco": {
+   "note": 6.29,
+   "matches": 15
+  },
+  "Folarin Balogun|Monaco": {
+   "note": 6.96,
+   "matches": 30
+  },
+  "Raphaël Le Guen|Brest": {
+   "note": 6.02,
+   "matches": 6
+  },
+  "Grégoire Coudert|Brest": {
+   "note": 6.78,
+   "matches": 25
+  },
+  "Osame Sahraoui|Lille": {
+   "note": 6.21,
+   "matches": 18
+  },
+  "Hamza Igamane|Lille": {
+   "note": 6.72,
+   "matches": 13
+  },
+  "Aissa Mandi|Lille": {
+   "note": 6.54,
+   "matches": 29
+  },
+  "Noah Cadiou|Lorient": {
+   "note": 6.27,
+   "matches": 28
+  },
+  "Oussama El Azzouzi|Auxerre": {
+   "note": 6.18,
+   "matches": 11
+  },
+  "Seny Koumbassa|Toulouse": {
+   "note": 6.11,
+   "matches": 9
+  },
+  "Lilian Brassier|Rennes": {
+   "note": 6.38,
+   "matches": 27
+  },
+  "Esteban Lepaul|Rennes": {
+   "note": 7.2,
+   "matches": 32
+  },
+  "Thomas Delaine|Le Havre": {
+   "note": 6.16,
+   "matches": 5
+  },
+  "Morgan Sanson|Nice": {
+   "note": 6.06,
+   "matches": 31
+  },
+  "Terry Yegbe|Metz": {
+   "note": 6.06,
+   "matches": 24
+  },
+  "Kevin Trapp|Paris FC": {
+   "note": 6.93,
+   "matches": 22
+  },
+  "Thibault De Smet|Paris FC": {
+   "note": 6.24,
+   "matches": 17
+  },
+  "Pierre Lees-Melou|Paris FC": {
+   "note": 6.29,
+   "matches": 22
+  },
+  "Philipp Köhn|Monaco": {
+   "note": 6.82,
+   "matches": 19
+  },
+  "Mamadou Coulibaly|Monaco": {
+   "note": 6.24,
+   "matches": 25
+  },
+  "Mathis Amougou|Strasbourg": {
+   "note": 6.01,
+   "matches": 12
+  },
+  "Rabby Nzingoula|Strasbourg": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Pol Lirola|Marseille": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Hamed Junior Traore|Marseille": {
+   "note": 6.4,
+   "matches": 13
+  },
+  "Telli Siwe|Auxerre": {
+   "note": 6.55,
+   "matches": 4
+  },
+  "Sékou Mara|Auxerre": {
+   "note": 6.28,
+   "matches": 27
+  },
+  "Mohammed Salisu|Monaco": {
+   "note": 6.34,
+   "matches": 12
+  },
+  "Thilo Kehrer|Monaco": {
+   "note": 6.36,
+   "matches": 28
+  },
+  "Daouda Guindo|Brest": {
+   "note": 6.36,
+   "matches": 25
+  },
+  "Eric Junior Dina Ebimbe|Brest": {
+   "note": 6.33,
+   "matches": 27
+  },
+  "Remy Labeau Lascary|Brest": {
+   "note": 6.41,
+   "matches": 27
+  },
+  "Pathé Mboup|Brest": {
+   "note": 6.13,
+   "matches": 28
+  },
+  "Chancel Mbemba|Lille": {
+   "note": 6.33,
+   "matches": 13
+  },
+  "Ethan Mbappé|Lille": {
+   "note": 6.31,
+   "matches": 18
+  },
+  "Abu Francis|Toulouse": {
+   "note": 6.09,
+   "matches": 8
+  },
+  "Rafik Messali|Toulouse": {
+   "note": 6.07,
+   "matches": 12
+  },
+  "Yvon Mvogo|Lorient": {
+   "note": 6.92,
+   "matches": 31
+  },
+  "Bamo Meïté|Lorient": {
+   "note": 6.46,
+   "matches": 25
+  },
+  "Jean-Victor Makengo|Lorient": {
+   "note": 6.3,
+   "matches": 31
+  },
+  "Jeffrey de Lange|Marseille": {
+   "note": 6.56,
+   "matches": 5
+  },
+  "Benjamin Pavard|Marseille": {
+   "note": 6.56,
+   "matches": 27
+  },
+  "Arthur Vermeeren|Marseille": {
+   "note": 6.08,
+   "matches": 20
+  },
+  "Naif Aguerd|Marseille": {
+   "note": 6.62,
+   "matches": 16
+  },
+  "Facundo Medina|Marseille": {
+   "note": 6.38,
+   "matches": 17
+  },
+  "Emerson|Marseille": {
+   "note": 6.4,
+   "matches": 28
+  },
+  "Igor Paixão|Marseille": {
+   "note": 6.54,
+   "matches": 30
+  },
+  "Matt O'Riley|Marseille": {
+   "note": 6.39,
+   "matches": 15
+  },
+  "Himad Abdelli|Angers": {
+   "note": 6.33,
+   "matches": 13
+  },
+  "Justin-Noel Kalumba|Angers": {
+   "note": 6.03,
+   "matches": 4
+  },
+  "Habib Diallo|Metz": {
+   "note": 6.38,
+   "matches": 25
+  },
+  "Junior Mwanga|Nantes": {
+   "note": 6.13,
+   "matches": 15
+  },
+  "Mayckel Lahdo|Nantes": {
+   "note": 6.32,
+   "matches": 8
+  },
+  "Dante|Nice": {
+   "note": 6.33,
+   "matches": 12
+  },
+  "Charles Vanhoutte|Nice": {
+   "note": 6.05,
+   "matches": 26
+  },
+  "Tiago Gouveia|Nice": {
+   "note": 6.01,
+   "matches": 15
+  },
+  "Abdallah Sima|Lens": {
+   "note": 6.3,
+   "matches": 21
+  },
+  "Odsonne Edouard|Lens": {
+   "note": 6.89,
+   "matches": 29
+  },
+  "Senny Mayulu|Paris Saint Germain": {
+   "note": 6.65,
+   "matches": 26
+  },
+  "Rachid Ghezzal|Lyon": {
+   "note": 6.03,
+   "matches": 10
+  },
+  "Breel Embolo|Rennes": {
+   "note": 6.63,
+   "matches": 31
+  },
+  "Reda Khadra|Le Havre": {
+   "note": 6.04,
+   "matches": 8
+  },
+  "Martial Godo|Strasbourg": {
+   "note": 6.68,
+   "matches": 28
+  },
+  "Ben Chilwell|Strasbourg": {
+   "note": 6.34,
+   "matches": 20
+  },
+  "Assane Diousse|Auxerre": {
+   "note": 5.99,
+   "matches": 15
+  },
+  "Emersonn|Toulouse": {
+   "note": 6.57,
+   "matches": 27
+  },
+  "Mohamed Ali-Cho|Nice": {
+   "note": 6.49,
+   "matches": 24
+  },
+  "Enzo Koffi|Le Havre": {
+   "note": 6.14,
+   "matches": 14
+  },
+  "Calvin Verdonk|Lille": {
+   "note": 6.27,
+   "matches": 18
+  },
+  "Dominik Greif|Lyon": {
+   "note": 6.97,
+   "matches": 29
+  },
+  "Martín Satriano|Lyon": {
+   "note": 6.46,
+   "matches": 11
+  },
+  "Mathys de Carvalho|Lyon": {
+   "note": 6.01,
+   "matches": 11
+  },
+  "Fode Toure|Metz": {
+   "note": 5.98,
+   "matches": 13
+  },
+  "Ismaël Guerti|Metz": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Krépin Diatta|Monaco": {
+   "note": 6.12,
+   "matches": 18
+  },
+  "Stanis Idumbo Muzambo|Monaco": {
+   "note": 6.35,
+   "matches": 8
+  },
+  "Anssumane Fati|Monaco": {
+   "note": 6.84,
+   "matches": 25
+  },
+  "Uros Radakovic|Nantes": {
+   "note": 6.05,
+   "matches": 6
+  },
+  "Hamari Traore|Paris FC": {
+   "note": 6.32,
+   "matches": 18
+  },
+  "Guela Doué|Strasbourg": {
+   "note": 6.67,
+   "matches": 24
+  },
+  "Marius Louãr|Angers": {
+   "note": 6.09,
+   "matches": 9
+  },
+  "Arnaud Bodart|Lille": {
+   "note": 6.47,
+   "matches": 3
+  },
+  "Tiago Santos|Lille": {
+   "note": 6.25,
+   "matches": 15
+  },
+  "Pape Cabral|Monaco": {
+   "note": 6.05,
+   "matches": 4
+  },
+  "Ali Abdi|Nice": {
+   "note": 6.38,
+   "matches": 22
+  },
+  "Jonathan Ikone|Paris FC": {
+   "note": 6.34,
+   "matches": 23
+  },
+  "Quentin Ndjantou|Paris Saint Germain": {
+   "note": 6.32,
+   "matches": 10
+  },
+  "Nordan Mukiele|Rennes": {
+   "note": 6.17,
+   "matches": 8
+  },
+  "Pierre Ganiou|Lens": {
+   "note": 6.65,
+   "matches": 23
+  },
+  "Bahmed Deuff|Nantes": {
+   "note": 6.02,
+   "matches": 11
+  },
+  "Ahmadou Bamba Dieng|Lorient": {
+   "note": 6.85,
+   "matches": 22
+  },
+  "Julio Enciso|Strasbourg": {
+   "note": 6.55,
+   "matches": 27
+  },
+  "Djibirin Harouna|Angers": {
+   "note": 6.29,
+   "matches": 15
+  },
+  "Amine Sbaï|Angers": {
+   "note": 6.33,
+   "matches": 25
+  },
+  "Soumaila Coulibaly|Brest": {
+   "note": 6.14,
+   "matches": 16
+  },
+  "Lucas Tousart|Brest": {
+   "note": 6.08,
+   "matches": 24
+  },
+  "Joel Asoro|Metz": {
+   "note": 6.05,
+   "matches": 8
+  },
+  "Julián Vignolo|Toulouse": {
+   "note": 6.28,
+   "matches": 13
+  },
+  "Fabien Centonze|Nantes": {
+   "note": 6.35,
+   "matches": 15
+  },
+  "Soriba Diaoune|Lille": {
+   "note": 6.26,
+   "matches": 10
+  },
+  "Pape Sy|Metz": {
+   "note": 6.28,
+   "matches": 8
+  },
+  "Stephan Zagadou|Le Havre": {
+   "note": 6.56,
+   "matches": 8
+  },
+  "Abdoulaye Bamba|Angers": {
+   "note": 5.98,
+   "matches": 6
+  },
+  "Hans Hateboer|Lyon": {
+   "note": 6.27,
+   "matches": 15
+  },
+  "Tuomas Ollila|Paris FC": {
+   "note": 6.17,
+   "matches": 10
+  },
+  "Glen Kamara|Rennes": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Sinaly Diomande|Auxerre": {
+   "note": 6.65,
+   "matches": 24
+  },
+  "Ryan Rodin|Auxerre": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Patrik Carlgren|Nantes": {
+   "note": 6.93,
+   "matches": 3
+  },
+  "Tadjidine Mmadi|Marseille": {
+   "note": 6.03,
+   "matches": 3
+  },
+  "Adil Hamdani|Lyon": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Nathaniel Adjei|Lorient": {
+   "note": 6.24,
+   "matches": 15
+  },
+  "Paul Pogba|Monaco": {
+   "note": 6.02,
+   "matches": 6
+  },
+  "Melvin Zinga|Angers": {
+   "note": 6.27,
+   "matches": 3
+  },
+  "Orel Mangala|Lyon": {
+   "note": 5.97,
+   "matches": 9
+  },
+  "Malick Mbaye|Metz": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Noam Obougou|Le Havre": {
+   "note": 6.28,
+   "matches": 5
+  },
+  "Tanguy NDombele Alvaro|Nice": {
+   "note": 6.11,
+   "matches": 8
+  },
+  "Matvey Safonov|Paris Saint Germain": {
+   "note": 7.17,
+   "matches": 15
+  },
+  "Elias Legendre|Rennes": {
+   "note": 6.05,
+   "matches": 6
+  },
+  "Deiver Machado|Nantes": {
+   "note": 6.26,
+   "matches": 14
+  },
+  "Kenny Quetant|Le Havre": {
+   "note": 6.19,
+   "matches": 9
+  },
+  "Rémy Cabella|Nantes": {
+   "note": 6.33,
+   "matches": 11
+  },
+  "Maxime Dupé|Nice": {
+   "note": 6.6,
+   "matches": 8
+  },
+  "Sepe Elye Wahi|Nice": {
+   "note": 6.71,
+   "matches": 14
+  },
+  "Romain Faivre|Auxerre": {
+   "note": 6.26,
+   "matches": 10
+  },
+  "Naouirou Ahamada|Auxerre": {
+   "note": 6.13,
+   "matches": 15
+  },
+  "Rémi Himbert|Lyon": {
+   "note": 6.32,
+   "matches": 6
+  },
+  "Endrick|Lyon": {
+   "note": 7.06,
+   "matches": 16
+  },
+  "Wout Faes|Monaco": {
+   "note": 6.14,
+   "matches": 14
+  },
+  "Ibrahima Sissoko|Nantes": {
+   "note": 5.95,
+   "matches": 13
+  },
+  "Ignatius Ganago|Nantes": {
+   "note": 6.53,
+   "matches": 13
+  },
+  "Marshall Munetsi|Paris FC": {
+   "note": 6.57,
+   "matches": 15
+  },
+  "Luca Koleosho|Paris FC": {
+   "note": 6.44,
+   "matches": 16
+  },
+  "Lionel Mpasi|Le Havre": {
+   "note": 6.95,
+   "matches": 4
+  },
+  "Timothee Pembele|Le Havre": {
+   "note": 6.03,
+   "matches": 14
+  },
+  "Sofiane Boufal|Le Havre": {
+   "note": 6.43,
+   "matches": 17
+  },
+  "Pape Diop|Toulouse": {
+   "note": 6.29,
+   "matches": 15
+  },
+  "Lucas Gourna Douath|Le Havre": {
+   "note": 6.11,
+   "matches": 15
+  },
+  "Gessime Yassine|Strasbourg": {
+   "note": 6.17,
+   "matches": 12
+  },
+  "Quinten Timber|Marseille": {
+   "note": 6.0,
+   "matches": 15
+  },
+  "Ethan Nwaneri|Marseille": {
+   "note": 6.43,
+   "matches": 9
+  },
+  "Believe Munongo|Metz": {
+   "note": 6.03,
+   "matches": 11
+  },
+  "Gabin Bernardeau|Nice": {
+   "note": 6.03,
+   "matches": 4
+  },
+  "Branco van den Boomen|Angers": {
+   "note": 6.14,
+   "matches": 15
+  },
+  "Sebastian Szymanski|Rennes": {
+   "note": 6.31,
+   "matches": 16
+  },
+  "Goduine Koyalipou|Angers": {
+   "note": 6.42,
+   "matches": 13
+  },
+  "Nathan Mbala|Metz": {
+   "note": 6.39,
+   "matches": 13
+  },
+  "Kyllian Antonio|Lens": {
+   "note": 6.62,
+   "matches": 4
+  },
+  "Mohamed Kaba|Nantes": {
+   "note": 6.31,
+   "matches": 12
+  },
+  "Mathieu Acapandié|Nantes": {
+   "note": 5.98,
+   "matches": 6
+  },
+  "Noah Nartey|Lyon": {
+   "note": 6.35,
+   "matches": 11
+  },
+  "Kail Boudache|Nice": {
+   "note": 6.22,
+   "matches": 13
+  },
+  "Bryan Okoh|Auxerre": {
+   "note": 6.66,
+   "matches": 13
+  },
+  "Jacen Russell-Rowe|Toulouse": {
+   "note": 6.17,
+   "matches": 13
+  },
+  "Ciro Immobile|Paris FC": {
+   "note": 6.52,
+   "matches": 12
+  },
+  "Amadou Haidara|Lens": {
+   "note": 6.4,
+   "matches": 7
+  },
+  "Allan Saint-Maximin|Lens": {
+   "note": 6.81,
+   "matches": 10
+  },
+  "Arnaud Nordin|Rennes": {
+   "note": 6.48,
+   "matches": 10
+  },
+  "Gaetan Perrin|Lille": {
+   "note": 6.17,
+   "matches": 12
+  },
+  "Noah Edjouma|Lille": {
+   "note": 6.07,
+   "matches": 3
+  },
+  "Giorgi Kvilitaia|Metz": {
+   "note": 6.37,
+   "matches": 10
+  },
+  "Lucas Michal|Metz": {
+   "note": 6.02,
+   "matches": 9
+  },
+  "Ali Youssif|Nantes": {
+   "note": 6.26,
+   "matches": 12
+  },
+  "Simon Adingra|Monaco": {
+   "note": 6.48,
+   "matches": 14
+  },
+  "Himad Abdelli|Marseille": {
+   "note": 6.0,
+   "matches": 8
+  },
+  "Dro Fernández|Paris Saint Germain": {
+   "note": 6.26,
+   "matches": 12
+  },
+  "Roman Yaremchuk|Lyon": {
+   "note": 6.72,
+   "matches": 11
+  },
+  "David Datro Fofana|Strasbourg": {
+   "note": 6.1,
+   "matches": 5
+  },
+  "Aaron Anselmino|Strasbourg": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Nidal Celik|Lens": {
+   "note": 6.38,
+   "matches": 8
+  },
+  "Arthur Masuaku|Lens": {
+   "note": 6.03,
+   "matches": 4
+  },
+  "Diego Coppola|Paris FC": {
+   "note": 6.54,
+   "matches": 13
+  },
+  "Rudy Matondo|Paris FC": {
+   "note": 6.27,
+   "matches": 11
+  },
+  "Yassir Zabiri|Rennes": {
+   "note": 6.05,
+   "matches": 6
+  },
+  "Bouna Sarr|Metz": {
+   "note": 6.05,
+   "matches": 12
+  },
+  "Tochukwu Nnadi|Marseille": {
+   "note": 6.15,
+   "matches": 8
+  },
+  "Maxi Oyedele|Strasbourg": {
+   "note": 6.15,
+   "matches": 8
+  },
+  "Frederic Guilbert|Nantes": {
+   "note": 6.51,
+   "matches": 8
+  },
+  "Dan Sinaté|Angers": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Steeve Kango|Lyon": {
+   "note": 6.15,
+   "matches": 4
+  },
+  "Ilyas Azizi|Toulouse": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Tyrese Noubissie|Strasbourg": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Yaya Diémé|Strasbourg": {
+   "note": 6.03,
+   "matches": 3
+  },
+  "Ugo El Kadmiri|Marseille": {
+   "note": 6.1,
+   "matches": 3
+  },
+  "Jahyann Pandore|Metz": {
+   "note": 6.42,
+   "matches": 4
+  },
+  "Nouhoum Kamissoko|Marseille": {
+   "note": 6.1,
+   "matches": 3
+  },
+  "Ernest Nuamah|Lyon": {
+   "note": 6.03,
+   "matches": 3
+  },
+  "Nicola Leali|Genoa": {
+   "note": 6.85,
+   "matches": 22
+  },
+  "Alessandro Marcandalli|Genoa": {
+   "note": 6.42,
+   "matches": 32
+  },
+  "Johan Vásquez|Genoa": {
+   "note": 6.39,
+   "matches": 36
+  },
+  "Brooke Norton-Cuffy|Genoa": {
+   "note": 6.23,
+   "matches": 27
+  },
+  "Aarón Martín|Genoa": {
+   "note": 6.33,
+   "matches": 33
+  },
+  "Morten Frendrup|Genoa": {
+   "note": 6.1,
+   "matches": 36
+  },
+  "Morten Thorsby|Genoa": {
+   "note": 6.35,
+   "matches": 13
+  },
+  "Patrizio Masini|Genoa": {
+   "note": 6.12,
+   "matches": 28
+  },
+  "Nicolae Stanciu|Genoa": {
+   "note": 6.15,
+   "matches": 4
+  },
+  "Vitinha|Genoa": {
+   "note": 6.34,
+   "matches": 35
+  },
+  "Valentín Carboni|Genoa": {
+   "note": 6.04,
+   "matches": 12
+  },
+  "Mikael Ellertsson|Genoa": {
+   "note": 6.19,
+   "matches": 36
+  },
+  "Albert Grønbæk|Genoa": {
+   "note": 6.03,
+   "matches": 4
+  },
+  "Junior Messias|Genoa": {
+   "note": 6.31,
+   "matches": 20
+  },
+  "Lorenzo Colombo|Genoa": {
+   "note": 6.41,
+   "matches": 38
+  },
+  "Jeff Ekhator|Genoa": {
+   "note": 6.2,
+   "matches": 30
+  },
+  "Wladimiro Falcone|Lecce": {
+   "note": 6.91,
+   "matches": 38
+  },
+  "Kialonda Gaspar|Lecce": {
+   "note": 6.38,
+   "matches": 23
+  },
+  "Tiago Gabriel|Lecce": {
+   "note": 6.48,
+   "matches": 37
+  },
+  "Danilo Veiga|Lecce": {
+   "note": 6.41,
+   "matches": 36
+  },
+  "Owen Kouassi|Lecce": {
+   "note": 5.85,
+   "matches": 4
+  },
+  "Antonino Gallo|Lecce": {
+   "note": 6.49,
+   "matches": 37
+  },
+  "Lassana Coulibaly|Lecce": {
+   "note": 6.26,
+   "matches": 33
+  },
+  "Konan N’Dri|Lecce": {
+   "note": 6.11,
+   "matches": 27
+  },
+  "Medon Berisha|Lecce": {
+   "note": 6.58,
+   "matches": 13
+  },
+  "Riccardo Sottil|Lecce": {
+   "note": 6.24,
+   "matches": 21
+  },
+  "Ylber Ramadani|Lecce": {
+   "note": 6.11,
+   "matches": 37
+  },
+  "Francesco Camarda|Lecce": {
+   "note": 6.12,
+   "matches": 21
+  },
+  "Balthazar Pierret|Lecce": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Lameck Banda|Lecce": {
+   "note": 6.39,
+   "matches": 32
+  },
+  "Mohamed Kaba|Lecce": {
+   "note": 5.99,
+   "matches": 15
+  },
+  "Tete Morente|Lecce": {
+   "note": 6.05,
+   "matches": 16
+  },
+  "Alex Meret|Napoli": {
+   "note": 7.07,
+   "matches": 11
+  },
+  "Amir Rrahmani|Napoli": {
+   "note": 6.83,
+   "matches": 21
+  },
+  "Juan Jesus|Napoli": {
+   "note": 6.4,
+   "matches": 24
+  },
+  "Giovanni Di Lorenzo|Napoli": {
+   "note": 6.64,
+   "matches": 26
+  },
+  "Mathías Olivera|Napoli": {
+   "note": 6.35,
+   "matches": 25
+  },
+  "Stanislav Lobotka|Napoli": {
+   "note": 6.18,
+   "matches": 32
+  },
+  "Noa Lang|Napoli": {
+   "note": 6.25,
+   "matches": 18
+  },
+  "Franck Zambo|Napoli": {
+   "note": 6.56,
+   "matches": 18
+  },
+  "Antonio Vergara|Napoli": {
+   "note": 6.3,
+   "matches": 12
+  },
+  "Kevin De Bruyne|Napoli": {
+   "note": 6.72,
+   "matches": 18
+  },
+  "Leonardo Spinazzola|Napoli": {
+   "note": 6.37,
+   "matches": 32
+  },
+  "Matteo Politano|Napoli": {
+   "note": 6.41,
+   "matches": 34
+  },
+  "David Neres|Napoli": {
+   "note": 6.57,
+   "matches": 16
+  },
+  "Scott McTominay|Napoli": {
+   "note": 6.78,
+   "matches": 33
+  },
+  "Lorenzo Lucca|Napoli": {
+   "note": 6.16,
+   "matches": 16
+  },
+  "Billy Gilmour|Napoli": {
+   "note": 6.17,
+   "matches": 17
+  },
+  "Stefano Turati|Sassuolo": {
+   "note": 7.0,
+   "matches": 6
+  },
+  "Filippo Romagna|Sassuolo": {
+   "note": 6.28,
+   "matches": 5
+  },
+  "Tarik Muharemovic|Sassuolo": {
+   "note": 6.49,
+   "matches": 32
+  },
+  "Sebastian Walukiewicz|Sassuolo": {
+   "note": 6.41,
+   "matches": 34
+  },
+  "Josh Doig|Sassuolo": {
+   "note": 6.25,
+   "matches": 30
+  },
+  "Fali Candé|Sassuolo": {
+   "note": 6.15,
+   "matches": 12
+  },
+  "Nicholas Pierini|Sassuolo": {
+   "note": 6.01,
+   "matches": 11
+  },
+  "Ismaël Koné|Sassuolo": {
+   "note": 6.37,
+   "matches": 35
+  },
+  "Luca Moro|Sassuolo": {
+   "note": 6.04,
+   "matches": 14
+  },
+  "Luca Lipani|Sassuolo": {
+   "note": 6.1,
+   "matches": 24
+  },
+  "Alieu Fadera|Sassuolo": {
+   "note": 6.17,
+   "matches": 28
+  },
+  "Andrea Pinamonti|Sassuolo": {
+   "note": 6.58,
+   "matches": 36
+  },
+  "Domenico Berardi|Sassuolo": {
+   "note": 6.74,
+   "matches": 26
+  },
+  "Armand Lauriente|Sassuolo": {
+   "note": 6.61,
+   "matches": 38
+  },
+  "Mike Maignan|AC Milan": {
+   "note": 7.12,
+   "matches": 37
+  },
+  "Fikayo Tomori|AC Milan": {
+   "note": 6.64,
+   "matches": 33
+  },
+  "Matteo Gabbia|AC Milan": {
+   "note": 6.53,
+   "matches": 30
+  },
+  "Strahinja Pavlovic|AC Milan": {
+   "note": 6.78,
+   "matches": 34
+  },
+  "Alexis Saelemaekers|AC Milan": {
+   "note": 6.41,
+   "matches": 35
+  },
+  "Estupiñán|AC Milan": {
+   "note": 6.27,
+   "matches": 19
+  },
+  "Luka Modric|AC Milan": {
+   "note": 6.38,
+   "matches": 34
+  },
+  "Ardon Jashari|AC Milan": {
+   "note": 6.14,
+   "matches": 14
+  },
+  "Ruben Loftus-Cheek|AC Milan": {
+   "note": 6.25,
+   "matches": 28
+  },
+  "Youssouf Fofana|AC Milan": {
+   "note": 6.39,
+   "matches": 33
+  },
+  "Christian Pulisic|AC Milan": {
+   "note": 6.69,
+   "matches": 30
+  },
+  "Santiago Giménez|AC Milan": {
+   "note": 6.19,
+   "matches": 16
+  },
+  "Emil Audero|Cremonese": {
+   "note": 6.86,
+   "matches": 34
+  },
+  "Federico Baschirotto|Cremonese": {
+   "note": 6.45,
+   "matches": 29
+  },
+  "Filippo Terracciano|Cremonese": {
+   "note": 6.44,
+   "matches": 36
+  },
+  "Matteo Bianchetti|Cremonese": {
+   "note": 6.37,
+   "matches": 27
+  },
+  "Alessio Zerbin|Cremonese": {
+   "note": 6.13,
+   "matches": 32
+  },
+  "Giuseppe Pezzella|Cremonese": {
+   "note": 6.11,
+   "matches": 31
+  },
+  "Alberto Grassi|Cremonese": {
+   "note": 6.01,
+   "matches": 30
+  },
+  "Warren Bondo|Cremonese": {
+   "note": 6.0,
+   "matches": 27
+  },
+  "Jari Vandeputte|Cremonese": {
+   "note": 6.36,
+   "matches": 32
+  },
+  "Martín Payero|Cremonese": {
+   "note": 6.09,
+   "matches": 25
+  },
+  "Michele Collocolo|Cremonese": {
+   "note": 6.08,
+   "matches": 8
+  },
+  "David Okereke|Cremonese": {
+   "note": 6.31,
+   "matches": 10
+  },
+  "Antonio Sanabria|Cremonese": {
+   "note": 6.18,
+   "matches": 25
+  },
+  "Federico Bonazzoli|Cremonese": {
+   "note": 6.54,
+   "matches": 35
+  },
+  "Federico Ceccherini|Cremonese": {
+   "note": 6.12,
+   "matches": 9
+  },
+  "Lukasz Skorupski|Bologna": {
+   "note": 7.08,
+   "matches": 19
+  },
+  "Jhon Lucumí|Bologna": {
+   "note": 6.46,
+   "matches": 29
+  },
+  "Nicolò Casale|Bologna": {
+   "note": 6.16,
+   "matches": 12
+  },
+  "Martin Vitík|Bologna": {
+   "note": 6.4,
+   "matches": 19
+  },
+  "Lorenzo De Silvestri|Bologna": {
+   "note": 6.22,
+   "matches": 12
+  },
+  "Nadir Zortea|Bologna": {
+   "note": 6.26,
+   "matches": 32
+  },
+  "Charalampos Lykogiannis|Bologna": {
+   "note": 6.41,
+   "matches": 10
+  },
+  "Remo Freuler|Bologna": {
+   "note": 6.22,
+   "matches": 29
+  },
+  "Federico Bernardeschi|Bologna": {
+   "note": 6.35,
+   "matches": 29
+  },
+  "Tommaso Pobega|Bologna": {
+   "note": 6.26,
+   "matches": 26
+  },
+  "Jens Odgaard|Bologna": {
+   "note": 6.35,
+   "matches": 26
+  },
+  "Giovanni Fabbian|Bologna": {
+   "note": 6.29,
+   "matches": 14
+  },
+  "Riccardo Orsolini|Bologna": {
+   "note": 6.57,
+   "matches": 35
+  },
+  "Nicolò Cambiaghi|Bologna": {
+   "note": 6.35,
+   "matches": 28
+  },
+  "Ciro Immobile|Bologna": {
+   "note": 6.02,
+   "matches": 6
+  },
+  "Santiago Castro|Bologna": {
+   "note": 6.47,
+   "matches": 35
+  },
+  "Mile Svilar|Roma": {
+   "note": 7.23,
+   "matches": 38
+  },
+  "Evan Ndicka|Roma": {
+   "note": 6.76,
+   "matches": 31
+  },
+  "Gianluca Mancini|Roma": {
+   "note": 6.83,
+   "matches": 36
+  },
+  "Mario Hermoso|Roma": {
+   "note": 6.8,
+   "matches": 27
+  },
+  "Wesley|Roma": {
+   "note": 6.48,
+   "matches": 30
+  },
+  "Angelino|Roma": {
+   "note": 6.19,
+   "matches": 7
+  },
+  "Devyne Rensch|Roma": {
+   "note": 6.29,
+   "matches": 24
+  },
+  "Bryan Cristante|Roma": {
+   "note": 6.26,
+   "matches": 37
+  },
+  "Kouadio Kone|Roma": {
+   "note": 6.4,
+   "matches": 29
+  },
+  "Matìas Soulè Malvano|Roma": {
+   "note": 6.5,
+   "matches": 33
+  },
+  "Paulo Dybala|Roma": {
+   "note": 6.63,
+   "matches": 22
+  },
+  "Stephan El Shaarawy|Roma": {
+   "note": 6.24,
+   "matches": 20
+  },
+  "Neil El Aynaoui|Roma": {
+   "note": 6.22,
+   "matches": 25
+  },
+  "Evan Ferguson|Roma": {
+   "note": 6.51,
+   "matches": 16
+  },
+  "Artem Dovbyk|Roma": {
+   "note": 6.49,
+   "matches": 14
+  },
+  "Elia Caprile|Cagliari": {
+   "note": 6.83,
+   "matches": 38
+  },
+  "Sebastiano Luperto|Cagliari": {
+   "note": 6.46,
+   "matches": 19
+  },
+  "Yerry Mina|Cagliari": {
+   "note": 6.5,
+   "matches": 26
+  },
+  "Gabriele Zappa|Cagliari": {
+   "note": 6.27,
+   "matches": 31
+  },
+  "Adam Obert|Cagliari": {
+   "note": 6.34,
+   "matches": 35
+  },
+  "Riyad Idrissi|Cagliari": {
+   "note": 6.13,
+   "matches": 23
+  },
+  "Alessandro Deiola|Cagliari": {
+   "note": 6.2,
+   "matches": 20
+  },
+  "Gianluca Gaetano|Cagliari": {
+   "note": 6.27,
+   "matches": 33
+  },
+  "Matteo Prati|Cagliari": {
+   "note": 6.15,
+   "matches": 20
+  },
+  "Luca Mazzitelli|Cagliari": {
+   "note": 6.32,
+   "matches": 18
+  },
+  "Ndary Adopo|Cagliari": {
+   "note": 6.19,
+   "matches": 38
+  },
+  "Sebastiano Esposito|Cagliari": {
+   "note": 6.51,
+   "matches": 36
+  },
+  "Zito|Cagliari": {
+   "note": 6.07,
+   "matches": 12
+  },
+  "Gennaro Borrelli|Cagliari": {
+   "note": 6.37,
+   "matches": 27
+  },
+  "Semih Kiliçsoy|Cagliari": {
+   "note": 6.28,
+   "matches": 22
+  },
+  "Michael Folorunsho|Cagliari": {
+   "note": 6.2,
+   "matches": 27
+  },
+  "David de Gea|Fiorentina": {
+   "note": 6.91,
+   "matches": 37
+  },
+  "Luca Ranieri|Fiorentina": {
+   "note": 6.44,
+   "matches": 34
+  },
+  "Rolando Mandragora|Fiorentina": {
+   "note": 6.5,
+   "matches": 34
+  },
+  "Marin Pongracic|Fiorentina": {
+   "note": 6.39,
+   "matches": 35
+  },
+  "Pietro Comuzzo|Fiorentina": {
+   "note": 6.24,
+   "matches": 27
+  },
+  "Pablo Marí|Fiorentina": {
+   "note": 6.06,
+   "matches": 11
+  },
+  "Dodô|Fiorentina": {
+   "note": 6.49,
+   "matches": 36
+  },
+  "Robin Gosens|Fiorentina": {
+   "note": 6.5,
+   "matches": 26
+  },
+  "Fabiano Parisi|Fiorentina": {
+   "note": 6.24,
+   "matches": 23
+  },
+  "Nicolo Fagioli|Fiorentina": {
+   "note": 6.31,
+   "matches": 33
+  },
+  "Simon Sohm|Fiorentina": {
+   "note": 6.07,
+   "matches": 16
+  },
+  "Albert Gudmundsson|Fiorentina": {
+   "note": 6.45,
+   "matches": 33
+  },
+  "Jacopo Fazzini|Fiorentina": {
+   "note": 6.04,
+   "matches": 20
+  },
+  "Cher Ndour|Fiorentina": {
+   "note": 6.22,
+   "matches": 33
+  },
+  "Mattia Viti|Fiorentina": {
+   "note": 5.97,
+   "matches": 10
+  },
+  "Moise Kean|Fiorentina": {
+   "note": 6.73,
+   "matches": 26
+  },
+  "Jean Butez|Como": {
+   "note": 7.28,
+   "matches": 38
+  },
+  "Jacobo Ramón|Como": {
+   "note": 6.76,
+   "matches": 32
+  },
+  "Marc-Oliver Kempf|Como": {
+   "note": 6.71,
+   "matches": 34
+  },
+  "Ignace Van der Brempt|Como": {
+   "note": 6.27,
+   "matches": 20
+  },
+  "Ivan Smolcic|Como": {
+   "note": 6.56,
+   "matches": 28
+  },
+  "Álex Valle|Como": {
+   "note": 6.69,
+   "matches": 28
+  },
+  "Lucas Da Cunha|Como": {
+   "note": 6.59,
+   "matches": 36
+  },
+  "Máximo Perrone|Como": {
+   "note": 6.38,
+   "matches": 36
+  },
+  "Maxence Caqueret|Como": {
+   "note": 6.37,
+   "matches": 30
+  },
+  "Nico Paz|Como": {
+   "note": 6.81,
+   "matches": 35
+  },
+  "Sergi Roberto|Como": {
+   "note": 6.02,
+   "matches": 20
+  },
+  "Mergim Vojvoda|Como": {
+   "note": 6.33,
+   "matches": 30
+  },
+  "Nicolas Kühn|Como": {
+   "note": 6.14,
+   "matches": 23
+  },
+  "Jesús Rodriguez|Como": {
+   "note": 6.49,
+   "matches": 31
+  },
+  "Tasos Douvikas|Como": {
+   "note": 6.73,
+   "matches": 38
+  },
+  "Álvaro Morata|Como": {
+   "note": 6.14,
+   "matches": 26
+  },
+  "Ivan Provedel|Lazio": {
+   "note": 7.11,
+   "matches": 27
+  },
+  "Mario Gila|Lazio": {
+   "note": 6.49,
+   "matches": 31
+  },
+  "Oliver Provstgaard|Lazio": {
+   "note": 6.18,
+   "matches": 26
+  },
+  "Manuel Lazzari|Lazio": {
+   "note": 6.16,
+   "matches": 23
+  },
+  "Adam Marusic|Lazio": {
+   "note": 6.66,
+   "matches": 33
+  },
+  "Nuno Tavares|Lazio": {
+   "note": 6.36,
+   "matches": 23
+  },
+  "Nicolo Rovella|Lazio": {
+   "note": 6.17,
+   "matches": 11
+  },
+  "Danilo Cataldi|Lazio": {
+   "note": 6.41,
+   "matches": 27
+  },
+  "Luca Pellegrini|Lazio": {
+   "note": 6.34,
+   "matches": 24
+  },
+  "Fisayo Dele-Bashiru|Lazio": {
+   "note": 6.12,
+   "matches": 24
+  },
+  "Boulaye Dia|Lazio": {
+   "note": 6.19,
+   "matches": 27
+  },
+  "Matteo Guendouzi|Lazio": {
+   "note": 6.45,
+   "matches": 16
+  },
+  "Valentín Castellanos|Lazio": {
+   "note": 6.65,
+   "matches": 11
+  },
+  "Matteo Cancellieri|Lazio": {
+   "note": 6.37,
+   "matches": 30
+  },
+  "Pedro|Lazio": {
+   "note": 6.36,
+   "matches": 29
+  },
+  "Mattia Zaccagni|Lazio": {
+   "note": 6.32,
+   "matches": 26
+  },
+  "Marco Carnesecchi|Atalanta": {
+   "note": 7.15,
+   "matches": 37
+  },
+  "Berat Gjimshiti|Atalanta": {
+   "note": 6.5,
+   "matches": 34
+  },
+  "Giorgio Scalvini|Atalanta": {
+   "note": 6.84,
+   "matches": 24
+  },
+  "Odilon Kossounou|Atalanta": {
+   "note": 6.28,
+   "matches": 19
+  },
+  "Isak Hien|Atalanta": {
+   "note": 6.33,
+   "matches": 28
+  },
+  "Raoul Bellanova|Atalanta": {
+   "note": 6.09,
+   "matches": 24
+  },
+  "Nicola Zalewski|Atalanta": {
+   "note": 6.36,
+   "matches": 33
+  },
+  "Mario Pasalic|Atalanta": {
+   "note": 6.39,
+   "matches": 33
+  },
+  "Éderson|Atalanta": {
+   "note": 6.35,
+   "matches": 30
+  },
+  "Marten de Roon|Atalanta": {
+   "note": 6.25,
+   "matches": 34
+  },
+  "Charles De Ketelaere|Atalanta": {
+   "note": 6.49,
+   "matches": 31
+  },
+  "Lazar Samardzic|Atalanta": {
+   "note": 6.23,
+   "matches": 26
+  },
+  "Daniel Maldini|Atalanta": {
+   "note": 6.06,
+   "matches": 9
+  },
+  "Kamaldeen Sulemana|Atalanta": {
+   "note": 6.24,
+   "matches": 25
+  },
+  "Gianluca Scamacca|Atalanta": {
+   "note": 6.78,
+   "matches": 24
+  },
+  "Nikola Krstovic|Atalanta": {
+   "note": 6.8,
+   "matches": 33
+  },
+  "Adrian Semper|Pisa": {
+   "note": 6.7,
+   "matches": 25
+  },
+  "Antonio Caracciolo|Pisa": {
+   "note": 6.25,
+   "matches": 35
+  },
+  "Arturo Calabresi|Pisa": {
+   "note": 6.02,
+   "matches": 26
+  },
+  "Simone Canestrelli|Pisa": {
+   "note": 6.18,
+   "matches": 37
+  },
+  "Idrissa Touré|Pisa": {
+   "note": 6.12,
+   "matches": 32
+  },
+  "Samuele Angori|Pisa": {
+   "note": 6.04,
+   "matches": 35
+  },
+  "Marius Marin|Pisa": {
+   "note": 5.93,
+   "matches": 23
+  },
+  "Gabriele Piccinini|Pisa": {
+   "note": 6.08,
+   "matches": 25
+  },
+  "Michel Aebischer|Pisa": {
+   "note": 6.1,
+   "matches": 35
+  },
+  "Matteo Tramoni|Pisa": {
+   "note": 6.27,
+   "matches": 27
+  },
+  "Juan Cuadrado|Pisa": {
+   "note": 6.12,
+   "matches": 19
+  },
+  "Stefano Moreo|Pisa": {
+   "note": 6.4,
+   "matches": 37
+  },
+  "Ebenezer Akinsanmiro|Pisa": {
+   "note": 6.03,
+   "matches": 24
+  },
+  "Henrik Meister|Pisa": {
+   "note": 6.2,
+   "matches": 28
+  },
+  "M'Bala Nzola|Pisa": {
+   "note": 6.44,
+   "matches": 16
+  },
+  "Michele Di Gregorio|Juventus": {
+   "note": 7.19,
+   "matches": 30
+  },
+  "Bremer|Juventus": {
+   "note": 6.98,
+   "matches": 26
+  },
+  "Federico Gatti|Juventus": {
+   "note": 6.41,
+   "matches": 21
+  },
+  "João Mário|Juventus": {
+   "note": 6.04,
+   "matches": 10
+  },
+  "Lloyd Kelly|Juventus": {
+   "note": 6.62,
+   "matches": 35
+  },
+  "Pierre Kalulu Kyatengwa|Juventus": {
+   "note": 6.75,
+   "matches": 37
+  },
+  "Andrea Cambiaso|Juventus": {
+   "note": 6.57,
+   "matches": 36
+  },
+  "Weston McKennie|Juventus": {
+   "note": 6.57,
+   "matches": 36
+  },
+  "Kephren Thuram|Juventus": {
+   "note": 6.38,
+   "matches": 35
+  },
+  "Manuel Locatelli|Juventus": {
+   "note": 6.31,
+   "matches": 36
+  },
+  "Teun Koopmeiners|Juventus": {
+   "note": 6.15,
+   "matches": 33
+  },
+  "Francisco Conceição|Juventus": {
+   "note": 6.47,
+   "matches": 31
+  },
+  "Dusan Vlahovic|Juventus": {
+   "note": 6.75,
+   "matches": 19
+  },
+  "Kenan Yildiz|Juventus": {
+   "note": 6.78,
+   "matches": 36
+  },
+  "Jonathan Christian David|Juventus": {
+   "note": 6.54,
+   "matches": 35
+  },
+  "Zion Suzuki|Parma Calcio 1913": {
+   "note": 6.87,
+   "matches": 20
+  },
+  "Alessandro Circati|Parma Calcio 1913": {
+   "note": 6.49,
+   "matches": 31
+  },
+  "Enrico Del Prato|Parma Calcio 1913": {
+   "note": 6.41,
+   "matches": 35
+  },
+  "Lautaro Valenti|Parma Calcio 1913": {
+   "note": 6.38,
+   "matches": 27
+  },
+  "Mathias Løvik|Parma Calcio 1913": {
+   "note": 6.03,
+   "matches": 9
+  },
+  "Emanuele Valeri|Parma Calcio 1913": {
+   "note": 6.28,
+   "matches": 34
+  },
+  "Adrián Bernabé|Parma Calcio 1913": {
+   "note": 6.36,
+   "matches": 32
+  },
+  "Milan Djuric|Parma Calcio 1913": {
+   "note": 6.0,
+   "matches": 12
+  },
+  "Mandela Keita|Parma Calcio 1913": {
+   "note": 6.12,
+   "matches": 37
+  },
+  "Nahuel Estévez|Parma Calcio 1913": {
+   "note": 6.08,
+   "matches": 32
+  },
+  "Christian Ordóñez|Parma Calcio 1913": {
+   "note": 6.07,
+   "matches": 28
+  },
+  "Oliver Sørensen|Parma Calcio 1913": {
+   "note": 6.14,
+   "matches": 34
+  },
+  "Pontus Almqvist|Parma Calcio 1913": {
+   "note": 6.18,
+   "matches": 13
+  },
+  "Adrian Benedyczak|Parma Calcio 1913": {
+   "note": 6.27,
+   "matches": 14
+  },
+  "Mateo Pellegrino|Parma Calcio 1913": {
+   "note": 6.5,
+   "matches": 37
+  },
+  "Razvan Sava|Udinese": {
+   "note": 6.69,
+   "matches": 7
+  },
+  "Nicolò Bertola|Udinese": {
+   "note": 6.24,
+   "matches": 28
+  },
+  "Oumar Solet|Udinese": {
+   "note": 6.56,
+   "matches": 35
+  },
+  "Thomas Thiesson Kristensen|Udinese": {
+   "note": 6.61,
+   "matches": 28
+  },
+  "Kingsley Ehizibue|Udinese": {
+   "note": 6.19,
+   "matches": 32
+  },
+  "Jordan Zemura|Udinese": {
+   "note": 6.11,
+   "matches": 17
+  },
+  "Hassane Kamara|Udinese": {
+   "note": 6.22,
+   "matches": 26
+  },
+  "Arthur Atta|Udinese": {
+   "note": 6.41,
+   "matches": 32
+  },
+  "Jesper Karlström|Udinese": {
+   "note": 6.11,
+   "matches": 36
+  },
+  "Sandi Lovric|Udinese": {
+   "note": 6.25,
+   "matches": 6
+  },
+  "Vakoun Bayo|Udinese": {
+   "note": 6.17,
+   "matches": 15
+  },
+  "Iker Bravo|Udinese": {
+   "note": 6.2,
+   "matches": 8
+  },
+  "Oier Zarraga|Udinese": {
+   "note": 6.0,
+   "matches": 24
+  },
+  "Keinan Davis|Udinese": {
+   "note": 6.77,
+   "matches": 30
+  },
+  "Jakub Piotrowski|Udinese": {
+   "note": 6.12,
+   "matches": 33
+  },
+  "Lorenzo Montipò|Verona": {
+   "note": 6.84,
+   "matches": 35
+  },
+  "Martin Frese|Verona": {
+   "note": 6.29,
+   "matches": 31
+  },
+  "Unai Núñez|Verona": {
+   "note": 6.18,
+   "matches": 17
+  },
+  "Victor Nelsson|Verona": {
+   "note": 6.27,
+   "matches": 38
+  },
+  "Fallou Cham|Verona": {
+   "note": 6.05,
+   "matches": 6
+  },
+  "Daniel Oyegoke|Verona": {
+   "note": 6.0,
+   "matches": 15
+  },
+  "Domagoj Bradaric|Verona": {
+   "note": 6.1,
+   "matches": 29
+  },
+  "Rafik Belghali|Verona": {
+   "note": 6.29,
+   "matches": 26
+  },
+  "Antoine Bernede|Verona": {
+   "note": 6.13,
+   "matches": 32
+  },
+  "Cheikh Niasse|Verona": {
+   "note": 6.04,
+   "matches": 20
+  },
+  "Daniel Mosquera|Verona": {
+   "note": 6.12,
+   "matches": 22
+  },
+  "Suat Serdar|Verona": {
+   "note": 6.18,
+   "matches": 20
+  },
+  "Enzo Ebosse|Verona": {
+   "note": 6.03,
+   "matches": 4
+  },
+  "Amin Sarr|Verona": {
+   "note": 6.06,
+   "matches": 34
+  },
+  "Abdou Harroui|Verona": {
+   "note": 6.04,
+   "matches": 23
+  },
+  "Giovane|Verona": {
+   "note": 6.53,
+   "matches": 21
+  },
+  "Yann Sommer|Inter": {
+   "note": 7.15,
+   "matches": 33
+  },
+  "Alessandro Bastoni|Inter": {
+   "note": 6.79,
+   "matches": 28
+  },
+  "Luis Henrique|Inter": {
+   "note": 6.25,
+   "matches": 30
+  },
+  "Francesco Acerbi|Inter": {
+   "note": 6.47,
+   "matches": 18
+  },
+  "Denzel Dumfries|Inter": {
+   "note": 6.38,
+   "matches": 20
+  },
+  "Federico Dimarco|Inter": {
+   "note": 7.08,
+   "matches": 35
+  },
+  "Carlos Augusto|Inter": {
+   "note": 6.28,
+   "matches": 34
+  },
+  "Henrikh Mkhitaryan|Inter": {
+   "note": 6.42,
+   "matches": 30
+  },
+  "Andy Diouf|Inter": {
+   "note": 6.17,
+   "matches": 19
+  },
+  "Nicolò Barella|Inter": {
+   "note": 6.57,
+   "matches": 34
+  },
+  "Petar Sucic|Inter": {
+   "note": 6.3,
+   "matches": 34
+  },
+  "Lautaro Martínez|Inter": {
+   "note": 7.28,
+   "matches": 30
+  },
+  "Piotr Zielinski|Inter": {
+   "note": 6.46,
+   "matches": 34
+  },
+  "Marcus Thuram|Inter": {
+   "note": 7.04,
+   "matches": 29
+  },
+  "Ange-Yoan Bonny|Inter": {
+   "note": 6.38,
+   "matches": 33
+  },
+  "Franco Israel|Torino": {
+   "note": 6.6,
+   "matches": 9
+  },
+  "Adam Masina|Torino": {
+   "note": 5.72,
+   "matches": 5
+  },
+  "Saúl Coco|Torino": {
+   "note": 6.35,
+   "matches": 35
+  },
+  "Valentino Lazaro|Torino": {
+   "note": 6.05,
+   "matches": 31
+  },
+  "Faustino Anjorin|Torino": {
+   "note": 6.0,
+   "matches": 15
+  },
+  "Cristiano Biraghi|Torino": {
+   "note": 5.99,
+   "matches": 14
+  },
+  "Cesare Casadei|Torino": {
+   "note": 6.27,
+   "matches": 33
+  },
+  "Emirhan Ilkhan|Torino": {
+   "note": 6.15,
+   "matches": 19
+  },
+  "Adrien Tameze|Torino": {
+   "note": 6.01,
+   "matches": 24
+  },
+  "Gvidas Gineitis|Torino": {
+   "note": 6.09,
+   "matches": 29
+  },
+  "Giovanni Simeone|Torino": {
+   "note": 6.65,
+   "matches": 32
+  },
+  "Che Adams|Torino": {
+   "note": 6.43,
+   "matches": 33
+  },
+  "Cyril Ngonge|Torino": {
+   "note": 6.17,
+   "matches": 20
+  },
+  "Marcus Pedersen|Torino": {
+   "note": 6.24,
+   "matches": 29
+  },
+  "Nikola Vlasic|Torino": {
+   "note": 6.45,
+   "matches": 37
+  },
+  "Zakaria Aboukhlal|Torino": {
+   "note": 6.07,
+   "matches": 15
+  },
+  "Romano Floriani|Cremonese": {
+   "note": 6.01,
+   "matches": 28
+  },
+  "Franco Vázquez|Cremonese": {
+   "note": 6.21,
+   "matches": 15
+  },
+  "Arijanet Muric|Sassuolo": {
+   "note": 6.89,
+   "matches": 32
+  },
+  "Jay Idzes|Sassuolo": {
+   "note": 6.39,
+   "matches": 35
+  },
+  "Aster Vranckx|Sassuolo": {
+   "note": 6.05,
+   "matches": 16
+  },
+  "Cristian Volpato|Sassuolo": {
+   "note": 6.33,
+   "matches": 24
+  },
+  "Nemanja Matic|Sassuolo": {
+   "note": 6.13,
+   "matches": 34
+  },
+  "Edoardo Iannoni|Sassuolo": {
+   "note": 6.11,
+   "matches": 15
+  },
+  "Samuele Ricci|AC Milan": {
+   "note": 6.24,
+   "matches": 31
+  },
+  "Thórir Helgason|Lecce": {
+   "note": 6.01,
+   "matches": 8
+  },
+  "Nikola Stulic|Lecce": {
+   "note": 6.26,
+   "matches": 34
+  },
+  "Santiago Pierotti|Lecce": {
+   "note": 6.16,
+   "matches": 37
+  },
+  "Torbjørn Heggem|Bologna": {
+   "note": 6.33,
+   "matches": 27
+  },
+  "Juan Miranda|Bologna": {
+   "note": 6.57,
+   "matches": 32
+  },
+  "Nikola Moro|Bologna": {
+   "note": 6.16,
+   "matches": 30
+  },
+  "Thijs Dallinga|Bologna": {
+   "note": 6.28,
+   "matches": 23
+  },
+  "Martin Baturina|Como": {
+   "note": 6.5,
+   "matches": 29
+  },
+  "Marco Brescianini|Atalanta": {
+   "note": 6.16,
+   "matches": 9
+  },
+  "Davide Zappacosta|Atalanta": {
+   "note": 6.39,
+   "matches": 35
+  },
+  "Patrick Cutrone|Parma Calcio 1913": {
+   "note": 6.21,
+   "matches": 15
+  },
+  "Gaetano Oristanio|Parma Calcio 1913": {
+   "note": 6.14,
+   "matches": 20
+  },
+  "Mateus Lusuardi|Pisa": {
+   "note": 6.07,
+   "matches": 3
+  },
+  "Mehdi Leris|Pisa": {
+   "note": 6.16,
+   "matches": 34
+  },
+  "Calvin Stengs|Pisa": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Mehmet Zeki Çelik|Roma": {
+   "note": 6.35,
+   "matches": 34
+  },
+  "Marco Palestra|Cagliari": {
+   "note": 6.25,
+   "matches": 37
+  },
+  "Alessandro Di Pardo|Cagliari": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Alessandro Buongiorno|Napoli": {
+   "note": 6.43,
+   "matches": 33
+  },
+  "Giuseppe Ambrosino|Napoli": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Leo Østigard|Genoa": {
+   "note": 6.66,
+   "matches": 30
+  },
+  "Ruslan Malinovskiy|Genoa": {
+   "note": 6.44,
+   "matches": 34
+  },
+  "Caleb Ekuban|Genoa": {
+   "note": 6.27,
+   "matches": 31
+  },
+  "Filip Kostic|Juventus": {
+   "note": 6.32,
+   "matches": 18
+  },
+  "Eddy Kouadio|Fiorentina": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Roberto Piccoli|Fiorentina": {
+   "note": 6.31,
+   "matches": 32
+  },
+  "Edin Dzeko|Fiorentina": {
+   "note": 6.01,
+   "matches": 11
+  },
+  "Guillermo Maripán|Torino": {
+   "note": 6.47,
+   "matches": 27
+  },
+  "Ivan Ilic|Torino": {
+   "note": 6.1,
+   "matches": 8
+  },
+  "Kristjan Asllani|Torino": {
+   "note": 5.99,
+   "matches": 15
+  },
+  "Yann Bisseck|Inter": {
+   "note": 6.8,
+   "matches": 23
+  },
+  "Hakan Calhanoglu|Inter": {
+   "note": 6.95,
+   "matches": 22
+  },
+  "Francesco Pio Esposito|Inter": {
+   "note": 6.49,
+   "matches": 35
+  },
+  "Saba Goglichidze|Udinese": {
+   "note": 6.08,
+   "matches": 8
+  },
+  "Rui Modesto|Udinese": {
+   "note": 6.33,
+   "matches": 3
+  },
+  "Jurgen Ekkelenkamp|Udinese": {
+   "note": 6.44,
+   "matches": 31
+  },
+  "Adam Buksa|Udinese": {
+   "note": 6.23,
+   "matches": 25
+  },
+  "Elseid Hysaj|Lazio": {
+   "note": 5.92,
+   "matches": 5
+  },
+  "Reda Belahyane|Lazio": {
+   "note": 6.18,
+   "matches": 13
+  },
+  "Armel Bella Kotchap|Verona": {
+   "note": 6.16,
+   "matches": 19
+  },
+  "Al Musrati|Verona": {
+   "note": 6.02,
+   "matches": 18
+  },
+  "Zé Pedro|Cagliari": {
+   "note": 6.29,
+   "matches": 23
+  },
+  "Mattia Felici|Cagliari": {
+   "note": 6.39,
+   "matches": 12
+  },
+  "Andrea Belotti|Cagliari": {
+   "note": 6.47,
+   "matches": 8
+  },
+  "Niakhate Ndiaye|Parma Calcio 1913": {
+   "note": 6.43,
+   "matches": 11
+  },
+  "Manuel Akanji|Inter": {
+   "note": 6.67,
+   "matches": 33
+  },
+  "Matteo Darmian|Inter": {
+   "note": 6.05,
+   "matches": 6
+  },
+  "Juan Cabal|Juventus": {
+   "note": 6.28,
+   "matches": 12
+  },
+  "Vasilije Adzic|Juventus": {
+   "note": 6.14,
+   "matches": 10
+  },
+  "Loïs Openda|Juventus": {
+   "note": 6.15,
+   "matches": 24
+  },
+  "Hans Nicolussi Caviglia|Fiorentina": {
+   "note": 6.15,
+   "matches": 11
+  },
+  "Vanja Milinkovic-Savic|Napoli": {
+   "note": 7.17,
+   "matches": 27
+  },
+  "Sam Beukema|Napoli": {
+   "note": 6.49,
+   "matches": 24
+  },
+  "Eljif Elmas|Napoli": {
+   "note": 6.21,
+   "matches": 33
+  },
+  "Rasmus Højlund|Napoli": {
+   "note": 6.89,
+   "matches": 33
+  },
+  "Niccolò Pisilli|Roma": {
+   "note": 6.32,
+   "matches": 25
+  },
+  "Tommaso Baldanzi|Roma": {
+   "note": 6.24,
+   "matches": 10
+  },
+  "Ardian Ismajli|Torino": {
+   "note": 6.35,
+   "matches": 25
+  },
+  "Giovanni Bonfanti|Pisa": {
+   "note": 6.09,
+   "matches": 9
+  },
+  "Nicolo Zaniolo|Udinese": {
+   "note": 6.54,
+   "matches": 32
+  },
+  "Lorenzo Bernasconi|Atalanta": {
+   "note": 6.3,
+   "matches": 23
+  },
+  "Yunus Musah|Atalanta": {
+   "note": 6.11,
+   "matches": 19
+  },
+  "Jamil Siebert|Lecce": {
+   "note": 6.3,
+   "matches": 21
+  },
+  "Alex Sala|Lecce": {
+   "note": 6.06,
+   "matches": 9
+  },
+  "Alessio Romagnoli|Lazio": {
+   "note": 6.52,
+   "matches": 32
+  },
+  "Gustav Isaksen|Lazio": {
+   "note": 6.35,
+   "matches": 30
+  },
+  "Woyo Coulibaly|Sassuolo": {
+   "note": 6.11,
+   "matches": 20
+  },
+  "Kristian Thorstvedt|Sassuolo": {
+   "note": 6.44,
+   "matches": 32
+  },
+  "Walid Cheddira|Sassuolo": {
+   "note": 6.1,
+   "matches": 16
+  },
+  "Koni de Winter|AC Milan": {
+   "note": 6.5,
+   "matches": 26
+  },
+  "Adrien Rabiot|AC Milan": {
+   "note": 6.66,
+   "matches": 29
+  },
+  "Christopher Nkunku|AC Milan": {
+   "note": 6.54,
+   "matches": 32
+  },
+  "Lewis Ferguson|Bologna": {
+   "note": 6.06,
+   "matches": 27
+  },
+  "Jonathan Rowe|Bologna": {
+   "note": 6.33,
+   "matches": 28
+  },
+  "Jeremy Sarmiento|Cremonese": {
+   "note": 6.0,
+   "matches": 7
+  },
+  "Jamie Vardy|Cremonese": {
+   "note": 6.51,
+   "matches": 29
+  },
+  "Roberto Gagliardini|Verona": {
+   "note": 6.13,
+   "matches": 29
+  },
+  "Jean-Daniel Akpa-Akpro|Verona": {
+   "note": 6.14,
+   "matches": 22
+  },
+  "Gift Orban|Verona": {
+   "note": 6.64,
+   "matches": 28
+  },
+  "Jayden Addai|Como": {
+   "note": 6.42,
+   "matches": 12
+  },
+  "Stefano Sabelli|Genoa": {
+   "note": 6.17,
+   "matches": 16
+  },
+  "Honest Ahanor|Atalanta": {
+   "note": 6.39,
+   "matches": 22
+  },
+  "Ademola Lookman|Atalanta": {
+   "note": 6.48,
+   "matches": 12
+  },
+  "Duván Zapata|Torino": {
+   "note": 6.29,
+   "matches": 28
+  },
+  "Zachary Athekame|AC Milan": {
+   "note": 6.21,
+   "matches": 27
+  },
+  "Alessandro Zanoli|Udinese": {
+   "note": 6.23,
+   "matches": 19
+  },
+  "Lennon Miller|Udinese": {
+   "note": 6.14,
+   "matches": 24
+  },
+  "Edon Zhegrova|Juventus": {
+   "note": 6.05,
+   "matches": 19
+  },
+  "Grigoris Kastanos|Verona": {
+   "note": 6.0,
+   "matches": 6
+  },
+  "Benjamín Domínguez|Bologna": {
+   "note": 6.18,
+   "matches": 15
+  },
+  "Dennis Johnsen|Cremonese": {
+   "note": 6.24,
+   "matches": 11
+  },
+  "Faris Moumbagna|Cremonese": {
+   "note": 6.04,
+   "matches": 5
+  },
+  "Diego Carlos|Como": {
+   "note": 6.56,
+   "matches": 27
+  },
+  "Stefan Posch|Como": {
+   "note": 6.15,
+   "matches": 14
+  },
+  "Niccolò Fortini|Fiorentina": {
+   "note": 6.03,
+   "matches": 16
+  },
+  "Josep Martínez|Inter": {
+   "note": 7.36,
+   "matches": 5
+  },
+  "Davide Frattesi|Inter": {
+   "note": 6.09,
+   "matches": 22
+  },
+  "Tijjani Noslin|Lazio": {
+   "note": 6.34,
+   "matches": 29
+  },
+  "Konstantinos Tsimikas|Roma": {
+   "note": 6.06,
+   "matches": 18
+  },
+  "Lorenzo Pellegrini|Roma": {
+   "note": 6.43,
+   "matches": 24
+  },
+  "Corrie Ndaba|Lecce": {
+   "note": 6.09,
+   "matches": 14
+  },
+  "Lorran|Pisa": {
+   "note": 6.19,
+   "matches": 9
+  },
+  "Stefan de Vrij|Inter": {
+   "note": 6.44,
+   "matches": 11
+  },
+  "Marco Silvestri|Cremonese": {
+   "note": 6.65,
+   "matches": 4
+  },
+  "Toma Basic|Lazio": {
+   "note": 6.37,
+   "matches": 23
+  },
+  "Patric|Lazio": {
+   "note": 6.11,
+   "matches": 14
+  },
+  "Emil Holm|Bologna": {
+   "note": 6.77,
+   "matches": 11
+  },
+  "Rafael Leão|AC Milan": {
+   "note": 6.73,
+   "matches": 29
+  },
+  "Davide Bartesaghi|AC Milan": {
+   "note": 6.31,
+   "matches": 31
+  },
+  "Miguel Gutiérrez|Napoli": {
+   "note": 6.15,
+   "matches": 28
+  },
+  "Sascha Britschgi|Parma Calcio 1913": {
+   "note": 6.21,
+   "matches": 29
+  },
+  "Niels Nkounkou|Torino": {
+   "note": 6.2,
+   "matches": 11
+  },
+  "Alieu Njie|Torino": {
+   "note": 6.18,
+   "matches": 15
+  },
+  "Isak Vural|Pisa": {
+   "note": 6.02,
+   "matches": 15
+  },
+  "Malthe Højholt|Pisa": {
+   "note": 5.91,
+   "matches": 17
+  },
+  "Jan Ziólkowski|Roma": {
+   "note": 6.11,
+   "matches": 18
+  },
+  "Matteo Palma|Udinese": {
+   "note": 5.96,
+   "matches": 5
+  },
+  "Idrissa Gueye|Udinese": {
+   "note": 6.13,
+   "matches": 19
+  },
+  "Louis Buffon|Pisa": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Tommaso Barbieri|Cremonese": {
+   "note": 6.11,
+   "matches": 29
+  },
+  "Mikayil Faye|Cremonese": {
+   "note": 6.08,
+   "matches": 8
+  },
+  "Daniele Rugani|Juventus": {
+   "note": 6.28,
+   "matches": 6
+  },
+  "Sebastian Otoa|Genoa": {
+   "note": 6.12,
+   "matches": 13
+  },
+  "Nicolò Cavuoti|Cagliari": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Leonardo Pavoletti|Cagliari": {
+   "note": 6.23,
+   "matches": 13
+  },
+  "Christian Kabasele|Udinese": {
+   "note": 6.52,
+   "matches": 30
+  },
+  "Matías Vecino|Lazio": {
+   "note": 6.25,
+   "matches": 13
+  },
+  "Federico Ravaglia|Bologna": {
+   "note": 6.68,
+   "matches": 17
+  },
+  "Alberto Moreno|Como": {
+   "note": 6.72,
+   "matches": 19
+  },
+  "Maduka Okoye|Udinese": {
+   "note": 7.0,
+   "matches": 30
+  },
+  "Maxwel Cornet|Genoa": {
+   "note": 6.1,
+   "matches": 8
+  },
+  "Mariano Troilo|Parma Calcio 1913": {
+   "note": 6.41,
+   "matches": 21
+  },
+  "Raúl Albiol|Pisa": {
+   "note": 6.19,
+   "matches": 8
+  },
+  "Nicolás Valentini|Verona": {
+   "note": 6.22,
+   "matches": 21
+  },
+  "Leon Bailey|Roma": {
+   "note": 6.0,
+   "matches": 7
+  },
+  "Youssef Maleh|Lecce": {
+   "note": 6.03,
+   "matches": 9
+  },
+  "Joseph Liteta|Cagliari": {
+   "note": 6.03,
+   "matches": 4
+  },
+  "Francesco Folino|Cremonese": {
+   "note": 6.09,
+   "matches": 18
+  },
+  "Mattia Perin|Juventus": {
+   "note": 7.01,
+   "matches": 9
+  },
+  "Assane Diao|Como": {
+   "note": 6.33,
+   "matches": 17
+  },
+  "Hernani|Parma Calcio 1913": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Jean Onana|Genoa": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Alberto Paleari|Torino": {
+   "note": 6.81,
+   "matches": 29
+  },
+  "Benjamín Cremaschi|Parma Calcio 1913": {
+   "note": 6.02,
+   "matches": 8
+  },
+  "Daniele Ghilardi|Roma": {
+   "note": 6.28,
+   "matches": 23
+  },
+  "Massimo Pessina|Bologna": {
+   "note": 7.0,
+   "matches": 4
+  },
+  "Edoardo Corvi|Parma Calcio 1913": {
+   "note": 7.09,
+   "matches": 17
+  },
+  "Fabio Miretti|Juventus": {
+   "note": 6.18,
+   "matches": 23
+  },
+  "Pasquale Mazzocchi|Napoli": {
+   "note": 6.09,
+   "matches": 16
+  },
+  "Sulemana|Bologna": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Sead Kolasinac|Atalanta": {
+   "note": 6.28,
+   "matches": 19
+  },
+  "Jacob Ondrejka|Parma Calcio 1913": {
+   "note": 6.06,
+   "matches": 16
+  },
+  "Simone Scuffet|Pisa": {
+   "note": 6.54,
+   "matches": 7
+  },
+  "Juan Rodríguez|Cagliari": {
+   "note": 6.27,
+   "matches": 17
+  },
+  "Niclas Füllkrug|AC Milan": {
+   "note": 6.2,
+   "matches": 20
+  },
+  "Omri Gandelman|Lecce": {
+   "note": 6.28,
+   "matches": 19
+  },
+  "Tobias Slotsager|Verona": {
+   "note": 6.12,
+   "matches": 8
+  },
+  "Manor Solomon|Fiorentina": {
+   "note": 6.31,
+   "matches": 16
+  },
+  "Yael Trepy|Cagliari": {
+   "note": 6.21,
+   "matches": 8
+  },
+  "Francesco Coppola|Pisa": {
+   "note": 5.71,
+   "matches": 7
+  },
+  "Marco Brescianini|Fiorentina": {
+   "note": 6.24,
+   "matches": 17
+  },
+  "Kenneth Taylor|Lazio": {
+   "note": 6.51,
+   "matches": 17
+  },
+  "Petar Ratkov|Lazio": {
+   "note": 6.03,
+   "matches": 8
+  },
+  "Simone Perilli|Verona": {
+   "note": 6.47,
+   "matches": 3
+  },
+  "Pol Lirola|Verona": {
+   "note": 5.9,
+   "matches": 6
+  },
+  "Giacomo Raspadori|Atalanta": {
+   "note": 6.55,
+   "matches": 13
+  },
+  "Rosen Bozhinov|Pisa": {
+   "note": 6.19,
+   "matches": 9
+  },
+  "Rafiu Durosinmi|Pisa": {
+   "note": 6.2,
+   "matches": 12
+  },
+  "Robinio Vaz|Roma": {
+   "note": 6.13,
+   "matches": 12
+  },
+  "Donyell Malen|Roma": {
+   "note": 7.54,
+   "matches": 18
+  },
+  "Rafael Obrador|Torino": {
+   "note": 6.28,
+   "matches": 16
+  },
+  "Sulemana|Cagliari": {
+   "note": 6.11,
+   "matches": 16
+  },
+  "Jack Harrison|Fiorentina": {
+   "note": 6.31,
+   "matches": 15
+  },
+  "Giovanni Fabbian|Fiorentina": {
+   "note": 6.09,
+   "matches": 15
+  },
+  "Simon Sohm|Bologna": {
+   "note": 6.11,
+   "matches": 12
+  },
+  "Justin Bijlow|Genoa": {
+   "note": 6.94,
+   "matches": 16
+  },
+  "Nils Zätterström|Genoa": {
+   "note": 6.5,
+   "matches": 3
+  },
+  "Romelu Lukaku|Napoli": {
+   "note": 6.34,
+   "matches": 5
+  },
+  "Giovane|Napoli": {
+   "note": 6.08,
+   "matches": 12
+  },
+  "Walid Cheddira|Lecce": {
+   "note": 6.39,
+   "matches": 17
+  },
+  "Lorenzo Venturino|Roma": {
+   "note": 6.04,
+   "matches": 10
+  },
+  "Isaac|Verona": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Sandi Lovric|Verona": {
+   "note": 6.12,
+   "matches": 8
+  },
+  "Milan Djuric|Cremonese": {
+   "note": 6.13,
+   "matches": 11
+  },
+  "Youssef Maleh|Cremonese": {
+   "note": 6.06,
+   "matches": 14
+  },
+  "Daniel Maldini|Lazio": {
+   "note": 6.39,
+   "matches": 12
+  },
+  "Hans Nicolussi Caviglia|Parma Calcio 1913": {
+   "note": 6.22,
+   "matches": 15
+  },
+  "Nesta Elphege|Parma Calcio 1913": {
+   "note": 6.53,
+   "matches": 9
+  },
+  "Filip Stojilkovic|Pisa": {
+   "note": 6.12,
+   "matches": 13
+  },
+  "Felipe Loyola|Pisa": {
+   "note": 6.09,
+   "matches": 11
+  },
+  "Oumar Ngom|Lecce": {
+   "note": 6.03,
+   "matches": 15
+  },
+  "Luca Marianucci|Torino": {
+   "note": 6.21,
+   "matches": 10
+  },
+  "Matteo Prati|Torino": {
+   "note": 6.11,
+   "matches": 13
+  },
+  "Sandro Kulenovic|Torino": {
+   "note": 6.11,
+   "matches": 13
+  },
+  "Andrias Edmundsson|Verona": {
+   "note": 6.36,
+   "matches": 15
+  },
+  "Kieron Bowie|Verona": {
+   "note": 6.53,
+   "matches": 14
+  },
+  "Ulisses García|Sassuolo": {
+   "note": 6.68,
+   "matches": 13
+  },
+  "M'Bala Nzola|Sassuolo": {
+   "note": 6.22,
+   "matches": 14
+  },
+  "Alberto Dossena|Cagliari": {
+   "note": 6.38,
+   "matches": 12
+  },
+  "Bryan Zaragoza|Roma": {
+   "note": 6.3,
+   "matches": 4
+  },
+  "Sebastiano Luperto|Cremonese": {
+   "note": 6.29,
+   "matches": 15
+  },
+  "Morten Thorsby|Cremonese": {
+   "note": 6.12,
+   "matches": 11
+  },
+  "João Mário|Bologna": {
+   "note": 6.66,
+   "matches": 10
+  },
+  "Franco Ezequiel Carboni|Parma Calcio 1913": {
+   "note": 6.01,
+   "matches": 7
+  },
+  "Gabriel Strefezza|Parma Calcio 1913": {
+   "note": 6.38,
+   "matches": 14
+  },
+  "Jeremie Boga|Juventus": {
+   "note": 6.54,
+   "matches": 15
+  },
+  "Sadik Fofana|Lecce": {
+   "note": 6.04,
+   "matches": 5
+  },
+  "Alex Amorim|Genoa": {
+   "note": 6.08,
+   "matches": 11
+  },
+  "Tommaso Baldanzi|Genoa": {
+   "note": 6.27,
+   "matches": 8
+  },
+  "Emil Holm|Juventus": {
+   "note": 6.1,
+   "matches": 7
+  },
+  "Alisson Santos|Napoli": {
+   "note": 6.46,
+   "matches": 14
+  },
+  "Nícolas|Pisa": {
+   "note": 6.37,
+   "matches": 6
+  },
+  "Samuel Iling-Junior|Pisa": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Juan Arizala|Udinese": {
+   "note": 6.02,
+   "matches": 10
+  },
+  "Enzo Ebosse|Torino": {
+   "note": 6.38,
+   "matches": 13
+  },
+  "Pedro Felipe|Sassuolo": {
+   "note": 6.2,
+   "matches": 3
+  },
+  "Ioan Vermesan|Verona": {
+   "note": 6.03,
+   "matches": 6
+  },
+  "Tomás Suslov|Verona": {
+   "note": 6.01,
+   "matches": 11
+  },
+  "Daniele Rugani|Fiorentina": {
+   "note": 6.43,
+   "matches": 6
+  },
+  "Branimir Mlacic|Udinese": {
+   "note": 6.1,
+   "matches": 7
+  },
+  "Gaby Jean|Lecce": {
+   "note": 6.16,
+   "matches": 7
+  },
+  "Edoardo Motta|Lazio": {
+   "note": 7.04,
+   "matches": 9
+  },
+  "Darryl Bakola|Sassuolo": {
+   "note": 6.2,
+   "matches": 6
+  },
+  "Paul Mendy|Cagliari": {
+   "note": 6.42,
+   "matches": 9
+  },
+  "Luís Balbo|Fiorentina": {
+   "note": 6.15,
+   "matches": 6
+  },
+  "Daniel Mikolajewski|Parma Calcio 1913": {
+   "note": 6.07,
+   "matches": 3
+  },
+  "Eivind Helland|Bologna": {
+   "note": 6.32,
+   "matches": 6
+  },
+  "Manuel Neuer|Bayern Munich": {
+   "note": 7.04,
+   "matches": 22
+  },
+  "Dayotchanculle Upamecano|Bayern Munich": {
+   "note": 6.56,
+   "matches": 24
+  },
+  "Jonathan Tah|Bayern Munich": {
+   "note": 6.53,
+   "matches": 28
+  },
+  "Aleksandar Pavlovic|Bayern Munich": {
+   "note": 6.29,
+   "matches": 24
+  },
+  "Konrad Laimer|Bayern Munich": {
+   "note": 6.89,
+   "matches": 29
+  },
+  "Lennart Karl|Bayern Munich": {
+   "note": 6.6,
+   "matches": 26
+  },
+  "Josip Stanisic|Bayern Munich": {
+   "note": 6.57,
+   "matches": 26
+  },
+  "Joshua Kimmich|Bayern Munich": {
+   "note": 6.6,
+   "matches": 29
+  },
+  "Leon Goretzka|Bayern Munich": {
+   "note": 6.51,
+   "matches": 31
+  },
+  "Kim Min-Jae|Bayern Munich": {
+   "note": 6.41,
+   "matches": 25
+  },
+  "Serge Gnabry|Bayern Munich": {
+   "note": 7.0,
+   "matches": 21
+  },
+  "Sacha Boey|Bayern Munich": {
+   "note": 6.42,
+   "matches": 9
+  },
+  "Michael Olise|Bayern Munich": {
+   "note": 7.42,
+   "matches": 32
+  },
+  "Luis Díaz|Bayern Munich": {
+   "note": 7.31,
+   "matches": 32
+  },
+  "Harry Kane|Bayern Munich": {
+   "note": 8.09,
+   "matches": 31
+  },
+  "Péter Gulácsi|RasenBallsport Leipzig": {
+   "note": 6.9,
+   "matches": 23
+  },
+  "Castello Lukeba|RasenBallsport Leipzig": {
+   "note": 6.43,
+   "matches": 26
+  },
+  "Willi Orban|RasenBallsport Leipzig": {
+   "note": 6.47,
+   "matches": 33
+  },
+  "Bote Baku|RasenBallsport Leipzig": {
+   "note": 6.66,
+   "matches": 32
+  },
+  "David Raum|RasenBallsport Leipzig": {
+   "note": 6.96,
+   "matches": 30
+  },
+  "Nicolas Seiwald|RasenBallsport Leipzig": {
+   "note": 6.08,
+   "matches": 33
+  },
+  "Assan Ouédraogo|RasenBallsport Leipzig": {
+   "note": 6.55,
+   "matches": 19
+  },
+  "Xaver Schlager|RasenBallsport Leipzig": {
+   "note": 6.21,
+   "matches": 26
+  },
+  "Ezechiel Banzuzi|RasenBallsport Leipzig": {
+   "note": 6.07,
+   "matches": 24
+  },
+  "Antonio Nusa|RasenBallsport Leipzig": {
+   "note": 6.4,
+   "matches": 31
+  },
+  "Johan Bakayoko|RasenBallsport Leipzig": {
+   "note": 6.22,
+   "matches": 20
+  },
+  "Christoph Baumgartner|RasenBallsport Leipzig": {
+   "note": 7.03,
+   "matches": 33
+  },
+  "Yan Diomande|RasenBallsport Leipzig": {
+   "note": 6.93,
+   "matches": 33
+  },
+  "Rômulo|RasenBallsport Leipzig": {
+   "note": 6.82,
+   "matches": 30
+  },
+  "Diant Ramaj|FC Heidenheim": {
+   "note": 6.43,
+   "matches": 31
+  },
+  "Benedikt Gimber|FC Heidenheim": {
+   "note": 5.96,
+   "matches": 21
+  },
+  "Patrick Mainka|FC Heidenheim": {
+   "note": 6.16,
+   "matches": 34
+  },
+  "Tim Siersleben|FC Heidenheim": {
+   "note": 5.87,
+   "matches": 15
+  },
+  "Adrian Beck|FC Heidenheim": {
+   "note": 6.15,
+   "matches": 24
+  },
+  "Marnon Busch|FC Heidenheim": {
+   "note": 6.23,
+   "matches": 29
+  },
+  "Jonas Föhrenbach|FC Heidenheim": {
+   "note": 6.1,
+   "matches": 27
+  },
+  "Omar Traoré|FC Heidenheim": {
+   "note": 5.99,
+   "matches": 26
+  },
+  "Jan Schöppner|FC Heidenheim": {
+   "note": 6.18,
+   "matches": 31
+  },
+  "Niklas Dorsch|FC Heidenheim": {
+   "note": 5.97,
+   "matches": 32
+  },
+  "Luca Kerber|FC Heidenheim": {
+   "note": 6.12,
+   "matches": 18
+  },
+  "Arijon Ibrahimovic|FC Heidenheim": {
+   "note": 6.36,
+   "matches": 32
+  },
+  "Mathias Honsak|FC Heidenheim": {
+   "note": 6.2,
+   "matches": 27
+  },
+  "Budu Zivzivadze|FC Heidenheim": {
+   "note": 6.55,
+   "matches": 20
+  },
+  "Mikkel Kaufmann|FC Heidenheim": {
+   "note": 6.21,
+   "matches": 16
+  },
+  "Kamil Grabara|Wolfsburg": {
+   "note": 6.58,
+   "matches": 34
+  },
+  "Konstantinos Koulierakis|Wolfsburg": {
+   "note": 6.4,
+   "matches": 29
+  },
+  "Moritz Jenz|Wolfsburg": {
+   "note": 6.04,
+   "matches": 22
+  },
+  "Kilian Fischer|Wolfsburg": {
+   "note": 5.95,
+   "matches": 11
+  },
+  "Aaron Zehnter|Wolfsburg": {
+   "note": 6.34,
+   "matches": 20
+  },
+  "Maximilian Arnold|Wolfsburg": {
+   "note": 6.19,
+   "matches": 25
+  },
+  "Yannick Gerhardt|Wolfsburg": {
+   "note": 6.05,
+   "matches": 19
+  },
+  "Vinicius Souza|Wolfsburg": {
+   "note": 5.95,
+   "matches": 24
+  },
+  "Lovro Majer|Wolfsburg": {
+   "note": 6.29,
+   "matches": 28
+  },
+  "Mohammed Amoura|Wolfsburg": {
+   "note": 6.66,
+   "matches": 30
+  },
+  "Andreas Skov Olsen|Wolfsburg": {
+   "note": 6.22,
+   "matches": 8
+  },
+  "Patrick Wimmer|Wolfsburg": {
+   "note": 6.43,
+   "matches": 25
+  },
+  "Dzenan Pejcinovic|Wolfsburg": {
+   "note": 6.5,
+   "matches": 30
+  },
+  "Mattias Svanberg|Wolfsburg": {
+   "note": 6.22,
+   "matches": 24
+  },
+  "Mark Flekken|Bayer Leverkusen": {
+   "note": 6.77,
+   "matches": 24
+  },
+  "Edmond Tapsoba|Bayer Leverkusen": {
+   "note": 6.75,
+   "matches": 29
+  },
+  "Jarell Quansah|Bayer Leverkusen": {
+   "note": 6.51,
+   "matches": 28
+  },
+  "Arthur|Bayer Leverkusen": {
+   "note": 6.25,
+   "matches": 20
+  },
+  "Ernest Poku|Bayer Leverkusen": {
+   "note": 6.47,
+   "matches": 29
+  },
+  "Álex Grimaldo|Bayer Leverkusen": {
+   "note": 6.84,
+   "matches": 29
+  },
+  "Aleix García|Bayer Leverkusen": {
+   "note": 6.44,
+   "matches": 33
+  },
+  "Robert Andrich|Bayer Leverkusen": {
+   "note": 6.33,
+   "matches": 32
+  },
+  "Ibrahim Maza|Bayer Leverkusen": {
+   "note": 6.48,
+   "matches": 28
+  },
+  "Christian Kofane|Bayer Leverkusen": {
+   "note": 6.5,
+   "matches": 29
+  },
+  "Nathan Tella|Bayer Leverkusen": {
+   "note": 6.46,
+   "matches": 17
+  },
+  "Claudio Echeverri|Bayer Leverkusen": {
+   "note": 6.02,
+   "matches": 6
+  },
+  "Patrik Schick|Bayer Leverkusen": {
+   "note": 7.18,
+   "matches": 28
+  },
+  "Oliver Baumann|Hoffenheim": {
+   "note": 6.79,
+   "matches": 34
+  },
+  "Arthur Chaves|Hoffenheim": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Robin Hranác|Hoffenheim": {
+   "note": 6.4,
+   "matches": 29
+  },
+  "Alexander Prass|Hoffenheim": {
+   "note": 6.14,
+   "matches": 32
+  },
+  "Vladimir Coufal|Hoffenheim": {
+   "note": 6.56,
+   "matches": 34
+  },
+  "Bernardo|Hoffenheim": {
+   "note": 6.24,
+   "matches": 29
+  },
+  "Leon Avdullahu|Hoffenheim": {
+   "note": 6.05,
+   "matches": 33
+  },
+  "Wouter Burger|Hoffenheim": {
+   "note": 6.47,
+   "matches": 30
+  },
+  "Umut Tohumcu|Hoffenheim": {
+   "note": 5.94,
+   "matches": 5
+  },
+  "Andrej Kramaric|Hoffenheim": {
+   "note": 6.91,
+   "matches": 34
+  },
+  "Grischa Prömel|Hoffenheim": {
+   "note": 6.41,
+   "matches": 33
+  },
+  "Bazoumana Touré|Hoffenheim": {
+   "note": 6.59,
+   "matches": 30
+  },
+  "Fisnik Asllani|Hoffenheim": {
+   "note": 6.79,
+   "matches": 33
+  },
+  "Tim Lemperle|Hoffenheim": {
+   "note": 6.62,
+   "matches": 29
+  },
+  "Kevin Akpoguma|Hoffenheim": {
+   "note": 5.97,
+   "matches": 8
+  },
+  "Frederik Rönnow|Union Berlin": {
+   "note": 6.65,
+   "matches": 30
+  },
+  "Danilho Doekhi|Union Berlin": {
+   "note": 6.46,
+   "matches": 34
+  },
+  "Leopold Querfeld|Union Berlin": {
+   "note": 6.35,
+   "matches": 31
+  },
+  "Tom Rothe|Union Berlin": {
+   "note": 6.2,
+   "matches": 21
+  },
+  "Christopher Trimmel|Union Berlin": {
+   "note": 6.2,
+   "matches": 29
+  },
+  "Robert Skov|Union Berlin": {
+   "note": 5.77,
+   "matches": 3
+  },
+  "Derrick Köhn|Union Berlin": {
+   "note": 6.21,
+   "matches": 29
+  },
+  "Andras Schafer|Union Berlin": {
+   "note": 6.15,
+   "matches": 28
+  },
+  "Josip Juranovic|Union Berlin": {
+   "note": 6.25,
+   "matches": 11
+  },
+  "Janik Haberer|Union Berlin": {
+   "note": 5.94,
+   "matches": 28
+  },
+  "Alex Kral|Union Berlin": {
+   "note": 5.97,
+   "matches": 20
+  },
+  "Rani Khedira|Union Berlin": {
+   "note": 6.23,
+   "matches": 32
+  },
+  "Andrej Ilic|Union Berlin": {
+   "note": 6.67,
+   "matches": 32
+  },
+  "Ilyas Ansah|Union Berlin": {
+   "note": 6.29,
+   "matches": 33
+  },
+  "Oliver Burke|Union Berlin": {
+   "note": 6.43,
+   "matches": 29
+  },
+  "Alexander Nübel|VfB Stuttgart": {
+   "note": 6.88,
+   "matches": 34
+  },
+  "Julian Chabot|VfB Stuttgart": {
+   "note": 6.34,
+   "matches": 27
+  },
+  "Ramon Hendriks|VfB Stuttgart": {
+   "note": 6.31,
+   "matches": 31
+  },
+  "Luca Jaquez|VfB Stuttgart": {
+   "note": 6.38,
+   "matches": 14
+  },
+  "Joshua Vagnoman|VfB Stuttgart": {
+   "note": 6.37,
+   "matches": 27
+  },
+  "Chris Führich|VfB Stuttgart": {
+   "note": 6.64,
+   "matches": 33
+  },
+  "Maximilian Mittelstädt|VfB Stuttgart": {
+   "note": 6.66,
+   "matches": 32
+  },
+  "Angelo Stiller|VfB Stuttgart": {
+   "note": 6.34,
+   "matches": 34
+  },
+  "Atakan Karazor|VfB Stuttgart": {
+   "note": 6.11,
+   "matches": 28
+  },
+  "Lazar Jovanovic|VfB Stuttgart": {
+   "note": 6.03,
+   "matches": 3
+  },
+  "Deniz Undav|VfB Stuttgart": {
+   "note": 7.41,
+   "matches": 29
+  },
+  "Jamie Leweling|VfB Stuttgart": {
+   "note": 6.7,
+   "matches": 32
+  },
+  "Ermedin Demirovic|VfB Stuttgart": {
+   "note": 6.94,
+   "matches": 25
+  },
+  "Tiago Tomás|VfB Stuttgart": {
+   "note": 6.45,
+   "matches": 27
+  },
+  "Michael Zetterer|Eintracht Frankfurt": {
+   "note": 6.75,
+   "matches": 22
+  },
+  "Nnamdi Collins|Eintracht Frankfurt": {
+   "note": 6.2,
+   "matches": 23
+  },
+  "Robin Koch|Eintracht Frankfurt": {
+   "note": 6.3,
+   "matches": 32
+  },
+  "Rasmus Kristensen|Eintracht Frankfurt": {
+   "note": 6.29,
+   "matches": 22
+  },
+  "Arthur Theate|Eintracht Frankfurt": {
+   "note": 6.05,
+   "matches": 24
+  },
+  "Farès Chaïbi|Eintracht Frankfurt": {
+   "note": 6.4,
+   "matches": 28
+  },
+  "Hugo Larsson|Eintracht Frankfurt": {
+   "note": 6.19,
+   "matches": 25
+  },
+  "Nathaniel Brown|Eintracht Frankfurt": {
+   "note": 6.34,
+   "matches": 33
+  },
+  "Can Uzun|Eintracht Frankfurt": {
+   "note": 6.77,
+   "matches": 21
+  },
+  "Mario Götze|Eintracht Frankfurt": {
+   "note": 6.07,
+   "matches": 21
+  },
+  "Ritsu Doan|Eintracht Frankfurt": {
+   "note": 6.49,
+   "matches": 31
+  },
+  "Oscar Højlund|Eintracht Frankfurt": {
+   "note": 6.08,
+   "matches": 24
+  },
+  "Jean Négoce|Eintracht Frankfurt": {
+   "note": 6.38,
+   "matches": 27
+  },
+  "Ansgar Knauff|Eintracht Frankfurt": {
+   "note": 6.28,
+   "matches": 28
+  },
+  "Jonathan Burkardt|Eintracht Frankfurt": {
+   "note": 7.12,
+   "matches": 22
+  },
+  "Sepe Elye Wahi|Eintracht Frankfurt": {
+   "note": 6.16,
+   "matches": 10
+  },
+  "Mio Backhaus|Werder Bremen": {
+   "note": 6.67,
+   "matches": 32
+  },
+  "Marco Friedl|Werder Bremen": {
+   "note": 6.24,
+   "matches": 30
+  },
+  "Niklas Stark|Werder Bremen": {
+   "note": 6.19,
+   "matches": 14
+  },
+  "Keke Maximilian Topp|Werder Bremen": {
+   "note": 6.17,
+   "matches": 20
+  },
+  "Julián Malatini|Werder Bremen": {
+   "note": 5.99,
+   "matches": 11
+  },
+  "Felix Agu|Werder Bremen": {
+   "note": 5.96,
+   "matches": 11
+  },
+  "Leonardo Bittencourt|Werder Bremen": {
+   "note": 6.03,
+   "matches": 17
+  },
+  "Karim Coulibaly|Werder Bremen": {
+   "note": 6.17,
+   "matches": 27
+  },
+  "Senne Lynen|Werder Bremen": {
+   "note": 5.95,
+   "matches": 31
+  },
+  "Romano Schmid|Werder Bremen": {
+   "note": 6.62,
+   "matches": 34
+  },
+  "Justin Njinmah|Werder Bremen": {
+   "note": 6.31,
+   "matches": 33
+  },
+  "Samuel Mbangula|Werder Bremen": {
+   "note": 6.26,
+   "matches": 26
+  },
+  "Patrice Covic|Werder Bremen": {
+   "note": 6.14,
+   "matches": 15
+  },
+  "Marco Grüll|Werder Bremen": {
+   "note": 6.24,
+   "matches": 33
+  },
+  "Finn Dahmen|Augsburg": {
+   "note": 6.68,
+   "matches": 34
+  },
+  "Chrislain Matsima|Augsburg": {
+   "note": 6.2,
+   "matches": 18
+  },
+  "Jeffrey Gouweleeuw|Augsburg": {
+   "note": 6.09,
+   "matches": 11
+  },
+  "Keven Schlotterbeck|Augsburg": {
+   "note": 6.31,
+   "matches": 24
+  },
+  "Marius Wolf|Augsburg": {
+   "note": 6.13,
+   "matches": 29
+  },
+  "Dimitris Giannoulis|Augsburg": {
+   "note": 6.3,
+   "matches": 27
+  },
+  "Phillip Tietz|Augsburg": {
+   "note": 6.18,
+   "matches": 10
+  },
+  "Kristijan Jakic|Augsburg": {
+   "note": 6.18,
+   "matches": 26
+  },
+  "Robin Fellhauer|Augsburg": {
+   "note": 6.18,
+   "matches": 34
+  },
+  "Cédric Zesiger|Augsburg": {
+   "note": 6.14,
+   "matches": 27
+  },
+  "Elias Saad|Augsburg": {
+   "note": 6.04,
+   "matches": 10
+  },
+  "Elvis Rexhbecaj|Augsburg": {
+   "note": 6.08,
+   "matches": 26
+  },
+  "Han-Noah Massengo|Augsburg": {
+   "note": 6.07,
+   "matches": 33
+  },
+  "Mert Kömür|Augsburg": {
+   "note": 6.29,
+   "matches": 28
+  },
+  "Noah Atubolu|Freiburg": {
+   "note": 6.74,
+   "matches": 34
+  },
+  "Matthias Ginter|Freiburg": {
+   "note": 6.49,
+   "matches": 32
+  },
+  "Philipp Lienhart|Freiburg": {
+   "note": 6.21,
+   "matches": 20
+  },
+  "Lukas Kübler|Freiburg": {
+   "note": 6.38,
+   "matches": 23
+  },
+  "Christian Günter|Freiburg": {
+   "note": 6.22,
+   "matches": 24
+  },
+  "Derry Scherhant|Freiburg": {
+   "note": 6.32,
+   "matches": 31
+  },
+  "Johan Manzambi|Freiburg": {
+   "note": 6.41,
+   "matches": 27
+  },
+  "Jordy Makengo|Freiburg": {
+   "note": 6.2,
+   "matches": 20
+  },
+  "Maximilian Eggestein|Freiburg": {
+   "note": 6.14,
+   "matches": 34
+  },
+  "Yuito Suzuki|Freiburg": {
+   "note": 6.4,
+   "matches": 25
+  },
+  "Eren Sami Dinkci|Freiburg": {
+   "note": 6.03,
+   "matches": 8
+  },
+  "Cyriaque Irié|Freiburg": {
+   "note": 6.04,
+   "matches": 10
+  },
+  "Vincenzo Grifo|Freiburg": {
+   "note": 6.55,
+   "matches": 33
+  },
+  "Lucas Höler|Freiburg": {
+   "note": 6.25,
+   "matches": 33
+  },
+  "Gregor Kobel|Borussia Dortmund": {
+   "note": 7.11,
+   "matches": 34
+  },
+  "Filippo Mané|Borussia Dortmund": {
+   "note": 5.9,
+   "matches": 4
+  },
+  "Salih Özcan|Borussia Dortmund": {
+   "note": 6.02,
+   "matches": 11
+  },
+  "Ramy Bensebaini|Borussia Dortmund": {
+   "note": 7.0,
+   "matches": 21
+  },
+  "Waldemar Anton|Borussia Dortmund": {
+   "note": 6.63,
+   "matches": 32
+  },
+  "Marcel Sabitzer|Borussia Dortmund": {
+   "note": 6.22,
+   "matches": 26
+  },
+  "Pascal Groß|Borussia Dortmund": {
+   "note": 6.25,
+   "matches": 11
+  },
+  "Yan Couto|Borussia Dortmund": {
+   "note": 6.38,
+   "matches": 19
+  },
+  "Daniel Svensson|Borussia Dortmund": {
+   "note": 6.33,
+   "matches": 33
+  },
+  "Jobe Bellingham|Borussia Dortmund": {
+   "note": 6.11,
+   "matches": 32
+  },
+  "Felix Nmecha|Borussia Dortmund": {
+   "note": 6.34,
+   "matches": 29
+  },
+  "Karim Adeyemi|Borussia Dortmund": {
+   "note": 6.58,
+   "matches": 28
+  },
+  "Julian Brandt|Borussia Dortmund": {
+   "note": 6.6,
+   "matches": 29
+  },
+  "Serhou Guirassy|Borussia Dortmund": {
+   "note": 7.02,
+   "matches": 33
+  },
+  "Nikola Vasilj|St. Pauli": {
+   "note": 6.65,
+   "matches": 34
+  },
+  "Adam Dzwigala|St. Pauli": {
+   "note": 6.24,
+   "matches": 19
+  },
+  "Connor Metcalfe|St. Pauli": {
+   "note": 6.1,
+   "matches": 25
+  },
+  "Eric Smith|St. Pauli": {
+   "note": 6.3,
+   "matches": 27
+  },
+  "Hauke Wahl|St. Pauli": {
+   "note": 6.32,
+   "matches": 30
+  },
+  "James Sands|St. Pauli": {
+   "note": 6.07,
+   "matches": 24
+  },
+  "Oladapo Afolayan|St. Pauli": {
+   "note": 6.04,
+   "matches": 7
+  },
+  "Joel Chima Fujita|St. Pauli": {
+   "note": 6.13,
+   "matches": 32
+  },
+  "Arkadiusz Pyrka|St. Pauli": {
+   "note": 6.05,
+   "matches": 31
+  },
+  "Manolis Saliakas|St. Pauli": {
+   "note": 6.21,
+   "matches": 17
+  },
+  "Louis Oppie|St. Pauli": {
+   "note": 6.1,
+   "matches": 23
+  },
+  "Danel Sinani|St. Pauli": {
+   "note": 6.45,
+   "matches": 30
+  },
+  "Andréas Hountondji|St. Pauli": {
+   "note": 6.37,
+   "matches": 21
+  },
+  "Abdoulie Ceesay|St. Pauli": {
+   "note": 6.23,
+   "matches": 20
+  },
+  "Pereira Lage|St. Pauli": {
+   "note": 6.26,
+   "matches": 28
+  },
+  "Marvin Schwäbe|FC Cologne": {
+   "note": 6.58,
+   "matches": 34
+  },
+  "Joël Schmied|FC Cologne": {
+   "note": 5.98,
+   "matches": 16
+  },
+  "Timo Hübers|FC Cologne": {
+   "note": 6.3,
+   "matches": 8
+  },
+  "Tom Krauß|FC Cologne": {
+   "note": 6.1,
+   "matches": 26
+  },
+  "Said El Mala|FC Cologne": {
+   "note": 6.83,
+   "matches": 34
+  },
+  "Sebastian Sebulonsen|FC Cologne": {
+   "note": 6.08,
+   "matches": 31
+  },
+  "Gian-Luca Waldschmidt|FC Cologne": {
+   "note": 6.62,
+   "matches": 24
+  },
+  "Kristoffer Lund|FC Cologne": {
+   "note": 6.05,
+   "matches": 33
+  },
+  "Ragnar Ache|FC Cologne": {
+   "note": 6.66,
+   "matches": 29
+  },
+  "Eric Martel|FC Cologne": {
+   "note": 6.16,
+   "matches": 31
+  },
+  "Ísak Bergmann Jóhannesson|FC Cologne": {
+   "note": 6.16,
+   "matches": 31
+  },
+  "Florian Kainz|FC Cologne": {
+   "note": 6.16,
+   "matches": 15
+  },
+  "Jakub Kaminski|FC Cologne": {
+   "note": 6.46,
+   "matches": 34
+  },
+  "Jan Thielmann|FC Cologne": {
+   "note": 6.2,
+   "matches": 26
+  },
+  "Cenk Özkacar|FC Cologne": {
+   "note": 6.04,
+   "matches": 25
+  },
+  "Marius Bülter|FC Cologne": {
+   "note": 6.44,
+   "matches": 32
+  },
+  "Robin Zentner|Mainz 05": {
+   "note": 6.86,
+   "matches": 10
+  },
+  "Andreas Hanche-Olsen|Mainz 05": {
+   "note": 6.36,
+   "matches": 13
+  },
+  "Lennard Maloney|Mainz 05": {
+   "note": 6.08,
+   "matches": 21
+  },
+  "Danny da Costa|Mainz 05": {
+   "note": 6.34,
+   "matches": 34
+  },
+  "Dominik Kohr|Mainz 05": {
+   "note": 6.4,
+   "matches": 29
+  },
+  "Anthony Caci|Mainz 05": {
+   "note": 6.12,
+   "matches": 10
+  },
+  "Silvan Widmer|Mainz 05": {
+   "note": 6.27,
+   "matches": 27
+  },
+  "Philipp Mwene|Mainz 05": {
+   "note": 6.13,
+   "matches": 29
+  },
+  "Kaishu Sano|Mainz 05": {
+   "note": 6.13,
+   "matches": 34
+  },
+  "Nadiem Amiri|Mainz 05": {
+   "note": 6.94,
+   "matches": 26
+  },
+  "Stefan Bell|Mainz 05": {
+   "note": 6.33,
+   "matches": 18
+  },
+  "Jae-Sung Lee|Mainz 05": {
+   "note": 6.39,
+   "matches": 28
+  },
+  "Paul Nebel|Mainz 05": {
+   "note": 6.47,
+   "matches": 30
+  },
+  "Armindo Sieb|Mainz 05": {
+   "note": 6.19,
+   "matches": 22
+  },
+  "Benedict Hollerbach|Mainz 05": {
+   "note": 6.39,
+   "matches": 14
+  },
+  "Nelson Weiper|Mainz 05": {
+   "note": 6.06,
+   "matches": 24
+  },
+  "Moritz Nicolas|Borussia M.Gladbach": {
+   "note": 6.89,
+   "matches": 34
+  },
+  "Fabio Chiarodia|Borussia M.Gladbach": {
+   "note": 6.17,
+   "matches": 15
+  },
+  "Kevin Diks|Borussia M.Gladbach": {
+   "note": 6.54,
+   "matches": 30
+  },
+  "Nico Elvedi|Borussia M.Gladbach": {
+   "note": 6.42,
+   "matches": 33
+  },
+  "Joe Scally|Borussia M.Gladbach": {
+   "note": 6.43,
+   "matches": 32
+  },
+  "Lukas Ullrich|Borussia M.Gladbach": {
+   "note": 6.04,
+   "matches": 23
+  },
+  "Luca Netz|Borussia M.Gladbach": {
+   "note": 6.44,
+   "matches": 15
+  },
+  "Philipp Sander|Borussia M.Gladbach": {
+   "note": 6.32,
+   "matches": 30
+  },
+  "Shuto Machino|Borussia M.Gladbach": {
+   "note": 6.21,
+   "matches": 32
+  },
+  "Rocco Reitz|Borussia M.Gladbach": {
+   "note": 6.13,
+   "matches": 31
+  },
+  "Kevin Stöger|Borussia M.Gladbach": {
+   "note": 6.12,
+   "matches": 29
+  },
+  "Florian Neuhaus|Borussia M.Gladbach": {
+   "note": 6.15,
+   "matches": 17
+  },
+  "Franck Honorat|Borussia M.Gladbach": {
+   "note": 6.41,
+   "matches": 28
+  },
+  "Robin Hack|Borussia M.Gladbach": {
+   "note": 6.28,
+   "matches": 8
+  },
+  "Haris Tabakovic|Borussia M.Gladbach": {
+   "note": 6.82,
+   "matches": 32
+  },
+  "Jens Castrop|Borussia M.Gladbach": {
+   "note": 6.26,
+   "matches": 26
+  },
+  "Daniel Heuer Fernandes|Hamburger SV": {
+   "note": 6.74,
+   "matches": 33
+  },
+  "Daniel Elfadli|Hamburger SV": {
+   "note": 6.22,
+   "matches": 21
+  },
+  "Jordan Torunarigha|Hamburger SV": {
+   "note": 6.22,
+   "matches": 24
+  },
+  "Warmed Omari|Hamburger SV": {
+   "note": 6.22,
+   "matches": 20
+  },
+  "Giorgi Gocholeishvili|Hamburger SV": {
+   "note": 6.1,
+   "matches": 24
+  },
+  "Jonas Meffert|Hamburger SV": {
+   "note": 5.88,
+   "matches": 4
+  },
+  "Miro Muheim|Hamburger SV": {
+   "note": 6.21,
+   "matches": 29
+  },
+  "Nicolai Remberg|Hamburger SV": {
+   "note": 6.08,
+   "matches": 32
+  },
+  "Nicolás Capaldo|Hamburger SV": {
+   "note": 6.39,
+   "matches": 26
+  },
+  "William Mikelbrencis|Hamburger SV": {
+   "note": 6.09,
+   "matches": 26
+  },
+  "Ransford Königsdörffer|Hamburger SV": {
+   "note": 6.33,
+   "matches": 33
+  },
+  "Yussuf Poulsen|Hamburger SV": {
+   "note": 6.11,
+   "matches": 15
+  },
+  "Rayan Philippe|Hamburger SV": {
+   "note": 6.35,
+   "matches": 28
+  },
+  "Alexander Røssing-Lelesiit|Hamburger SV": {
+   "note": 6.04,
+   "matches": 11
+  },
+  "Jean-Luc Dompe|Hamburger SV": {
+   "note": 6.35,
+   "matches": 20
+  },
+  "Otto Stange|Hamburger SV": {
+   "note": 6.03,
+   "matches": 10
+  },
+  "Martijn Kaars|St. Pauli": {
+   "note": 6.24,
+   "matches": 29
+  },
+  "Lars Ritzka|St. Pauli": {
+   "note": 5.95,
+   "matches": 21
+  },
+  "Aurélio Buta|Eintracht Frankfurt": {
+   "note": 5.92,
+   "matches": 4
+  },
+  "Michy Batshuayi|Eintracht Frankfurt": {
+   "note": 6.32,
+   "matches": 6
+  },
+  "Max Moerstedt|Hoffenheim": {
+   "note": 6.16,
+   "matches": 22
+  },
+  "Muhammed Damar|Hoffenheim": {
+   "note": 6.08,
+   "matches": 15
+  },
+  "Albian Hajdari|Hoffenheim": {
+   "note": 6.43,
+   "matches": 30
+  },
+  "Sirlord Conteh|FC Heidenheim": {
+   "note": 6.34,
+   "matches": 15
+  },
+  "Julian Niehues|FC Heidenheim": {
+   "note": 6.19,
+   "matches": 24
+  },
+  "Kosta Nedeljkovic|RasenBallsport Leipzig": {
+   "note": 6.08,
+   "matches": 5
+  },
+  "Axel Tape|Bayer Leverkusen": {
+   "note": 5.97,
+   "matches": 6
+  },
+  "Malik Tillman|Bayer Leverkusen": {
+   "note": 6.45,
+   "matches": 29
+  },
+  "Exequiel Palacios|Bayer Leverkusen": {
+   "note": 6.09,
+   "matches": 18
+  },
+  "Loic Bade|Bayer Leverkusen": {
+   "note": 6.34,
+   "matches": 23
+  },
+  "Yukinari Sugawara|Werder Bremen": {
+   "note": 6.36,
+   "matches": 31
+  },
+  "Isaac Schmidt|Werder Bremen": {
+   "note": 6.08,
+   "matches": 19
+  },
+  "Grant-Leon Ranos|Borussia M.Gladbach": {
+   "note": 6.2,
+   "matches": 8
+  },
+  "Finn Jeltsch|VfB Stuttgart": {
+   "note": 6.38,
+   "matches": 23
+  },
+  "Nikolas Nartey|VfB Stuttgart": {
+   "note": 6.41,
+   "matches": 28
+  },
+  "Chema Andres|VfB Stuttgart": {
+   "note": 6.21,
+   "matches": 25
+  },
+  "Lorenz Assignon|VfB Stuttgart": {
+   "note": 6.18,
+   "matches": 24
+  },
+  "Anton Kade|Augsburg": {
+   "note": 6.42,
+   "matches": 28
+  },
+  "Noahkai Banks|Augsburg": {
+   "note": 6.34,
+   "matches": 23
+  },
+  "Raphael Guerreiro|Bayern Munich": {
+   "note": 6.62,
+   "matches": 18
+  },
+  "Nikolas Veratschnig|Mainz 05": {
+   "note": 6.04,
+   "matches": 21
+  },
+  "Arnaud Nordin|Mainz 05": {
+   "note": 5.97,
+   "matches": 13
+  },
+  "Joakim Maehle|Wolfsburg": {
+   "note": 6.2,
+   "matches": 16
+  },
+  "Jonas Wind|Wolfsburg": {
+   "note": 6.2,
+   "matches": 11
+  },
+  "Aaron Anselmino|Borussia Dortmund": {
+   "note": 6.82,
+   "matches": 6
+  },
+  "Julian Ryerson|Borussia Dortmund": {
+   "note": 6.69,
+   "matches": 31
+  },
+  "Maximilian Beier|Borussia Dortmund": {
+   "note": 6.72,
+   "matches": 32
+  },
+  "Carney Chukwuemeka|Borussia Dortmund": {
+   "note": 6.15,
+   "matches": 28
+  },
+  "Woo-Yeong Jeong|Union Berlin": {
+   "note": 6.26,
+   "matches": 28
+  },
+  "Tim Skarke|Union Berlin": {
+   "note": 6.13,
+   "matches": 22
+  },
+  "Aljoscha Kemlein|Union Berlin": {
+   "note": 6.08,
+   "matches": 30
+  },
+  "Rav van den Berg|FC Cologne": {
+   "note": 6.14,
+   "matches": 14
+  },
+  "Denis Huseinbasic|FC Cologne": {
+   "note": 5.97,
+   "matches": 15
+  },
+  "Junior Adamu|Freiburg": {
+   "note": 6.4,
+   "matches": 9
+  },
+  "Philipp Treu|Freiburg": {
+   "note": 6.31,
+   "matches": 28
+  },
+  "Nicolas Höfler|Freiburg": {
+   "note": 5.95,
+   "matches": 13
+  },
+  "Anthony Jung|Freiburg": {
+   "note": 6.04,
+   "matches": 12
+  },
+  "Lucas Vázquez|Bayer Leverkusen": {
+   "note": 6.44,
+   "matches": 12
+  },
+  "Ezequiél Fernández|Bayer Leverkusen": {
+   "note": 6.04,
+   "matches": 20
+  },
+  "Mahmoud Dahoud|Eintracht Frankfurt": {
+   "note": 6.27,
+   "matches": 15
+  },
+  "Patrick Osterhage|Freiburg": {
+   "note": 6.13,
+   "matches": 20
+  },
+  "Jan-Niklas Beste|Freiburg": {
+   "note": 6.29,
+   "matches": 28
+  },
+  "Igor Matanovic|Freiburg": {
+   "note": 6.7,
+   "matches": 31
+  },
+  "Bilal El Khannouss|VfB Stuttgart": {
+   "note": 6.54,
+   "matches": 25
+  },
+  "Badredine Bouanani|VfB Stuttgart": {
+   "note": 6.06,
+   "matches": 14
+  },
+  "Sota Kawasaki|Mainz 05": {
+   "note": 5.93,
+   "matches": 10
+  },
+  "William Bøving|Mainz 05": {
+   "note": 6.11,
+   "matches": 9
+  },
+  "Kevin Kampl|RasenBallsport Leipzig": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Conrad Harder|RasenBallsport Leipzig": {
+   "note": 6.34,
+   "matches": 29
+  },
+  "Alessio Castro-Montes|FC Cologne": {
+   "note": 6.43,
+   "matches": 14
+  },
+  "Jesper Lindstrom|Wolfsburg": {
+   "note": 6.05,
+   "matches": 13
+  },
+  "Jenson Seelt|Wolfsburg": {
+   "note": 6.22,
+   "matches": 9
+  },
+  "Adam Daghim|Wolfsburg": {
+   "note": 6.29,
+   "matches": 27
+  },
+  "Nicolas Jackson|Bayern Munich": {
+   "note": 6.71,
+   "matches": 23
+  },
+  "Tom Bischof|Bayern Munich": {
+   "note": 6.6,
+   "matches": 26
+  },
+  "Aboubaka Soumahoro|Hamburger SV": {
+   "note": 5.83,
+   "matches": 4
+  },
+  "Luka Vuskovic|Hamburger SV": {
+   "note": 6.63,
+   "matches": 28
+  },
+  "Fábio Vieira|Hamburger SV": {
+   "note": 6.59,
+   "matches": 29
+  },
+  "Fabio Baldé|Hamburger SV": {
+   "note": 6.16,
+   "matches": 16
+  },
+  "Robert Glatzel|Hamburger SV": {
+   "note": 6.39,
+   "matches": 19
+  },
+  "Ismaël Gharbi|Augsburg": {
+   "note": 6.02,
+   "matches": 6
+  },
+  "Alexis Claude Maurice|Augsburg": {
+   "note": 6.49,
+   "matches": 29
+  },
+  "Fabian Rieder|Augsburg": {
+   "note": 6.47,
+   "matches": 32
+  },
+  "Aiman Dardari|Augsburg": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Giovanni Reyna|Borussia M.Gladbach": {
+   "note": 6.12,
+   "matches": 19
+  },
+  "Yannick Engelhardt|Borussia M.Gladbach": {
+   "note": 6.18,
+   "matches": 31
+  },
+  "Jens Stage|Werder Bremen": {
+   "note": 6.63,
+   "matches": 29
+  },
+  "Cameron Puertas|Werder Bremen": {
+   "note": 6.23,
+   "matches": 28
+  },
+  "Victor Boniface|Werder Bremen": {
+   "note": 6.23,
+   "matches": 11
+  },
+  "Samuel Essende|Augsburg": {
+   "note": 6.16,
+   "matches": 14
+  },
+  "Maxim Leitsch|Mainz 05": {
+   "note": 6.37,
+   "matches": 3
+  },
+  "Stefan Schimmer|FC Heidenheim": {
+   "note": 6.41,
+   "matches": 27
+  },
+  "Adam Kölle|FC Heidenheim": {
+   "note": 6.3,
+   "matches": 6
+  },
+  "Yannik Wagner|FC Heidenheim": {
+   "note": 6.03,
+   "matches": 4
+  },
+  "Albert Sambi Lokonga|Hamburger SV": {
+   "note": 6.28,
+   "matches": 26
+  },
+  "Ihlas Bebou|Hoffenheim": {
+   "note": 6.04,
+   "matches": 16
+  },
+  "Linton Maina|FC Cologne": {
+   "note": 6.2,
+   "matches": 24
+  },
+  "Andrija Maksimovic|RasenBallsport Leipzig": {
+   "note": 6.03,
+   "matches": 8
+  },
+  "Kauã Santos|Eintracht Frankfurt": {
+   "note": 6.27,
+   "matches": 13
+  },
+  "Aurèle Amenda|Eintracht Frankfurt": {
+   "note": 6.17,
+   "matches": 24
+  },
+  "Diogo Leite|Union Berlin": {
+   "note": 6.32,
+   "matches": 23
+  },
+  "Ben Seghir|Bayer Leverkusen": {
+   "note": 6.07,
+   "matches": 10
+  },
+  "Jonas Hofmann|Bayer Leverkusen": {
+   "note": 6.28,
+   "matches": 23
+  },
+  "Nico Schlotterbeck|Borussia Dortmund": {
+   "note": 6.84,
+   "matches": 28
+  },
+  "Christian Eriksen|Wolfsburg": {
+   "note": 6.51,
+   "matches": 31
+  },
+  "Wisdom Mike|Bayern Munich": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Fabio Silva|Borussia Dortmund": {
+   "note": 6.36,
+   "matches": 28
+  },
+  "Lasse Rieß|Mainz 05": {
+   "note": 5.7,
+   "matches": 4
+  },
+  "Timo Werner|RasenBallsport Leipzig": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Ellyes Skhiri|Eintracht Frankfurt": {
+   "note": 5.95,
+   "matches": 25
+  },
+  "Max Rosenfelder|Freiburg": {
+   "note": 6.17,
+   "matches": 12
+  },
+  "Ameen Al Dakhil|VfB Stuttgart": {
+   "note": 5.91,
+   "matches": 8
+  },
+  "Guilherme Ramos|Hamburger SV": {
+   "note": 6.01,
+   "matches": 8
+  },
+  "Jeanuël Belocian|Bayer Leverkusen": {
+   "note": 6.01,
+   "matches": 8
+  },
+  "Oscar Fraulo|Borussia M.Gladbach": {
+   "note": 6.42,
+   "matches": 4
+  },
+  "Jan Urbich|Borussia M.Gladbach": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Dominique Heintz|FC Cologne": {
+   "note": 6.11,
+   "matches": 9
+  },
+  "Niklas Süle|Borussia Dortmund": {
+   "note": 6.3,
+   "matches": 11
+  },
+  "Marvin Pieringer|FC Heidenheim": {
+   "note": 6.37,
+   "matches": 27
+  },
+  "Amos Pieper|Werder Bremen": {
+   "note": 6.09,
+   "matches": 19
+  },
+  "Martin Terrier|Bayer Leverkusen": {
+   "note": 6.45,
+   "matches": 18
+  },
+  "Immanuel Pherai|Hamburger SV": {
+   "note": 6.0,
+   "matches": 6
+  },
+  "Lukas Klostermann|RasenBallsport Leipzig": {
+   "note": 6.26,
+   "matches": 5
+  },
+  "Ozan Kabak|Hoffenheim": {
+   "note": 6.37,
+   "matches": 25
+  },
+  "Karol Mets|St. Pauli": {
+   "note": 6.18,
+   "matches": 23
+  },
+  "Marvin Friedrich|Borussia M.Gladbach": {
+   "note": 5.93,
+   "matches": 6
+  },
+  "Sael Kumbedi|Wolfsburg": {
+   "note": 6.13,
+   "matches": 24
+  },
+  "El Chadaille Bitshiabu|RasenBallsport Leipzig": {
+   "note": 6.23,
+   "matches": 11
+  },
+  "Tidiam Gomis|RasenBallsport Leipzig": {
+   "note": 6.1,
+   "matches": 18
+  },
+  "Jonas Urbig|Bayern Munich": {
+   "note": 6.76,
+   "matches": 14
+  },
+  "Jackson Irvine|St. Pauli": {
+   "note": 6.1,
+   "matches": 24
+  },
+  "Dan-Axel Zagadou|VfB Stuttgart": {
+   "note": 6.23,
+   "matches": 3
+  },
+  "Alejo Sarco|Bayer Leverkusen": {
+   "note": 6.03,
+   "matches": 3
+  },
+  "Emre Can|Borussia Dortmund": {
+   "note": 6.81,
+   "matches": 9
+  },
+  "Hiroki Ito|Bayern Munich": {
+   "note": 6.43,
+   "matches": 16
+  },
+  "Tim Kleindienst|Borussia M.Gladbach": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Thomas Keller|FC Heidenheim": {
+   "note": 6.15,
+   "matches": 4
+  },
+  "Max Finkgrafe|RasenBallsport Leipzig": {
+   "note": 6.12,
+   "matches": 13
+  },
+  "Denis Vavro|Wolfsburg": {
+   "note": 6.15,
+   "matches": 17
+  },
+  "Jan Bürger|Wolfsburg": {
+   "note": 6.04,
+   "matches": 7
+  },
+  "Jessic Ngankam|Eintracht Frankfurt": {
+   "note": 6.0,
+   "matches": 3
+  },
+  "Pharell Hensel|Wolfsburg": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Kacper Potulski|Mainz 05": {
+   "note": 6.38,
+   "matches": 15
+  },
+  "Stanley N'Soki|Union Berlin": {
+   "note": 6.32,
+   "matches": 13
+  },
+  "Livan Burcu|Union Berlin": {
+   "note": 6.19,
+   "matches": 18
+  },
+  "Mads Pedersen|Augsburg": {
+   "note": 5.91,
+   "matches": 7
+  },
+  "Adam Hlozek|Hoffenheim": {
+   "note": 6.12,
+   "matches": 5
+  },
+  "Ricky-Jade Jones|St. Pauli": {
+   "note": 6.51,
+   "matches": 9
+  },
+  "Bakery Jatta|Hamburger SV": {
+   "note": 6.25,
+   "matches": 15
+  },
+  "Daniel Batz|Mainz 05": {
+   "note": 6.94,
+   "matches": 21
+  },
+  "Alphonso Davies|Bayern Munich": {
+   "note": 6.35,
+   "matches": 13
+  },
+  "Wael Mohya|Borussia M.Gladbach": {
+   "note": 6.28,
+   "matches": 15
+  },
+  "Valentin Gendrey|Hoffenheim": {
+   "note": 6.34,
+   "matches": 8
+  },
+  "Elias Baum|Eintracht Frankfurt": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Montrell Culbreath|Bayer Leverkusen": {
+   "note": 6.18,
+   "matches": 12
+  },
+  "Jeremy Arévalo|VfB Stuttgart": {
+   "note": 6.13,
+   "matches": 7
+  },
+  "Kevin Paredes|Wolfsburg": {
+   "note": 6.0,
+   "matches": 6
+  },
+  "Michael Gregoritsch|Augsburg": {
+   "note": 6.79,
+   "matches": 17
+  },
+  "Kota Takai|Borussia M.Gladbach": {
+   "note": 5.97,
+   "matches": 8
+  },
+  "Arnaud Kalimuendo Muinga|Eintracht Frankfurt": {
+   "note": 6.63,
+   "matches": 19
+  },
+  "Younes Ebnoutalib|Eintracht Frankfurt": {
+   "note": 6.32,
+   "matches": 5
+  },
+  "Damion Downs|Hamburger SV": {
+   "note": 6.06,
+   "matches": 12
+  },
+  "Jahmai Simpson-Pusey|FC Cologne": {
+   "note": 5.97,
+   "matches": 11
+  },
+  "Youssoupha Niang|FC Cologne": {
+   "note": 6.03,
+   "matches": 10
+  },
+  "Fynn Schenten|FC Cologne": {
+   "note": 6.03,
+   "matches": 7
+  },
+  "Benjamin Henrichs|RasenBallsport Leipzig": {
+   "note": 6.06,
+   "matches": 17
+  },
+  "Tomoya Ando|St. Pauli": {
+   "note": 6.14,
+   "matches": 15
+  },
+  "Mathias Rasmussen|St. Pauli": {
+   "note": 5.96,
+   "matches": 13
+  },
+  "Phillip Tietz|Mainz 05": {
+   "note": 6.74,
+   "matches": 19
+  },
+  "Olivier Deman|Werder Bremen": {
+   "note": 6.41,
+   "matches": 16
+  },
+  "Jovan Milosevic|Werder Bremen": {
+   "note": 6.46,
+   "matches": 13
+  },
+  "Janis Blaswich|Bayer Leverkusen": {
+   "note": 7.04,
+   "matches": 11
+  },
+  "Bruno Ogbus|Freiburg": {
+   "note": 6.11,
+   "matches": 18
+  },
+  "Ayoube Amaimouni-Echghouyab|Eintracht Frankfurt": {
+   "note": 6.32,
+   "matches": 17
+  },
+  "Yannik Keitel|Augsburg": {
+   "note": 5.92,
+   "matches": 6
+  },
+  "Silas Wamangituka|Mainz 05": {
+   "note": 6.33,
+   "matches": 8
+  },
+  "Jamal Musiala|Bayern Munich": {
+   "note": 6.73,
+   "matches": 15
+  },
+  "Leonidas Stergiou|FC Heidenheim": {
+   "note": 5.92,
+   "matches": 5
+  },
+  "Arthur Chaves|Augsburg": {
+   "note": 6.5,
+   "matches": 11
+  },
+  "Alejo Sarco|Borussia M.Gladbach": {
+   "note": 6.03,
+   "matches": 3
+  },
+  "Hennes Behrens|FC Heidenheim": {
+   "note": 6.3,
+   "matches": 16
+  },
+  "Stefan Posch|Mainz 05": {
+   "note": 6.31,
+   "matches": 16
+  },
+  "Kento Shiogai|Wolfsburg": {
+   "note": 6.21,
+   "matches": 12
+  },
+  "Eren Sami Dinkci|FC Heidenheim": {
+   "note": 6.49,
+   "matches": 14
+  },
+  "Hugo Bolin|Borussia M.Gladbach": {
+   "note": 6.21,
+   "matches": 13
+  },
+  "Felipe Chávez|FC Cologne": {
+   "note": 6.01,
+   "matches": 7
+  },
+  "Brajan Gruda|RasenBallsport Leipzig": {
+   "note": 6.73,
+   "matches": 13
+  },
+  "Philip Otele|Hamburger SV": {
+   "note": 6.34,
+   "matches": 9
+  },
+  "Rodrigo Ribeiro|Augsburg": {
+   "note": 6.35,
+   "matches": 14
+  },
+  "Sheraldo Becker|Mainz 05": {
+   "note": 6.74,
+   "matches": 14
+  },
+  "Taichi Hara|St. Pauli": {
+   "note": 6.03,
+   "matches": 4
+  },
+  "Luca Reggiani|Borussia Dortmund": {
+   "note": 6.53,
+   "matches": 8
+  },
+  "Jeanuël Belocian|Wolfsburg": {
+   "note": 6.12,
+   "matches": 14
+  },
+  "Christian Conteh|FC Heidenheim": {
+   "note": 6.09,
+   "matches": 9
+  },
+  "Love Arrhov|Eintracht Frankfurt": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Maarten Vandevoordt|RasenBallsport Leipzig": {
+   "note": 6.93,
+   "matches": 12
+  },
+  "Jonas Adjetey|Wolfsburg": {
+   "note": 6.0,
+   "matches": 4
+  },
+  "Uchenna Ogundu|Augsburg": {
+   "note": 6.02,
+   "matches": 5
+  },
+  "Samuele Inácio|Borussia Dortmund": {
+   "note": 6.4,
+   "matches": 7
+  },
+  "Cole Campbell|Hoffenheim": {
+   "note": 6.0,
+   "matches": 5
+  },
+  "Frank Feller|FC Heidenheim": {
+   "note": 6.8,
+   "matches": 3
+  },
+  "Salim Musah|Werder Bremen": {
+   "note": 6.21,
+   "matches": 8
+  },
+  "Albert Grønbæk|Hamburger SV": {
+   "note": 6.49,
+   "matches": 7
+  },
+  "Bara Sapoko Ndiaye|Bayern Munich": {
+   "note": 5.85,
+   "matches": 4
+  },
+  "Carl Klaus|Union Berlin": {
+   "note": 6.8,
+   "matches": 4
+  }
+ }
+}

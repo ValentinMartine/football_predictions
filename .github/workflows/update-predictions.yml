@@ -34,7 +34,7 @@ jobs:
           git add data/predictions.json data/understat_stats.json data/lineups.json data/national_player_form.json \
                   data/team_power.json data/club_logos.json data/standings.json data/bigfive_team_stats.json \
                   data/bigfive_player_extra.json data/other_leagues.json data/other_leagues_matches.json \
-                  data/other_leagues_lineups.json data/team_market.json
+                  data/other_leagues_lineups.json data/team_market.json data/computed_ratings.json
           if git diff --cached --quiet; then
             echo "No prediction changes."
           else

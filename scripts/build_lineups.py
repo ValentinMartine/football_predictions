@@ -460,6 +460,45 @@ def main() -> None:
         for x in missing:
             print("  -", x)
 
+    # ===== Agrégats SAISON (tous les matchs Understat, pas seulement les 200 affichés) =====
+    # « Ma note » moyenne par joueur et « Puissance XI calculée » par équipe : moyennes sur
+    # la saison entière -> robustes, contrairement à l'agrégation côté site limitée à la
+    # fenêtre d'affichage (2-5 matchs par équipe).
+    agg_players: dict[str, dict] = {}
+    agg_teams: dict[str, dict] = {}
+    all_gids = sorted(set(pm[gcol].dropna().unique()))
+    for gid in all_gids:
+        players = players_for(gid)
+        if not players:
+            continue
+        by_team: dict[str, list] = {}
+        for p in players:
+            by_team.setdefault(p["team"], []).append(p)
+        for team, plist in by_team.items():
+            notes = [p["note"] for p in plist if isinstance(p.get("note"), (int, float))]
+            if notes:
+                t = agg_teams.setdefault(team, {"power_sum": 0.0, "matches": 0})
+                t["power_sum"] += sum(notes) * (11.0 / len(notes))
+                t["matches"] += 1
+            for p in plist:
+                key = f"{p['player']}|{p['team']}"
+                a = agg_players.setdefault(key, {"player": p["player"], "team": p["team"],
+                                                 "note_sum": 0.0, "n": 0})
+                if isinstance(p.get("note"), (int, float)):
+                    a["note_sum"] += p["note"]
+                    a["n"] += 1
+    ratings = {
+        "note": "Moyennes saison complète (toutes journées Understat), formule « ma note » v1.5.",
+        "teams": {team: {"power": round(t["power_sum"] / t["matches"], 1), "matches": t["matches"]}
+                  for team, t in agg_teams.items() if t["matches"] >= 5},
+        "players": {k: {"note": round(a["note_sum"] / a["n"], 2), "matches": a["n"]}
+                    for k, a in agg_players.items() if a["n"] >= 3},
+    }
+    ratings_out = ROOT / "data" / "computed_ratings.json"
+    ratings_out.write_text(json.dumps(ratings, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"computed_ratings.json : {len(ratings['teams'])} équipes, {len(ratings['players'])} joueurs "
+          f"({len(all_gids)} matchs saison)")
+
 
 if __name__ == "__main__":
     main()

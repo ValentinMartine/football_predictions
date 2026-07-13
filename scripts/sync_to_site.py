@@ -25,6 +25,7 @@ FILES = [
     ("other_leagues_matches.json", "other_leagues_matches.json"),
     ("other_leagues_lineups.json", "other_leagues_lineups.json"),
     ("team_market.json", "team_market.json"),
+    ("computed_ratings.json", "computed_ratings.json"),
 ]
 
 
