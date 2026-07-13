@@ -146,8 +146,13 @@ def update_ratings(store: dict, code: str, lname: str, flag: str, season, match_
             a = store["players"].setdefault(pk, {"player": p["player"], "team": team,
                                                  "league": lname, "flag": flag,
                                                  "season": season,
+                                                 "pos_counts": {},
                                                  "note_sum": 0.0, "n": 0, "g": 0, "a": 0,
                                                  "xg": 0.0, "xa": 0.0, "sofa_sum": 0.0, "sofa_n": 0})
+            pos = p.get("display_pos") or p.get("pos")
+            if pos:
+                a.setdefault("pos_counts", {})[pos] = a.setdefault("pos_counts", {}).get(pos, 0) + 1
+                a["pos"] = max(a["pos_counts"].items(), key=lambda item: item[1])[0]
             if isinstance(p.get("note"), (int, float)):
                 a["note_sum"] += p["note"]
                 a["n"] += 1

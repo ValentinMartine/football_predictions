@@ -71,6 +71,28 @@ def player_note(group: str, g: int, a: int, xg: float, xa: float, conceded: int,
     return round(min(10.0, max(3.5, note)), 1)
 
 
+def player_note_from_team_power(p: dict, apps: int) -> float:
+    """Season-level computed rating from the richer team_power export.
+
+    Unlike Understat-only rows, team_power carries key passes, tackles and dribble
+    success. These fields matter for midfielders and creators, so this fallback is
+    intentionally richer than the match-level v1.5 formula.
+    """
+    apps = max(1, int(apps or 1))
+    g = float(p.get("g") or 0.0) / apps
+    a = float(p.get("a") or 0.0) / apps
+    xg = float(p.get("xg") or 0.0) / apps
+    xa = float(p.get("xa") or 0.0) / apps
+    kp = float(p.get("key_passes") or 0.0) / apps
+    tackles = float(p.get("tackles") or 0.0) / apps
+    drib = p.get("drib")
+    drib_bonus = 0.0
+    if isinstance(drib, (int, float)):
+        drib_bonus = max(-0.3, min(0.3, 0.3 * ((float(drib) - 50.0) / 25.0)))
+    note = 6.15 + 1.5 * g + 1.0 * a + 0.45 * xg + 0.45 * xa + 0.18 * kp + 0.35 * tackles + drib_bonus
+    return round(min(10.0, max(3.5, note)), 2)
+
+
 # football-data.co.uk aliases -> Understat names after normalization.
 ALIAS = {
     "espanol": "espanyol", "man city": "manchester city", "man united": "manchester united",
@@ -508,29 +530,19 @@ def main() -> None:
             team_power = json.loads(team_power_path.read_text(encoding="utf-8"))
         except Exception:  # noqa: BLE001
             team_power = {}
-        known = {(norm(pl), norm(tm)) for pl, tm in (k.split("|", 1) for k in ratings["players"] if "|" in k)}
         for team in team_power.get("teams", []):
             team_name = team.get("team")
             for p in team.get("players", []):
                 player_name = p.get("player")
-                if not player_name or not team_name or (norm(player_name), norm(team_name)) in known:
+                if not player_name or not team_name:
                     continue
                 apps = int(p.get("apps") or 0)
                 if apps <= 0:
                     continue
-                note = player_note(
-                    "ATT",
-                    int(round((p.get("g") or 0) / apps)),
-                    int(round((p.get("a") or 0) / apps)),
-                    float(p.get("xg") or 0.0) / apps,
-                    float(p.get("xa") or 0.0) / apps,
-                    1,
-                    int((p.get("min") or 0) / apps) or 90,
-                )
                 ratings["players"][f"{player_name}|{team_name}"] = {
-                    "note": note,
+                    "note": player_note_from_team_power(p, apps),
                     "matches": apps,
-                    "fallback": "team_power_season_stats",
+                    "fallback": "team_power_rich_stats",
                     "g": int(p.get("g") or 0),
                     "a": int(p.get("a") or 0),
                     "xg": round(float(p.get("xg") or 0.0), 1),

@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "data" / "european" / "Matches.csv"
 OUT = ROOT / "data" / "bigfive_team_stats.json"
 SITE = Path("C:/Users/valen/Documents/Projets/Projets_Informatiques/Perso/valentinmartine/public/data/bigfive_team_stats.json")
-SINCE = "2019-01-01"
+SINCE = "2000-01-01"
 MIN_MATCHES = 20
 
 DIV = {
@@ -113,7 +113,7 @@ def main() -> int:
     rows = seasons.get(latest, build_rows(long, MIN_MATCHES))
 
     payload = {
-        "source": "club-football-match-data, since 2019",
+        "source": "club-football-match-data, since 2000",
         "note": "Per-team Big Five statistics. Headers are sortable on the site.",
         "min_matches": MIN_MATCHES,
         "season_default": latest,
