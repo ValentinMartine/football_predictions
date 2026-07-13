@@ -1,4 +1,4 @@
-"""Copie les données générées du projet clubs vers le dossier public du site
+﻿"""Copie les données générées du projet clubs vers le dossier public du site
 (valentinmartine/public/data), pour publication (Vercel déploie au push)."""
 from __future__ import annotations
 
@@ -27,6 +27,7 @@ FILES = [
     ("other_leagues_ratings.json", "other_leagues_ratings.json"),
     ("team_market.json", "team_market.json"),
     ("computed_ratings.json", "computed_ratings.json"),
+    ("computed_ratings_history.json", "computed_ratings_history.json"),
 ]
 
 
@@ -49,3 +50,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
