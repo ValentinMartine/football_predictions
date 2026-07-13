@@ -6,3 +6,4 @@ data/processed/*.parquet
 data/*.pkl
 downloaded_files/
 data/european/
+data/cache/
