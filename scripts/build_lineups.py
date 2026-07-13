@@ -506,7 +506,8 @@ def main() -> None:
                 key = f"{p['player']}|{p['team']}"
                 a = agg_players.setdefault(key, {"player": p["player"], "team": p["team"],
                                                  "note_sum": 0.0, "n": 0,
-                                                 "g": 0, "a": 0, "xg": 0.0, "xa": 0.0})
+                                                 "g": 0, "a": 0, "xg": 0.0, "xa": 0.0,
+                                                 "pos_counts": {}})
                 if isinstance(p.get("note"), (int, float)):
                     a["note_sum"] += p["note"]
                     a["n"] += 1
@@ -514,6 +515,9 @@ def main() -> None:
                 a["a"] += int(p.get("a") or 0)
                 a["xg"] += float(p.get("xg") or 0.0)
                 a["xa"] += float(p.get("xa") or 0.0)
+                pos = p.get("pos")
+                if pos and pos != "Sub":
+                    a["pos_counts"][pos] = a["pos_counts"].get(pos, 0) + 1
     ratings = {
         "season": "2025-2026",
         "note": "Moyennes saison complète (toutes journées Understat), formule « ma note » v1.5.",
@@ -521,7 +525,8 @@ def main() -> None:
                   for team, t in agg_teams.items() if t["matches"] >= 5},
         "players": {k: {"note": round(a["note_sum"] / a["n"], 2), "matches": a["n"],
                         "g": a["g"], "a": a["a"],
-                        "xg": round(a["xg"], 1), "xa": round(a["xa"], 1)}
+                        "xg": round(a["xg"], 1), "xa": round(a["xa"], 1),
+                        "pos": max(a["pos_counts"], key=a["pos_counts"].get) if a["pos_counts"] else None}
                     for k, a in agg_players.items() if a["n"] >= 3},
     }
     team_power_path = ROOT / "data" / "team_power.json"
@@ -539,7 +544,9 @@ def main() -> None:
                 apps = int(p.get("apps") or 0)
                 if apps <= 0:
                     continue
-                ratings["players"][f"{player_name}|{team_name}"] = {
+                key = f"{player_name}|{team_name}"
+                existing = ratings["players"].get(key, {})
+                ratings["players"][key] = {
                     "note": player_note_from_team_power(p, apps),
                     "matches": apps,
                     "fallback": "team_power_rich_stats",
@@ -547,6 +554,7 @@ def main() -> None:
                     "a": int(p.get("a") or 0),
                     "xg": round(float(p.get("xg") or 0.0), 1),
                     "xa": round(float(p.get("xa") or 0.0), 1),
+                    "pos": existing.get("pos"),
                 }
 
     def merge_player_rows(players: dict[str, dict]) -> dict[str, dict]:
@@ -559,6 +567,7 @@ def main() -> None:
             row = buckets.setdefault(bucket_key, {
                 "key": key, "note_sum": 0.0, "matches": 0,
                 "g": 0, "a": 0, "xg": 0.0, "xa": 0.0,
+                "pos_counts": {},
                 "fallback": value.get("fallback"),
             })
             n = int(value.get("matches") or 0)
@@ -570,6 +579,9 @@ def main() -> None:
             row["a"] += int(value.get("a") or 0)
             row["xg"] += float(value.get("xg") or 0.0)
             row["xa"] += float(value.get("xa") or 0.0)
+            pos = value.get("pos")
+            if pos and pos != "Sub":
+                row["pos_counts"][pos] = row["pos_counts"].get(pos, 0) + n
             if not row.get("fallback"):
                 row["fallback"] = value.get("fallback")
         merged = {}
@@ -584,6 +596,7 @@ def main() -> None:
                 "a": row["a"],
                 "xg": round(row["xg"], 1),
                 "xa": round(row["xa"], 1),
+                "pos": max(row["pos_counts"], key=row["pos_counts"].get) if row["pos_counts"] else None,
             }
             if row.get("fallback"):
                 out["fallback"] = row["fallback"]

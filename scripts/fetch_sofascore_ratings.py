@@ -64,6 +64,7 @@ def main() -> int:
             def rec(r):
                 return {
                     "player": str(r["player"]),
+                    "pos": str(r.get("position") or "") or None,
                     "rating": _f(r, "rating"),
                     "apps": int(_f(r, "appearances")),
                     "min": int(_f(r, "minutesPlayed")),

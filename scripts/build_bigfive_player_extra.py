@@ -80,20 +80,52 @@ def scrape_cards(ss) -> dict:
     return cache
 
 
-def aggregate_pass() -> dict:
-    """% de passes réussies par joueur normalisé, depuis les player_match existants."""
-    acc: dict[str, list[int]] = {}
+def aggregate_player_metrics() -> dict:
+    """Agrège les métriques disponibles par joueur et par joueur-équipe.
+
+    Les pourcentages sont calculés sur les volumes cumulés, afin qu'une courte
+    apparition ne pèse pas autant qu'un match entier.
+    """
+    totals: dict[str, dict[str, float]] = {}
+
+    def add(key: str, row: dict) -> None:
+        if not key:
+            return
+        bucket = totals.setdefault(key, {"acc_pass": 0.0, "tot_pass": 0.0,
+                                         "dribbles": 0.0, "drib_att": 0.0,
+                                         "key_passes": 0.0, "tackles": 0.0})
+        for source, target in (("acc_pass", "acc_pass"), ("tot_pass", "tot_pass"),
+                               ("dribbles", "dribbles"), ("drib_att", "drib_att"),
+                               ("key_pass", "key_passes"), ("tackles", "tackles")):
+            value = row.get(source)
+            if value is not None:
+                try:
+                    bucket[target] += float(value)
+                except (TypeError, ValueError):
+                    continue
+
     for f in PM_FILES:
         for r in load_json(f, []):
-            ap, tp = r.get("acc_pass"), r.get("tot_pass")
-            if ap is None or tp is None:
-                continue
-            k = norm(r.get("player", ""))
-            if not k:
-                continue
-            a, t = acc.setdefault(k, [0, 0])
-            acc[k] = [a + int(ap), t + int(tp)]
-    return {k: round(100 * a / t, 1) for k, (a, t) in acc.items() if t > 0}
+            player = norm(r.get("player", ""))
+            team = norm(r.get("team", ""))
+            add(player, r)
+            if player and team:
+                add(f"{player}|{team}", r)
+
+    result: dict[str, dict] = {}
+    for key, values in totals.items():
+        row: dict[str, float] = {}
+        if values["tot_pass"] > 0:
+            row["pass_pct"] = round(100 * values["acc_pass"] / values["tot_pass"], 1)
+        if values["drib_att"] > 0:
+            row["drib_pct"] = round(100 * values["dribbles"] / values["drib_att"], 1)
+        if values["key_passes"] > 0:
+            row["key_passes"] = round(values["key_passes"], 1)
+        if values["tackles"] > 0:
+            row["tackles"] = round(values["tackles"], 1)
+        if row:
+            result[key] = row
+    return result
 
 
 def main() -> int:
@@ -111,21 +143,20 @@ def main() -> int:
                 d["cards"] += 1
                 d["red" if red else "yellow"] += 1
 
-    pass_pct = aggregate_pass()
+    metrics = aggregate_player_metrics()
 
     extra: dict[str, dict] = {}
     for k, d in by_player.items():
-        extra[k] = {**d, "pass_pct": pass_pct.get(k)}
-    for k in pass_pct:
-        extra.setdefault(k, {"cards": None, "yellow": None, "red": None})["pass_pct"] = pass_pct[k]
+        extra[k] = {**d, **metrics.get(k, {})}
+    for k, values in metrics.items():
+        extra.setdefault(k, {"cards": None, "yellow": None, "red": None}).update(values)
     for k, d in by_pt.items():
-        pk = k.split("|")[0]
-        extra[k] = {**d, "pass_pct": pass_pct.get(pk)}
+        extra[k] = {**d, **metrics.get(k, metrics.get(k.split("|")[0], {}))}
 
     OUT.write_text(json.dumps(extra, ensure_ascii=False, indent=1), encoding="utf-8")
     if SITE.parent.exists():
         SITE.write_text(json.dumps(extra, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"{len(by_player)} joueurs avec cartons, {len(pass_pct)} avec passe% -> {OUT.name}")
+    print(f"{len(by_player)} joueurs avec cartons, {len(metrics)} avec metriques de jeu -> {OUT.name}")
     return 0
 
 
