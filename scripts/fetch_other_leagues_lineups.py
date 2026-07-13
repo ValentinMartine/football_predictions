@@ -87,6 +87,80 @@ def compute_note(group, p, conceded):
     return round(min(10.0, max(3.0, note)), 1)
 
 
+RATINGS = ROOT / "data" / "other_leagues_ratings.json"
+SITE_RATINGS = Path("C:/Users/valen/Documents/Projets/Projets_Informatiques/Perso/valentinmartine/public/data/other_leagues_ratings.json")
+
+
+def load_ratings() -> dict:
+    """Magasin cumulatif des notes saison (dédupliqué par id de match Sofascore)."""
+    if RATINGS.exists():
+        try:
+            return json.loads(RATINGS.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            pass
+    return {"seen": {}, "players": {}, "teams": {}}
+
+
+def save_ratings(store: dict) -> None:
+    blob = json.dumps(store, ensure_ascii=False)
+    RATINGS.write_text(blob, encoding="utf-8")
+    if SITE_RATINGS.parent.exists():
+        SITE_RATINGS.write_text(blob, encoding="utf-8")
+
+
+def update_ratings(store: dict, code: str, lname: str, flag: str, season, match_id,
+                   home: str, away: str, hs, as_, home_players: list, away_players: list) -> bool:
+    """Intègre un match au magasin (retourne False s'il y était déjà)."""
+    seen = store["seen"].setdefault(code, [])
+    if match_id in seen:
+        return False
+    seen.append(match_id)
+    season = str(season or "")
+    for team, opp_goals, own_goals, plist in ((home, as_, hs, home_players), (away, hs, as_, away_players)):
+        if not team:
+            continue
+        tk = f"{team}|{code}|{season}"
+        t = store["teams"].setdefault(tk, {"team": team, "league": lname, "flag": flag,
+                                           "season": season,
+                                           "power_sum": 0.0, "m": 0, "win": 0, "draw": 0, "loss": 0,
+                                           "gf": 0, "ga": 0, "sofa_power_sum": 0.0, "sm": 0})
+        notes = [p["note"] for p in plist if isinstance(p.get("note"), (int, float))]
+        if notes:
+            t["power_sum"] += sum(notes) * (11.0 / len(notes))
+            t["m"] += 1
+        sofas = [p["sofa"] for p in plist if isinstance(p.get("sofa"), (int, float)) and p["sofa"] > 0]
+        if sofas:
+            t["sofa_power_sum"] = t.get("sofa_power_sum", 0.0) + sum(sofas) * (11.0 / len(sofas))
+            t["sm"] = t.get("sm", 0) + 1
+        if isinstance(own_goals, int) and isinstance(opp_goals, int):
+            t["gf"] += own_goals
+            t["ga"] += opp_goals
+            if own_goals > opp_goals:
+                t["win"] += 1
+            elif own_goals == opp_goals:
+                t["draw"] += 1
+            else:
+                t["loss"] += 1
+        for p in plist:
+            pk = f"{p['player']}|{team}|{code}|{season}"
+            a = store["players"].setdefault(pk, {"player": p["player"], "team": team,
+                                                 "league": lname, "flag": flag,
+                                                 "season": season,
+                                                 "note_sum": 0.0, "n": 0, "g": 0, "a": 0,
+                                                 "xg": 0.0, "xa": 0.0, "sofa_sum": 0.0, "sofa_n": 0})
+            if isinstance(p.get("note"), (int, float)):
+                a["note_sum"] += p["note"]
+                a["n"] += 1
+            if isinstance(p.get("sofa"), (int, float)) and p["sofa"] > 0:
+                a["sofa_sum"] += p["sofa"]
+                a["sofa_n"] += 1
+            a["g"] += int(p.get("g") or 0)
+            a["a"] += int(p.get("a") or 0)
+            a["xg"] += float(p.get("xg") or 0.0)
+            a["xa"] += float(p.get("xa") or 0.0)
+    return True
+
+
 def _div_meta():
     import importlib.util
     spec = importlib.util.spec_from_file_location("bol", ROOT / "scripts" / "build_other_leagues.py")
@@ -148,6 +222,7 @@ def main() -> int:
     # Argument optionnel : ne traiter qu'un seul code de ligue (isolation par processus).
     only = sys.argv[1] if len(sys.argv) > 1 else None
     targets = {only: LEAGUE_MAP[only]} if only in LEAGUE_MAP else LEAGUE_MAP
+    ratings_store = load_ratings()
     for code, league in targets.items():
         if code in out:
             print(f"  {code}: déjà présent, ignoré", flush=True)
@@ -181,9 +256,10 @@ def main() -> int:
                 home, away = _players_from_stats(ps, ht, at)
                 if not home and not away:
                     continue
+                update_ratings(ratings_store, code, name, flag, season, m.get("id"), ht, at, hs, as_, home, away)
                 date = datetime.fromtimestamp(m.get("startTimestamp", 0), tz=timezone.utc).strftime("%Y-%m-%d")
                 league_matches.append({
-                    "date": date, "home": ht, "away": at,
+                    "date": date, "season": str(season), "home": ht, "away": at,
                     "score": f"{hs}-{as_}" if hs is not None else None,
                     "home_lineup": home, "away_lineup": away,
                 })
@@ -191,6 +267,7 @@ def main() -> int:
                 out[code] = {"code": code, "name": name, "flag": flag, "season": season, "matches": league_matches}
                 print(f"  {code} {league}: {len(league_matches)} matchs avec compos", flush=True)
                 _write(out)  # sauvegarde incrémentale : progression conservée si interruption
+                save_ratings(ratings_store)
         except Exception as exc:
             print(f"  {code} {league}: échec ({exc})", flush=True)
             continue

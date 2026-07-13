@@ -483,17 +483,102 @@ def main() -> None:
             for p in plist:
                 key = f"{p['player']}|{p['team']}"
                 a = agg_players.setdefault(key, {"player": p["player"], "team": p["team"],
-                                                 "note_sum": 0.0, "n": 0})
+                                                 "note_sum": 0.0, "n": 0,
+                                                 "g": 0, "a": 0, "xg": 0.0, "xa": 0.0})
                 if isinstance(p.get("note"), (int, float)):
                     a["note_sum"] += p["note"]
                     a["n"] += 1
+                a["g"] += int(p.get("g") or 0)
+                a["a"] += int(p.get("a") or 0)
+                a["xg"] += float(p.get("xg") or 0.0)
+                a["xa"] += float(p.get("xa") or 0.0)
     ratings = {
+        "season": "2025-2026",
         "note": "Moyennes saison complète (toutes journées Understat), formule « ma note » v1.5.",
         "teams": {team: {"power": round(t["power_sum"] / t["matches"], 1), "matches": t["matches"]}
                   for team, t in agg_teams.items() if t["matches"] >= 5},
-        "players": {k: {"note": round(a["note_sum"] / a["n"], 2), "matches": a["n"]}
+        "players": {k: {"note": round(a["note_sum"] / a["n"], 2), "matches": a["n"],
+                        "g": a["g"], "a": a["a"],
+                        "xg": round(a["xg"], 1), "xa": round(a["xa"], 1)}
                     for k, a in agg_players.items() if a["n"] >= 3},
     }
+    team_power_path = ROOT / "data" / "team_power.json"
+    if team_power_path.exists():
+        try:
+            team_power = json.loads(team_power_path.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            team_power = {}
+        known = {(norm(pl), norm(tm)) for pl, tm in (k.split("|", 1) for k in ratings["players"] if "|" in k)}
+        for team in team_power.get("teams", []):
+            team_name = team.get("team")
+            for p in team.get("players", []):
+                player_name = p.get("player")
+                if not player_name or not team_name or (norm(player_name), norm(team_name)) in known:
+                    continue
+                apps = int(p.get("apps") or 0)
+                if apps <= 0:
+                    continue
+                note = player_note(
+                    "ATT",
+                    int(round((p.get("g") or 0) / apps)),
+                    int(round((p.get("a") or 0) / apps)),
+                    float(p.get("xg") or 0.0) / apps,
+                    float(p.get("xa") or 0.0) / apps,
+                    1,
+                    int((p.get("min") or 0) / apps) or 90,
+                )
+                ratings["players"][f"{player_name}|{team_name}"] = {
+                    "note": note,
+                    "matches": apps,
+                    "fallback": "team_power_season_stats",
+                    "g": int(p.get("g") or 0),
+                    "a": int(p.get("a") or 0),
+                    "xg": round(float(p.get("xg") or 0.0), 1),
+                    "xa": round(float(p.get("xa") or 0.0), 1),
+                }
+
+    def merge_player_rows(players: dict[str, dict]) -> dict[str, dict]:
+        buckets: dict[tuple[str, str], dict] = {}
+        for key, value in players.items():
+            if "|" not in key:
+                continue
+            player, team = key.split("|", 1)
+            bucket_key = (norm(player), norm(team))
+            row = buckets.setdefault(bucket_key, {
+                "key": key, "note_sum": 0.0, "matches": 0,
+                "g": 0, "a": 0, "xg": 0.0, "xa": 0.0,
+                "fallback": value.get("fallback"),
+            })
+            n = int(value.get("matches") or 0)
+            note = value.get("note")
+            if isinstance(note, (int, float)) and n > 0:
+                row["note_sum"] += float(note) * n
+                row["matches"] += n
+            row["g"] += int(value.get("g") or 0)
+            row["a"] += int(value.get("a") or 0)
+            row["xg"] += float(value.get("xg") or 0.0)
+            row["xa"] += float(value.get("xa") or 0.0)
+            if not row.get("fallback"):
+                row["fallback"] = value.get("fallback")
+        merged = {}
+        for row in buckets.values():
+            matches = row["matches"]
+            if matches <= 0:
+                continue
+            out = {
+                "note": round(row["note_sum"] / matches, 2),
+                "matches": matches,
+                "g": row["g"],
+                "a": row["a"],
+                "xg": round(row["xg"], 1),
+                "xa": round(row["xa"], 1),
+            }
+            if row.get("fallback"):
+                out["fallback"] = row["fallback"]
+            merged[row["key"]] = out
+        return merged
+
+    ratings["players"] = merge_player_rows(ratings["players"])
     ratings_out = ROOT / "data" / "computed_ratings.json"
     ratings_out.write_text(json.dumps(ratings, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"computed_ratings.json : {len(ratings['teams'])} équipes, {len(ratings['players'])} joueurs "
