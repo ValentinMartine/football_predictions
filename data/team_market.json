@@ -1,0 +1,875 @@
+{
+ "source": "Transfermarkt (valeurs) + Capology (salaires bruts annuels, EUR)",
+ "teams": {
+  "FC Bayern München": {
+   "value_meur": 994.4,
+   "squad": 40,
+   "avg_age": 24.0,
+   "payroll_meur": 248.9
+  },
+  "Real Madrid": {
+   "value_meur": 1300.0,
+   "squad": 44,
+   "avg_age": 24.0,
+   "payroll_meur": 307.9
+  },
+  "FC Barcelona": {
+   "value_meur": 1190.0,
+   "squad": 36,
+   "avg_age": 24.3,
+   "payroll_meur": 234.8
+  },
+  "Manchester City": {
+   "value_meur": 1390.0,
+   "squad": 43,
+   "avg_age": 25.2,
+   "payroll_meur": 276.4
+  },
+  "Paris Saint-Germain": {
+   "value_meur": 1380.0,
+   "squad": 37,
+   "avg_age": 22.4,
+   "payroll_meur": 185.2
+  },
+  "Inter": {
+   "value_meur": 680.1,
+   "squad": 40,
+   "avg_age": 26.3,
+   "payroll_meur": 135.7
+  },
+  "RC Lens": {
+   "value_meur": 266.6,
+   "squad": 37,
+   "avg_age": 25.9,
+   "payroll_meur": 43.3
+  },
+  "Bayer 04 Leverkusen": {
+   "value_meur": 548.4,
+   "squad": 42,
+   "avg_age": 24.5,
+   "payroll_meur": 92.2
+  },
+  "RB Leipzig": {
+   "value_meur": 618.7,
+   "squad": 37,
+   "avg_age": 24.6,
+   "payroll_meur": 91.6
+  },
+  "Juventus": {
+   "value_meur": 536.5,
+   "squad": 37,
+   "avg_age": 26.0,
+   "payroll_meur": 125.0
+  },
+  "Arsenal": {
+   "value_meur": 1330.0,
+   "squad": 40,
+   "avg_age": 23.9,
+   "payroll_meur": 217.7
+  },
+  "AC Milan": {
+   "value_meur": 511.7,
+   "squad": 36,
+   "avg_age": 25.1,
+   "payroll_meur": 99.9
+  },
+  "Borussia Dortmund": {
+   "value_meur": 520.4,
+   "squad": 36,
+   "avg_age": 25.2,
+   "payroll_meur": 119.2
+  },
+  "VfB Stuttgart": {
+   "value_meur": 464.6,
+   "squad": 36,
+   "avg_age": 24.4,
+   "payroll_meur": 60.4
+  },
+  "Como": {
+   "value_meur": 412.9,
+   "squad": 40,
+   "avg_age": 25.4,
+   "payroll_meur": 43.2
+  },
+  "AS Roma": {
+   "value_meur": 503.3,
+   "squad": 41,
+   "avg_age": 24.5,
+   "payroll_meur": 110.6
+  },
+  "Atalanta": {
+   "value_meur": 491.9,
+   "squad": 37,
+   "avg_age": 25.7,
+   "payroll_meur": 63.8
+  },
+  "Olympique de Marseille": {
+   "value_meur": 484.8,
+   "squad": 48,
+   "avg_age": 25.3,
+   "payroll_meur": 95.4
+  },
+  "Manchester United": {
+   "value_meur": 774.6,
+   "squad": 34,
+   "avg_age": 24.9,
+   "payroll_meur": 190.5
+  },
+  "Chelsea": {
+   "value_meur": 1150.0,
+   "squad": 42,
+   "avg_age": 22.4,
+   "payroll_meur": 174.4
+  },
+  "Olympique Lyonnais": {
+   "value_meur": 354.6,
+   "squad": 41,
+   "avg_age": 24.1,
+   "payroll_meur": 58.0
+  },
+  "Lille": {
+   "value_meur": 294.5,
+   "squad": 43,
+   "avg_age": 24.7,
+   "payroll_meur": 50.8
+  },
+  "Everton": {
+   "value_meur": 459.2,
+   "squad": 33,
+   "avg_age": 25.6,
+   "payroll_meur": 92.0
+  },
+  "Villarreal": {
+   "value_meur": 375.6,
+   "squad": 41,
+   "avg_age": 25.4,
+   "payroll_meur": 67.1
+  },
+  "Liverpool FC": {
+   "value_meur": 980.5,
+   "squad": 45,
+   "avg_age": 24.0,
+   "payroll_meur": 209.5
+  },
+  "Atlético Madrid": {
+   "value_meur": 646.9,
+   "squad": 44,
+   "avg_age": 25.2,
+   "payroll_meur": 161.6
+  },
+  "Aston Villa": {
+   "value_meur": 614.0,
+   "squad": 44,
+   "avg_age": 25.1,
+   "payroll_meur": 168.5
+  },
+  "Real Betis": {
+   "value_meur": 253.1,
+   "squad": 39,
+   "avg_age": 26.8,
+   "payroll_meur": 78.6
+  },
+  "Lazio": {
+   "value_meur": 288.1,
+   "squad": 38,
+   "avg_age": 26.6,
+   "payroll_meur": 79.4
+  },
+  "Newcastle United": {
+   "value_meur": 697.7,
+   "squad": 37,
+   "avg_age": 26.6,
+   "payroll_meur": 138.2
+  },
+  "Elche": {
+   "value_meur": 128.1,
+   "squad": 43,
+   "avg_age": 25.2,
+   "payroll_meur": 28.6
+  },
+  "Stade Rennais": {
+   "value_meur": 333.6,
+   "squad": 41,
+   "avg_age": 24.3,
+   "payroll_meur": 55.1
+  },
+  "1. FSV Mainz 05": {
+   "value_meur": 165.3,
+   "squad": 38,
+   "avg_age": 26.5,
+   "payroll_meur": 41.2
+  },
+  "Nottingham Forest": {
+   "value_meur": 638.7,
+   "squad": 42,
+   "avg_age": 25.5,
+   "payroll_meur": 102.7
+  },
+  "Hamburger SV": {
+   "value_meur": 186.1,
+   "squad": 37,
+   "avg_age": 25.3,
+   "payroll_meur": 39.9
+  },
+  "TSG Hoffenheim": {
+   "value_meur": 285.8,
+   "squad": 35,
+   "avg_age": 25.0,
+   "payroll_meur": 52.1
+  },
+  "AS Monaco": {
+   "value_meur": 454.7,
+   "squad": 38,
+   "avg_age": 24.5,
+   "payroll_meur": 63.2
+  },
+  "Mallorca": {
+   "value_meur": 83.2,
+   "squad": 38,
+   "avg_age": 26.1,
+   "payroll_meur": 35.7
+  },
+  "Udinese": {
+   "value_meur": 206.1,
+   "squad": 37,
+   "avg_age": 25.0,
+   "payroll_meur": 25.1
+  },
+  "Borussia M'gladbach": {
+   "value_meur": 171.4,
+   "squad": 36,
+   "avg_age": 25.7,
+   "payroll_meur": 55.7
+  },
+  "Lorient": {
+   "value_meur": 128.3,
+   "squad": 36,
+   "avg_age": 24.7,
+   "payroll_meur": 23.3
+  },
+  "Paris FC": {
+   "value_meur": 154.2,
+   "squad": 38,
+   "avg_age": 27.8,
+   "payroll_meur": 42.4
+  },
+  "RC Strasbourg": {
+   "value_meur": 466.1,
+   "squad": 46,
+   "avg_age": 22.0,
+   "payroll_meur": 33.6
+  },
+  "Brentford": {
+   "value_meur": 503.6,
+   "squad": 40,
+   "avg_age": 24.4,
+   "payroll_meur": 68.6
+  },
+  "Sunderland": {
+   "value_meur": 446.7,
+   "squad": 43,
+   "avg_age": 24.6,
+   "payroll_meur": 76.0
+  },
+  "Girona FC": {
+   "value_meur": 199.2,
+   "squad": 42,
+   "avg_age": 26.9,
+   "payroll_meur": 47.8
+  },
+  "FC Augsburg": {
+   "value_meur": 180.7,
+   "squad": 37,
+   "avg_age": 25.7,
+   "payroll_meur": 36.7
+  },
+  "Bournemouth": {
+   "value_meur": 681.0,
+   "squad": 39,
+   "avg_age": 25.0,
+   "payroll_meur": 74.8
+  },
+  "Fulham": {
+   "value_meur": 376.2,
+   "squad": 30,
+   "avg_age": 27.4,
+   "payroll_meur": 90.6
+  },
+  "Rayo Vallecano": {
+   "value_meur": 106.2,
+   "squad": 33,
+   "avg_age": 27.6,
+   "payroll_meur": 33.5
+  },
+  "Fiorentina": {
+   "value_meur": 264.9,
+   "squad": 45,
+   "avg_age": 25.1,
+   "payroll_meur": 67.3
+  },
+  "SSC Napoli": {
+   "value_meur": 459.6,
+   "squad": 39,
+   "avg_age": 26.7,
+   "payroll_meur": 109.2
+  },
+  "Sassuolo": {
+   "value_meur": 211.8,
+   "squad": 44,
+   "avg_age": 25.1,
+   "payroll_meur": 40.4
+  },
+  "Leeds United": {
+   "value_meur": 374.2,
+   "squad": 33,
+   "avg_age": 26.1,
+   "payroll_meur": 67.7
+  },
+  "Celta Vigo": {
+   "value_meur": 207.6,
+   "squad": 38,
+   "avg_age": 25.9,
+   "payroll_meur": 37.9
+  },
+  "Real Sociedad": {
+   "value_meur": 299.0,
+   "squad": 44,
+   "avg_age": 24.9,
+   "payroll_meur": 68.5
+  },
+  "SC Freiburg": {
+   "value_meur": 264.9,
+   "squad": 30,
+   "avg_age": 27.3,
+   "payroll_meur": 55.0
+  },
+  "Toulouse": {
+   "value_meur": 198.6,
+   "squad": 37,
+   "avg_age": 23.1,
+   "payroll_meur": 21.8
+  },
+  "Brighton & Hove Albion": {
+   "value_meur": 625.0,
+   "squad": 42,
+   "avg_age": 25.3,
+   "payroll_meur": 81.0
+  },
+  "Crystal Palace": {
+   "value_meur": 702.5,
+   "squad": 41,
+   "avg_age": 25.2,
+   "payroll_meur": 90.8
+  },
+  "Levante UD": {
+   "value_meur": 114.0,
+   "squad": 37,
+   "avg_age": 25.1,
+   "payroll_meur": 25.7
+  },
+  "Bologna": {
+   "value_meur": 301.5,
+   "squad": 43,
+   "avg_age": 25.7,
+   "payroll_meur": 45.8
+  },
+  "Parma": {
+   "value_meur": 204.1,
+   "squad": 50,
+   "avg_age": 23.9,
+   "payroll_meur": 25.9
+  },
+  "1. FC Köln": {
+   "value_meur": 156.7,
+   "squad": 33,
+   "avg_age": 25.6,
+   "payroll_meur": 34.5
+  },
+  "Stade Brestois": {
+   "value_meur": 95.3,
+   "squad": 32,
+   "avg_age": 24.9,
+   "payroll_meur": 27.1
+  },
+  "Tottenham Hotspur": {
+   "value_meur": 813.4,
+   "squad": 45,
+   "avg_age": 24.0,
+   "payroll_meur": 160.4
+  },
+  "West Ham United": {
+   "value_meur": 469.7,
+   "squad": 40,
+   "avg_age": 26.6,
+   "payroll_meur": 97.2
+  },
+  "Espanyol": {
+   "value_meur": 135.2,
+   "squad": 36,
+   "avg_age": 25.4,
+   "payroll_meur": 26.7
+  },
+  "Osasuna": {
+   "value_meur": 102.7,
+   "squad": 34,
+   "avg_age": 26.5,
+   "payroll_meur": 33.2
+  },
+  "Genoa": {
+   "value_meur": 187.4,
+   "squad": 46,
+   "avg_age": 24.3,
+   "payroll_meur": 31.3
+  },
+  "Torino": {
+   "value_meur": 150.9,
+   "squad": 40,
+   "avg_age": 25.6,
+   "payroll_meur": 51.0
+  },
+  "Eintracht Frankfurt": {
+   "value_meur": 408.9,
+   "squad": 37,
+   "avg_age": 25.2,
+   "payroll_meur": 64.7
+  },
+  "Auxerre": {
+   "value_meur": 122.0,
+   "squad": 40,
+   "avg_age": 24.0,
+   "payroll_meur": 22.9
+  },
+  "Le Havre": {
+   "value_meur": 79.5,
+   "squad": 40,
+   "avg_age": 24.5,
+   "payroll_meur": 19.8
+  },
+  "Nice": {
+   "value_meur": 215.6,
+   "squad": 49,
+   "avg_age": 24.2,
+   "payroll_meur": 59.0
+  },
+  "SV Werder Bremen": {
+   "value_meur": 177.8,
+   "squad": 35,
+   "avg_age": 25.3,
+   "payroll_meur": 44.2
+  },
+  "VfL Wolfsburg": {
+   "value_meur": 234.1,
+   "squad": 40,
+   "avg_age": 24.9,
+   "payroll_meur": 67.5
+  },
+  "Valencia": {
+   "value_meur": 147.0,
+   "squad": 42,
+   "avg_age": 25.7,
+   "payroll_meur": 52.6
+  },
+  "Cagliari": {
+   "value_meur": 201.8,
+   "squad": 48,
+   "avg_age": 24.7,
+   "payroll_meur": 28.1
+  },
+  "Cremonese": {
+   "value_meur": 78.2,
+   "squad": 43,
+   "avg_age": 27.2,
+   "payroll_meur": 34.6
+  },
+  "Athletic Club": {
+   "value_meur": 237.7,
+   "squad": 40,
+   "avg_age": 25.8,
+   "payroll_meur": 85.1
+  },
+  "Real Oviedo": {
+   "value_meur": 61.0,
+   "squad": 39,
+   "avg_age": 27.0,
+   "payroll_meur": 28.1
+  },
+  "Sevilla": {
+   "value_meur": 176.5,
+   "squad": 40,
+   "avg_age": 26.7,
+   "payroll_meur": 65.5
+  },
+  "Lecce": {
+   "value_meur": 128.6,
+   "squad": 38,
+   "avg_age": 25.0,
+   "payroll_meur": 19.6
+  },
+  "1. FC Union Berlin": {
+   "value_meur": 129.8,
+   "squad": 30,
+   "avg_age": 26.2,
+   "payroll_meur": 35.7
+  },
+  "Angers": {
+   "value_meur": 137.6,
+   "squad": 36,
+   "avg_age": 24.4,
+   "payroll_meur": 19.5
+  },
+  "Deportivo Alavés": {
+   "value_meur": 82.7,
+   "squad": 37,
+   "avg_age": 26.3,
+   "payroll_meur": 26.1
+  },
+  "Getafe": {
+   "value_meur": 95.6,
+   "squad": 44,
+   "avg_age": 26.0,
+   "payroll_meur": 38.2
+  },
+  "Pisa": {
+   "value_meur": 111.5,
+   "squad": 45,
+   "avg_age": 24.9,
+   "payroll_meur": 22.5
+  },
+  "FC St. Pauli": {
+   "value_meur": 65.7,
+   "squad": 34,
+   "avg_age": 26.3,
+   "payroll_meur": 27.0
+  },
+  "Metz": {
+   "value_meur": 91.8,
+   "squad": 40,
+   "avg_age": 24.7,
+   "payroll_meur": 23.7
+  },
+  "Nantes": {
+   "value_meur": 122.6,
+   "squad": 38,
+   "avg_age": 26.4,
+   "payroll_meur": 33.1
+  },
+  "Wolverhampton": {
+   "value_meur": 389.9,
+   "squad": 42,
+   "avg_age": 25.0,
+   "payroll_meur": 81.7
+  },
+  "Hellas Verona": {
+   "value_meur": 107.8,
+   "squad": 51,
+   "avg_age": 24.4,
+   "payroll_meur": 30.2
+  },
+  "1. FC Heidenheim": {
+   "value_meur": 78.8,
+   "squad": 33,
+   "avg_age": 26.6,
+   "payroll_meur": 26.5
+  },
+  "Burnley": {
+   "value_meur": 236.0,
+   "squad": 43,
+   "avg_age": 25.8,
+   "payroll_meur": 67.2
+  },
+  "Bayern Munich": {
+   "value_meur": 994.4,
+   "squad": 40,
+   "avg_age": 24.0,
+   "payroll_meur": 248.9
+  },
+  "Man City": {
+   "value_meur": 1390.0,
+   "squad": 43,
+   "avg_age": 25.2,
+   "payroll_meur": 276.4
+  },
+  "Paris SG": {
+   "value_meur": 1380.0,
+   "squad": 37,
+   "avg_age": 22.4,
+   "payroll_meur": 185.2
+  },
+  "Barcelona": {
+   "value_meur": 1190.0,
+   "squad": 36,
+   "avg_age": 24.3,
+   "payroll_meur": 234.8
+  },
+  "Liverpool": {
+   "value_meur": 980.5,
+   "squad": 45,
+   "avg_age": 24.0,
+   "payroll_meur": 209.5
+  },
+  "Atletico Madrid": {
+   "value_meur": 646.9,
+   "squad": 44,
+   "avg_age": 25.2,
+   "payroll_meur": 161.6
+  },
+  "Napoli": {
+   "value_meur": 459.6,
+   "squad": 39,
+   "avg_age": 26.7,
+   "payroll_meur": 109.2
+  },
+  "Dortmund": {
+   "value_meur": 520.4,
+   "squad": 36,
+   "avg_age": 25.2,
+   "payroll_meur": 119.2
+  },
+  "Milan": {
+   "value_meur": 511.7,
+   "squad": 36,
+   "avg_age": 25.1,
+   "payroll_meur": 99.9
+  },
+  "Leverkusen": {
+   "value_meur": 548.4,
+   "squad": 42,
+   "avg_age": 24.5,
+   "payroll_meur": 92.2
+  },
+  "Marseille": {
+   "value_meur": 484.8,
+   "squad": 48,
+   "avg_age": 25.3,
+   "payroll_meur": 95.4
+  },
+  "Monaco": {
+   "value_meur": 454.7,
+   "squad": 38,
+   "avg_age": 24.5,
+   "payroll_meur": 63.2
+  },
+  "Roma": {
+   "value_meur": 503.3,
+   "squad": 41,
+   "avg_age": 24.5,
+   "payroll_meur": 110.6
+  },
+  "Lyon": {
+   "value_meur": 354.6,
+   "squad": 41,
+   "avg_age": 24.1,
+   "payroll_meur": 58.0
+  },
+  "Lens": {
+   "value_meur": 266.6,
+   "squad": 37,
+   "avg_age": 25.9,
+   "payroll_meur": 43.3
+  },
+  "Man United": {
+   "value_meur": 774.6,
+   "squad": 34,
+   "avg_age": 24.9,
+   "payroll_meur": 190.5
+  },
+  "Nott'm Forest": {
+   "value_meur": 638.7,
+   "squad": 42,
+   "avg_age": 25.5,
+   "payroll_meur": 102.7
+  },
+  "Sociedad": {
+   "value_meur": 299.0,
+   "squad": 44,
+   "avg_age": 24.9,
+   "payroll_meur": 68.5
+  },
+  "Tottenham": {
+   "value_meur": 813.4,
+   "squad": 45,
+   "avg_age": 24.0,
+   "payroll_meur": 160.4
+  },
+  "Rennes": {
+   "value_meur": 333.6,
+   "squad": 41,
+   "avg_age": 24.3,
+   "payroll_meur": 55.1
+  },
+  "Athletic Bilbao": {
+   "value_meur": 237.7,
+   "squad": 40,
+   "avg_age": 25.8,
+   "payroll_meur": 85.1
+  },
+  "Ein Frankfurt": {
+   "value_meur": 408.9,
+   "squad": 37,
+   "avg_age": 25.2,
+   "payroll_meur": 64.7
+  },
+  "Betis": {
+   "value_meur": 253.1,
+   "squad": 39,
+   "avg_age": 26.8,
+   "payroll_meur": 78.6
+  },
+  "Newcastle": {
+   "value_meur": 697.7,
+   "squad": 37,
+   "avg_age": 26.6,
+   "payroll_meur": 138.2
+  },
+  "Freiburg": {
+   "value_meur": 264.9,
+   "squad": 30,
+   "avg_age": 27.3,
+   "payroll_meur": 55.0
+  },
+  "M'gladbach": {
+   "value_meur": 171.4,
+   "squad": 36,
+   "avg_age": 25.7,
+   "payroll_meur": 55.7
+  },
+  "Union Berlin": {
+   "value_meur": 129.8,
+   "squad": 30,
+   "avg_age": 26.2,
+   "payroll_meur": 35.7
+  },
+  "Wolfsburg": {
+   "value_meur": 234.1,
+   "squad": 40,
+   "avg_age": 24.9,
+   "payroll_meur": 67.5
+  },
+  "Girona": {
+   "value_meur": 199.2,
+   "squad": 42,
+   "avg_age": 26.9,
+   "payroll_meur": 47.8
+  },
+  "Stuttgart": {
+   "value_meur": 464.6,
+   "squad": 36,
+   "avg_age": 24.4,
+   "payroll_meur": 60.4
+  },
+  "Brest": {
+   "value_meur": 95.3,
+   "squad": 32,
+   "avg_age": 24.9,
+   "payroll_meur": 27.1
+  },
+  "Strasbourg": {
+   "value_meur": 466.1,
+   "squad": 46,
+   "avg_age": 22.0,
+   "payroll_meur": 33.6
+  },
+  "West Ham": {
+   "value_meur": 469.7,
+   "squad": 40,
+   "avg_age": 26.6,
+   "payroll_meur": 97.2
+  },
+  "Brighton": {
+   "value_meur": 625.0,
+   "squad": 42,
+   "avg_age": 25.3,
+   "payroll_meur": 81.0
+  },
+  "Hoffenheim": {
+   "value_meur": 285.8,
+   "squad": 35,
+   "avg_age": 25.0,
+   "payroll_meur": 52.1
+  },
+  "Wolves": {
+   "value_meur": 389.9,
+   "squad": 42,
+   "avg_age": 25.0,
+   "payroll_meur": 81.7
+  },
+  "Mainz": {
+   "value_meur": 165.3,
+   "squad": 38,
+   "avg_age": 26.5,
+   "payroll_meur": 41.2
+  },
+  "Werder Bremen": {
+   "value_meur": 177.8,
+   "squad": 35,
+   "avg_age": 25.3,
+   "payroll_meur": 44.2
+  },
+  "Celta": {
+   "value_meur": 207.6,
+   "squad": 38,
+   "avg_age": 25.9,
+   "payroll_meur": 37.9
+  },
+  "Vallecano": {
+   "value_meur": 106.2,
+   "squad": 33,
+   "avg_age": 27.6,
+   "payroll_meur": 33.5
+  },
+  "FC Koln": {
+   "value_meur": 156.7,
+   "squad": 33,
+   "avg_age": 25.6,
+   "payroll_meur": 34.5
+  },
+  "Leeds": {
+   "value_meur": 374.2,
+   "squad": 33,
+   "avg_age": 26.1,
+   "payroll_meur": 67.7
+  },
+  "Augsburg": {
+   "value_meur": 180.7,
+   "squad": 37,
+   "avg_age": 25.7,
+   "payroll_meur": 36.7
+  },
+  "Verona": {
+   "value_meur": 107.8,
+   "squad": 51,
+   "avg_age": 24.4,
+   "payroll_meur": 30.2
+  },
+  "Levante": {
+   "value_meur": 114.0,
+   "squad": 37,
+   "avg_age": 25.1,
+   "payroll_meur": 25.7
+  },
+  "Heidenheim": {
+   "value_meur": 78.8,
+   "squad": 33,
+   "avg_age": 26.6,
+   "payroll_meur": 26.5
+  },
+  "Alaves": {
+   "value_meur": 82.7,
+   "squad": 37,
+   "avg_age": 26.3,
+   "payroll_meur": 26.1
+  },
+  "Espanol": {
+   "value_meur": 135.2,
+   "squad": 36,
+   "avg_age": 25.4,
+   "payroll_meur": 26.7
+  },
+  "St Pauli": {
+   "value_meur": 65.7,
+   "squad": 34,
+   "avg_age": 26.3,
+   "payroll_meur": 27.0
+  }
+ }
+}
