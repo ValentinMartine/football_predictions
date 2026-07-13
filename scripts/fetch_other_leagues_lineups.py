@@ -45,6 +45,8 @@ def _f(v, default=0.0):
 
 # Colonnes Sofascore par match -> clés compactes stockées par joueur.
 EXTRA_STATS = {
+    "accuratePass": "acc_pass", "totalPass": "tot_pass",
+    "wonContest": "dribbles", "totalContest": "drib_att", "totalTackle": "tackles",
     "saves": "sv", "goalsPrevented": "gp", "penaltySave": "ps",
     "wonTackle": "tw", "interceptionWon": "itc", "totalClearance": "clr",
     "blockedScoringAttempt": "blk", "outfielderBlock": "oblk",
@@ -148,7 +150,7 @@ def update_ratings(store: dict, code: str, lname: str, flag: str, season, match_
                                                  "season": season,
                                                  "pos_counts": {},
                                                  "note_sum": 0.0, "n": 0, "g": 0, "a": 0,
-                                                 "xg": 0.0, "xa": 0.0, "sofa_sum": 0.0, "sofa_n": 0})
+                                                 "xg": 0.0, "xa": 0.0, "mins": 0, "sofa_sum": 0.0, "sofa_n": 0})
             pos = p.get("display_pos") or p.get("pos")
             if pos:
                 a.setdefault("pos_counts", {})[pos] = a.setdefault("pos_counts", {}).get(pos, 0) + 1
@@ -163,6 +165,11 @@ def update_ratings(store: dict, code: str, lname: str, flag: str, season, match_
             a["a"] += int(p.get("a") or 0)
             a["xg"] += float(p.get("xg") or 0.0)
             a["xa"] += float(p.get("xa") or 0.0)
+            a["mins"] = a.get("mins", 0) + int(p.get("mins") or 0)
+            for stat in EXTRA_STATS.values():
+                value = p.get(stat)
+                if isinstance(value, (int, float)):
+                    a[stat] = a.get(stat, 0) + value
     return True
 
 
