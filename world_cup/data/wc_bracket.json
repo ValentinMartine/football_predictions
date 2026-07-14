@@ -1,5 +1,5 @@
 {
- "stage_reached": "Quarts de finale",
+ "stage_reached": "Demi-finales",
  "note": "Bracket réel de la Coupe du Monde 2026 jusqu'au tour le plus récent joué.",
  "teams": [
   {
@@ -295,8 +295,9 @@
  ],
  "sf": [
   {
-   "winner": null,
-   "flag": null
+   "winner": "Spain",
+   "flag": "🇪🇸",
+   "label": "France 0-2 Spain"
   },
   {
    "winner": null,
