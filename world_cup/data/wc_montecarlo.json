@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-14T18:19:59+00:00",
+ "generated_at": "2026-07-15T07:35:38+00:00",
  "n_sims": 20000,
  "elo_asof": "2026-06-11",
  "note": "Simulation Monte Carlo du tableau final à partir des équipes réellement présentes à chaque stade, via l'Elo pré-tournoi et un tirage Poisson des buts (nul en KO tranché par la probabilité Elo). La simulation part des 32es (1er tour à élimination directe) : la phase de groupes n'est pas resimulée.",
- "current_stage": "Quarts de finale",
+ "current_stage": "Demi-finales",
  "latest_completed_stage_key": "semi_final_start",
  "stages": {
   "round_of_32_start": {
@@ -180,9 +180,9 @@
   }
  },
  "knockout_accuracy": {
-  "n": 32,
-  "correct": 27,
-  "pct": 84.4
+  "n": 33,
+  "correct": 28,
+  "pct": 84.8
  },
  "blend": {
   "b": 0.00559,
