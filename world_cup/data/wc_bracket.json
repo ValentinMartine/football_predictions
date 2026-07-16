@@ -300,8 +300,9 @@
    "label": "France 0-2 Spain"
   },
   {
-   "winner": null,
-   "flag": null
+   "winner": "Argentina",
+   "flag": "🇦🇷",
+   "label": "England 1-2 Argentina"
   }
  ],
  "winner": null
