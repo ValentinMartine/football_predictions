@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T22:46:22+00:00",
+ "generated_at": "2026-07-16T01:17:25+00:00",
  "n_sims": 20000,
  "elo_asof": "2026-06-11",
  "note": "Simulation Monte Carlo du tableau final à partir des équipes réellement présentes à chaque stade, via l'Elo pré-tournoi et un tirage Poisson des buts (nul en KO tranché par la probabilité Elo). La simulation part des 32es (1er tour à élimination directe) : la phase de groupes n'est pas resimulée.",
@@ -20,7 +20,7 @@
     {
      "team": "Argentina",
      "flag": "🇦🇷",
-     "pct": 22.3
+     "pct": 22.4
     },
     {
      "team": "France",
@@ -30,7 +30,7 @@
     {
      "team": "England",
      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-     "pct": 9.5
+     "pct": 9.4
     },
     {
      "team": "Colombia",
@@ -68,17 +68,17 @@
     {
      "team": "Argentina",
      "flag": "🇦🇷",
-     "pct": 23.3
+     "pct": 23.4
     },
     {
      "team": "France",
      "flag": "🇫🇷",
-     "pct": 13.4
+     "pct": 13.5
     },
     {
      "team": "England",
      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-     "pct": 10.1
+     "pct": 10.0
     },
     {
      "team": "Colombia",
@@ -98,7 +98,7 @@
     {
      "team": "Norway",
      "flag": "🇳🇴",
-     "pct": 2.2
+     "pct": 2.1
     }
    ]
   },
@@ -106,12 +106,12 @@
    "n_teams": 8,
    "champion": "Spain",
    "champion_flag": "🇪🇸",
-   "champion_pct": 39.7,
+   "champion_pct": 39.8,
    "top": [
     {
      "team": "Spain",
      "flag": "🇪🇸",
-     "pct": 39.7
+     "pct": 39.8
     },
     {
      "team": "Argentina",
@@ -121,7 +121,7 @@
     {
      "team": "France",
      "flag": "🇫🇷",
-     "pct": 14.8
+     "pct": 14.7
     },
     {
      "team": "England",
@@ -164,7 +164,7 @@
     {
      "team": "Argentina",
      "flag": "🇦🇷",
-     "pct": 26.9
+     "pct": 27.0
     },
     {
      "team": "France",
