@@ -13,11 +13,15 @@ from sklearn.metrics import log_loss
 from src.export import TEST_START, TRAIN_END, _acc_ll, _elo_probs
 from src.pipeline import (
     CANDIDATE_CONFED_GEO_COLS,
+    CANDIDATE_H2H_COLS,
     CANDIDATE_LOCATION_COLS,
     CANDIDATE_STAGE_COLS,
     FEATURE_COLS,
     build_features,
 )
+
+H2H_5Y_COLS = [c for c in CANDIDATE_H2H_COLS if c.endswith("_5y")]
+H2H_10Y_COLS = [c for c in CANDIDATE_H2H_COLS if c.endswith("_10y")]
 
 FIFA_COLS = {c for c in FEATURE_COLS if c.startswith("fifa_") or c == "has_fifa_rank"}
 FORM_COLS = {c for c in FEATURE_COLS if c.startswith(("form_", "gf_", "ga_"))}
@@ -74,6 +78,9 @@ def main() -> None:
 
     feature_sets = {
         "active": FEATURE_COLS,
+        "active_plus_h2h_5y": FEATURE_COLS + H2H_5Y_COLS,
+        "active_plus_h2h_10y": FEATURE_COLS + H2H_10Y_COLS,
+        "active_plus_h2h_both": FEATURE_COLS + CANDIDATE_H2H_COLS,
         "active_plus_stage": FEATURE_COLS + CANDIDATE_STAGE_COLS,
         "active_plus_location": FEATURE_COLS + CANDIDATE_LOCATION_COLS,
         "active_plus_conf_geo": FEATURE_COLS + CANDIDATE_CONFED_GEO_COLS,

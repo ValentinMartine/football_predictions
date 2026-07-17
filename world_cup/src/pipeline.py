@@ -21,6 +21,7 @@ RANKINGS = ROOT / "data" / "fifa_rankings.csv"
 TEAMS_METADATA = ROOT / "data" / "worldcup_teams.csv"
 WORLD_CUP_MATCHES = ROOT / "data" / "worldcup_matches.csv"
 FORM_WINDOWS = (5, 10, 20)
+H2H_WINDOWS_YEARS = (5, 10)  # confrontations directes : fenêtres glissantes
 CONFEDERATIONS = ("AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA")
 STAGES = ("group", "round_of_32", "round_of_16", "quarter_final", "semi_final", "third_place", "final")
 HOST_2026_COUNTRIES = ("Canada", "Mexico", "United States")
@@ -223,6 +224,7 @@ def build_features(extra_fixtures: pd.DataFrame | None = None) -> pd.DataFrame:
     confed_index = _load_confederations()
     stage_index = _load_world_cup_stage_index()
     hist: dict[str, deque] = defaultdict(lambda: deque(maxlen=max(FORM_WINDOWS)))
+    h2h_hist: dict[tuple, list] = defaultdict(list)  # paire triée -> [(date, home, hs, as_)]
     last_date: dict[str, datetime] = {}
     rows = []
 
@@ -234,6 +236,29 @@ def build_features(extra_fixtures: pd.DataFrame | None = None) -> pd.DataFrame:
         gf = sum(x[1] for x in recent) / len(recent)
         ga = sum(x[2] for x in recent) / len(recent)
         return pts, gf, ga
+
+    def h2h(home: str, away: str, date: datetime) -> dict:
+        """Bilan des confrontations directes ANTÉRIEURES, vu du côté de l'équipe à
+        domicile du match courant, par fenêtre glissante (points moyens, différence
+        de buts moyenne, nombre de duels). Neutre (1 pt, 0 diff) si aucun historique."""
+        key = (home, away) if home <= away else (away, home)
+        meetings = h2h_hist.get(key, [])
+        out = {}
+        for years in H2H_WINDOWS_YEARS:
+            cutoff = date - pd.Timedelta(days=int(365.25 * years))
+            pts, gds = [], []
+            for mdate, mhome, mhs, mas in meetings:
+                if mdate < cutoff:
+                    continue
+                hs_, as_ = (mhs, mas) if mhome == home else (mas, mhs)
+                pts.append(3.0 if hs_ > as_ else (1.0 if hs_ == as_ else 0.0))
+                gds.append(hs_ - as_)
+            n = len(pts)
+            out[f"h2h_n_{years}y"] = n
+            out[f"h2h_pts_{years}y"] = sum(pts) / n if n else 1.0
+            out[f"h2h_gd_{years}y"] = sum(gds) / n if n else 0.0
+            out[f"h2h_has_{years}y"] = int(n > 0)
+        return out
 
     for r in df.itertuples(index=False):
         home, away = r.home_team, r.away_team
@@ -320,12 +345,15 @@ def build_features(extra_fixtures: pd.DataFrame | None = None) -> pd.DataFrame:
                 f"gf_diff_{window}": gfh - gfa,
                 f"ga_diff_{window}": gah - gaa,
             })
+        row.update(h2h(home, away, r.date))
         rows.append(row)
 
         if getattr(r, "predict_flag", False):
-            continue  # match non joué : ne pas polluer l'état (Elo, forme)
+            continue  # match non joué : ne pas polluer l'état (Elo, forme, h2h)
         hist[home].append((_pts(r.home_score, r.away_score), r.home_score, r.away_score))
         hist[away].append((_pts(r.away_score, r.home_score), r.away_score, r.home_score))
+        pair = (home, away) if home <= away else (away, home)
+        h2h_hist[pair].append((r.date, home, r.home_score, r.away_score))
         last_date[home] = last_date[away] = r.date
         elo.update(home, away, r.home_score, r.away_score, r.tournament, neutral)
 
@@ -353,6 +381,13 @@ CANDIDATE_LOCATION_COLS = [
     "match_in_2026_host_country", "match_in_2026_host_city",
     *[f"match_country_{country.lower().replace(' ', '_')}" for country in HOST_2026_COUNTRIES],
     *[f"match_city_{slug}" for slug in HOST_2026_CITIES.values()],
+]
+
+
+CANDIDATE_H2H_COLS = [
+    f"{prefix}_{years}y"
+    for years in H2H_WINDOWS_YEARS
+    for prefix in ("h2h_n", "h2h_pts", "h2h_gd", "h2h_has")
 ]
 
 
