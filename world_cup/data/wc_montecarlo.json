@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-18T22:36:35+00:00",
+ "generated_at": "2026-07-19T01:18:33+00:00",
  "n_sims": 20000,
  "elo_asof": "2026-06-11",
  "note": "Simulation Monte Carlo à partir des équipes réellement présentes à chaque stade, via l'Elo pré-tournoi et un tirage Poisson des buts (nul en KO tranché par la probabilité Elo). Les instantanés avant J1/J2/J3 resimulent la phase de poules (journées déjà jouées figées à leur résultat réel), qualifient les deux premiers et les 8 meilleurs troisièmes, et répartissent les troisièmes aléatoirement sur les slots du tableau réel.",
@@ -40,7 +40,7 @@
     {
      "team": "Brazil",
      "flag": "🇧🇷",
-     "pct": 2.3
+     "pct": 2.4
     },
     {
      "team": "Ecuador",
@@ -200,6 +200,54 @@
    "n_teams": 48,
    "champion": "Spain",
    "champion_flag": "🇪🇸",
+   "champion_pct": 31.6,
+   "top": [
+    {
+     "team": "Spain",
+     "flag": "🇪🇸",
+     "pct": 31.6
+    },
+    {
+     "team": "Argentina",
+     "flag": "🇦🇷",
+     "pct": 17.1
+    },
+    {
+     "team": "France",
+     "flag": "🇫🇷",
+     "pct": 11.0
+    },
+    {
+     "team": "England",
+     "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+     "pct": 9.9
+    },
+    {
+     "team": "Ecuador",
+     "flag": "🇪🇨",
+     "pct": 3.6
+    },
+    {
+     "team": "Colombia",
+     "flag": "🇨🇴",
+     "pct": 3.4
+    },
+    {
+     "team": "Brazil",
+     "flag": "🇧🇷",
+     "pct": 3.0
+    },
+    {
+     "team": "Portugal",
+     "flag": "🇵🇹",
+     "pct": 2.2
+    }
+   ]
+  },
+  "before_group_j2": {
+   "n_teams": 48,
+   "champion": "Spain",
+   "champion_flag": "🇪🇸",
    "champion_pct": 31.8,
    "top": [
     {
@@ -210,55 +258,7 @@
     {
      "team": "Argentina",
      "flag": "🇦🇷",
-     "pct": 16.7
-    },
-    {
-     "team": "France",
-     "flag": "🇫🇷",
-     "pct": 10.8
-    },
-    {
-     "team": "England",
-     "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-     "pct": 10.0
-    },
-    {
-     "team": "Colombia",
-     "flag": "🇨🇴",
-     "pct": 3.7
-    },
-    {
-     "team": "Ecuador",
-     "flag": "🇪🇨",
-     "pct": 3.3
-    },
-    {
-     "team": "Brazil",
-     "flag": "🇧🇷",
-     "pct": 3.2
-    },
-    {
-     "team": "Germany",
-     "flag": "🇩🇪",
-     "pct": 2.3
-    }
-   ]
-  },
-  "before_group_j2": {
-   "n_teams": 48,
-   "champion": "Spain",
-   "champion_flag": "🇪🇸",
-   "champion_pct": 32.4,
-   "top": [
-    {
-     "team": "Spain",
-     "flag": "🇪🇸",
-     "pct": 32.4
-    },
-    {
-     "team": "Argentina",
-     "flag": "🇦🇷",
-     "pct": 17.7
+     "pct": 17.8
     },
     {
      "team": "France",
@@ -268,17 +268,17 @@
     {
      "team": "England",
      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-     "pct": 10.3
+     "pct": 10.9
     },
     {
      "team": "Colombia",
      "flag": "🇨🇴",
-     "pct": 3.8
+     "pct": 4.0
     },
     {
      "team": "Brazil",
      "flag": "🇧🇷",
-     "pct": 3.0
+     "pct": 3.3
     },
     {
      "team": "Norway",
@@ -306,45 +306,45 @@
     {
      "team": "Argentina",
      "flag": "🇦🇷",
-     "pct": 21.6
+     "pct": 21.0
     },
     {
      "team": "France",
      "flag": "🇫🇷",
-     "pct": 11.5
+     "pct": 12.0
     },
     {
      "team": "England",
      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-     "pct": 9.6
+     "pct": 9.2
     },
     {
      "team": "Colombia",
      "flag": "🇨🇴",
-     "pct": 3.9
-    },
-    {
-     "team": "Brazil",
-     "flag": "🇧🇷",
-     "pct": 2.8
-    },
-    {
-     "team": "Germany",
-     "flag": "🇩🇪",
-     "pct": 2.5
+     "pct": 3.7
     },
     {
      "team": "Norway",
      "flag": "🇳🇴",
-     "pct": 2.4
+     "pct": 2.8
+    },
+    {
+     "team": "Brazil",
+     "flag": "🇧🇷",
+     "pct": 2.7
+    },
+    {
+     "team": "Germany",
+     "flag": "🇩🇪",
+     "pct": 2.3
     }
    ]
   }
  },
  "knockout_accuracy": {
-  "n": 34,
+  "n": 35,
   "correct": 29,
-  "pct": 85.3
+  "pct": 82.9
  },
  "blend": {
   "b": 0.00559,
