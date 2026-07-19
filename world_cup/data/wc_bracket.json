@@ -1,5 +1,5 @@
 {
- "stage_reached": "Demi-finales",
+ "stage_reached": "Finale jouée",
  "note": "Bracket réel de la Coupe du Monde 2026 jusqu'au tour le plus récent joué.",
  "teams": [
   {
@@ -305,5 +305,8 @@
    "label": "England 1-2 Argentina"
   }
  ],
- "winner": null
+ "winner": {
+  "winner": "Spain",
+  "flag": "🇪🇸"
+ }
 }
