@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-20T20:58:46+00:00",
+ "generated_at": "2026-07-20T22:44:35+00:00",
  "n_sims": 20000,
  "elo_asof": "2026-06-11",
  "note": "Simulation Monte Carlo à partir des équipes réellement présentes à chaque stade, via l'Elo pré-tournoi et un tirage Poisson des buts (nul en KO tranché par la probabilité Elo). Les instantanés avant J1/J2/J3 resimulent la phase de poules (journées déjà jouées figées à leur résultat réel), qualifient les deux premiers et les 8 meilleurs troisièmes, et répartissent les troisièmes aléatoirement sur les slots du tableau réel.",
