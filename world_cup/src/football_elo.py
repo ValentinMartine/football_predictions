@@ -34,7 +34,10 @@ HOME_ADVANTAGE = 65.0   # points Elo ajoutés à l'équipe à domicile
 
 def k_for_tournament(tournament: str) -> float:
     t = (tournament or "").lower()
-    for key, k in TOURNAMENT_K.items():
+    # Clés parcourues de la plus spécifique à la plus générale : sans ce tri,
+    # "fifa world cup" capture aussi "fifa world cup qualification", dont le K
+    # plus faible n'était jamais atteint.
+    for key, k in sorted(TOURNAMENT_K.items(), key=lambda item: -len(item[0])):
         if key in t:
             return k
     return DEFAULT_K
