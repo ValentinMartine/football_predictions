@@ -56,4 +56,5 @@ sont ajoutés).
 ## Chantier à venir
 Archiver chaque semaine les sorties de `scripts/fetch_market_data.py` (valeurs Transfermarkt, salaires
 Capology) dans un historique **daté** dès la reprise de saison, pour en faire des features sans fuite.
-Les valeurs actuelles vivent dans `data/team_market.json` (96 clubs Big Five).
+Les valeurs actuelles vivent dans `data/team_market.json`, sous la clé `teams`. Ne pas recopier
+le nombre de clubs ici : il suit les mises à jour du fichier.
