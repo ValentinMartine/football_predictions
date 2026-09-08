@@ -5,6 +5,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+RAW = ROOT / "data" / "raw"
+PUBLISHED_PREDICTIONS = ROOT / "data" / "predictions.json"
 
 
 def run(command: list[str], check: bool = True) -> None:
@@ -14,6 +16,9 @@ def run(command: list[str], check: bool = True) -> None:
 def main() -> None:
     # Étapes critiques : résultats + prédictions. Doivent réussir (échec = pipeline stoppé).
     run([sys.executable, "scripts/download_data.py"])
+    if not any(RAW.glob("*.csv")) and PUBLISHED_PREDICTIONS.exists():
+        print("Aucun CSV football-data disponible ; artefact publie conserve.")
+        return
     run([sys.executable, "-m", "src.export"])
     # Enrichissements dépendant de sources externes (Understat, Sofascore, API logos) :
     # non bloquants, pour que prédictions et « ma note » (calculée) se régénèrent même si
