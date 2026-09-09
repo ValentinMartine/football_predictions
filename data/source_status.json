@@ -1,6 +1,7 @@
 {
-  "checked_at": "2026-09-09T12:59:44+00:00",
+  "checked_at": "2026-09-09T13:28:37+00:00",
   "source": "football-data.co.uk",
+  "fallback_source": "football-data.org",
   "base_url": "https://www.football-data.co.uk/mmz4281/{season}/{league}.csv",
   "season_codes": [
     "1516",
@@ -17,11 +18,12 @@
     "2627"
   ],
   "current_season": "2627",
-  "files_ok": 0,
-  "files_checked": 19,
-  "current_season_files_ok": 0,
-  "healthy": false,
-  "current_season_healthy": false,
+  "files_ok": 5,
+  "files_checked": 24,
+  "current_season_files_ok": 5,
+  "healthy": true,
+  "current_season_healthy": true,
+  "current_season_has_bookmaker_odds": false,
   "records": [
     {
       "season": "2627",
@@ -174,6 +176,61 @@
       "ok": false,
       "status_code": 503,
       "error": null
+    },
+    {
+      "season": "2627",
+      "league": "E0",
+      "competition": "PL",
+      "source": "football-data.org",
+      "url": "https://api.football-data.org/v4/competitions/PL/matches",
+      "ok": true,
+      "rows": 30,
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "season": "2627",
+      "league": "SP1",
+      "competition": "PD",
+      "source": "football-data.org",
+      "url": "https://api.football-data.org/v4/competitions/PD/matches",
+      "ok": true,
+      "rows": 41,
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "season": "2627",
+      "league": "I1",
+      "competition": "SA",
+      "source": "football-data.org",
+      "url": "https://api.football-data.org/v4/competitions/SA/matches",
+      "ok": true,
+      "rows": 30,
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "season": "2627",
+      "league": "D1",
+      "competition": "BL1",
+      "source": "football-data.org",
+      "url": "https://api.football-data.org/v4/competitions/BL1/matches",
+      "ok": true,
+      "rows": 18,
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "season": "2627",
+      "league": "F1",
+      "competition": "FL1",
+      "source": "football-data.org",
+      "url": "https://api.football-data.org/v4/competitions/FL1/matches",
+      "ok": true,
+      "rows": 27,
+      "error": null,
+      "status_code": 200
     }
   ]
 }
