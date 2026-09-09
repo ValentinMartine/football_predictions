@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-09T07:35:48+00:00",
+  "generated_at": "2026-09-09T13:00:47+00:00",
   "method": "Club Elo + rolling form/shots + LightGBM, blend tuned on temporal validation",
   "data_source": "football-data.co.uk CSV, Big Five leagues, seasons 1516 to 2526",
   "source_status": {
-    "checked_at": "2026-09-09T07:57:00+00:00",
+    "checked_at": "2026-09-09T12:59:44+00:00",
     "source": "football-data.co.uk",
     "base_url": "https://www.football-data.co.uk/mmz4281/{season}/{league}.csv",
     "season_codes": [
@@ -181,7 +181,7 @@
       }
     ]
   },
-  "refresh_status": "source_unavailable_existing_predictions_preserved",
+  "refresh_status": "current_season_source_unavailable_model_regenerated_from_cached_csv",
   "n_matches": 19763,
   "blend_weight": 0.65,
   "calibration_temperature": 0.967,

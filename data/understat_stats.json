@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-09T07:25:24+00:00",
+  "generated_at": "2026-09-09T13:01:36+00:00",
   "season": "2025-2026",
   "source": "Understat (via soccerdata)",
-  "n_players": 1926,
+  "n_players": 1927,
   "top_scorers": [
     {
       "player": "Harry Kane",
@@ -13,8 +13,7 @@
       "goals": 36,
       "assists": 5,
       "xg": 29.58,
-      "xa": 7.4,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "xa": 7.4
     },
     {
       "player": "Erling Haaland",
@@ -25,8 +24,7 @@
       "goals": 27,
       "assists": 8,
       "xg": 28.8,
-      "xa": 5.51,
-      "flag": "🇳🇴"
+      "xa": 5.51
     },
     {
       "player": "Kylian Mbappe-Lottin",
@@ -48,8 +46,7 @@
       "goals": 23,
       "assists": 1,
       "xg": 21.63,
-      "xa": 2.49,
-      "flag": "🇽🇰"
+      "xa": 2.49
     },
     {
       "player": "Thiago",
@@ -60,8 +57,7 @@
       "goals": 22,
       "assists": 1,
       "xg": 24.69,
-      "xa": 3.45,
-      "flag": "🇧🇷"
+      "xa": 3.45
     },
     {
       "player": "Esteban Lepaul",
@@ -72,8 +68,7 @@
       "goals": 21,
       "assists": 5,
       "xg": 15.73,
-      "xa": 3.39,
-      "flag": "🇫🇷"
+      "xa": 3.39
     },
     {
       "player": "Deniz Undav",
@@ -84,32 +79,7 @@
       "goals": 19,
       "assists": 6,
       "xg": 19.06,
-      "xa": 5.58,
-      "flag": "🇩🇪"
-    },
-    {
-      "player": "Ante Budimir",
-      "team": "Osasuna",
-      "league": "ESP-La Liga",
-      "matches": 37,
-      "minutes": 2995,
-      "goals": 17,
-      "assists": 0,
-      "xg": 19.19,
-      "xa": 1.71,
-      "flag": "🇭🇷"
-    },
-    {
-      "player": "Serhou Guirassy",
-      "team": "Borussia Dortmund",
-      "league": "GER-Bundesliga",
-      "matches": 33,
-      "minutes": 2366,
-      "goals": 17,
-      "assists": 1,
-      "xg": 19.91,
-      "xa": 1.93,
-      "flag": "🇬🇳"
+      "xa": 5.58
     },
     {
       "player": "Lautaro Martínez",
@@ -123,6 +93,17 @@
       "xa": 6.29
     },
     {
+      "player": "Ante Budimir",
+      "team": "Osasuna",
+      "league": "ESP-La Liga",
+      "matches": 37,
+      "minutes": 2995,
+      "goals": 17,
+      "assists": 0,
+      "xg": 19.19,
+      "xa": 1.71
+    },
+    {
       "player": "Antoine Semenyo",
       "team": "Bournemouth",
       "league": "ENG-Premier League",
@@ -131,68 +112,18 @@
       "goals": 17,
       "assists": 4,
       "xg": 12.84,
-      "xa": 4.13,
-      "flag": "🇬🇭"
+      "xa": 4.13
     },
     {
-      "player": "Ollie Watkins",
-      "team": "Aston Villa",
-      "league": "ENG-Premier League",
-      "matches": 37,
-      "minutes": 2908,
-      "goals": 16,
-      "assists": 3,
-      "xg": 18.83,
-      "xa": 2.82,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
-    },
-    {
-      "player": "Mason Greenwood",
-      "team": "Marseille",
-      "league": "FRA-Ligue 1",
-      "matches": 32,
-      "minutes": 2503,
-      "goals": 16,
-      "assists": 7,
-      "xg": 14.34,
-      "xa": 7.64,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
-    },
-    {
-      "player": "Vinícius Júnior",
-      "team": "Real Madrid",
-      "league": "ESP-La Liga",
-      "matches": 36,
-      "minutes": 2865,
-      "goals": 16,
-      "assists": 5,
-      "xg": 14.4,
-      "xa": 7.16,
-      "flag": "🇧🇷"
-    },
-    {
-      "player": "Ferrán Torres",
-      "team": "Barcelona",
-      "league": "ESP-La Liga",
+      "player": "Serhou Guirassy",
+      "team": "Borussia Dortmund",
+      "league": "GER-Bundesliga",
       "matches": 33,
-      "minutes": 2025,
-      "goals": 16,
-      "assists": 2,
-      "xg": 16.18,
-      "xa": 3.16,
-      "flag": "🇪🇸"
-    },
-    {
-      "player": "Joaquín Panichelli",
-      "team": "Strasbourg",
-      "league": "FRA-Ligue 1",
-      "matches": 27,
-      "minutes": 2202,
-      "goals": 16,
+      "minutes": 2366,
+      "goals": 17,
       "assists": 1,
-      "xg": 14.72,
-      "xa": 2.95,
-      "flag": "🇦🇷"
+      "xg": 19.91,
+      "xa": 1.93
     },
     {
       "player": "Lamine Yamal",
@@ -203,8 +134,18 @@
       "goals": 16,
       "assists": 11,
       "xg": 14.66,
-      "xa": 12.57,
-      "flag": "🇪🇸"
+      "xa": 12.57
+    },
+    {
+      "player": "Ferrán Torres",
+      "team": "Barcelona",
+      "league": "ESP-La Liga",
+      "matches": 33,
+      "minutes": 2025,
+      "goals": 16,
+      "assists": 2,
+      "xg": 16.18,
+      "xa": 3.16
     },
     {
       "player": "Patrik Schick",
@@ -215,44 +156,51 @@
       "goals": 16,
       "assists": 3,
       "xg": 19.42,
-      "xa": 3.19,
-      "flag": "🇨🇿"
+      "xa": 3.19
     },
     {
-      "player": "Michael Olise",
-      "team": "Bayern Munich",
-      "league": "GER-Bundesliga",
+      "player": "Joaquín Panichelli",
+      "team": "Strasbourg",
+      "league": "FRA-Ligue 1",
+      "matches": 27,
+      "minutes": 2202,
+      "goals": 16,
+      "assists": 1,
+      "xg": 14.72,
+      "xa": 2.95
+    },
+    {
+      "player": "Mason Greenwood",
+      "team": "Marseille",
+      "league": "FRA-Ligue 1",
       "matches": 32,
-      "minutes": 2308,
-      "goals": 15,
-      "assists": 19,
-      "xg": 11.55,
-      "xa": 17.04,
-      "flag": "🇫🇷"
+      "minutes": 2503,
+      "goals": 16,
+      "assists": 7,
+      "xg": 14.34,
+      "xa": 7.64
     },
     {
-      "player": "Morgan Gibbs-White",
-      "team": "Nottingham Forest",
+      "player": "Ollie Watkins",
+      "team": "Aston Villa",
       "league": "ENG-Premier League",
       "matches": 37,
-      "minutes": 3142,
-      "goals": 15,
-      "assists": 4,
-      "xg": 11.67,
-      "xa": 4.5,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "minutes": 2908,
+      "goals": 16,
+      "assists": 3,
+      "xg": 18.83,
+      "xa": 2.82
     },
     {
-      "player": "Luis Díaz",
-      "team": "Bayern Munich",
-      "league": "GER-Bundesliga",
-      "matches": 32,
-      "minutes": 2464,
-      "goals": 15,
-      "assists": 14,
-      "xg": 14.86,
-      "xa": 10.12,
-      "flag": "🇨🇴"
+      "player": "Vinícius Júnior",
+      "team": "Real Madrid",
+      "league": "ESP-La Liga",
+      "matches": 36,
+      "minutes": 2865,
+      "goals": 16,
+      "assists": 5,
+      "xg": 14.4,
+      "xa": 7.16
     },
     {
       "player": "João Pedro",
@@ -263,8 +211,7 @@
       "goals": 15,
       "assists": 5,
       "xg": 15.72,
-      "xa": 3.98,
-      "flag": "🇧🇷"
+      "xa": 3.98
     },
     {
       "player": "Mikel Oyarzabal",
@@ -275,31 +222,62 @@
       "goals": 15,
       "assists": 4,
       "xg": 16.03,
-      "xa": 5.96,
-      "flag": "🇪🇸"
+      "xa": 5.96
     },
     {
-      "player": "Antonio Martínez",
-      "team": "Alaves",
-      "league": "ESP-La Liga",
-      "matches": 37,
-      "minutes": 2750,
-      "goals": 14,
-      "assists": 3,
-      "xg": 12.84,
-      "xa": 3.82
+      "player": "Michael Olise",
+      "team": "Bayern Munich",
+      "league": "GER-Bundesliga",
+      "matches": 32,
+      "minutes": 2308,
+      "goals": 15,
+      "assists": 19,
+      "xg": 11.55,
+      "xa": 17.04
     },
     {
-      "player": "Dominic Calvert-Lewin",
-      "team": "Leeds",
+      "player": "Luis Díaz",
+      "team": "Bayern Munich",
+      "league": "GER-Bundesliga",
+      "matches": 32,
+      "minutes": 2464,
+      "goals": 15,
+      "assists": 14,
+      "xg": 14.86,
+      "xa": 10.12
+    },
+    {
+      "player": "Morgan Gibbs-White",
+      "team": "Nottingham Forest",
       "league": "ENG-Premier League",
-      "matches": 35,
-      "minutes": 2732,
+      "matches": 37,
+      "minutes": 3142,
+      "goals": 15,
+      "assists": 4,
+      "xg": 11.67,
+      "xa": 4.5
+    },
+    {
+      "player": "Andrej Kramaric",
+      "team": "Hoffenheim",
+      "league": "GER-Bundesliga",
+      "matches": 34,
+      "minutes": 2256,
       "goals": 14,
-      "assists": 1,
-      "xg": 18.67,
-      "xa": 1.54,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "assists": 6,
+      "xg": 13.08,
+      "xa": 4.53
+    },
+    {
+      "player": "Borja Iglesias",
+      "team": "Celta Vigo",
+      "league": "ESP-La Liga",
+      "matches": 35,
+      "minutes": 1903,
+      "goals": 14,
+      "assists": 2,
+      "xg": 11.61,
+      "xa": 1.66
     }
   ],
   "top_assists": [
@@ -312,8 +290,7 @@
       "goals": 9,
       "assists": 21,
       "xg": 11.93,
-      "xa": 17.76,
-      "flag": "🇵🇹"
+      "xa": 17.76
     },
     {
       "player": "Michael Olise",
@@ -324,8 +301,7 @@
       "goals": 15,
       "assists": 19,
       "xg": 11.55,
-      "xa": 17.04,
-      "flag": "🇫🇷"
+      "xa": 17.04
     },
     {
       "player": "Federico Dimarco",
@@ -347,8 +323,7 @@
       "goals": 0,
       "assists": 15,
       "xg": 1.09,
-      "xa": 10.86,
-      "flag": "🇳🇴"
+      "xa": 10.86
     },
     {
       "player": "Luis Díaz",
@@ -359,8 +334,7 @@
       "goals": 15,
       "assists": 14,
       "xg": 14.86,
-      "xa": 10.12,
-      "flag": "🇨🇴"
+      "xa": 10.12
     },
     {
       "player": "Mathis Cherki",
@@ -371,20 +345,7 @@
       "goals": 4,
       "assists": 12,
       "xg": 4.64,
-      "xa": 10.78,
-      "flag": "🇫🇷"
-    },
-    {
-      "player": "Jarrod Bowen",
-      "team": "West Ham",
-      "league": "ENG-Premier League",
-      "matches": 38,
-      "minutes": 3416,
-      "goals": 9,
-      "assists": 11,
-      "xg": 8.27,
-      "xa": 8.43,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "xa": 10.78
     },
     {
       "player": "Lamine Yamal",
@@ -395,8 +356,18 @@
       "goals": 16,
       "assists": 11,
       "xg": 14.66,
-      "xa": 12.57,
-      "flag": "🇪🇸"
+      "xa": 12.57
+    },
+    {
+      "player": "Jarrod Bowen",
+      "team": "West Ham",
+      "league": "ENG-Premier League",
+      "matches": 38,
+      "minutes": 3416,
+      "goals": 9,
+      "assists": 11,
+      "xg": 8.27,
+      "xa": 8.43
     },
     {
       "player": "Luis Milla",
@@ -407,8 +378,18 @@
       "goals": 1,
       "assists": 10,
       "xg": 1.47,
-      "xa": 6.84,
-      "flag": "🇪🇸"
+      "xa": 6.84
+    },
+    {
+      "player": "Jamie Leweling",
+      "team": "VfB Stuttgart",
+      "league": "GER-Bundesliga",
+      "matches": 32,
+      "minutes": 2385,
+      "goals": 7,
+      "assists": 9,
+      "xg": 4.1,
+      "xa": 6.05
     },
     {
       "player": "Adrien Thomasson",
@@ -419,8 +400,84 @@
       "goals": 3,
       "assists": 9,
       "xg": 6.46,
-      "xa": 8.48,
-      "flag": "🇫🇷"
+      "xa": 8.48
+    },
+    {
+      "player": "Konrad Laimer",
+      "team": "Bayern Munich",
+      "league": "GER-Bundesliga",
+      "matches": 29,
+      "minutes": 1997,
+      "goals": 3,
+      "assists": 9,
+      "xg": 2.83,
+      "xa": 4.99
+    },
+    {
+      "player": "Bazoumana Touré",
+      "team": "Hoffenheim",
+      "league": "GER-Bundesliga",
+      "matches": 30,
+      "minutes": 2379,
+      "goals": 5,
+      "assists": 9,
+      "xg": 5.14,
+      "xa": 7.23
+    },
+    {
+      "player": "Farès Chaïbi",
+      "team": "Eintracht Frankfurt",
+      "league": "GER-Bundesliga",
+      "matches": 28,
+      "minutes": 1822,
+      "goals": 2,
+      "assists": 9,
+      "xg": 3.52,
+      "xa": 5.04
+    },
+    {
+      "player": "Fermín López",
+      "team": "Barcelona",
+      "league": "ESP-La Liga",
+      "matches": 30,
+      "minutes": 1780,
+      "goals": 6,
+      "assists": 9,
+      "xg": 7.52,
+      "xa": 7.65
+    },
+    {
+      "player": "Pedri",
+      "team": "Barcelona",
+      "league": "ESP-La Liga",
+      "matches": 29,
+      "minutes": 2117,
+      "goals": 2,
+      "assists": 9,
+      "xg": 2.39,
+      "xa": 5.95
+    },
+    {
+      "player": "Andrej Ilic",
+      "team": "Union Berlin",
+      "league": "GER-Bundesliga",
+      "matches": 32,
+      "minutes": 2238,
+      "goals": 5,
+      "assists": 9,
+      "xg": 11.11,
+      "xa": 4.75
+    },
+    {
+      "player": "Arda Güler",
+      "team": "Real Madrid",
+      "league": "ESP-La Liga",
+      "matches": 33,
+      "minutes": 2076,
+      "goals": 4,
+      "assists": 9,
+      "xg": 4.81,
+      "xa": 8.85
     },
     {
       "player": "Jesús Rodriguez",
@@ -434,66 +491,6 @@
       "xa": 6.97
     },
     {
-      "player": "Farès Chaïbi",
-      "team": "Eintracht Frankfurt",
-      "league": "GER-Bundesliga",
-      "matches": 28,
-      "minutes": 1822,
-      "goals": 2,
-      "assists": 9,
-      "xg": 3.52,
-      "xa": 5.04,
-      "flag": "🇩🇿"
-    },
-    {
-      "player": "Bazoumana Touré",
-      "team": "Hoffenheim",
-      "league": "GER-Bundesliga",
-      "matches": 30,
-      "minutes": 2379,
-      "goals": 5,
-      "assists": 9,
-      "xg": 5.14,
-      "xa": 7.23,
-      "flag": "🇨🇮"
-    },
-    {
-      "player": "Arda Güler",
-      "team": "Real Madrid",
-      "league": "ESP-La Liga",
-      "matches": 33,
-      "minutes": 2076,
-      "goals": 4,
-      "assists": 9,
-      "xg": 4.81,
-      "xa": 8.85,
-      "flag": "🇹🇷"
-    },
-    {
-      "player": "Pedri",
-      "team": "Barcelona",
-      "league": "ESP-La Liga",
-      "matches": 29,
-      "minutes": 2117,
-      "goals": 2,
-      "assists": 9,
-      "xg": 2.39,
-      "xa": 5.95,
-      "flag": "🇪🇸"
-    },
-    {
-      "player": "Fermín López",
-      "team": "Barcelona",
-      "league": "ESP-La Liga",
-      "matches": 30,
-      "minutes": 1780,
-      "goals": 6,
-      "assists": 9,
-      "xg": 7.52,
-      "xa": 7.65,
-      "flag": "🇪🇸"
-    },
-    {
       "player": "Christian Eriksen",
       "team": "Wolfsburg",
       "league": "GER-Bundesliga",
@@ -502,32 +499,18 @@
       "goals": 3,
       "assists": 9,
       "xg": 5.57,
-      "xa": 7.9,
-      "flag": "🇩🇰"
+      "xa": 7.9
     },
     {
-      "player": "Jamie Leweling",
-      "team": "VfB Stuttgart",
-      "league": "GER-Bundesliga",
+      "player": "Ludovic Ajorque",
+      "team": "Brest",
+      "league": "FRA-Ligue 1",
       "matches": 32,
-      "minutes": 2385,
-      "goals": 7,
+      "minutes": 2834,
+      "goals": 8,
       "assists": 9,
-      "xg": 4.1,
-      "xa": 6.05,
-      "flag": "🇩🇪"
-    },
-    {
-      "player": "Andrej Ilic",
-      "team": "Union Berlin",
-      "league": "GER-Bundesliga",
-      "matches": 32,
-      "minutes": 2238,
-      "goals": 5,
-      "assists": 9,
-      "xg": 11.11,
-      "xa": 4.75,
-      "flag": "🇷🇸"
+      "xg": 9.86,
+      "xa": 3.82
     },
     {
       "player": "Armand Lauriente",
@@ -541,40 +524,26 @@
       "xa": 8.51
     },
     {
-      "player": "Ludovic Ajorque",
-      "team": "Brest",
-      "league": "FRA-Ligue 1",
-      "matches": 32,
-      "minutes": 2834,
-      "goals": 8,
-      "assists": 9,
-      "xg": 9.86,
-      "xa": 3.82,
-      "flag": "🇫🇷"
-    },
-    {
-      "player": "Konrad Laimer",
+      "player": "Joshua Kimmich",
       "team": "Bayern Munich",
       "league": "GER-Bundesliga",
       "matches": 29,
-      "minutes": 1997,
-      "goals": 3,
-      "assists": 9,
-      "xg": 2.83,
-      "xa": 4.99,
-      "flag": "🇦🇹"
+      "minutes": 2268,
+      "goals": 2,
+      "assists": 8,
+      "xg": 2.36,
+      "xa": 7.57
     },
     {
-      "player": "Dani Olmo",
-      "team": "Barcelona",
-      "league": "ESP-La Liga",
-      "matches": 33,
-      "minutes": 2109,
-      "goals": 7,
+      "player": "Vladimir Coufal",
+      "team": "Hoffenheim",
+      "league": "GER-Bundesliga",
+      "matches": 34,
+      "minutes": 3032,
+      "goals": 1,
       "assists": 8,
-      "xg": 8.75,
-      "xa": 6.66,
-      "flag": "🇪🇸"
+      "xg": 0.99,
+      "xa": 7.48
     },
     {
       "player": "Erling Haaland",
@@ -585,19 +554,7 @@
       "goals": 27,
       "assists": 8,
       "xg": 28.8,
-      "xa": 5.51,
-      "flag": "🇳🇴"
-    },
-    {
-      "player": "Nicolò Barella",
-      "team": "Inter",
-      "league": "ITA-Serie A",
-      "matches": 34,
-      "minutes": 2561,
-      "goals": 3,
-      "assists": 8,
-      "xg": 3.82,
-      "xa": 7.97
+      "xa": 5.51
     }
   ],
   "top_xg": [
@@ -610,8 +567,7 @@
       "goals": 36,
       "assists": 5,
       "xg": 29.58,
-      "xa": 7.4,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "xa": 7.4
     },
     {
       "player": "Erling Haaland",
@@ -622,8 +578,7 @@
       "goals": 27,
       "assists": 8,
       "xg": 28.8,
-      "xa": 5.51,
-      "flag": "🇳🇴"
+      "xa": 5.51
     },
     {
       "player": "Kylian Mbappe-Lottin",
@@ -645,8 +600,7 @@
       "goals": 22,
       "assists": 1,
       "xg": 24.69,
-      "xa": 3.45,
-      "flag": "🇧🇷"
+      "xa": 3.45
     },
     {
       "player": "Vedat Muriqi",
@@ -657,8 +611,7 @@
       "goals": 23,
       "assists": 1,
       "xg": 21.63,
-      "xa": 2.49,
-      "flag": "🇽🇰"
+      "xa": 2.49
     },
     {
       "player": "Serhou Guirassy",
@@ -669,8 +622,7 @@
       "goals": 17,
       "assists": 1,
       "xg": 19.91,
-      "xa": 1.93,
-      "flag": "🇬🇳"
+      "xa": 1.93
     },
     {
       "player": "Patrik Schick",
@@ -681,8 +633,7 @@
       "goals": 16,
       "assists": 3,
       "xg": 19.42,
-      "xa": 3.19,
-      "flag": "🇨🇿"
+      "xa": 3.19
     },
     {
       "player": "Ante Budimir",
@@ -693,8 +644,7 @@
       "goals": 17,
       "assists": 0,
       "xg": 19.19,
-      "xa": 1.71,
-      "flag": "🇭🇷"
+      "xa": 1.71
     },
     {
       "player": "Deniz Undav",
@@ -705,8 +655,7 @@
       "goals": 19,
       "assists": 6,
       "xg": 19.06,
-      "xa": 5.58,
-      "flag": "🇩🇪"
+      "xa": 5.58
     },
     {
       "player": "Ollie Watkins",
@@ -717,8 +666,7 @@
       "goals": 16,
       "assists": 3,
       "xg": 18.83,
-      "xa": 2.82,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "xa": 2.82
     },
     {
       "player": "Dominic Calvert-Lewin",
@@ -729,8 +677,7 @@
       "goals": 14,
       "assists": 1,
       "xg": 18.67,
-      "xa": 1.54,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "xa": 1.54
     },
     {
       "player": "Christoph Baumgartner",
@@ -741,8 +688,7 @@
       "goals": 13,
       "assists": 8,
       "xg": 18.02,
-      "xa": 4.29,
-      "flag": "🇦🇹"
+      "xa": 4.29
     },
     {
       "player": "Lautaro Martínez",
@@ -764,8 +710,7 @@
       "goals": 16,
       "assists": 2,
       "xg": 16.18,
-      "xa": 3.16,
-      "flag": "🇪🇸"
+      "xa": 3.16
     },
     {
       "player": "Robert Lewandowski",
@@ -776,8 +721,7 @@
       "goals": 14,
       "assists": 2,
       "xg": 16.07,
-      "xa": 2.28,
-      "flag": "🇵🇱"
+      "xa": 2.28
     },
     {
       "player": "Mikel Oyarzabal",
@@ -788,8 +732,7 @@
       "goals": 15,
       "assists": 4,
       "xg": 16.03,
-      "xa": 5.96,
-      "flag": "🇪🇸"
+      "xa": 5.96
     },
     {
       "player": "Jean-Philippe Mateta",
@@ -800,8 +743,7 @@
       "goals": 12,
       "assists": 0,
       "xg": 15.98,
-      "xa": 1.25,
-      "flag": "🇫🇷"
+      "xa": 1.25
     },
     {
       "player": "Rômulo",
@@ -812,8 +754,7 @@
       "goals": 9,
       "assists": 4,
       "xg": 15.94,
-      "xa": 3.61,
-      "flag": "🇧🇷"
+      "xa": 3.61
     },
     {
       "player": "Esteban Lepaul",
@@ -824,8 +765,7 @@
       "goals": 21,
       "assists": 5,
       "xg": 15.73,
-      "xa": 3.39,
-      "flag": "🇫🇷"
+      "xa": 3.39
     },
     {
       "player": "João Pedro",
@@ -836,8 +776,7 @@
       "goals": 15,
       "assists": 5,
       "xg": 15.72,
-      "xa": 3.98,
-      "flag": "🇧🇷"
+      "xa": 3.98
     },
     {
       "player": "Nikola Krstovic",
@@ -859,8 +798,7 @@
       "goals": 10,
       "assists": 5,
       "xg": 15.53,
-      "xa": 5.14,
-      "flag": "🇬🇦"
+      "xa": 5.14
     },
     {
       "player": "Moise Kean",
@@ -882,8 +820,7 @@
       "goals": 14,
       "assists": 2,
       "xg": 15.2,
-      "xa": 1.55,
-      "flag": "🇳🇱"
+      "xa": 1.55
     },
     {
       "player": "Tasos Douvikas",
@@ -907,8 +844,7 @@
       "goals": 9,
       "assists": 21,
       "xg": 11.93,
-      "xa": 17.76,
-      "flag": "🇵🇹"
+      "xa": 17.76
     },
     {
       "player": "Michael Olise",
@@ -919,8 +855,7 @@
       "goals": 15,
       "assists": 19,
       "xg": 11.55,
-      "xa": 17.04,
-      "flag": "🇫🇷"
+      "xa": 17.04
     },
     {
       "player": "Federico Dimarco",
@@ -942,8 +877,7 @@
       "goals": 16,
       "assists": 11,
       "xg": 14.66,
-      "xa": 12.57,
-      "flag": "🇪🇸"
+      "xa": 12.57
     },
     {
       "player": "Matthieu Udol",
@@ -954,8 +888,7 @@
       "goals": 1,
       "assists": 7,
       "xg": 4.39,
-      "xa": 11.9,
-      "flag": "🇫🇷"
+      "xa": 11.9
     },
     {
       "player": "David Raum",
@@ -966,8 +899,7 @@
       "goals": 3,
       "assists": 7,
       "xg": 2.4,
-      "xa": 11.04,
-      "flag": "🇩🇪"
+      "xa": 11.04
     },
     {
       "player": "Julian Ryerson",
@@ -978,8 +910,7 @@
       "goals": 0,
       "assists": 15,
       "xg": 1.09,
-      "xa": 10.86,
-      "flag": "🇳🇴"
+      "xa": 10.86
     },
     {
       "player": "Kenan Yildiz",
@@ -1001,8 +932,7 @@
       "goals": 4,
       "assists": 12,
       "xg": 4.64,
-      "xa": 10.78,
-      "flag": "🇫🇷"
+      "xa": 10.78
     },
     {
       "player": "Charles De Ketelaere",
@@ -1024,8 +954,7 @@
       "goals": 4,
       "assists": 8,
       "xg": 7.94,
-      "xa": 10.28,
-      "flag": "🇦🇹"
+      "xa": 10.28
     },
     {
       "player": "Álex Grimaldo",
@@ -1036,8 +965,7 @@
       "goals": 8,
       "assists": 7,
       "xg": 6.76,
-      "xa": 10.24,
-      "flag": "🇪🇸"
+      "xa": 10.24
     },
     {
       "player": "Luis Díaz",
@@ -1048,8 +976,7 @@
       "goals": 15,
       "assists": 14,
       "xg": 14.86,
-      "xa": 10.12,
-      "flag": "🇨🇴"
+      "xa": 10.12
     },
     {
       "player": "Yan Diomande",
@@ -1060,8 +987,7 @@
       "goals": 12,
       "assists": 8,
       "xg": 8.03,
-      "xa": 10.05,
-      "flag": "🇨🇮"
+      "xa": 10.05
     },
     {
       "player": "Florian Thauvin",
@@ -1072,8 +998,7 @@
       "goals": 11,
       "assists": 6,
       "xg": 12.1,
-      "xa": 9.86,
-      "flag": "🇫🇷"
+      "xa": 9.86
     },
     {
       "player": "Enzo Fernández",
@@ -1084,8 +1009,7 @@
       "goals": 10,
       "assists": 4,
       "xg": 11.92,
-      "xa": 8.87,
-      "flag": "🇦🇷"
+      "xa": 8.87
     },
     {
       "player": "Arda Güler",
@@ -1096,8 +1020,7 @@
       "goals": 4,
       "assists": 9,
       "xg": 4.81,
-      "xa": 8.85,
-      "flag": "🇹🇷"
+      "xa": 8.85
     },
     {
       "player": "Dominik Szoboszlai",
@@ -1108,8 +1031,7 @@
       "goals": 6,
       "assists": 7,
       "xg": 4.72,
-      "xa": 8.84,
-      "flag": "🇭🇺"
+      "xa": 8.84
     },
     {
       "player": "Bukayo Saka",
@@ -1120,8 +1042,7 @@
       "goals": 7,
       "assists": 5,
       "xg": 8.7,
-      "xa": 8.55,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "xa": 8.55
     },
     {
       "player": "Armand Lauriente",
@@ -1143,8 +1064,7 @@
       "goals": 2,
       "assists": 2,
       "xg": 4.37,
-      "xa": 8.5,
-      "flag": "🇪🇸"
+      "xa": 8.5
     },
     {
       "player": "Adrien Thomasson",
@@ -1155,8 +1075,7 @@
       "goals": 3,
       "assists": 9,
       "xg": 6.46,
-      "xa": 8.48,
-      "flag": "🇫🇷"
+      "xa": 8.48
     },
     {
       "player": "Jarrod Bowen",
@@ -1167,8 +1086,7 @@
       "goals": 9,
       "assists": 11,
       "xg": 8.27,
-      "xa": 8.43,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "xa": 8.43
     },
     {
       "player": "Declan Rice",
@@ -1179,8 +1097,7 @@
       "goals": 4,
       "assists": 5,
       "xg": 3.72,
-      "xa": 8.16,
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "xa": 8.16
     },
     {
       "player": "Nicolas Pepe",
@@ -1191,8 +1108,7 @@
       "goals": 9,
       "assists": 8,
       "xg": 9.8,
-      "xa": 8.08,
-      "flag": "🇨🇮"
+      "xa": 8.08
     }
   ],
   "teams": [
@@ -1579,12 +1495,12 @@
     {
       "team": "Toulouse",
       "league": "FRA-Ligue 1",
-      "matches": 33,
+      "matches": 34,
       "gf": 47,
       "ga": 46,
-      "xgf": 46.29,
-      "xga": 44.32,
-      "xg_diff": 1.97
+      "xgf": 46.61,
+      "xga": 44.4,
+      "xg_diff": 2.2
     },
     {
       "team": "Mainz 05",
@@ -1929,12 +1845,12 @@
     {
       "team": "Nantes",
       "league": "FRA-Ligue 1",
-      "matches": 33,
+      "matches": 34,
       "gf": 29,
       "ga": 52,
-      "xgf": 37.82,
-      "xga": 52.75,
-      "xg_diff": -14.93
+      "xgf": 37.91,
+      "xga": 53.07,
+      "xg_diff": -15.17
     },
     {
       "team": "Nottingham Forest",
