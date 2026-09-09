@@ -40,5 +40,6 @@ jobs:
             echo "No prediction changes."
           else
             git commit -m "Update football club predictions"
+            git pull --rebase origin main
             git push
           fi

@@ -85,5 +85,6 @@ jobs:
             echo "No prediction changes."
           else
             git commit -m "Regenerate world cup predictions"
+            git pull --rebase origin main
             git push
           fi
