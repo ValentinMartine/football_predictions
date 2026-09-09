@@ -8,7 +8,8 @@ __pycache__/
 dist/
 build/
 .env
-data/raw/*.csv
+# Historical CSV cache is versioned so CI can regenerate from cached data
+# when football-data.co.uk is temporarily unavailable.
 data/processed/*.parquet
 data/*.pkl
 downloaded_files/
