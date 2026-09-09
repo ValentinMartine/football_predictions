@@ -49,7 +49,9 @@ def main() -> None:
     run([sys.executable, "scripts/fetch_other_leagues_lineups.py"], check=False, timeout=180)
     # Normalisation des noms (données + clés de logos) : après tous les builders, avant sync.
     run([sys.executable, "scripts/normalize_names.py"], check=False, timeout=60)
-    run([sys.executable, "scripts/sync_to_site.py"])
+    # Local convenience only: the website repository is not available in GitHub Actions.
+    # Publication is handled by the valentinmartine repository workflows.
+    run([sys.executable, "scripts/sync_to_site.py"], check=False, timeout=30)
 
 
 if __name__ == "__main__":
