@@ -34,9 +34,11 @@ La couche de pari **n'est pas résolue** : ne pas présenter le projet comme ren
 ## Sous-projet `world_cup/`
 La Coupe du Monde vit **dans ce dépôt**, sous `world_cup/`, avec son propre `src/`, ses données et son
 workflow `.github/workflows/regenerate-worldcup.yml` (toutes les 2 heures pendant le tournoi).
-L'ancien dépôt séparé `worldcup_2026_predictions` est **figé depuis le 13/07/2026** : ne plus y toucher.
-Les fichiers `football_elo.py`, `poisson.py`, `calibration.py` et `dixon_coles.py` y sont encore présents
-à l'identique, donc toute correction faite ici doit y être reportée tant que ce dépôt existe.
+L'ancien dépôt séparé est **archivé sur GitHub depuis le 09/09/2026** sous
+`ValentinMartine/worldcup-2026-predictions` : il était nommé `claude-memory`, ce qui n'a jamais
+correspondu à son contenu, et son workflow poussait encore des données toutes les 2 heures alors
+que le site ne les lit pas. Il est en lecture seule : **plus rien à y reporter**, `world_cup/` est
+la seule version. Le clone local en double a été déplacé dans `Perso/_archives/`.
 
 Sa suite de tests se lance **depuis son dossier** : `cd world_cup && python -m pytest`. La racine du
 dépôt ignore `world_cup/` à la collecte, sinon les deux paquets `src/` entrent en collision.
