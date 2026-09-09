@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T12:58:49+00:00",
+  "generated_at": "2026-09-09T07:28:15+00:00",
   "source": "Understat player season stats + FBref nationalities via soccerdata",
   "season": "2025-2026",
   "coverage": "Players in Big Five leagues with at least 300 minutes.",
@@ -375,7 +375,7 @@
     {
       "fifa_code": "ENG",
       "team": "England",
-      "flag": "🇬🇧",
+      "flag": null,
       "players": 127,
       "minutes": 210010,
       "goals": 341,
@@ -3837,7 +3837,7 @@
     {
       "fifa_code": "WAL",
       "team": "Wales",
-      "flag": "🇬🇧",
+      "flag": null,
       "players": 8,
       "minutes": 17456,
       "goals": 18,
@@ -4394,7 +4394,7 @@
     {
       "fifa_code": "SCO",
       "team": null,
-      "flag": "🇬🇧",
+      "flag": null,
       "players": 6,
       "minutes": 7437,
       "goals": 16,

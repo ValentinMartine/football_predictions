@@ -20,6 +20,7 @@ from src.pipeline import FEATURE_COLS, build_features
 from src.walk_forward import run_walk_forward
 
 OUT = Path(__file__).resolve().parents[1] / "data" / "predictions.json"
+SOURCE_STATUS = Path(__file__).resolve().parents[1] / "data" / "source_status.json"
 LABELS = ["H", "D", "A"]
 LABEL_NAMES = ["home", "draw", "away"]
 
@@ -150,10 +151,18 @@ def main() -> None:
             "prediction_apres_compositions": _prediction_payload(row, probs, "lineups"),
         })
 
+    seasons = sorted(str(value) for value in df["season"].dropna().unique())
+    source_status = json.loads(SOURCE_STATUS.read_text(encoding="utf-8")) if SOURCE_STATUS.exists() else None
+    refresh_status = "ok"
+    if source_status and source_status.get("current_season_healthy") is False:
+        refresh_status = "current_season_source_unavailable_model_regenerated_from_cached_csv"
+
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "method": "Club Elo + rolling form/shots + LightGBM, blend tuned on temporal validation",
-        "data_source": "football-data.co.uk CSV, Big Five leagues, seasons 2015-2016 to 2025-2026",
+        "data_source": f"football-data.co.uk CSV, Big Five leagues, seasons {seasons[0]} to {seasons[-1]}",
+        "source_status": source_status,
+        "refresh_status": refresh_status,
         "n_matches": int(len(df)),
         "blend_weight": round(weight, 2),
         "calibration_temperature": round(calibrator.T, 3),

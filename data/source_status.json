@@ -1,0 +1,179 @@
+{
+  "checked_at": "2026-09-09T07:23:15+00:00",
+  "source": "football-data.co.uk",
+  "base_url": "https://www.football-data.co.uk/mmz4281/{season}/{league}.csv",
+  "season_codes": [
+    "1516",
+    "1617",
+    "1718",
+    "1819",
+    "1920",
+    "2021",
+    "2122",
+    "2223",
+    "2324",
+    "2425",
+    "2526",
+    "2627"
+  ],
+  "current_season": "2627",
+  "files_ok": 0,
+  "files_checked": 19,
+  "current_season_files_ok": 0,
+  "healthy": false,
+  "current_season_healthy": false,
+  "records": [
+    {
+      "season": "2627",
+      "league": "E0",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/E0.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "SP1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "I1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "D1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/D1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "F1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/F1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "E1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/E1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "E2",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/E2.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "E3",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/E3.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "SC0",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/SC0.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "SC1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/SC1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "D2",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/D2.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "I2",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I2.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "SP2",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "F2",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/F2.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "N1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/N1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "B1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/B1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "P1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/P1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "T1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    },
+    {
+      "season": "2627",
+      "league": "G1",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/G1.csv",
+      "ok": false,
+      "status_code": 503,
+      "error": null
+    }
+  ]
+}

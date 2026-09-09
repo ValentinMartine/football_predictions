@@ -22,6 +22,7 @@ SEASON = date.today().year if date.today().month >= 8 else date.today().year - 1
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "team_market.json"
+HISTORIQUE = ROOT / "data" / "market_history"
 SITE = Path("C:/Users/valen/Documents/Projets/Projets_Informatiques/Perso/valentinmartine/public/data/team_market.json")
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
@@ -75,6 +76,40 @@ def norm(s: str) -> str:
     s = re.sub(r"\b(18|19|20)\d{2}\b", " ", s)  # années de fondation (1907, 1909...)
     s = re.sub(r"\b\d{1,2}\b", " ", s)  # numéros résiduels (05, 29...)
     return re.sub(r"\s+", " ", s).strip()
+
+
+def archiver(payload: dict, jour: date | None = None) -> Path:
+    """Archive one market-data snapshot under its capture date."""
+    capture_day = jour or date.today()
+    HISTORIQUE.mkdir(parents=True, exist_ok=True)
+    archived = dict(payload)
+    archived["captured_on"] = capture_day.isoformat()
+    path = HISTORIQUE / f"{capture_day.isoformat()}.json"
+    path.write_text(json.dumps(archived, ensure_ascii=False, indent=1), encoding="utf-8")
+    return path
+
+
+def charger_historique(repertoire: Path = HISTORIQUE) -> dict[str, dict]:
+    """Load archived market snapshots ordered from oldest to newest."""
+    if not repertoire.exists():
+        return {}
+    snapshots = {}
+    for path in sorted(repertoire.glob("*.json")):
+        try:
+            snapshots[path.stem] = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+    return snapshots
+
+
+def valeurs_a_la_date(match_date: str, repertoire: Path = HISTORIQUE) -> dict:
+    """Return the latest market snapshot available on or before a match date."""
+    snapshots = charger_historique(repertoire)
+    eligible = [capture_date for capture_date in snapshots if capture_date <= match_date]
+    if not eligible:
+        return {}
+    latest = max(eligible)
+    return snapshots[latest].get("teams", {})
 
 
 def _get(url: str, tries: int = 3) -> str:
@@ -214,6 +249,7 @@ def main() -> int:
     payload = {"source": "Transfermarkt (valeurs) + Capology (salaires bruts annuels, EUR)",
                "teams": merged}
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    archiver(payload)
     if SITE.parent.exists():
         SITE.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"team_market.json : {len(merged)}/{len(project_teams)} équipes"
