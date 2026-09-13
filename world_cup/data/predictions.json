@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T23:30:26+00:00",
+  "generated_at": "2026-09-13T01:35:41+00:00",
   "method": "Elo football + FIFA rankings + recent form + LightGBM (blend tuned on validation), scores via Poisson",
   "score_definition": "results.csv provides the score before penalty shootouts: it can include extra time, but it does not separate the 90-minute score from the 120-minute score. shootouts.csv adds the penalty shootout winner and first shooter when available, but not the shootout score.",
   "shootout_count": 4,
