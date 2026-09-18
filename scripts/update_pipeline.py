@@ -12,12 +12,21 @@ SOURCE_STATUS = ROOT / "data" / "source_status.json"
 
 
 def run(command: list[str], check: bool = True, timeout: int | None = None) -> None:
+    label = " ".join(command)
+    print(f"==> {label}", flush=True)
     try:
-        subprocess.run(command, cwd=ROOT, check=check, timeout=timeout)
+        completed = subprocess.run(command, cwd=ROOT, check=check, timeout=timeout)
+        if completed.returncode:
+            print(f"<== non-zero {completed.returncode} {label}", flush=True)
+        else:
+            print(f"<== ok {label}", flush=True)
+    except subprocess.CalledProcessError as exc:
+        print(f"<== failed {exc.returncode} {label}", flush=True)
+        raise
     except subprocess.TimeoutExpired:
         if check:
             raise
-        print(f"timeout non bloquant apres {timeout}s : {' '.join(command)}")
+        print(f"<== timeout non bloquant apres {timeout}s : {label}", flush=True)
 
 
 def main() -> None:

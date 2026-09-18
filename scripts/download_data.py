@@ -24,6 +24,8 @@ LEAGUES = {
 }
 BASE_URL = "https://www.football-data.co.uk/mmz4281/{season}/{league}.csv"
 FOOTBALL_DATA_ORG_URL = "https://api.football-data.org/v4/competitions/{competition}/matches"
+REQUEST_TIMEOUT = (5, 20)
+HEADERS = {"User-Agent": "valentinmartine-football-predictions/1.0"}
 FOOTBALL_DATA_ORG_COMPETITIONS = {
     "E0": "PL",
     "SP1": "PD",
@@ -68,6 +70,16 @@ TEAM_ALIASES = {
     "Nottingham Forest FC": "Nott'm Forest",
     "AFC Bournemouth": "Bournemouth",
 }
+
+
+def log(message: str) -> None:
+    """Print immediately so GitHub Actions exposes long-running source checks."""
+    print(message, flush=True)
+
+
+def is_usable_cached_raw(path: Path) -> bool:
+    """Return True when a historical CSV can be reused instead of downloaded again."""
+    return path.exists() and path.stat().st_size > 0
 
 
 def current_season_start_year(today: date | None = None) -> int:
@@ -166,7 +178,7 @@ def fetch_football_data_org_current_season(current_code: str, records: list[dict
             "error": None,
         }
         try:
-            response = requests.get(url, params=params, timeout=30, headers=headers)
+            response = requests.get(url, params=params, timeout=REQUEST_TIMEOUT, headers=headers)
             record["status_code"] = response.status_code
             response.raise_for_status()
             rows = football_data_org_rows(response.json(), league)
@@ -177,13 +189,13 @@ def fetch_football_data_org_current_season(current_code: str, records: list[dict
                 pd.DataFrame(rows, columns=FOOTBALL_DATA_COLUMNS).to_csv(out, index=False)
                 total += 1
                 record["ok"] = True
-                print(f"ok {current_code} {league} -> {out.relative_to(ROOT)} via football-data.org")
+                log(f"ok {current_code} {league} -> {out.relative_to(ROOT)} via football-data.org")
             else:
                 record["error"] = "no finished matches returned"
-                print(f"skip {current_code} {league}: no finished matches via football-data.org")
+                log(f"skip {current_code} {league}: no finished matches via football-data.org")
         except Exception as exc:  # noqa: BLE001
             record["error"] = str(exc)
-            print(f"skip {current_code} {league}: football-data.org {exc}")
+            log(f"skip {current_code} {league}: football-data.org {exc}")
         records.append(record)
     return total
 
@@ -198,8 +210,22 @@ def main() -> None:
         for league in LEAGUES:
             url = BASE_URL.format(season=season, league=league)
             out = RAW / f"{season}_{league}.csv"
+            if season != current_code and is_usable_cached_raw(out):
+                records.append({
+                    "season": season,
+                    "league": league,
+                    "url": url,
+                    "ok": True,
+                    "source": "cache",
+                    "cached": True,
+                    "status_code": None,
+                    "error": None,
+                })
+                total += 1
+                log(f"cache {season} {league} -> {out.relative_to(ROOT)}")
+                continue
             try:
-                response = requests.get(url, timeout=30, headers={"User-Agent": "valentinmartine-football-predictions/1.0"})
+                response = requests.get(url, timeout=REQUEST_TIMEOUT, headers=HEADERS)
                 ok = response.ok and "Div,Date" in response.text[:500]
                 status_code = response.status_code
                 error = None
@@ -218,11 +244,11 @@ def main() -> None:
             })
             if not ok or response is None:
                 detail = f"HTTP {status_code}" if status_code is not None else error
-                print(f"skip {season} {league}: {detail}")
+                log(f"skip {season} {league}: {detail}")
                 continue
             out.write_bytes(response.content)
             total += 1
-            print(f"ok {season} {league} -> {out.relative_to(ROOT)}")
+            log(f"ok {season} {league} -> {out.relative_to(ROOT)}")
         if season == current_code:
             current_attempts = [record for record in records if record["season"] == current_code]
             if current_attempts and not any(record["ok"] for record in current_attempts):
@@ -249,8 +275,8 @@ def main() -> None:
         "records": records,
     }
     SOURCE_STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"source status -> {SOURCE_STATUS.relative_to(ROOT)}")
-    print(f"{total} fichiers telecharges")
+    log(f"source status -> {SOURCE_STATUS.relative_to(ROOT)}")
+    log(f"{total} fichiers telecharges")
 
 
 if __name__ == "__main__":

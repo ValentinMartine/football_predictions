@@ -4,6 +4,7 @@ from scripts.download_data import (
     canonical_team_name,
     current_season_start_year,
     football_data_org_rows,
+    is_usable_cached_raw,
     result_code,
     season_code,
     seasons_to_fetch,
@@ -22,6 +23,19 @@ def test_season_code_uses_two_digit_football_data_format() -> None:
 
 def test_seasons_to_fetch_includes_active_season() -> None:
     assert seasons_to_fetch(first_start_year=2024, today=date(2026, 9, 9)) == ["2425", "2526", "2627"]
+
+
+def test_historical_download_cache_requires_non_empty_file(tmp_path) -> None:
+    missing = tmp_path / "missing.csv"
+    empty = tmp_path / "empty.csv"
+    cached = tmp_path / "cached.csv"
+
+    empty.write_text("", encoding="utf-8")
+    cached.write_text("Div,Date,HomeTeam,AwayTeam\n", encoding="utf-8")
+
+    assert not is_usable_cached_raw(missing)
+    assert not is_usable_cached_raw(empty)
+    assert is_usable_cached_raw(cached)
 
 
 def test_result_code_matches_football_data_format() -> None:
