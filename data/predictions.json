@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-20T11:36:40+00:00",
+  "generated_at": "2026-09-21T13:01:24+00:00",
   "method": "Club Elo + rolling form/shots + LightGBM, blend tuned on temporal validation",
   "data_source": "football-data.co.uk CSV, Big Five leagues, seasons 1516 to 2627",
   "source_status": {
-    "checked_at": "2026-09-20T11:35:55+00:00",
+    "checked_at": "2026-09-21T13:00:46+00:00",
     "source": "football-data.co.uk",
     "fallback_source": "football-data.org",
     "base_url": "https://www.football-data.co.uk/mmz4281/{season}/{league}.csv",
