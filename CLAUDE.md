@@ -48,6 +48,15 @@ Le pipeline tourne à deux endroits, et c'est **voulu** : `automation/daily_upda
 Windows quand le PC est allumé (il fait plus : Sofascore, dont les IP de CI sont bloquées, et la copie
 vers le site), et `.github/workflows/update-predictions.yml` chaque matin à 6h20 en relais quand le PC
 est éteint. Ne pas « corriger » cette redondance, elle est documentée dans le docstring de `daily_update.py`.
+Chaque étape locale est coupée au bout de 45 minutes et git n'y demande jamais d'identifiants : une étape
+Sofascore bloquée gardait la tâche active toute la journée (30/09/2026). La Coupe du Monde, terminée le
+19/07/2026, n'est plus régénérée : tâche locale « VM WC Live Update » désactivée, workflow en lancement
+manuel seulement.
+
+`predictions.json` porte `upcoming` : les prochains matchs des cinq grands championnats (`fixtures.csv` de
+football-data.co.uk) avec des probabilités de l'**Elo seul** et la cote moyenne du marché. Le LightGBM
+n'y est pas appliqué, ses variables de forme exigeant le match joué. L'alerte Telegram Hermes les lit
+sur le site.
 
 ## Tests
 `python -m pytest tests/` depuis la racine. `tests/test_elo.py` verrouille les invariants de la baseline :

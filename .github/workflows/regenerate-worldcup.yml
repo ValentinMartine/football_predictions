@@ -1,10 +1,8 @@
 name: Regenerate world cup predictions
 
 on:
-  schedule:
-    # Toutes les 2 heures pendant le tournoi : régénère à partir des derniers résultats
-    # (Sofascore en direct), pour que le site reflète vite les matchs terminés.
-    - cron: "0 */2 * * *"
+  # Tournoi terminé le 19/07/2026 : la régénération toutes les 2 heures ne produisait plus que des
+  # commits d'horodatage. Lancement manuel seulement.
   workflow_dispatch:
 
 permissions:

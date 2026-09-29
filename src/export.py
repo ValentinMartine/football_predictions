@@ -16,7 +16,8 @@ from src.backtesting import ROBUST_POLICY, select_policy, simulate, threshold_cu
 from src.calibration import TemperatureScaling
 from src.lineups import lineup_adjusted_prediction
 from src.modeling import elo_probabilities, fit_lgbm, metrics, temporal_split, tune_blend
-from src.pipeline import FEATURE_COLS, build_features
+from src.pipeline import FEATURE_COLS, LEAGUE_NAMES, build_features, load_matches
+from src.upcoming import elo_actuels, lire_fixtures, predire, telecharger_fixtures
 from src.walk_forward import run_walk_forward
 
 OUT = Path(__file__).resolve().parents[1] / "data" / "predictions.json"
@@ -67,6 +68,17 @@ def _prediction_payload(row, probs, stage: str) -> dict:
 
 
 BIG5 = {"E0", "SP1", "I1", "D1", "F1"}  # la page 1X2 est brandée "5 grands championnats"
+
+
+def _prochains_matchs(train: pd.DataFrame) -> list[dict]:
+    """Pronostics Elo des matchs à venir ; une panne de football-data.co.uk ne bloque pas l'export."""
+    try:
+        fixtures = lire_fixtures(telecharger_fixtures(), BIG5)
+    except (OSError, ValueError) as erreur:
+        print(f"Prochains matchs indisponibles : {erreur}")
+        return []
+    matches = load_matches()
+    return predire(fixtures, train, elo_actuels(matches[matches["league"].isin(BIG5)]), LEAGUE_NAMES)
 
 
 def main() -> None:
@@ -203,6 +215,7 @@ def main() -> None:
         },
         "walk_forward": run_walk_forward(df),
         "recent_matches": matches,
+        "upcoming": _prochains_matchs(train),
         "recent_bets": [] if bets.empty else bets.tail(20).assign(date=lambda x: x["date"].dt.strftime("%Y-%m-%d")).to_dict("records"),
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")

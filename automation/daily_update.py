@@ -3,8 +3,8 @@ Mise à jour quotidienne complète des prédictions sportives + déploiement.
 
 1. Pipeline clubs (téléchargement -> ré-entraînement/export -> stats -> drapeaux ->
    compos clubs + autres championnats via Sofascore -> logos -> normalisation -> sync).
-2. Régénération Coupe du Monde (dépôt séparé) à partir des derniers résultats, puis
-   copie des données WC vers le site.
+2. Tennis ATP (dépôt tennis-predictions), copié vers le site par son propre export.
+   La Coupe du Monde, terminée le 19/07/2026, n'est plus régénérée : ses données restent figées.
 3. Commit + push UNIQUEMENT des données (pas le code) sur les trois dépôts.
    Vercel redéploie automatiquement au push du site.
 
@@ -14,7 +14,7 @@ les workflows GitHub Actions (cloud) qui prennent le relais.
 """
 from __future__ import annotations
 
-import shutil
+import os
 import subprocess
 import sys
 from datetime import datetime
@@ -31,20 +31,15 @@ for _stream in (sys.stdout, sys.stderr):
 CLUBS = Path(__file__).resolve().parents[1]
 PERSO = CLUBS.parent
 SITE = PERSO / "valentinmartine"
-WORLDCUP = CLUBS / "world_cup"  # Coupe du Monde désormais dans le monorepo clubs
-TENNIS = PERSO / "tennis_predictions"
-SITE_DATA = SITE / "public" / "data"
+TENNIS = PERSO / "tennis-predictions"
 LOG_DIR = CLUBS / "automation" / "logs"
 AUTHOR_EMAIL = "212414673+ValentinMartine@users.noreply.github.com"
 AUTHOR_NAME = "ValentinMartine"
 
-# fichiers WC (dépôt séparé, data/) -> nom de destination côté site (public/data/)
-WC_TO_SITE = {
-    "predictions.json": "worldcup_predictions.json",
-    "wc_bracket.json": "wc_bracket.json",
-    "wc_montecarlo.json": "wc_montecarlo.json",
-    "worldcup_lineups.json": "worldcup_lineups.json",
-}
+# Une étape Sofascore bloquée a gardé la tâche active plus de 11 heures le 30/09/2026.
+DELAI_ETAPE = 45 * 60
+# Tâche lancée sans fenêtre : une demande d'identifiants git attendrait indéfiniment.
+ENV_GIT = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
 
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 LOG_FILE = LOG_DIR / f"daily_{datetime.now():%Y%m%d}.log"
@@ -57,9 +52,13 @@ def log(msg: str) -> None:
         f.write(line + "\n")
 
 
-def run(cmd: list[str], cwd: Path, check: bool = True) -> subprocess.CompletedProcess:
-    """Exécute une commande, journalise sa sortie. Lève si check et code non nul."""
-    res = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+def run(cmd: list[str], cwd: Path, check: bool = True, delai: int = DELAI_ETAPE) -> subprocess.CompletedProcess:
+    """Exécute une commande, journalise sa sortie. Lève si check et code non nul, ou au-delà du délai."""
+    try:
+        res = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, encoding="utf-8", errors="replace",
+                             timeout=delai, env=ENV_GIT)
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"délai de {delai} s dépassé : {' '.join(cmd)}") from exc
     for stream in (res.stdout, res.stderr):
         for ln in (stream or "").splitlines():
             if ln.strip():
@@ -67,15 +66,6 @@ def run(cmd: list[str], cwd: Path, check: bool = True) -> subprocess.CompletedPr
     if check and res.returncode != 0:
         raise RuntimeError(f"échec ({res.returncode}) : {' '.join(cmd)}")
     return res
-
-
-def copy_wc_to_site() -> None:
-    if not SITE_DATA.exists():
-        return
-    for src_name, dst_name in WC_TO_SITE.items():
-        src = WORLDCUP / "data" / src_name
-        if src.exists():
-            shutil.copy2(src, SITE_DATA / dst_name)
 
 
 def commit_and_push(repo: Path, path_spec: str, message: str) -> None:
@@ -99,9 +89,9 @@ def commit_and_push(repo: Path, path_spec: str, message: str) -> None:
 def _push_resilient(repo: Path) -> bool:
     """Pousse ; si l'origine a avancé, rebase en gardant NOS données (les plus fraîches).
     En cas d'échec du rebase, on l'abandonne proprement et on réessaiera au prochain run."""
-    if subprocess.run(["git", "push", "-q"], cwd=repo).returncode == 0:
+    if subprocess.run(["git", "push", "-q"], cwd=repo, env=ENV_GIT).returncode == 0:
         return True
-    subprocess.run(["git", "fetch", "origin", "-q"], cwd=repo)
+    subprocess.run(["git", "fetch", "origin", "-q"], cwd=repo, env=ENV_GIT)
     # --autostash : un fichier modifié non commité (travail en cours) ne bloque plus le rebase.
     rb = subprocess.run(["git", "rebase", "--autostash", "-X", "theirs", "@{u}"], cwd=repo,
                         capture_output=True, text=True)
@@ -109,7 +99,7 @@ def _push_resilient(repo: Path) -> bool:
         subprocess.run(["git", "rebase", "--abort"], cwd=repo)
         log(f"  [{repo.name}] push rejeté, non résolu — réessai au prochain run")
         return False
-    if subprocess.run(["git", "push", "-q"], cwd=repo).returncode != 0:
+    if subprocess.run(["git", "push", "-q"], cwd=repo, env=ENV_GIT).returncode != 0:
         return False
     return True
 
@@ -119,23 +109,6 @@ def main() -> int:
     try:
         log("Pipeline clubs (download -> export -> stats -> flags -> compos + autres ligues -> logos -> sync)...")
         run([sys.executable, "scripts/update_pipeline.py"], CLUBS)
-
-        log("Régénération Coupe du Monde (dépôt séparé)...")
-        try:
-            run([sys.executable, "scripts/download_fifa_rankings.py"], WORLDCUP, check=False)
-            run([sys.executable, "scripts/download_match_data.py"], WORLDCUP)
-            # Résultats live Sofascore pour les matchs pas encore publiés par martj42 (retard).
-            run([sys.executable, "scripts/patch_wc_results_from_sofascore.py"], WORLDCUP, check=False)
-            run([sys.executable, "scripts/download_worldcup_metadata.py"], WORLDCUP, check=False)
-            run([sys.executable, "scripts/train_and_backtest.py"], WORLDCUP)
-            run([sys.executable, "-m", "src.export"], WORLDCUP)
-            run([sys.executable, "scripts/build_wc_bracket.py"], WORLDCUP)
-            run([sys.executable, "scripts/montecarlo_wc.py"], WORLDCUP)
-            run([sys.executable, "scripts/fetch_wc_lineups.py"], WORLDCUP, check=False)  # scraping best-effort
-            copy_wc_to_site()
-            log("  Coupe du Monde régénérée + copiée vers le site")
-        except Exception as exc:  # noqa: BLE001
-            log(f"  Coupe du Monde ignorée (non bloquant) : {exc}")
 
         log("Tennis ATP (download -> patch Sofascore Grands Chelems -> train -> export)...")
         try:
@@ -149,7 +122,6 @@ def main() -> int:
 
         today = f"{datetime.now():%Y-%m-%d}"
         commit_and_push(CLUBS, "data", f"chore(data): mise à jour quotidienne clubs ({today})")
-        commit_and_push(WORLDCUP, "data", f"chore(data): mise à jour quotidienne Coupe du Monde ({today})")
         commit_and_push(TENNIS, "data", f"chore(data): mise à jour quotidienne tennis ({today})")
         commit_and_push(SITE, "public/data", f"chore(data): rafraîchissement quotidien du site ({today})")
 
