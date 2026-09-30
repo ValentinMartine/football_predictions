@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T13:07:41+00:00",
+  "generated_at": "2026-09-30T12:48:25+00:00",
   "season": "2025-2026",
   "source": "Understat (via soccerdata)",
   "n_players": 1927,
@@ -137,6 +137,17 @@
       "xa": 12.57
     },
     {
+      "player": "Vinícius Júnior",
+      "team": "Real Madrid",
+      "league": "ESP-La Liga",
+      "matches": 36,
+      "minutes": 2865,
+      "goals": 16,
+      "assists": 5,
+      "xg": 14.4,
+      "xa": 7.16
+    },
+    {
       "player": "Ferrán Torres",
       "team": "Barcelona",
       "league": "ESP-La Liga",
@@ -146,6 +157,17 @@
       "assists": 2,
       "xg": 16.18,
       "xa": 3.16
+    },
+    {
+      "player": "Mason Greenwood",
+      "team": "Marseille",
+      "league": "FRA-Ligue 1",
+      "matches": 32,
+      "minutes": 2503,
+      "goals": 16,
+      "assists": 7,
+      "xg": 14.34,
+      "xa": 7.64
     },
     {
       "player": "Patrik Schick",
@@ -170,17 +192,6 @@
       "xa": 2.95
     },
     {
-      "player": "Mason Greenwood",
-      "team": "Marseille",
-      "league": "FRA-Ligue 1",
-      "matches": 32,
-      "minutes": 2503,
-      "goals": 16,
-      "assists": 7,
-      "xg": 14.34,
-      "xa": 7.64
-    },
-    {
       "player": "Ollie Watkins",
       "team": "Aston Villa",
       "league": "ENG-Premier League",
@@ -192,17 +203,6 @@
       "xa": 2.82
     },
     {
-      "player": "Vinícius Júnior",
-      "team": "Real Madrid",
-      "league": "ESP-La Liga",
-      "matches": 36,
-      "minutes": 2865,
-      "goals": 16,
-      "assists": 5,
-      "xg": 14.4,
-      "xa": 7.16
-    },
-    {
       "player": "João Pedro",
       "team": "Chelsea",
       "league": "ENG-Premier League",
@@ -212,28 +212,6 @@
       "assists": 5,
       "xg": 15.72,
       "xa": 3.98
-    },
-    {
-      "player": "Mikel Oyarzabal",
-      "team": "Real Sociedad",
-      "league": "ESP-La Liga",
-      "matches": 34,
-      "minutes": 2727,
-      "goals": 15,
-      "assists": 4,
-      "xg": 16.03,
-      "xa": 5.96
-    },
-    {
-      "player": "Michael Olise",
-      "team": "Bayern Munich",
-      "league": "GER-Bundesliga",
-      "matches": 32,
-      "minutes": 2308,
-      "goals": 15,
-      "assists": 19,
-      "xg": 11.55,
-      "xa": 17.04
     },
     {
       "player": "Luis Díaz",
@@ -256,6 +234,28 @@
       "assists": 4,
       "xg": 11.67,
       "xa": 4.5
+    },
+    {
+      "player": "Mikel Oyarzabal",
+      "team": "Real Sociedad",
+      "league": "ESP-La Liga",
+      "matches": 34,
+      "minutes": 2727,
+      "goals": 15,
+      "assists": 4,
+      "xg": 16.03,
+      "xa": 5.96
+    },
+    {
+      "player": "Michael Olise",
+      "team": "Bayern Munich",
+      "league": "GER-Bundesliga",
+      "matches": 32,
+      "minutes": 2308,
+      "goals": 15,
+      "assists": 19,
+      "xg": 11.55,
+      "xa": 17.04
     },
     {
       "player": "Andrej Kramaric",
@@ -348,17 +348,6 @@
       "xa": 10.78
     },
     {
-      "player": "Lamine Yamal",
-      "team": "Barcelona",
-      "league": "ESP-La Liga",
-      "matches": 28,
-      "minutes": 2291,
-      "goals": 16,
-      "assists": 11,
-      "xg": 14.66,
-      "xa": 12.57
-    },
-    {
       "player": "Jarrod Bowen",
       "team": "West Ham",
       "league": "ENG-Premier League",
@@ -368,6 +357,17 @@
       "assists": 11,
       "xg": 8.27,
       "xa": 8.43
+    },
+    {
+      "player": "Lamine Yamal",
+      "team": "Barcelona",
+      "league": "ESP-La Liga",
+      "matches": 28,
+      "minutes": 2291,
+      "goals": 16,
+      "assists": 11,
+      "xg": 14.66,
+      "xa": 12.57
     },
     {
       "player": "Luis Milla",
@@ -381,50 +381,6 @@
       "xa": 6.84
     },
     {
-      "player": "Jamie Leweling",
-      "team": "VfB Stuttgart",
-      "league": "GER-Bundesliga",
-      "matches": 32,
-      "minutes": 2385,
-      "goals": 7,
-      "assists": 9,
-      "xg": 4.1,
-      "xa": 6.05
-    },
-    {
-      "player": "Adrien Thomasson",
-      "team": "Lens",
-      "league": "FRA-Ligue 1",
-      "matches": 32,
-      "minutes": 2714,
-      "goals": 3,
-      "assists": 9,
-      "xg": 6.46,
-      "xa": 8.48
-    },
-    {
-      "player": "Konrad Laimer",
-      "team": "Bayern Munich",
-      "league": "GER-Bundesliga",
-      "matches": 29,
-      "minutes": 1997,
-      "goals": 3,
-      "assists": 9,
-      "xg": 2.83,
-      "xa": 4.99
-    },
-    {
-      "player": "Bazoumana Touré",
-      "team": "Hoffenheim",
-      "league": "GER-Bundesliga",
-      "matches": 30,
-      "minutes": 2379,
-      "goals": 5,
-      "assists": 9,
-      "xg": 5.14,
-      "xa": 7.23
-    },
-    {
       "player": "Farès Chaïbi",
       "team": "Eintracht Frankfurt",
       "league": "GER-Bundesliga",
@@ -434,17 +390,6 @@
       "assists": 9,
       "xg": 3.52,
       "xa": 5.04
-    },
-    {
-      "player": "Fermín López",
-      "team": "Barcelona",
-      "league": "ESP-La Liga",
-      "matches": 30,
-      "minutes": 1780,
-      "goals": 6,
-      "assists": 9,
-      "xg": 7.52,
-      "xa": 7.65
     },
     {
       "player": "Pedri",
@@ -458,15 +403,26 @@
       "xa": 5.95
     },
     {
-      "player": "Andrej Ilic",
-      "team": "Union Berlin",
-      "league": "GER-Bundesliga",
-      "matches": 32,
-      "minutes": 2238,
-      "goals": 5,
+      "player": "Jesús Rodriguez",
+      "team": "Como",
+      "league": "ITA-Serie A",
+      "matches": 31,
+      "minutes": 1728,
+      "goals": 2,
       "assists": 9,
-      "xg": 11.11,
-      "xa": 4.75
+      "xg": 3.92,
+      "xa": 6.97
+    },
+    {
+      "player": "Konrad Laimer",
+      "team": "Bayern Munich",
+      "league": "GER-Bundesliga",
+      "matches": 29,
+      "minutes": 1997,
+      "goals": 3,
+      "assists": 9,
+      "xg": 2.83,
+      "xa": 4.99
     },
     {
       "player": "Arda Güler",
@@ -480,15 +436,26 @@
       "xa": 8.85
     },
     {
-      "player": "Jesús Rodriguez",
-      "team": "Como",
-      "league": "ITA-Serie A",
-      "matches": 31,
-      "minutes": 1728,
-      "goals": 2,
+      "player": "Adrien Thomasson",
+      "team": "Lens",
+      "league": "FRA-Ligue 1",
+      "matches": 32,
+      "minutes": 2714,
+      "goals": 3,
       "assists": 9,
-      "xg": 3.92,
-      "xa": 6.97
+      "xg": 6.46,
+      "xa": 8.48
+    },
+    {
+      "player": "Jamie Leweling",
+      "team": "VfB Stuttgart",
+      "league": "GER-Bundesliga",
+      "matches": 32,
+      "minutes": 2385,
+      "goals": 7,
+      "assists": 9,
+      "xg": 4.1,
+      "xa": 6.05
     },
     {
       "player": "Christian Eriksen",
@@ -502,15 +469,26 @@
       "xa": 7.9
     },
     {
-      "player": "Ludovic Ajorque",
-      "team": "Brest",
-      "league": "FRA-Ligue 1",
+      "player": "Andrej Ilic",
+      "team": "Union Berlin",
+      "league": "GER-Bundesliga",
       "matches": 32,
-      "minutes": 2834,
-      "goals": 8,
+      "minutes": 2238,
+      "goals": 5,
       "assists": 9,
-      "xg": 9.86,
-      "xa": 3.82
+      "xg": 11.11,
+      "xa": 4.75
+    },
+    {
+      "player": "Fermín López",
+      "team": "Barcelona",
+      "league": "ESP-La Liga",
+      "matches": 30,
+      "minutes": 1780,
+      "goals": 6,
+      "assists": 9,
+      "xg": 7.52,
+      "xa": 7.65
     },
     {
       "player": "Armand Lauriente",
@@ -524,6 +502,28 @@
       "xa": 8.51
     },
     {
+      "player": "Bazoumana Touré",
+      "team": "Hoffenheim",
+      "league": "GER-Bundesliga",
+      "matches": 30,
+      "minutes": 2379,
+      "goals": 5,
+      "assists": 9,
+      "xg": 5.14,
+      "xa": 7.23
+    },
+    {
+      "player": "Ludovic Ajorque",
+      "team": "Brest",
+      "league": "FRA-Ligue 1",
+      "matches": 32,
+      "minutes": 2834,
+      "goals": 8,
+      "assists": 9,
+      "xg": 9.86,
+      "xa": 3.82
+    },
+    {
       "player": "Joshua Kimmich",
       "team": "Bayern Munich",
       "league": "GER-Bundesliga",
@@ -535,6 +535,17 @@
       "xa": 7.57
     },
     {
+      "player": "Dani Olmo",
+      "team": "Barcelona",
+      "league": "ESP-La Liga",
+      "matches": 33,
+      "minutes": 2109,
+      "goals": 7,
+      "assists": 8,
+      "xg": 8.75,
+      "xa": 6.66
+    },
+    {
       "player": "Vladimir Coufal",
       "team": "Hoffenheim",
       "league": "GER-Bundesliga",
@@ -544,17 +555,6 @@
       "assists": 8,
       "xg": 0.99,
       "xa": 7.48
-    },
-    {
-      "player": "Erling Haaland",
-      "team": "Manchester City",
-      "league": "ENG-Premier League",
-      "matches": 35,
-      "minutes": 2979,
-      "goals": 27,
-      "assists": 8,
-      "xg": 28.8,
-      "xa": 5.51
     }
   ],
   "top_xg": [
