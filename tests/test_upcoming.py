@@ -52,3 +52,12 @@ def test_pronostic_elo_et_marche():
 
 def test_calendrier_vide():
     assert predire(pd.DataFrame(), _features(), {}, {}) == []
+
+
+def test_les_cotes_moyennes_sont_publiees():
+    fixtures = lire_fixtures(FIXTURES, {"F1", "E0"})
+    matchs = predire(fixtures, _features(), elo_actuels(_historique()), {"F1": "Ligue 1", "E0": "Premier League"})
+    psg = next(m for m in matchs if m["home"] == "Paris SG")
+    assert (psg["odds_home"], psg["odds_draw"], psg["odds_away"]) == (1.40, 4.8, 7.5)
+    arsenal = next(m for m in matchs if m["home"] == "Arsenal")
+    assert "odds_home" not in arsenal

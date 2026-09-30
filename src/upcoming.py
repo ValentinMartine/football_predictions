@@ -48,7 +48,11 @@ def _marche(ligne) -> dict | None:
         return None
     brutes = [1 / float(c) for c in cotes]
     total = sum(brutes)
-    return {f"market_{nom}": round(b / total, 3) for nom, b in zip(("home", "draw", "away"), brutes)}
+    noms = ("home", "draw", "away")
+    return {
+        **{f"odds_{nom}": round(float(c), 2) for nom, c in zip(noms, cotes)},
+        **{f"market_{nom}": round(b / total, 3) for nom, b in zip(noms, brutes)},
+    }
 
 
 def predire(fixtures: pd.DataFrame, features: pd.DataFrame, elos: dict[str, ClubElo],

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T14:58:03+00:00",
+  "generated_at": "2026-09-30T12:37:40+00:00",
   "method": "Club Elo + rolling form/shots + LightGBM, blend tuned on temporal validation",
   "data_source": "football-data.co.uk CSV, Big Five leagues, seasons 1516 to 2627",
   "source_status": {
@@ -168221,11 +168221,11 @@
       "home_team": "Liverpool",
       "away_team": "Chelsea",
       "bet_side": 0,
-      "prob": 0.566492545117261,
+      "prob": 0.5664925451172609,
       "odds": 2.0,
-      "expected_value": 0.13298509023452199,
-      "edge": 0.13298509023452199,
-      "probability_edge": 0.06649254511726099,
+      "expected_value": 0.13298509023452176,
+      "edge": 0.13298509023452176,
+      "probability_edge": 0.06649254511726088,
       "stake": 23.193120600975842,
       "profit": -23.193120600975842,
       "bankroll": 1136.4629094478162,
