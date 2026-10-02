@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T13:43:28+00:00",
+  "generated_at": "2026-10-02T13:01:06+00:00",
   "market": "Over/Under 2.5 buts",
   "model": "Score Poisson (2 régresseurs LightGBM), P(Over) calibrée (isotone)",
   "n_test": 14623,
