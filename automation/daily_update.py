@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import os
 import subprocess
+import tempfile
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -39,7 +40,7 @@ AUTHOR_NAME = "ValentinMartine"
 # Une étape Sofascore bloquée a gardé la tâche active plus de 11 heures le 30/09/2026.
 DELAI_ETAPE = 45 * 60
 # Tâche lancée sans fenêtre : une demande d'identifiants git attendrait indéfiniment.
-ENV_GIT = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
+ENV_GIT = {**os.environ, "GIT_TERMINAL_PROMPT": "0", "PYTHONIOENCODING": "utf-8"}
 
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 LOG_FILE = LOG_DIR / f"daily_{datetime.now():%Y%m%d}.log"
@@ -54,15 +55,18 @@ def log(msg: str) -> None:
 
 def run(cmd: list[str], cwd: Path, check: bool = True, delai: int = DELAI_ETAPE) -> subprocess.CompletedProcess:
     """Exécute une commande, journalise sa sortie. Lève si check et code non nul, ou au-delà du délai."""
-    try:
-        res = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, encoding="utf-8", errors="replace",
-                             timeout=delai, env=ENV_GIT)
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError(f"délai de {delai} s dépassé : {' '.join(cmd)}") from exc
-    for stream in (res.stdout, res.stderr):
-        for ln in (stream or "").splitlines():
-            if ln.strip():
-                log(f"    {ln}")
+    # Sortie dans un fichier, pas dans un tuyau : un petit-enfant orphelin (uc_driver.exe de
+    # seleniumbase) gardait le tuyau ouvert et bloquait la tâche deux jours (02/10/2026).
+    with tempfile.TemporaryFile() as sortie:
+        try:
+            res = subprocess.run(cmd, cwd=cwd, stdout=sortie, stderr=subprocess.STDOUT, timeout=delai, env=ENV_GIT)
+        except subprocess.TimeoutExpired as exc:
+            raise RuntimeError(f"délai de {delai} s dépassé : {' '.join(cmd)}") from exc
+        sortie.seek(0)
+        texte = sortie.read().decode("utf-8", errors="replace")
+    for ln in texte.splitlines():
+        if ln.strip():
+            log(f"    {ln}")
     if check and res.returncode != 0:
         raise RuntimeError(f"échec ({res.returncode}) : {' '.join(cmd)}")
     return res
@@ -115,6 +119,8 @@ def main() -> int:
             run([sys.executable, "scripts/download_data.py"], TENNIS)
             run([sys.executable, "scripts/patch_results_from_sofascore.py"], TENNIS, check=False)
             run([sys.executable, "scripts/train_and_backtest.py"], TENNIS)
+            # Signaux d'actualité jugés par Nimble (Ollama local) : affichés à côté des prédictions.
+            run([sys.executable, "scripts/signaux_actualite.py"], TENNIS, check=False)
             run([sys.executable, "-m", "src.export"], TENNIS)  # copie aussi vers le site
             log("  Tennis régénéré + copié vers le site")
         except Exception as exc:  # noqa: BLE001
