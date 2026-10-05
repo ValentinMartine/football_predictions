@@ -14,7 +14,7 @@
    "payroll_meur": null
   },
   "Barcelona": {
-   "value_meur": 1260.0,
+   "value_meur": 1300.0,
    "squad": 27,
    "avg_age": 25.3,
    "payroll_meur": null
@@ -26,7 +26,7 @@
    "payroll_meur": null
   },
   "Real Madrid": {
-   "value_meur": 1460.0,
+   "value_meur": 1500.0,
    "squad": 27,
    "avg_age": 26.0,
    "payroll_meur": null
@@ -50,7 +50,7 @@
    "payroll_meur": null
   },
   "Atletico Madrid": {
-   "value_meur": 679.7,
+   "value_meur": 703.5,
    "squad": 25,
    "avg_age": 26.6,
    "payroll_meur": null
@@ -86,7 +86,7 @@
    "payroll_meur": null
   },
   "Athletic Bilbao": {
-   "value_meur": 232.8,
+   "value_meur": 229.8,
    "squad": 26,
    "avg_age": 26.9,
    "payroll_meur": null
@@ -98,7 +98,7 @@
    "payroll_meur": null
   },
   "Villarreal": {
-   "value_meur": 331.6,
+   "value_meur": 367.9,
    "squad": 24,
    "avg_age": 26.2,
    "payroll_meur": null
@@ -140,9 +140,9 @@
    "payroll_meur": null
   },
   "Aston Villa": {
-   "value_meur": 572.3,
-   "squad": 27,
-   "avg_age": 26.3,
+   "value_meur": 572.5,
+   "squad": 28,
+   "avg_age": 26.1,
    "payroll_meur": null
   },
   "Newcastle": {
@@ -218,7 +218,7 @@
    "payroll_meur": null
   },
   "Betis": {
-   "value_meur": 254.6,
+   "value_meur": 258.1,
    "squad": 25,
    "avg_age": 28.3,
    "payroll_meur": null
@@ -244,13 +244,13 @@
   "Werder Bremen": {
    "value_meur": 124.2,
    "squad": 31,
-   "avg_age": 25.6,
+   "avg_age": 25.7,
    "payroll_meur": null
   },
   "Bournemouth": {
-   "value_meur": 574.5,
-   "squad": 29,
-   "avg_age": 25.7,
+   "value_meur": 574.2,
+   "squad": 28,
+   "avg_age": 25.8,
    "payroll_meur": null
   },
   "Brentford": {
@@ -272,7 +272,7 @@
    "payroll_meur": null
   },
   "Celta": {
-   "value_meur": 173.0,
+   "value_meur": 178.3,
    "squad": 25,
    "avg_age": 27.1,
    "payroll_meur": null
@@ -290,13 +290,13 @@
    "payroll_meur": null
   },
   "Osasuna": {
-   "value_meur": 78.1,
-   "squad": 24,
-   "avg_age": 28.1,
+   "value_meur": 82.0,
+   "squad": 25,
+   "avg_age": 27.9,
    "payroll_meur": null
   },
   "Vallecano": {
-   "value_meur": 86.8,
+   "value_meur": 100.8,
    "squad": 27,
    "avg_age": 28.6,
    "payroll_meur": null
@@ -338,7 +338,7 @@
    "payroll_meur": null
   },
   "Sociedad": {
-   "value_meur": 283.3,
+   "value_meur": 291.8,
    "squad": 26,
    "avg_age": 25.4,
    "payroll_meur": null
@@ -350,7 +350,7 @@
    "payroll_meur": null
   },
   "Valencia": {
-   "value_meur": 149.2,
+   "value_meur": 156.5,
    "squad": 29,
    "avg_age": 26.9,
    "payroll_meur": null
@@ -374,21 +374,21 @@
    "payroll_meur": null
   },
   "Alaves": {
-   "value_meur": 66.7,
+   "value_meur": 72.9,
    "squad": 24,
    "avg_age": 27.3,
    "payroll_meur": null
   },
   "Espanol": {
-   "value_meur": 127.8,
+   "value_meur": 141.6,
    "squad": 25,
    "avg_age": 26.9,
    "payroll_meur": null
   },
   "Getafe": {
-   "value_meur": 92.3,
-   "squad": 23,
-   "avg_age": 27.5,
+   "value_meur": 95.4,
+   "squad": 24,
+   "avg_age": 27.3,
    "payroll_meur": null
   },
   "Man United": {
@@ -398,7 +398,7 @@
    "payroll_meur": null
   },
   "Sevilla": {
-   "value_meur": 169.1,
+   "value_meur": 176.8,
    "squad": 26,
    "avg_age": 25.9,
    "payroll_meur": null
