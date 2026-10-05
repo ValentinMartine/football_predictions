@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-04T12:43:47+00:00",
+  "generated_at": "2026-10-05T15:09:10+00:00",
   "market": "Over/Under 2.5 buts",
   "model": "Score Poisson (2 régresseurs LightGBM), P(Over) calibrée (isotone)",
-  "n_test": 14623,
+  "n_test": 14647,
   "over_rate_pct": 51.6,
   "closing_avg": {
-    "n_bets": 3330,
+    "n_bets": 3333,
     "roi_pct": -8.6,
     "win_rate_pct": 46.9,
-    "final_bankroll": 9.09
+    "final_bankroll": 9.08
   },
   "line_shopping": {
-    "n_bets": 6450,
+    "n_bets": 6459,
     "roi_pct": -1.0,
-    "win_rate_pct": 47.9,
-    "final_bankroll": 120.51
+    "win_rate_pct": 47.8,
+    "final_bankroll": 113.69
   },
   "by_tier": {
     "top5": {
@@ -24,13 +24,13 @@
       "final_bankroll": 707.41
     },
     "mineures": {
-      "n_bets": 4690,
-      "roi_pct": -1.64,
+      "n_bets": 4699,
+      "roi_pct": -1.66,
       "win_rate_pct": 48.0,
-      "final_bankroll": 170.35
+      "final_bankroll": 160.71
     }
   },
-  "mean_clv_pct": 4.26,
-  "clv_n_bets": 3174,
+  "mean_clv_pct": 4.28,
+  "clv_n_bets": 3182,
   "note": "Testé sur 19 championnats (dont divisions inférieures), ~13 500 matchs de test. Aucun edge à la clôture. Le line shopping ramène près de l'équilibre sur le top 5 (~0 %) mais reste négatif sur les ligues mineures (le modèle y est moins précis, ce qui annule leur inefficience supposée). CLV positive mais jamais convertie en ROI. Conclusion honnête : aucun profit fiable démontrable sur ces marchés publics."
 }
