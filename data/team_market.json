@@ -20,7 +20,7 @@
    "payroll_meur": null
   },
   "Liverpool": {
-   "value_meur": 1050.0,
+   "value_meur": 1090.0,
    "squad": 29,
    "avg_age": 25.7,
    "payroll_meur": null
@@ -56,7 +56,7 @@
    "payroll_meur": null
   },
   "Arsenal": {
-   "value_meur": 1370.0,
+   "value_meur": 1380.0,
    "squad": 24,
    "avg_age": 26.5,
    "payroll_meur": null
@@ -74,7 +74,7 @@
    "payroll_meur": null
   },
   "Man City": {
-   "value_meur": 1440.0,
+   "value_meur": 1500.0,
    "squad": 24,
    "avg_age": 25.5,
    "payroll_meur": null
@@ -88,7 +88,7 @@
   "Athletic Bilbao": {
    "value_meur": 229.8,
    "squad": 26,
-   "avg_age": 26.9,
+   "avg_age": 27.0,
    "payroll_meur": null
   },
   "Juventus": {
@@ -104,13 +104,13 @@
    "payroll_meur": null
   },
   "Chelsea": {
-   "value_meur": 1090.0,
+   "value_meur": 1150.0,
    "squad": 28,
    "avg_age": 24.4,
    "payroll_meur": null
   },
   "Nottingham Forest": {
-   "value_meur": 520.5,
+   "value_meur": 554.0,
    "squad": 24,
    "avg_age": 27.1,
    "payroll_meur": null
@@ -140,13 +140,13 @@
    "payroll_meur": null
   },
   "Aston Villa": {
-   "value_meur": 602.5,
+   "value_meur": 633.7,
    "squad": 28,
    "avg_age": 26.1,
    "payroll_meur": null
   },
   "Newcastle": {
-   "value_meur": 618.1,
+   "value_meur": 712.1,
    "squad": 25,
    "avg_age": 26.1,
    "payroll_meur": null
@@ -200,13 +200,13 @@
    "payroll_meur": null
   },
   "Nott'm Forest": {
-   "value_meur": 520.5,
+   "value_meur": 554.0,
    "squad": 24,
    "avg_age": 27.1,
    "payroll_meur": null
   },
   "Brighton": {
-   "value_meur": 630.5,
+   "value_meur": 700.0,
    "squad": 30,
    "avg_age": 25.2,
    "payroll_meur": null
@@ -248,13 +248,13 @@
    "payroll_meur": null
   },
   "Bournemouth": {
-   "value_meur": 574.2,
+   "value_meur": 624.2,
    "squad": 28,
    "avg_age": 25.8,
    "payroll_meur": null
   },
   "Brentford": {
-   "value_meur": 588.8,
+   "value_meur": 633.8,
    "squad": 29,
    "avg_age": 25.1,
    "payroll_meur": null
@@ -278,13 +278,13 @@
    "payroll_meur": null
   },
   "Fulham": {
-   "value_meur": 411.8,
+   "value_meur": 418.6,
    "squad": 26,
    "avg_age": 26.8,
    "payroll_meur": null
   },
   "Crystal Palace": {
-   "value_meur": 596.2,
+   "value_meur": 603.2,
    "squad": 28,
    "avg_age": 26.7,
    "payroll_meur": null
@@ -314,7 +314,7 @@
    "payroll_meur": null
   },
   "Everton": {
-   "value_meur": 417.1,
+   "value_meur": 436.1,
    "squad": 21,
    "avg_age": 26.9,
    "payroll_meur": null
@@ -346,7 +346,7 @@
   "Union Berlin": {
    "value_meur": 111.5,
    "squad": 30,
-   "avg_age": 27.1,
+   "avg_age": 27.2,
    "payroll_meur": null
   },
   "Valencia": {
@@ -392,7 +392,7 @@
    "payroll_meur": null
   },
   "Man United": {
-   "value_meur": 922.8,
+   "value_meur": 928.8,
    "squad": 29,
    "avg_age": 26.3,
    "payroll_meur": null
@@ -416,7 +416,7 @@
    "payroll_meur": null
   },
   "Tottenham": {
-   "value_meur": 829.0,
+   "value_meur": 836.0,
    "squad": 28,
    "avg_age": 26.7,
    "payroll_meur": null
