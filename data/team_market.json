@@ -188,9 +188,9 @@
    "payroll_meur": null
   },
   "Bologna": {
-   "value_meur": 227.8,
-   "squad": 27,
-   "avg_age": 26.3,
+   "value_meur": 229.2,
+   "squad": 28,
+   "avg_age": 26.7,
    "payroll_meur": null
   },
   "Freiburg": {
@@ -314,9 +314,9 @@
    "payroll_meur": null
   },
   "Everton": {
-   "value_meur": 436.1,
-   "squad": 21,
-   "avg_age": 26.9,
+   "value_meur": 436.8,
+   "squad": 22,
+   "avg_age": 26.6,
    "payroll_meur": null
   },
   "Auxerre": {
@@ -334,7 +334,7 @@
   "Rennes": {
    "value_meur": 253.4,
    "squad": 26,
-   "avg_age": 25.7,
+   "avg_age": 25.8,
    "payroll_meur": null
   },
   "Sociedad": {
