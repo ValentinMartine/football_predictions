@@ -52,7 +52,7 @@
   "Atletico Madrid": {
    "value_meur": 703.5,
    "squad": 25,
-   "avg_age": 26.6,
+   "avg_age": 26.7,
    "payroll_meur": null
   },
   "Arsenal": {
@@ -98,9 +98,9 @@
    "payroll_meur": null
   },
   "Villarreal": {
-   "value_meur": 367.9,
-   "squad": 24,
-   "avg_age": 26.2,
+   "value_meur": 368.1,
+   "squad": 25,
+   "avg_age": 26.1,
    "payroll_meur": null
   },
   "Chelsea": {
@@ -196,7 +196,7 @@
   "Freiburg": {
    "value_meur": 244.2,
    "squad": 27,
-   "avg_age": 27.0,
+   "avg_age": 27.1,
    "payroll_meur": null
   },
   "Nott'm Forest": {
@@ -266,7 +266,7 @@
    "payroll_meur": null
   },
   "Stuttgart": {
-   "value_meur": 399.8,
+   "value_meur": 399.4,
    "squad": 30,
    "avg_age": 25.4,
    "payroll_meur": null
@@ -344,7 +344,7 @@
    "payroll_meur": null
   },
   "Union Berlin": {
-   "value_meur": 111.5,
+   "value_meur": 112.0,
    "squad": 30,
    "avg_age": 27.2,
    "payroll_meur": null
@@ -352,7 +352,7 @@
   "Valencia": {
    "value_meur": 156.5,
    "squad": 29,
-   "avg_age": 26.9,
+   "avg_age": 27.0,
    "payroll_meur": null
   },
   "Torino": {
@@ -424,7 +424,7 @@
   "Cagliari": {
    "value_meur": 141.8,
    "squad": 30,
-   "avg_age": 25.0,
+   "avg_age": 25.1,
    "payroll_meur": null
   },
   "Parma": {
@@ -434,7 +434,7 @@
    "payroll_meur": null
   },
   "Hoffenheim": {
-   "value_meur": 288.4,
+   "value_meur": 287.6,
    "squad": 27,
    "avg_age": 25.0,
    "payroll_meur": null
@@ -446,9 +446,9 @@
    "payroll_meur": null
   },
   "Venezia": {
-   "value_meur": 120.2,
-   "squad": 35,
-   "avg_age": 26.1,
+   "value_meur": 120.3,
+   "squad": 36,
+   "avg_age": 26.0,
    "payroll_meur": null
   },
   "Monza": {
