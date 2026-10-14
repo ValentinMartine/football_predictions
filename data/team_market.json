@@ -21,8 +21,8 @@
   },
   "Liverpool": {
    "value_meur": 1090.0,
-   "squad": 29,
-   "avg_age": 25.7,
+   "squad": 31,
+   "avg_age": 25.4,
    "payroll_meur": null
   },
   "Real Madrid": {
@@ -68,9 +68,9 @@
    "payroll_meur": null
   },
   "Marseille": {
-   "value_meur": 188.8,
-   "squad": 22,
-   "avg_age": 27.2,
+   "value_meur": 189.0,
+   "squad": 23,
+   "avg_age": 27.0,
    "payroll_meur": null
   },
   "Man City": {
@@ -106,7 +106,7 @@
   "Chelsea": {
    "value_meur": 1150.0,
    "squad": 28,
-   "avg_age": 24.4,
+   "avg_age": 24.5,
    "payroll_meur": null
   },
   "Nottingham Forest": {
@@ -208,7 +208,7 @@
   "Brighton": {
    "value_meur": 700.0,
    "squad": 30,
-   "avg_age": 25.2,
+   "avg_age": 25.3,
    "payroll_meur": null
   },
   "M'gladbach": {
@@ -226,7 +226,7 @@
   "Lens": {
    "value_meur": 243.0,
    "squad": 29,
-   "avg_age": 26.5,
+   "avg_age": 26.6,
    "payroll_meur": null
   },
   "Mainz": {
@@ -410,9 +410,9 @@
    "payroll_meur": null
   },
   "Le Havre": {
-   "value_meur": 62.2,
-   "squad": 26,
-   "avg_age": 24.8,
+   "value_meur": 62.5,
+   "squad": 27,
+   "avg_age": 24.7,
    "payroll_meur": null
   },
   "Tottenham": {
