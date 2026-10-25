@@ -68,7 +68,7 @@
    "payroll_meur": null
   },
   "Marseille": {
-   "value_meur": 189.3,
+   "value_meur": 190.3,
    "squad": 25,
    "avg_age": null,
    "payroll_meur": null
@@ -176,8 +176,8 @@
    "payroll_meur": null
   },
   "Strasbourg": {
-   "value_meur": 319.9,
-   "squad": 29,
+   "value_meur": 320.9,
+   "squad": 30,
    "avg_age": null,
    "payroll_meur": null
   },
@@ -320,8 +320,8 @@
    "payroll_meur": null
   },
   "Auxerre": {
-   "value_meur": 96.0,
-   "squad": 31,
+   "value_meur": 96.2,
+   "squad": 32,
    "avg_age": null,
    "payroll_meur": null
   },
@@ -404,14 +404,14 @@
    "payroll_meur": null
   },
   "Angers": {
-   "value_meur": 65.5,
+   "value_meur": 65.8,
    "squad": 23,
    "avg_age": null,
    "payroll_meur": null
   },
   "Le Havre": {
-   "value_meur": 62.5,
-   "squad": 27,
+   "value_meur": 63.1,
+   "squad": 28,
    "avg_age": null,
    "payroll_meur": null
   },
