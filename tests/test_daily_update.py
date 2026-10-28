@@ -139,8 +139,6 @@ def test_pages_paris9_refusees_si_page_publique_nominative(tmp_path, monkeypatch
     publique = tmp_path / "fftt" / "publique"
     publique.mkdir(parents=True)
     (publique / "index.html").write_text('{"public": true, "lic": "123"}', encoding="utf-8")
-    for nom in ("complet.html", "complet_mobile.html"):
-        (publique / nom).write_text('content="noindex, nofollow, noarchive, nosnippet"', encoding="utf-8")
     monkeypatch.setattr(du, "FFTT", tmp_path / "fftt")
     monkeypatch.setattr(du, "SITE", tmp_path / "site")
     with pytest.raises(RuntimeError, match="publique"):
@@ -192,3 +190,38 @@ def test_commit_avec_plusieurs_chemins(tmp_path, monkeypatch):
     assert {"data/a.json", "pages/b.html"} <= set(suivis) and "brouillon.txt" not in suivis
     dernier = subprocess.run(["git", "log", "-1", "--format=%s"], cwd=depot, capture_output=True, text=True).stdout
     assert "{jour}" not in dernier
+
+
+def _paris9(tmp_path, monkeypatch, fichiers):
+    publique = tmp_path / "fftt" / "publique"
+    (publique / "france").mkdir(parents=True)
+    (publique / "index.html").write_text('{"public": true}', encoding="utf-8")
+    for nom, contenu in fichiers.items():
+        (publique / "france" / nom).write_text(contenu, encoding="utf-8")
+    site = tmp_path / "site" / "public/projects/pronostics-paris9"
+    (site / "france").mkdir(parents=True)
+    (site / "france" / "ancien.json").write_text("{}", encoding="utf-8")
+    monkeypatch.setattr(du, "FFTT", tmp_path / "fftt")
+    monkeypatch.setattr(du, "SITE", tmp_path / "site")
+    return site
+
+
+def test_pages_paris9_publique_et_toutes_les_poules(tmp_path, monkeypatch):
+    # Depuis le 06/10/2026, aucune page avec les noms des joueurs n'est publiée sur le site.
+    site = _paris9(tmp_path, monkeypatch, {"clubs.json": "{}", "0101.json": '{"poule": 1}',
+                                         "319D.json": "{}", "tournois.json": "[]"})
+    du.copier_pages_paris9()
+    assert (site / "index.html").read_text(encoding="utf-8") == '{"public": true}'
+    assert sorted(p.name for p in (site / "france").iterdir()) == ["0101.json", "319D.json", "clubs.json", "tournois.json"]
+    assert not (tmp_path / "site" / "public" / "pronostics-paris9-255e79ed").exists()
+
+
+def test_poules_refusees_au_moindre_doute(tmp_path, monkeypatch):
+    for fichiers in ({"clubs.json": "{}", "0101.json": '{"lic": "1"}'}, {"clubs.json": "{}", "notes.txt": "x"},
+                     {"0101.json": "{}"}):
+        site = _paris9(tmp_path, monkeypatch, fichiers)
+        with pytest.raises(RuntimeError):
+            du.copier_pages_paris9()
+        assert [p.name for p in (site / "france").iterdir()] == ["ancien.json"]
+        import shutil
+        shutil.rmtree(tmp_path / "fftt"); shutil.rmtree(tmp_path / "site")

@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import shutil
 import subprocess
 import tempfile
@@ -184,17 +185,27 @@ def copier_json(source: Path, cible: Path) -> None:
 
 
 def copier_pages_paris9() -> None:
-    # Mêmes garde-fous que l'ancien workflow du site : page publique sans licence, pages complètes non indexées.
+    # Mêmes garde-fous que le workflow du site : seule la version publique (niveau équipe, sans nom ni licence)
+    # est copiée ; la page nominative a quitté le site le 06/10/2026. Tout est refusé au moindre doute.
     publique = FFTT / "publique"
+    dest = SITE / "public/projects/pronostics-paris9"
     index = (publique / "index.html").read_text(encoding="utf-8")
     if '"public": true' not in index or '"lic":' in index:
         raise RuntimeError("index.html de fftt-ping n'est pas la version publique : copie refusée")
-    for nom in ("complet.html", "complet_mobile.html"):
-        if 'content="noindex, nofollow, noarchive, nosnippet"' not in (publique / nom).read_text(encoding="utf-8"):
-            raise RuntimeError(f"{nom} n'a pas la balise noindex : copie refusée")
-    shutil.copyfile(publique / "index.html", SITE / "public/projects/pronostics-paris9/index.html")
-    shutil.copyfile(publique / "complet.html", SITE / "public/pronostics-paris9-255e79ed/index.html")
-    shutil.copyfile(publique / "complet_mobile.html", SITE / "public/pronostics-paris9-255e79ed/mobile/index.html")
+    poules = sorted((publique / "france").iterdir()) if (publique / "france").is_dir() else []
+    for f in poules:
+        if not re.fullmatch(r"(clubs|tournois|\d{3}[0-9A-Z])\.json", f.name):
+            raise RuntimeError(f"france/{f.name} : nom de fichier inattendu")
+        contenu = f.read_text(encoding="utf-8")
+        if '"lic"' in contenu:
+            raise RuntimeError(f"france/{f.name} refusé : licence présente")
+        json.loads(contenu)
+    if poules and not (publique / "france" / "clubs.json").exists():
+        raise RuntimeError("france/clubs.json absent")
+    shutil.copyfile(publique / "index.html", dest / "index.html")
+    if poules:
+        shutil.rmtree(dest / "france", ignore_errors=True)
+        shutil.copytree(publique / "france", dest / "france")
 
 
 def synchroniser_site() -> None:
@@ -268,7 +279,7 @@ def main() -> int:
         # Ping et échecs par équipes en dernier : la mise à jour du lundi prend plusieurs heures.
         maj_hebdo_ping_echecs(jour)
         synchroniser_site()
-        commit_and_push(SITE, ["public/data", "public/projects/pronostics-paris9", "public/pronostics-paris9-255e79ed"],
+        commit_and_push(SITE, ["public/data", "public/projects/pronostics-paris9"],
                         f"chore(data): rafraîchissement quotidien du site ({today})")
 
         log("=== Fin : succès ===")
