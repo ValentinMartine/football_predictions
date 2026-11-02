@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-01T13:37:51+00:00",
+  "checked_at": "2026-11-02T16:16:25+00:00",
   "source": "football-data.co.uk",
   "fallback_source": "football-data.org",
   "base_url": "https://www.football-data.co.uk/mmz4281/{season}/{league}.csv",
