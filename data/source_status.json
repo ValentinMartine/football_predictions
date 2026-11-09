@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-09T16:19:38+00:00",
+  "checked_at": "2026-11-09T21:15:33+00:00",
   "source": "football-data.co.uk",
   "fallback_source": "football-data.org",
   "base_url": "https://www.football-data.co.uk/mmz4281/{season}/{league}.csv",
@@ -18,9 +18,9 @@
     "2627"
   ],
   "current_season": "2627",
-  "files_ok": 227,
+  "files_ok": 228,
   "files_checked": 228,
-  "current_season_files_ok": 18,
+  "current_season_files_ok": 19,
   "healthy": true,
   "current_season_healthy": true,
   "current_season_has_bookmaker_odds": true,
@@ -85,9 +85,9 @@
       "season": "2627",
       "league": "E3",
       "url": "https://www.football-data.co.uk/mmz4281/2627/E3.csv",
-      "ok": false,
-      "status_code": null,
-      "error": "HTTPSConnectionPool(host='www.football-data.co.uk', port=443): Read timed out. (read timeout=20)"
+      "ok": true,
+      "status_code": 200,
+      "error": null
     },
     {
       "season": "2627",
