@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-23T18:38:22+00:00",
+  "generated_at": "2026-11-24T18:07:23+00:00",
   "market": "Over/Under 2.5 buts",
   "model": "Score Poisson (2 régresseurs LightGBM), P(Over) calibrée (isotone)",
-  "n_test": 15760,
+  "n_test": 15768,
   "over_rate_pct": 51.8,
   "closing_avg": {
-    "n_bets": 3523,
+    "n_bets": 3524,
     "roi_pct": -8.6,
     "win_rate_pct": 46.8,
-    "final_bankroll": 6.78
+    "final_bankroll": 6.64
   },
   "line_shopping": {
-    "n_bets": 6870,
+    "n_bets": 6873,
     "roi_pct": -1.04,
     "win_rate_pct": 47.7,
-    "final_bankroll": 73.64
+    "final_bankroll": 72.51
   },
   "by_tier": {
     "top5": {
-      "n_bets": 1875,
-      "roi_pct": -0.62,
+      "n_bets": 1876,
+      "roi_pct": -0.59,
       "win_rate_pct": 47.5,
-      "final_bankroll": 758.41
+      "final_bankroll": 768.35
     },
     "mineures": {
-      "n_bets": 4995,
+      "n_bets": 4997,
       "roi_pct": -1.76,
       "win_rate_pct": 47.8,
-      "final_bankroll": 97.1
+      "final_bankroll": 94.37
     }
   },
   "mean_clv_pct": 4.3,
